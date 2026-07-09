@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-09 19:57:49 IST",
+  "last_updated":"2026-07-09 20:06:42 IST",
   "movies":[
     {
       "name":"Alpha",
@@ -60,6 +60,12 @@
       "slug":"michael",
       "totalGross":0.0,
       "totalTickets":0
+    },
+    {
+      "name":"Gatta Kusthi 2",
+      "slug":"gatta-kusthi-2",
+      "totalGross":20000.0,
+      "totalTickets":18
     }
   ]
 }

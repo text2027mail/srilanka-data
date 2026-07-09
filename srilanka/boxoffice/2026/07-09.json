@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-09 19:57:49 IST",
+  "last_updated":"2026-07-09 20:06:42 IST",
   "movies":{
     "Alpha":[
       [
@@ -253,6 +253,89 @@
         200,
         0,
         0.0
+      ]
+    ],
+    "Gatta Kusthi 2":[
+      [
+        "ET00006130",
+        "Aqua Lite 3D Cinema: Negombo",
+        "09:30 PM",
+        "4702",
+        298,
+        0,
+        0.0
+      ],
+      [
+        "ET00006130",
+        "City Lite Cinema: Mt. Lavinia",
+        "09:30 PM",
+        "5708",
+        100,
+        0,
+        0.0
+      ],
+      [
+        "ET00006130",
+        "Concord: Dehiwala",
+        "10:30 PM",
+        "9322",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00006130",
+        "Liberty By Scope Cinemas: Colombo (Screen 2)",
+        "09:00 PM",
+        "21530",
+        134,
+        4,
+        3200.0
+      ],
+      [
+        "ET00006130",
+        "PVR Cinema: One Galle Face Mall",
+        "10:15 PM",
+        "4249",
+        319,
+        4,
+        5000.0
+      ],
+      [
+        "ET00006130",
+        "Regal Cinemas: Polonnaruwa",
+        "09:00 PM",
+        "1043",
+        93,
+        0,
+        0.0
+      ],
+      [
+        "ET00006130",
+        "Savoy 3D Dolby ATMOS: Wellawatta",
+        "10:00 PM",
+        "9975",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00006130",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:45 PM",
+        "24401",
+        140,
+        8,
+        9600.0
+      ],
+      [
+        "ET00006130",
+        "Scope Cinemas: Colombo City Center (Screen 2)",
+        "09:30 PM",
+        "61824",
+        125,
+        2,
+        2200.0
       ]
     ]
   }
