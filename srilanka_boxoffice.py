@@ -1,14 +1,7 @@
 #!/usr/bin/env python3
 """
 Sri Lanka Box Office Script – Fetches seat data for the current IST date only.
-Updates existing JSON file by matching (eventCode, venue, sessionId) – append/update.
-Saves to: srilanka/boxoffice/YYYY/MM-DD.json (minified, value-only arrays).
-
-Also builds/updates a movie‑level database:
-- srilanka/movie/data/{slug}.json – day‑wise aggregated stats per movie
-- srilanka/movie/index.json – master index of all movies with lifetime totals
-
-Auto‑refreshes CF cookies via Playwright if missing or expired.
+Auto‑refreshes Cloudflare cookies via Playwright each run.
 """
 
 import json
@@ -51,11 +44,11 @@ RETRY_PER_REQUEST = 6
 SCRAPE_PASSES = 5
 MAX_RETRIES_PER_EVENT = 3
 TIMEOUT_SEC = 30
-CUT_OFF_MINUTES = 200
-REGION_CODE = "SNLK"
+CUT_OFF_MINUTES = 300
+REGION_CODE = "SNLK"   # Sri Lanka region code
 
 IST = ZoneInfo("Asia/Kolkata")
-TARGET_DATE = datetime.now(IST).strftime("%Y%m%d")   # today's date in IST
+TARGET_DATE = datetime.now(IST).strftime("%Y%m%d")
 YEAR = datetime.now(IST).strftime("%Y")
 
 BASE_DIR = "srilanka"
@@ -66,13 +59,12 @@ os.makedirs(MOVIE_DATA_DIR, exist_ok=True)
 
 DAILY_FILE = os.path.join(BOXOFFICE_DIR, f"{datetime.now(IST).strftime('%m-%d')}.json")
 
-# Cloudflare cookies (loaded from environment, will be refreshed by ensure_cf_cookies)
 CF_CLEARANCE = os.environ.get("CF_CLEARANCE", "")
 CF_BM = os.environ.get("CF_BM", "")
 print(f"🧩 CF_CLEARANCE present: {bool(CF_CLEARANCE)}")
 print(f"🧩 CF_BM present: {bool(CF_BM)}")
 
-AVG_PRICE = 500   # placeholder
+AVG_PRICE = 500
 
 # ========== HELPERS ==========
 def slugify(title: str) -> str:
@@ -121,9 +113,8 @@ def build_headers(extra=None, use_mobile=False):
         "Priority": "u=1, i",
         "Connection": "keep-alive",
     }
-    # Add cookies if available
-    cookie_parts = []
     global CF_CLEARANCE, CF_BM
+    cookie_parts = []
     if CF_CLEARANCE:
         cookie_parts.append(f"cf_clearance={CF_CLEARANCE}")
     if CF_BM:
@@ -137,10 +128,6 @@ def build_headers(extra=None, use_mobile=False):
 
 # ========== PLAYWRIGHT COOKIE FETCHER ==========
 async def get_cf_cookies_playwright(url: str, timeout: int = 30) -> Tuple[Optional[str], Optional[str]]:
-    """
-    Launch a headless Chromium, navigate to `url`, wait for Cloudflare
-    challenge to complete, and return cf_clearance + __cf_bm.
-    """
     if not HAS_PLAYWRIGHT:
         return None, None
     async with async_playwright() as p:
@@ -153,29 +140,23 @@ async def get_cf_cookies_playwright(url: str, timeout: int = 30) -> Tuple[Option
         print(f"🌐 Navigating to {url} to solve CF challenge...")
         try:
             await page.goto(url, wait_until="networkidle", timeout=timeout * 1000)
-            # Wait a bit for the challenge to be solved (oneshot is quick)
-            await page.wait_for_timeout(10000)  # 10 seconds
+            await page.wait_for_timeout(10000)  # let challenge solve
         except Exception as e:
             print(f"⚠️ Navigation/timeout error: {e}")
-            # Still might have cookies if challenge was solved quickly
         cookies = await context.cookies()
         cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
         cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
         await browser.close()
         return cf_clearance, cf_bm
 
-def ensure_cf_cookies(target_url: str = "https://lk.bookmyshow.com/") -> bool:
-    """
-    Ensure CF_CLEARANCE and CF_BM are set. If missing, try to obtain them via Playwright.
-    Returns True if cookies are available, False otherwise.
-    """
+def ensure_cf_cookies(target_url: str = "https://lk.bookmyshow.com/", force: bool = False) -> bool:
     global CF_CLEARANCE, CF_BM
-    if CF_CLEARANCE and CF_BM:
-        print("✅ CF cookies already present.")
+    if not force and CF_CLEARANCE and CF_BM:
+        print("✅ CF cookies already present (using existing).")
         return True
 
     if not HAS_PLAYWRIGHT:
-        print("⚠️ Playwright not installed. Please run: pip install playwright && playwright install")
+        print("⚠️ Playwright not installed. Cannot refresh cookies.")
         return False
 
     print("⏳ Attempting to fetch fresh CF cookies using Playwright...")
@@ -197,13 +178,11 @@ def ensure_cf_cookies(target_url: str = "https://lk.bookmyshow.com/") -> bool:
 
 # ========== SESSION CREATION ==========
 def create_session():
-    """Try different libraries/impersonations, test by calling movie API."""
     candidates = []
 
     if HAS_CURL:
+        candidates.append(("curl_chrome120", lambda: curl_req.Session(impersonate="chrome120", timeout=TIMEOUT_SEC)))
         candidates.append(("curl_safari", lambda: curl_req.Session(impersonate="safari17_0", timeout=TIMEOUT_SEC)))
-        candidates.append(("curl_chrome", lambda: curl_req.Session(impersonate="chrome124", timeout=TIMEOUT_SEC)))
-        candidates.append(("curl_edge", lambda: curl_req.Session(impersonate="edge124", timeout=TIMEOUT_SEC)))
 
     if HAS_CLOUDSCRAPER:
         candidates.append(("cloudscraper", lambda: cloudscraper.create_scraper(browser={"browser": "chrome", "platform": "windows"})))
@@ -231,14 +210,28 @@ def create_session():
                     print(f"❌ {name} returned 200 but not JSON – likely challenge page")
             else:
                 print(f"❌ {name} – API status {resp.status_code}")
+                # If 403, maybe cookies expired – trigger a refresh and retry once
+                if resp.status_code == 403:
+                    print("🔄 Attempting to refresh cookies and retry...")
+                    if ensure_cf_cookies(force=True):
+                        # Retry with updated headers
+                        headers = build_headers()
+                        resp = session.post(test_url, json=test_payload, headers=headers, timeout=TIMEOUT_SEC)
+                        if resp.status_code == 200:
+                            try:
+                                data = resp.json()
+                                print(f"✅ {name} works after refresh!")
+                                return session, False
+                            except:
+                                pass
         except Exception as e:
             print(f"❌ {name} error: {e}")
 
-    # Mobile subdomain fallback
+    # Mobile subdomain fallback (only if curl is available)
     if HAS_CURL:
         print("🧪 Trying mobile subdomain...")
         try:
-            session = curl_req.Session(impersonate="safari17_0", timeout=TIMEOUT_SEC)
+            session = curl_req.Session(impersonate="chrome120", timeout=TIMEOUT_SEC)
             test_url = "https://m.bookmyshow.com/pwa/api/uapi/movies/"
             test_payload = {"regionCode": REGION_CODE, "page": 1, "limit": 1}
             headers = build_headers(use_mobile=True)
@@ -255,6 +248,7 @@ def create_session():
 
     return None, False
 
+# ========== SAFE REQUEST (with auto‑refresh on 403) ==========
 def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PER_REQUEST, use_mobile=False):
     if session is None:
         return None, "NO_SESSION"
@@ -268,9 +262,8 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
                 resp = session.get(url, headers=headers)
 
             if resp.status_code == 403:
-                # CF cookies may have expired – attempt refresh and retry once
                 print("🔄 Received 403 – refreshing CF cookies...")
-                if ensure_cf_cookies():
+                if ensure_cf_cookies(force=True):
                     headers = build_headers(use_mobile=use_mobile)
                     if method == "POST":
                         resp = session.post(url, json=payload, headers=headers)
@@ -300,9 +293,6 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
                     return None, "INVALID_JSON"
             elif resp.status_code == 404:
                 return None, "HTTP_404"
-            elif resp.status_code == 403:
-                # Already handled above, but keep as fallback
-                last_err = "HTTP_403"
             else:
                 last_err = f"HTTP_{resp.status_code}"
             time.sleep(random.uniform(1.0, 3.0))
@@ -312,7 +302,7 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
             time.sleep(random.uniform(1.0, 3.0))
     return None, last_err
 
-# ========== API CALLS ==========
+# ========== API CALLS (unchanged) ==========
 def get_movies(session, use_mobile=False):
     base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
     url = f"{base}/pwa/api/uapi/movies/"
@@ -333,7 +323,7 @@ def get_showtimes(event_code, date, session, use_mobile=False):
     url = f"{base}/pwa/api/de/showtimes/byevent?regionCode={REGION_CODE}&subCode=&eventCode={event_code}&dateCode={date}"
     return safe_request(url, "GET", session=session, use_mobile=use_mobile)
 
-# ========== PARSERS ==========
+# ========== PARSERS (unchanged) ==========
 def extract_movies(raw):
     if not isinstance(raw, dict):
         return []
@@ -400,7 +390,7 @@ def scrape_event(movie, date, attempt, session_pool, use_mobile=False):
             rows.append(flatten(movie, v, sh, date))
     return title, rows, True
 
-# ========== MERGE & SAVE DAILY FILE ==========
+# ========== MERGE & SAVE (unchanged) ==========
 def load_existing_data(filepath: str) -> Dict[str, List[List[Any]]]:
     if os.path.exists(filepath):
         try:
@@ -435,7 +425,7 @@ def merge_and_save_daily(filepath: str, new_shows: List[Dict]):
     atomic_dump(filepath, result)
     print(f"💾 Updated {filepath}")
 
-# ========== MOVIE DATABASE BUILDER ==========
+# ========== MOVIE DATABASE BUILDER (unchanged) ==========
 def update_movie_database():
     print("\n📊 Building movie database...")
     base_dir = os.path.join(BASE_DIR, "boxoffice")
@@ -528,11 +518,14 @@ def main():
     target_date = TARGET_DATE
     print(f"📅 Processing date: {target_date} (IST)")
 
-    # Ensure CF cookies are available
-    if not ensure_cf_cookies("https://lk.bookmyshow.com/"):
-        print("⚠️ No CF cookies available. Will try without them (likely to fail).")
-        # You may choose to exit here if cookies are mandatory:
-        # sys.exit(1)
+    # Always try to refresh cookies if Playwright is available
+    if HAS_PLAYWRIGHT:
+        print("🔄 Playwright available – fetching fresh CF cookies.")
+        if not ensure_cf_cookies(force=True):
+            print("⚠️ Fresh cookie fetch failed. Will try without (may fail).")
+    else:
+        if not ensure_cf_cookies(force=False):
+            print("⚠️ No valid CF cookies. Will try without (likely to fail).")
 
     # Create session
     session, use_mobile = create_session()
@@ -626,7 +619,6 @@ def main():
     else:
         print("⚠️ No new shows to add.")
 
-    # Rebuild movie database
     update_movie_database()
 
     print("\n================================================")
