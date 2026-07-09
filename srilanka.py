@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Sri Lanka Boxoffice Tracker – Fetches seat data from lk.bookmyshow.com
-using Playwright to handle Cloudflare and call the API directly.
+using Playwright. The API is called via page.evaluate() to avoid header/cookie mismatches.
 Saves daily JSON files with a "last_updated" timestamp (IST).
 """
 
@@ -22,17 +22,8 @@ API_ENDPOINT = "/pwa/api/uapi/movies/"   # Adjust if needed
 
 OUTPUT_DIR = "srilanka/boxoffice"
 
-# Headers that mimic a real browser (used in the request)
-API_HEADERS = {
-    "Accept": "application/json, text/plain, */*",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Referer": BASE_URL + "/",
-    "Origin": BASE_URL,
-    "Connection": "keep-alive",
-    "Sec-Fetch-Dest": "empty",
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "same-origin",
+# Headers used only for the main page navigation
+PAGE_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
 }
 
@@ -55,63 +46,71 @@ def get_output_filepath() -> str:
     os.makedirs(dir_path, exist_ok=True)
     return os.path.join(dir_path, f"{month}-{day}.json")
 
-# ========== FETCH API VIA PLAYWRIGHT ==========
+# ========== FETCH API VIA PAGE.EVALUATE ==========
 async def fetch_api_data() -> Optional[Dict]:
     """
     Use Playwright to:
-    1. Load the main page (to solve Cloudflare).
-    2. Then call the API endpoint from the same context.
+    1. Load the main page and solve Cloudflare.
+    2. Use page.evaluate() to call the API via fetch, which carries all session cookies.
     """
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
-            user_agent=API_HEADERS["User-Agent"],
+            user_agent=PAGE_HEADERS["User-Agent"],
             viewport={"width": 1280, "height": 720}
         )
         page = await context.new_page()
 
         try:
-            # Step 1: Navigate to main page to get cookies / solve challenge
+            # Step 1: Navigate to main page and wait for the challenge to be solved.
             print("🌐 Navigating to main page:", BASE_URL)
             await page.goto(BASE_URL, wait_until="networkidle", timeout=60000)
-            # Allow extra time for any async scripts
-            await page.wait_for_timeout(3000)
 
-            # Optional: check that we are not on a challenge page
-            # If the page title contains "Just a moment", wait longer or reload.
-            title = await page.title()
-            if "Just a moment" in title:
-                print("⏳ Challenge page detected, waiting...")
-                await page.wait_for_timeout(10000)
-                # Reload and wait again
+            # Wait for a known element that appears only after the page loads fully.
+            # Adjust the selector to something that exists on the actual site.
+            # For example, the logo or the navigation bar.
+            try:
+                await page.wait_for_selector("header", timeout=30000)  # or 'nav', '.logo', etc.
+                print("✅ Main page loaded (challenge likely solved).")
+            except Exception:
+                print("⏳ Timeout waiting for header – page might still be under challenge.")
+                # Try reloading once
                 await page.reload(wait_until="networkidle")
-                await page.wait_for_timeout(3000)
+                await page.wait_for_timeout(5000)
+                # Check again
+                await page.wait_for_selector("header", timeout=15000)
 
-            # Step 2: Now call the API using the same page (or a new request in the same context)
-            # We'll use page.request.get() which inherits cookies and headers.
+            # Step 2: Now call the API using fetch inside the page context.
             api_url = BASE_URL + API_ENDPOINT
-            print("📡 Calling API:", api_url)
+            print("📡 Calling API via page.evaluate():", api_url)
 
-            # Set extra headers for the request
-            response = await page.request.get(
-                api_url,
-                headers=API_HEADERS
-            )
-            status = response.status
-            print(f"   Status: {status}")
+            # We'll pass the API URL to evaluate and return the JSON response.
+            result = await page.evaluate("""
+                async (url) => {
+                    const response = await fetch(url, {
+                        method: 'GET',
+                        headers: {
+                            'Accept': 'application/json, text/plain, */*',
+                            'X-Requested-With': 'XMLHttpRequest',
+                            'Referer': document.location.origin + '/',
+                        },
+                        credentials: 'include'
+                    });
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}`);
+                    }
+                    return await response.json();
+                }
+            """, api_url)
 
-            if status == 200:
-                data = await response.json()
-                print("✅ API data fetched successfully.")
-                return data
-            else:
-                # If it fails, try to read as text (might be HTML challenge)
-                text = await response.text()
-                print(f"❌ API returned {status}. First 200 chars: {text[:200]}")
-                return None
+            print("✅ API data fetched successfully.")
+            return result
 
         except Exception as e:
             print("❌ Playwright error:", e)
+            # Optionally print the page content for debugging
+            # content = await page.content()
+            # print(content[:500])
             return None
         finally:
             await browser.close()
