@@ -1,17 +1,17 @@
 {
-  "last_updated":"2026-07-09 20:06:42 IST",
+  "last_updated":"2026-07-09 20:17:52 IST",
   "movies":[
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":22300.0,
-      "totalTickets":20
+      "totalGross":24500.0,
+      "totalTickets":22
     },
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":54200.0,
-      "totalTickets":29
+      "totalGross":56800.0,
+      "totalTickets":31
     },
     {
       "name":"Backrooms",
@@ -28,8 +28,8 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":48200.0,
-      "totalTickets":20
+      "totalGross":50900.0,
+      "totalTickets":21
     },
     {
       "name":"Con City",
@@ -46,8 +46,8 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":37500.0,
-      "totalTickets":54
+      "totalGross":40700.0,
+      "totalTickets":62
     },
     {
       "name":"Sooriya Sulanga",
@@ -64,8 +64,14 @@
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":20000.0,
-      "totalTickets":18
+      "totalGross":23200.0,
+      "totalTickets":22
+    },
+    {
+      "name":"Chandarege Wife",
+      "slug":"chandarege-wife",
+      "totalGross":0.0,
+      "totalTickets":0
     }
   ]
 }
