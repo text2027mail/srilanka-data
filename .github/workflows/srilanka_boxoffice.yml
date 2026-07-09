@@ -21,14 +21,17 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          # Additional libs for Sri Lanka scraping
-          pip install curl_cffi cloudscraper
+          # Install required packages
+          pip install curl_cffi cloudscraper playwright requests
+          # Install Playwright's Chromium browser (needed for CF cookie refresh)
+          playwright install chromium
 
       - name: Run Sri Lanka Box Office script
         env:
           CF_CLEARANCE: ${{ secrets.CF_CLEARANCE }}
           CF_BM: ${{ secrets.CF_BM }}
+          # Optionally set a timezone (script uses IST internally)
+          TZ: Asia/Kolkata
         run: python srilanka_boxoffice.py
 
       - name: Commit and push updated JSONs (with retry + force)
@@ -36,8 +39,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Stage both boxoffice daily files AND movie database
-          git add /
+          # Stage only the srilanka directory (boxoffice + movie data)
+          git add srilanka/
 
           if git diff --staged --quiet; then
             echo "No changes to commit."
