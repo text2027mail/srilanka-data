@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-09 20:17:52 IST",
+  "last_updated":"2026-07-10 05:23:03 IST",
   "movies":[
     {
       "name":"Alpha",
@@ -28,8 +28,8 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":50900.0,
-      "totalTickets":21
+      "totalGross":68300.0,
+      "totalTickets":33
     },
     {
       "name":"Con City",
@@ -46,32 +46,98 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":40700.0,
-      "totalTickets":62
+      "totalGross":67700.0,
+      "totalTickets":106
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":0.0,
-      "totalTickets":0
+      "totalGross":14200.0,
+      "totalTickets":38
     },
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":0.0,
-      "totalTickets":0
+      "totalGross":16050.0,
+      "totalTickets":13
     },
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":23200.0,
-      "totalTickets":22
+      "totalGross":52400.0,
+      "totalTickets":36
     },
     {
       "name":"Chandarege Wife",
       "slug":"chandarege-wife",
       "totalGross":0.0,
       "totalTickets":0
+    },
+    {
+      "name":"Eka Thamai Meka",
+      "slug":"eka-thamai-meka",
+      "totalGross":3100.0,
+      "totalTickets":3
+    },
+    {
+      "name":"Minions & Monsters",
+      "slug":"minions-monsters",
+      "totalGross":35750.0,
+      "totalTickets":29
+    },
+    {
+      "name":"Young Washington",
+      "slug":"young-washington",
+      "totalGross":37800.0,
+      "totalTickets":12
+    },
+    {
+      "name":"Scary Movie",
+      "slug":"scary-movie",
+      "totalGross":0.0,
+      "totalTickets":0
+    },
+    {
+      "name":"Love Oh Love",
+      "slug":"love-oh-love",
+      "totalGross":0.0,
+      "totalTickets":0
+    },
+    {
+      "name":"Dhamaal 4",
+      "slug":"dhamaal-4",
+      "totalGross":42600.0,
+      "totalTickets":28
+    },
+    {
+      "name":"Toy Story 5",
+      "slug":"toy-story-5",
+      "totalGross":2400.0,
+      "totalTickets":2
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":146300.0,
+      "totalTickets":71
+    },
+    {
+      "name":"Oscar",
+      "slug":"oscar",
+      "totalGross":4800.0,
+      "totalTickets":8
+    },
+    {
+      "name":"OIC Gadafi",
+      "slug":"oic-gadafi",
+      "totalGross":0.0,
+      "totalTickets":0
+    },
+    {
+      "name":"The Sheep Detectives",
+      "slug":"the-sheep-detectives",
+      "totalGross":3600.0,
+      "totalTickets":3
     }
   ]
 }
