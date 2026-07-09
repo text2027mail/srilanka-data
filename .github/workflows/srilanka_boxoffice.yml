@@ -2,7 +2,7 @@ name: Sri Lanka Boxoffice Hourly
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '45 0,2,4,6,8,10,12,14,16,18,20,22 * * *'   # every 15th minute of even IST hours
   workflow_dispatch:
 
 jobs:
