@@ -7,6 +7,8 @@ Saves to: srilanka/boxoffice/YYYY/MM-DD.json (minified, value-only arrays).
 Also builds/updates a movie‑level database:
 - srilanka/movie/data/{slug}.json – day‑wise aggregated stats per movie
 - srilanka/movie/index.json – master index of all movies with lifetime totals
+
+Auto‑refreshes CF cookies via Playwright if missing or expired.
 """
 
 import json
@@ -20,6 +22,8 @@ from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from queue import Queue
 from typing import Dict, List, Any, Optional, Tuple
+from collections import defaultdict
+import asyncio
 
 # ========== Try to import scraping libraries ==========
 try:
@@ -34,6 +38,13 @@ try:
 except ImportError:
     HAS_CLOUDSCRAPER = False
 
+# ========== Playwright for CF cookie refresh ==========
+try:
+    from playwright.async_api import async_playwright
+    HAS_PLAYWRIGHT = True
+except ImportError:
+    HAS_PLAYWRIGHT = False
+
 # ========== CONFIG ==========
 MAX_THREADS = 5
 RETRY_PER_REQUEST = 6
@@ -47,7 +58,7 @@ IST = ZoneInfo("Asia/Kolkata")
 TARGET_DATE = datetime.now(IST).strftime("%Y%m%d")   # today's date in IST
 YEAR = datetime.now(IST).strftime("%Y")
 
-BASE_DIR = ""
+BASE_DIR = "srilanka"
 BOXOFFICE_DIR = os.path.join(BASE_DIR, "boxoffice", YEAR)
 MOVIE_DATA_DIR = os.path.join(BASE_DIR, "movie", "data")
 os.makedirs(BOXOFFICE_DIR, exist_ok=True)
@@ -55,29 +66,26 @@ os.makedirs(MOVIE_DATA_DIR, exist_ok=True)
 
 DAILY_FILE = os.path.join(BOXOFFICE_DIR, f"{datetime.now(IST).strftime('%m-%d')}.json")
 
-# Cloudflare cookies (set as GitHub secrets)
+# Cloudflare cookies (loaded from environment, will be refreshed by ensure_cf_cookies)
 CF_CLEARANCE = os.environ.get("CF_CLEARANCE", "")
 CF_BM = os.environ.get("CF_BM", "")
 print(f"🧩 CF_CLEARANCE present: {bool(CF_CLEARANCE)}")
 print(f"🧩 CF_BM present: {bool(CF_BM)}")
 
-AVG_PRICE = 500   # placeholder, actual gross computed per show from API
+AVG_PRICE = 500   # placeholder
 
 # ========== HELPERS ==========
 def slugify(title: str) -> str:
-    """Generate a URL‑friendly slug from a movie title."""
     slug = re.sub(r'[^a-zA-Z0-9\s]', '', title).strip().lower()
     slug = re.sub(r'\s+', '-', slug)
     return slug
 
 def atomic_dump(path, data):
-    """Atomic write using a temporary file."""
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, separators=(',', ':'), ensure_ascii=False)
     os.replace(tmp, path)
 
-# ========== RANDOM HEADERS ==========
 def random_user_agent():
     ios = f"Mozilla/5.0 (iPhone; CPU iPhone OS {random.randint(15,18)}_{random.randint(0,7)} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{random.randint(16,18)}.0 Mobile/15E148 Safari/604.1"
     android = f"Mozilla/5.0 (Linux; Android {random.choice(['10','11','12','13','14','15'])}; Pixel {random.randint(3,9)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{random.randint(110,129)}.0.{random.randint(1000,7000)}.{random.randint(50,250)} Mobile Safari/537.36"
@@ -113,8 +121,9 @@ def build_headers(extra=None, use_mobile=False):
         "Priority": "u=1, i",
         "Connection": "keep-alive",
     }
-    # Add cookies
+    # Add cookies if available
     cookie_parts = []
+    global CF_CLEARANCE, CF_BM
     if CF_CLEARANCE:
         cookie_parts.append(f"cf_clearance={CF_CLEARANCE}")
     if CF_BM:
@@ -125,6 +134,66 @@ def build_headers(extra=None, use_mobile=False):
     if extra:
         headers.update(extra)
     return {k: v for k, v in headers.items() if v is not None}
+
+# ========== PLAYWRIGHT COOKIE FETCHER ==========
+async def get_cf_cookies_playwright(url: str, timeout: int = 30) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Launch a headless Chromium, navigate to `url`, wait for Cloudflare
+    challenge to complete, and return cf_clearance + __cf_bm.
+    """
+    if not HAS_PLAYWRIGHT:
+        return None, None
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        context = await browser.new_context(
+            user_agent=random_user_agent(),
+            viewport={"width": 1280, "height": 720}
+        )
+        page = await context.new_page()
+        print(f"🌐 Navigating to {url} to solve CF challenge...")
+        try:
+            await page.goto(url, wait_until="networkidle", timeout=timeout * 1000)
+            # Wait a bit for the challenge to be solved (oneshot is quick)
+            await page.wait_for_timeout(10000)  # 10 seconds
+        except Exception as e:
+            print(f"⚠️ Navigation/timeout error: {e}")
+            # Still might have cookies if challenge was solved quickly
+        cookies = await context.cookies()
+        cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
+        cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
+        await browser.close()
+        return cf_clearance, cf_bm
+
+def ensure_cf_cookies(target_url: str = "https://lk.bookmyshow.com/") -> bool:
+    """
+    Ensure CF_CLEARANCE and CF_BM are set. If missing, try to obtain them via Playwright.
+    Returns True if cookies are available, False otherwise.
+    """
+    global CF_CLEARANCE, CF_BM
+    if CF_CLEARANCE and CF_BM:
+        print("✅ CF cookies already present.")
+        return True
+
+    if not HAS_PLAYWRIGHT:
+        print("⚠️ Playwright not installed. Please run: pip install playwright && playwright install")
+        return False
+
+    print("⏳ Attempting to fetch fresh CF cookies using Playwright...")
+    try:
+        cf_clearance, cf_bm = asyncio.run(get_cf_cookies_playwright(target_url))
+        if cf_clearance and cf_bm:
+            CF_CLEARANCE = cf_clearance
+            CF_BM = cf_bm
+            os.environ["CF_CLEARANCE"] = cf_clearance
+            os.environ["CF_BM"] = cf_bm
+            print("✅ Fresh CF cookies obtained.")
+            return True
+        else:
+            print("❌ Playwright did not return valid cookies.")
+            return False
+    except Exception as e:
+        print(f"❌ Playwright failed: {e}")
+        return False
 
 # ========== SESSION CREATION ==========
 def create_session():
@@ -186,7 +255,6 @@ def create_session():
 
     return None, False
 
-# ========== SAFE REQUEST ==========
 def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PER_REQUEST, use_mobile=False):
     if session is None:
         return None, "NO_SESSION"
@@ -198,6 +266,24 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
                 resp = session.post(url, json=payload, headers=headers)
             else:
                 resp = session.get(url, headers=headers)
+
+            if resp.status_code == 403:
+                # CF cookies may have expired – attempt refresh and retry once
+                print("🔄 Received 403 – refreshing CF cookies...")
+                if ensure_cf_cookies():
+                    headers = build_headers(use_mobile=use_mobile)
+                    if method == "POST":
+                        resp = session.post(url, json=payload, headers=headers)
+                    else:
+                        resp = session.get(url, headers=headers)
+                    if resp.status_code == 200:
+                        try:
+                            return resp.json(), None
+                        except:
+                            return None, "INVALID_JSON"
+                else:
+                    print("❌ Could not refresh CF cookies.")
+                    return None, "HTTP_403"
 
             if resp.status_code != 200 and resp.status_code != 404:
                 snippet = resp.text[:200] if resp.text else "empty"
@@ -215,7 +301,7 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
             elif resp.status_code == 404:
                 return None, "HTTP_404"
             elif resp.status_code == 403:
-                print("  🔄 403 detected, retrying...")
+                # Already handled above, but keep as fallback
                 last_err = "HTTP_403"
             else:
                 last_err = f"HTTP_{resp.status_code}"
@@ -325,71 +411,32 @@ def load_existing_data(filepath: str) -> Dict[str, List[List[Any]]]:
     return {}
 
 def merge_and_save_daily(filepath: str, new_shows: List[Dict]):
-    """Merge new shows into existing daily file, keyed by (eventCode, venue, sessionId)."""
     existing = load_existing_data(filepath)
-
-    # Convert existing structure to a map: (eventCode, venue, sessionId) -> [eventCode, venue, showTime, total, sold]
-    existing_map = {}
-    for movie, entries in existing.items():
-        for entry in entries:
-            # entry format: [eventCode, venue, showTime, total, sold]
-            # We need to recreate the key from the entry
-            key = (entry[0], entry[1], entry[2] + entry[0])  # showTime not part of key? Actually we need sessionId but we don't have it in the stored entry.
-            # Better: store the sessionId as the 5th element? But we want compact array. We can include sessionId as an extra field.
-            # We'll modify the storage format to include sessionId as a 6th element? But the requirement is to keep compact array.
-            # Let's use the composite key as (eventCode, venue, sessionId) and store showTime separately.
-            # However, the stored array is [eventCode, venue, showTime, total, sold]. We can't recover sessionId from that.
-            # So we need to store sessionId as well. We'll add a 6th element: [eventCode, venue, showTime, total, sold, sessionId]
-            # But the original Bangladesh format only has 5 elements. We'll adapt: for Sri Lanka, we need the sessionId for merging.
-            # Let's store: [eventCode, venue, showTime, total, sold, sessionId] – that's 6 elements.
-            pass
-
-    # We'll rebuild the existing_map by reading the file and converting.
-    # But we haven't stored sessionId in the file yet. So we need to migrate.
-    # For simplicity, we'll store the full show dict in the daily file as a list of objects? That would break the compact requirement.
-    # Instead, we'll keep the compact array but we need to include a unique identifier. sessionId is the only unique per show.
-    # So we'll store: [eventCode, venue, showTime, total, sold, sessionId]
-    # Then merging is easy: key = (eventCode, venue, sessionId)
-
-    # We'll handle both old and new format: if an entry has 6 elements, use sessionId; if 5, treat as old and generate a dummy sessionId.
-    # We'll read existing and convert to map with (eventCode, venue, sessionId) -> entry (with 6 elements if possible).
-
-    # Let's implement a robust conversion:
     existing_map = {}
     for movie, entries in existing.items():
         for entry in entries:
             if len(entry) >= 6:
-                # new format: [eventCode, venue, showTime, total, sold, sessionId]
                 eventCode, venue, showTime, total, sold, sessionId = entry
             else:
-                # old format: [eventCode, venue, showTime, total, sold] – generate a pseudo sessionId from showTime+eventCode (not perfect but okay)
                 eventCode, venue, showTime, total, sold = entry[:5]
                 sessionId = f"{eventCode}-{showTime}"
             key = (eventCode, venue, sessionId)
             existing_map[key] = (movie, [eventCode, venue, showTime, total, sold, sessionId])
 
-    # Now process new_shows
     for show in new_shows:
         key = (show["eventCode"], show["venue"], show["sessionId"])
-        # Convert to compact array: [eventCode, venue, showTime, total, sold, sessionId]
         entry = [show["eventCode"], show["venue"], show["time"], show["totalSeats"], show["sold"], show["sessionId"]]
         existing_map[key] = (show["movie"], entry)
 
-    # Rebuild the movie->list structure
     result = {}
     for (_, _, _), (movie, entry) in existing_map.items():
         result.setdefault(movie, []).append(entry)
 
-    # Write minified JSON
     atomic_dump(filepath, result)
     print(f"💾 Updated {filepath}")
 
 # ========== MOVIE DATABASE BUILDER ==========
 def update_movie_database():
-    """
-    Scan all daily JSON files under srilanka/boxoffice/, aggregate per movie per date,
-    and write per‑movie summary files + an index.
-    """
     print("\n📊 Building movie database...")
     base_dir = os.path.join(BASE_DIR, "boxoffice")
     if not os.path.exists(base_dir):
@@ -405,14 +452,14 @@ def update_movie_database():
             if file.endswith(".json") and "-" in file:
                 month_day = file.replace(".json", "")
                 month, day = month_day.split("-")
-                date_str = f"{year_dir}{month}{day}"  # YYYYMMDD
+                date_str = f"{year_dir}{month}{day}"
                 daily_files.append((date_str, os.path.join(year_path, file)))
 
     if not daily_files:
         print("⚠️ No daily files found.")
         return
 
-    movie_agg: Dict[str, Dict[str, Dict[str, int]]] = defaultdict(lambda: defaultdict(lambda: {
+    movie_agg = defaultdict(lambda: defaultdict(lambda: {
         "shows": 0,
         "seats": 0,
         "sold": 0,
@@ -426,12 +473,10 @@ def update_movie_database():
         except:
             continue
         for movie, entries in data.items():
-            # entries: [eventCode, venue, showTime, total, sold, sessionId]
-            # We only need total, sold, and venue (unique locations)
             shows = len(entries)
-            seats = sum(e[3] for e in entries if len(e) >= 4)  # total seats
-            sold = sum(e[4] for e in entries if len(e) >= 5)  # sold
-            venues = {e[1] for e in entries if len(e) >= 2}   # venue name
+            seats = sum(e[3] for e in entries if len(e) >= 4)
+            sold = sum(e[4] for e in entries if len(e) >= 5)
+            venues = {e[1] for e in entries if len(e) >= 2}
 
             agg = movie_agg[movie][date_str]
             agg["shows"] += shows
@@ -439,7 +484,6 @@ def update_movie_database():
             agg["sold"] += sold
             agg["venues"].update(venues)
 
-    # Write per‑movie files and index
     os.makedirs(MOVIE_DATA_DIR, exist_ok=True)
     index = []
 
@@ -450,7 +494,7 @@ def update_movie_database():
         total_tickets = 0
 
         for date_str, stats in sorted(dates.items()):
-            gross = stats["sold"] * AVG_PRICE   # we use average price placeholder
+            gross = stats["sold"] * AVG_PRICE
             total_gross += gross
             total_tickets += stats["sold"]
             venues_count = len(stats["venues"])
@@ -483,6 +527,12 @@ def main():
     print("\n🚀 Sri Lanka Boxoffice Tracker Started...\n")
     target_date = TARGET_DATE
     print(f"📅 Processing date: {target_date} (IST)")
+
+    # Ensure CF cookies are available
+    if not ensure_cf_cookies("https://lk.bookmyshow.com/"):
+        print("⚠️ No CF cookies available. Will try without them (likely to fail).")
+        # You may choose to exit here if cookies are mandatory:
+        # sys.exit(1)
 
     # Create session
     session, use_mobile = create_session()
@@ -552,7 +602,7 @@ def main():
                         print(f"⏭️ Skipping {code} after {MAX_RETRIES_PER_EVENT} failed attempts")
         pending = next_round
 
-    # Filter out shows that are too far in the past (optional)
+    # Filter out shows that are too far in the past
     def parse_time(date_str, t):
         for fmt in ["%I:%M %p", "%H:%M"]:
             try:
@@ -571,13 +621,12 @@ def main():
     eligible_new = [s for s in all_rows if is_within_cutoff(s)]
     print(f"✅ New shows scraped: {len(eligible_new)}")
 
-    # Merge and save daily file
     if eligible_new:
         merge_and_save_daily(DAILY_FILE, eligible_new)
     else:
         print("⚠️ No new shows to add.")
 
-    # Rebuild the movie database from all daily files
+    # Rebuild movie database
     update_movie_database()
 
     print("\n================================================")
@@ -588,5 +637,4 @@ def main():
     print("🎉 DONE — Sri Lanka Boxoffice updated.\n")
 
 if __name__ == "__main__":
-    from collections import defaultdict
     main()
