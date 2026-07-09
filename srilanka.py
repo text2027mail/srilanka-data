@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Sri Lanka Box Office Script – Fetches seat data for the current IST date only.
-Auto‑refreshes Cloudflare cookies via Playwright each run.
+Auto‑refreshes Cloudflare cookies via Playwright each run, targeting the protected API.
 """
 
 import json
@@ -44,8 +44,8 @@ RETRY_PER_REQUEST = 6
 SCRAPE_PASSES = 5
 MAX_RETRIES_PER_EVENT = 3
 TIMEOUT_SEC = 30
-CUT_OFF_MINUTES = 300
-REGION_CODE = "SNLK"   # Sri Lanka region code
+CUT_OFF_MINUTES = 200
+REGION_CODE = "SNLK"   # Original working region code
 
 IST = ZoneInfo("Asia/Kolkata")
 TARGET_DATE = datetime.now(IST).strftime("%Y%m%d")
@@ -126,42 +126,86 @@ def build_headers(extra=None, use_mobile=False):
         headers.update(extra)
     return {k: v for k, v in headers.items() if v is not None}
 
-# ========== PLAYWRIGHT COOKIE FETCHER ==========
-async def get_cf_cookies_playwright(url: str, timeout: int = 30) -> Tuple[Optional[str], Optional[str]]:
+# ========== PLAYWRIGHT COOKIE FETCHER (targeting protected API) ==========
+async def get_cf_cookies_playwright(protected_url: str, timeout: int = 60) -> Tuple[Optional[str], Optional[str]]:
+    """
+    Navigate to the protected API endpoint to trigger the Cloudflare challenge,
+    then wait for the cf_clearance and __cf_bm cookies to be set.
+    """
     if not HAS_PLAYWRIGHT:
         return None, None
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         context = await browser.new_context(
             user_agent=random_user_agent(),
-            viewport={"width": 1280, "height": 720}
+            viewport={"width": 1280, "height": 720},
+            locale="en-US"
         )
         page = await context.new_page()
-        print(f"🌐 Navigating to {url} to solve CF challenge...")
+        print(f"🌐 Navigating to protected URL: {protected_url}")
+
         try:
-            await page.goto(url, wait_until="networkidle", timeout=timeout * 1000)
-            await page.wait_for_timeout(10000)  # let challenge solve
+            # Navigate to the API endpoint – it will return a 403 challenge page
+            response = await page.goto(protected_url, wait_until="networkidle", timeout=timeout * 1000)
+            print(f"📄 Initial response status: {response.status if response else 'N/A'}")
+
+            # Wait for the challenge to be solved and cookies to appear
+            start = time.time()
+            cf_clearance = None
+            cf_bm = None
+
+            while time.time() - start < timeout:
+                cookies = await context.cookies()
+                cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
+                cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
+                if cf_clearance and cf_bm:
+                    print("✅ Cookies found after challenge.")
+                    break
+                await asyncio.sleep(2)
+
+            # If not found, maybe the challenge wasn't triggered; try reloading or fallback
+            if not cf_clearance:
+                print("⏳ No cookies yet. Reloading the page to trigger challenge...")
+                await page.reload(wait_until="networkidle")
+                await page.wait_for_timeout(5000)
+                cookies = await context.cookies()
+                cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
+                cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
+
+            if not cf_clearance:
+                print("⚠️ Still no cf_clearance. Trying homepage as fallback...")
+                await page.goto("https://lk.bookmyshow.com/", wait_until="networkidle")
+                await page.wait_for_timeout(10000)
+                cookies = await context.cookies()
+                cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
+                cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
+
         except Exception as e:
-            print(f"⚠️ Navigation/timeout error: {e}")
-        cookies = await context.cookies()
-        cf_clearance = next((c['value'] for c in cookies if c['name'] == 'cf_clearance'), None)
-        cf_bm = next((c['value'] for c in cookies if c['name'] == '__cf_bm'), None)
+            print(f"⚠️ Playwright error: {e}")
+
         await browser.close()
         return cf_clearance, cf_bm
 
-def ensure_cf_cookies(target_url: str = "https://lk.bookmyshow.com/", force: bool = False) -> bool:
+def ensure_cf_cookies(protected_url: str = "https://lk.bookmyshow.com/pwa/api/uapi/movies/", force: bool = False) -> bool:
+    """
+    Ensure CF_CLEARANCE and CF_BM are set. If force is True or cookies are missing,
+    fetch fresh ones using Playwright targeting the protected API.
+    """
     global CF_CLEARANCE, CF_BM
+
     if not force and CF_CLEARANCE and CF_BM:
-        print("✅ CF cookies already present (using existing).")
+        print("✅ Using existing CF cookies.")
+        # Still test them quickly (optional)
         return True
 
     if not HAS_PLAYWRIGHT:
         print("⚠️ Playwright not installed. Cannot refresh cookies.")
         return False
 
-    print("⏳ Attempting to fetch fresh CF cookies using Playwright...")
+    print("⏳ Fetching fresh CF cookies via Playwright (targeting protected API)...")
     try:
-        cf_clearance, cf_bm = asyncio.run(get_cf_cookies_playwright(target_url))
+        cf_clearance, cf_bm = asyncio.run(get_cf_cookies_playwright(protected_url))
         if cf_clearance and cf_bm:
             CF_CLEARANCE = cf_clearance
             CF_BM = cf_bm
@@ -214,7 +258,6 @@ def create_session():
                 if resp.status_code == 403:
                     print("🔄 Attempting to refresh cookies and retry...")
                     if ensure_cf_cookies(force=True):
-                        # Retry with updated headers
                         headers = build_headers()
                         resp = session.post(test_url, json=test_payload, headers=headers, timeout=TIMEOUT_SEC)
                         if resp.status_code == 200:
@@ -302,7 +345,7 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
             time.sleep(random.uniform(1.0, 3.0))
     return None, last_err
 
-# ========== API CALLS (unchanged) ==========
+# ========== API CALLS ==========
 def get_movies(session, use_mobile=False):
     base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
     url = f"{base}/pwa/api/uapi/movies/"
@@ -323,7 +366,7 @@ def get_showtimes(event_code, date, session, use_mobile=False):
     url = f"{base}/pwa/api/de/showtimes/byevent?regionCode={REGION_CODE}&subCode=&eventCode={event_code}&dateCode={date}"
     return safe_request(url, "GET", session=session, use_mobile=use_mobile)
 
-# ========== PARSERS (unchanged) ==========
+# ========== PARSERS ==========
 def extract_movies(raw):
     if not isinstance(raw, dict):
         return []
@@ -390,7 +433,7 @@ def scrape_event(movie, date, attempt, session_pool, use_mobile=False):
             rows.append(flatten(movie, v, sh, date))
     return title, rows, True
 
-# ========== MERGE & SAVE (unchanged) ==========
+# ========== MERGE & SAVE ==========
 def load_existing_data(filepath: str) -> Dict[str, List[List[Any]]]:
     if os.path.exists(filepath):
         try:
@@ -425,7 +468,7 @@ def merge_and_save_daily(filepath: str, new_shows: List[Dict]):
     atomic_dump(filepath, result)
     print(f"💾 Updated {filepath}")
 
-# ========== MOVIE DATABASE BUILDER (unchanged) ==========
+# ========== MOVIE DATABASE BUILDER ==========
 def update_movie_database():
     print("\n📊 Building movie database...")
     base_dir = os.path.join(BASE_DIR, "boxoffice")
@@ -519,9 +562,10 @@ def main():
     print(f"📅 Processing date: {target_date} (IST)")
 
     # Always try to refresh cookies if Playwright is available
+    protected_api_url = "https://lk.bookmyshow.com/pwa/api/uapi/movies/"
     if HAS_PLAYWRIGHT:
-        print("🔄 Playwright available – fetching fresh CF cookies.")
-        if not ensure_cf_cookies(force=True):
+        print("🔄 Playwright available – fetching fresh CF cookies from protected API.")
+        if not ensure_cf_cookies(protected_url=protected_api_url, force=True):
             print("⚠️ Fresh cookie fetch failed. Will try without (may fail).")
     else:
         if not ensure_cf_cookies(force=False):
