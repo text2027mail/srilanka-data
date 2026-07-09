@@ -35,7 +35,7 @@ except ImportError:
 #########################################
 # CONFIG
 #########################################
-MAX_THREADS = 2
+MAX_THREADS = 5
 RETRY_PER_REQUEST = 5
 SCRAPE_PASSES = 5
 MAX_RETRIES_PER_EVENT = 5
