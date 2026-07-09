@@ -2,9 +2,8 @@ name: Sri Lanka Boxoffice Hourly
 
 on:
   schedule:
-    # Runs every hour at minute 0
     - cron: '0 * * * *'
-  workflow_dispatch:   # allow manual trigger
+  workflow_dispatch:
 
 jobs:
   scrape:
@@ -28,7 +27,7 @@ jobs:
         env:
           CF_CLEARANCE: ${{ secrets.CF_CLEARANCE }}
           CF_BM: ${{ secrets.CF_BM }}
-        run: python srilanka_boxoffice.py
+        run: python -u srilanka_boxoffice.py   # 👈 unbuffered
 
       - name: Commit and push updated JSONs (with retry + force)
         run: |
