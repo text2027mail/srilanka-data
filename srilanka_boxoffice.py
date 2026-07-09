@@ -35,12 +35,12 @@ except ImportError:
 #########################################
 # CONFIG
 #########################################
-MAX_THREADS = 5
-RETRY_PER_REQUEST = 6
+MAX_THREADS = 2
+RETRY_PER_REQUEST = 5
 SCRAPE_PASSES = 5
-MAX_RETRIES_PER_EVENT = 3
+MAX_RETRIES_PER_EVENT = 5
 TIMEOUT_SEC = 30
-CUT_OFF_MINUTES = 200
+CUT_OFF_MINUTES = 500
 REGION_CODE = "SNLK"
 IST = ZoneInfo("Asia/Kolkata")
 
