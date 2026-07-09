@@ -54,7 +54,7 @@ print(f"🧩 CF_BM present: {bool(CF_BM)}")
 def atomic_dump(path, data):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, indent=2, separators=(",", ":"))  # minified
+        json.dump(data, f, indent=2, separators=(",", ":"))
     os.replace(tmp, path)
 
 def now_ist_str():
@@ -109,7 +109,6 @@ def build_headers(extra=None, use_mobile=False):
         "Priority": "u=1, i",
         "Connection": "keep-alive",
     }
-    # Add both cookies if present
     cookie_parts = []
     if CF_CLEARANCE:
         cookie_parts.append(f"cf_clearance={CF_CLEARANCE}")
@@ -123,7 +122,7 @@ def build_headers(extra=None, use_mobile=False):
     return {k: v for k, v in headers.items() if v is not None}
 
 #########################################
-# SESSION CREATION – identical
+# SESSION CREATION
 #########################################
 def create_session():
     """Try different libraries/impersonations, test by calling movie API."""
@@ -147,16 +146,15 @@ def create_session():
         print(f"🧪 Trying {name}...")
         try:
             session = creator()
-            # Test it by calling the movie API
             test_url = "https://lk.bookmyshow.com/pwa/api/uapi/movies/"
             test_payload = {"regionCode": REGION_CODE, "page": 1, "limit": 1}
             headers = build_headers()
             resp = session.post(test_url, json=test_payload, headers=headers, timeout=TIMEOUT_SEC)
             if resp.status_code == 200:
                 try:
-                    data = resp.json()
+                    resp.json()
                     print(f"✅ {name} works! (status 200, got JSON)")
-                    return session, False  # session, use_mobile=False
+                    return session, False
                 except:
                     print(f"❌ {name} returned 200 but not JSON – likely challenge page")
             else:
@@ -164,7 +162,7 @@ def create_session():
         except Exception as e:
             print(f"❌ {name} error: {e}")
 
-    # If everything fails, try mobile subdomain with curl
+    # Fallback: mobile subdomain with curl
     if HAS_CURL:
         print("🧪 Trying mobile subdomain...")
         try:
@@ -175,7 +173,7 @@ def create_session():
             resp = session.post(test_url, json=test_payload, headers=headers, timeout=TIMEOUT_SEC)
             if resp.status_code == 200:
                 try:
-                    data = resp.json()
+                    resp.json()
                     print("✅ Mobile subdomain works!")
                     return session, True
                 except:
@@ -186,7 +184,7 @@ def create_session():
     return None, False
 
 #########################################
-# SAFE REQUEST – identical
+# SAFE REQUEST
 #########################################
 def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PER_REQUEST, use_mobile=False):
     if session is None:
@@ -228,7 +226,7 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
     return None, last_err
 
 #########################################
-# API CALLS – identical
+# API CALLS
 #########################################
 def get_movies(session=None, use_mobile=False):
     base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
@@ -243,6 +241,7 @@ def get_movies(session=None, use_mobile=False):
         "page": 1,
         "limit": 200
     }
+    print(f"🌐 Fetching movies from: {url}")
     return safe_request(url, "POST", payload=body, session=session, use_mobile=use_mobile)
 
 def get_showtimes(event_code, date, session=None, use_mobile=False):
@@ -251,7 +250,7 @@ def get_showtimes(event_code, date, session=None, use_mobile=False):
     return safe_request(url, "GET", session=session, use_mobile=use_mobile)
 
 #########################################
-# PARSERS – identical
+# PARSERS
 #########################################
 def extract_movies(raw):
     if not isinstance(raw, dict):
@@ -324,7 +323,6 @@ def scrape_event(movie, date, attempt, session_pool, use_mobile=False):
 #########################################
 def save_advance_file(date_str, shows_list):
     """Save shows_list (list of show dicts) to daily advance file, overwriting."""
-    # Group by movie title
     movies = defaultdict(list)
     for show in shows_list:
         movies[show["movie"]].append([
@@ -349,27 +347,58 @@ def save_advance_file(date_str, shows_list):
 #########################################
 def main():
     print("\n🚀 Sri Lanka Advance Bookings Tracker Started...\n")
-    target_date = get_tomorrow()  # tomorrow's date
+    target_date = get_tomorrow()
     print(f"📅 Target date: {target_date}")
 
-    # Create session
+    # 1. Create session
     session, use_mobile = create_session()
     if session is None:
         print("❌ All session creation strategies failed. Exiting.")
         sys.exit(1)
 
-    # Fetch movies
-    movies_raw, err = get_movies(session=session, use_mobile=use_mobile)
-    if not movies_raw:
-        print(f"❌ Failed to fetch movies. Error: {err}")
-        if use_mobile:
-            print("🔄 Retrying with desktop...")
-            movies_raw, err = get_movies(session=session, use_mobile=False)
-            if movies_raw:
-                use_mobile = False
-        if not movies_raw:
-            sys.exit(1)
+    # 2. Attempt to fetch movies with multiple fallbacks
+    movies_raw = None
+    err = None
 
+    # Try with the returned session and its use_mobile flag
+    print(f"🔍 Attempt 1: using {'mobile' if use_mobile else 'desktop'} subdomain...")
+    movies_raw, err = get_movies(session=session, use_mobile=use_mobile)
+
+    # If that fails, try the opposite subdomain with the same session
+    if not movies_raw:
+        print(f"⚠️ Attempt 1 failed ({err}). Trying the other subdomain...")
+        other_mobile = not use_mobile
+        movies_raw, err = get_movies(session=session, use_mobile=other_mobile)
+        if movies_raw:
+            use_mobile = other_mobile  # update for subsequent calls
+
+    # If still failing, fallback to a plain requests session with cookies
+    if not movies_raw:
+        print("🔄 Attempt 3: falling back to plain 'requests' session with cookies...")
+        try:
+            import requests
+            fallback_session = requests.Session()
+            cookies = {}
+            if CF_CLEARANCE:
+                cookies["cf_clearance"] = CF_CLEARANCE
+            if CF_BM:
+                cookies["__cf_bm"] = CF_BM
+            if cookies:
+                fallback_session.cookies.update(cookies)
+            movies_raw, err = get_movies(session=fallback_session, use_mobile=False)
+            if movies_raw:
+                session = fallback_session
+                use_mobile = False
+                print("✅ Fallback session succeeded.")
+        except Exception as e:
+            print(f"❌ Fallback error: {e}")
+
+    # If all attempts failed, exit
+    if not movies_raw:
+        print(f"❌ Failed to fetch movies after all attempts. Last error: {err}")
+        sys.exit(1)
+
+    # 3. Process movies
     parent_movies = extract_movies(movies_raw)
     print(f"📽️ Found {len(parent_movies)} parent movies")
 
@@ -389,7 +418,7 @@ def main():
         print("⚠️ No event variants found – check API response")
         sys.exit(0)
 
-    # Create session pool
+    # 4. Scrape showtimes for each event
     session_pool = Queue()
     for _ in range(MAX_THREADS + 2):
         session_pool.put(session)
@@ -421,7 +450,7 @@ def main():
 
     print(f"✅ Total shows scraped (no cutoff): {len(all_shows)}")
 
-    # Save directly (overwrite, no merge)
+    # 5. Save
     save_advance_file(target_date, all_shows)
 
     print("\n🎉 DONE — ADVANCE BOOKINGS SAVED\n")
