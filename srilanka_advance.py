@@ -1,22 +1,22 @@
 #!/usr/bin/env python3
 """
-Sri Lanka Advance Bookings – Fetches seat data for the next 6 days (excluding today).
-Saves each date to: srilanka/advance/YYYY/MM-DD.json (minified, value-only arrays).
-No cutoff – all shows are included.
+Sri Lanka Advance Bookings Scraper
+Fetches showtimes for TOMORROW, overwrites daily file.
+No cutoff, no merge, no movie DB.
 """
 
 import json
 import os
 import random
-import sys
 import time
+import sys
 from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from queue import Queue
-from typing import Dict, List, Any, Optional, Tuple
+from collections import defaultdict
 
-# ========== Try to import scraping libraries ==========
+# Only use curl_cffi and cloudscraper as fallback
 try:
     from curl_cffi import requests as curl_req
     HAS_CURL = True
@@ -29,51 +29,51 @@ try:
 except ImportError:
     HAS_CLOUDSCRAPER = False
 
-# ========== CONFIG ==========
+#########################################
+# CONFIG
+#########################################
 MAX_THREADS = 5
 RETRY_PER_REQUEST = 6
 SCRAPE_PASSES = 5
 MAX_RETRIES_PER_EVENT = 3
 TIMEOUT_SEC = 30
 REGION_CODE = "SNLK"
-DAYS_AHEAD = 1   # number of future days to fetch
-
 IST = ZoneInfo("Asia/Kolkata")
-TODAY = datetime.now(IST).date()
-YEAR = datetime.now(IST).strftime("%Y")
 
-# Output directories – mirror advance structure
+# Paths – advance data stored separately
 BASE_DIR = "srilanka"
-ADVANCE_BASE = os.path.join(BASE_DIR, "advance")
-os.makedirs(ADVANCE_BASE, exist_ok=True)
+ADVANCE_DIR = os.path.join(BASE_DIR, "advance")
+os.makedirs(ADVANCE_DIR, exist_ok=True)
 
-# Cloudflare cookies
+# Cloudflare cookies from env
 CF_CLEARANCE = os.environ.get("CF_CLEARANCE", "")
 CF_BM = os.environ.get("CF_BM", "")
 print(f"🧩 CF_CLEARANCE present: {bool(CF_CLEARANCE)}")
 print(f"🧩 CF_BM present: {bool(CF_BM)}")
 
-# ========== HELPERS ==========
 def atomic_dump(path, data):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, separators=(',', ':'), ensure_ascii=False)
+        json.dump(data, f, indent=2, separators=(",", ":"))  # minified
     os.replace(tmp, path)
 
-def get_future_dates(days_ahead: int = DAYS_AHEAD) -> List[str]:
-    """Return list of date strings (YYYYMMDD) for the next `days_ahead` days, excluding today."""
-    return [(TODAY + timedelta(days=i)).strftime("%Y%m%d") for i in range(1, days_ahead + 1)]
+def now_ist_str():
+    return datetime.now(IST).strftime("%Y-%m-%d %H:%M:%S IST")
 
-def get_advance_filepath(date_str: str) -> str:
-    """Return file path for a given date string (YYYYMMDD)."""
+def get_tomorrow():
+    return (datetime.now(IST) + timedelta(days=1)).strftime("%Y%m%d")
+
+def get_daily_file_path(date_str):
     year = date_str[:4]
     month = date_str[4:6]
     day = date_str[6:8]
-    dir_path = os.path.join(ADVANCE_BASE, year)
-    os.makedirs(dir_path, exist_ok=True)
-    return os.path.join(dir_path, f"{month}-{day}.json")
+    path = os.path.join(ADVANCE_DIR, year, f"{month}-{day}.json")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    return path
 
-# ========== RANDOM HEADERS (same as box office) ==========
+#########################################
+# RANDOM HEADERS (identical to boxoffice)
+#########################################
 def random_user_agent():
     ios = f"Mozilla/5.0 (iPhone; CPU iPhone OS {random.randint(15,18)}_{random.randint(0,7)} like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/{random.randint(16,18)}.0 Mobile/15E148 Safari/604.1"
     android = f"Mozilla/5.0 (Linux; Android {random.choice(['10','11','12','13','14','15'])}; Pixel {random.randint(3,9)}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{random.randint(110,129)}.0.{random.randint(1000,7000)}.{random.randint(50,250)} Mobile Safari/537.36"
@@ -109,6 +109,7 @@ def build_headers(extra=None, use_mobile=False):
         "Priority": "u=1, i",
         "Connection": "keep-alive",
     }
+    # Add both cookies if present
     cookie_parts = []
     if CF_CLEARANCE:
         cookie_parts.append(f"cf_clearance={CF_CLEARANCE}")
@@ -121,7 +122,9 @@ def build_headers(extra=None, use_mobile=False):
         headers.update(extra)
     return {k: v for k, v in headers.items() if v is not None}
 
-# ========== SESSION CREATION ==========
+#########################################
+# SESSION CREATION – identical
+#########################################
 def create_session():
     """Try different libraries/impersonations, test by calling movie API."""
     candidates = []
@@ -144,6 +147,7 @@ def create_session():
         print(f"🧪 Trying {name}...")
         try:
             session = creator()
+            # Test it by calling the movie API
             test_url = "https://lk.bookmyshow.com/pwa/api/uapi/movies/"
             test_payload = {"regionCode": REGION_CODE, "page": 1, "limit": 1}
             headers = build_headers()
@@ -152,7 +156,7 @@ def create_session():
                 try:
                     data = resp.json()
                     print(f"✅ {name} works! (status 200, got JSON)")
-                    return session, False
+                    return session, False  # session, use_mobile=False
                 except:
                     print(f"❌ {name} returned 200 but not JSON – likely challenge page")
             else:
@@ -160,7 +164,7 @@ def create_session():
         except Exception as e:
             print(f"❌ {name} error: {e}")
 
-    # Mobile subdomain fallback
+    # If everything fails, try mobile subdomain with curl
     if HAS_CURL:
         print("🧪 Trying mobile subdomain...")
         try:
@@ -181,7 +185,9 @@ def create_session():
 
     return None, False
 
-# ========== SAFE REQUEST ==========
+#########################################
+# SAFE REQUEST – identical
+#########################################
 def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PER_REQUEST, use_mobile=False):
     if session is None:
         return None, "NO_SESSION"
@@ -221,8 +227,10 @@ def safe_request(url, method="GET", payload=None, session=None, retries=RETRY_PE
             time.sleep(random.uniform(1.0, 3.0))
     return None, last_err
 
-# ========== API CALLS ==========
-def get_movies(session, use_mobile=False):
+#########################################
+# API CALLS – identical
+#########################################
+def get_movies(session=None, use_mobile=False):
     base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
     url = f"{base}/pwa/api/uapi/movies/"
     body = {
@@ -237,12 +245,14 @@ def get_movies(session, use_mobile=False):
     }
     return safe_request(url, "POST", payload=body, session=session, use_mobile=use_mobile)
 
-def get_showtimes(event_code, date, session, use_mobile=False):
+def get_showtimes(event_code, date, session=None, use_mobile=False):
     base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
     url = f"{base}/pwa/api/de/showtimes/byevent?regionCode={REGION_CODE}&subCode=&eventCode={event_code}&dateCode={date}"
     return safe_request(url, "GET", session=session, use_mobile=use_mobile)
 
-# ========== PARSERS ==========
+#########################################
+# PARSERS – identical
+#########################################
 def extract_movies(raw):
     if not isinstance(raw, dict):
         return []
@@ -309,85 +319,38 @@ def scrape_event(movie, date, attempt, session_pool, use_mobile=False):
             rows.append(flatten(movie, v, sh, date))
     return title, rows, True
 
-# ========== PROCESS A SINGLE DATE ==========
-def process_date(date_str: str, session, use_mobile: bool, session_pool: Queue) -> Dict[str, List[List[Any]]]:
-    """
-    Fetch all shows for a given date (YYYYMMDD) and return a dict:
-    {movie_title: [[eventCode, venue, showTime, totalSeats, sold, sessionId], ...]}
-    """
-    print(f"\n📅 Processing {date_str}...")
-    
-    # Fetch movie list (we do this once per date; could cache but fine)
-    movies_raw, err = get_movies(session=session, use_mobile=use_mobile)
-    if not movies_raw:
-        print(f"❌ Failed to fetch movies for {date_str}: {err}")
-        return {}
-
-    parent_movies = extract_movies(movies_raw)
-    expanded_movies = []
-    for movie in parent_movies:
-        for c in movie.get("ChildEvents", []):
-            expanded_movies.append({
-                "title": movie.get("EventTitle", "Unknown"),
-                "eventCode": c.get("EventCode", ""),
-                "format": c.get("EventDimension", ""),
-                "language": c.get("EventLanguage", ""),
-                "release": c.get("EventDate", "9999-99-99")
-            })
-
-    if not expanded_movies:
-        print(f"⚠️ No events for {date_str}")
-        return {}
-
-    retry_count = {m["eventCode"]: 0 for m in expanded_movies}
-    all_rows = []
-    pending = expanded_movies.copy()
-
-    for attempt in range(1, SCRAPE_PASSES + 1):
-        if not pending:
-            break
-        print(f"  🔄 Pass {attempt}/{SCRAPE_PASSES} – {len(pending)} events pending")
-        next_round = []
-        with ThreadPoolExecutor(max_workers=MAX_THREADS) as pool:
-            futures = {pool.submit(scrape_event, m, date_str, attempt, session_pool, use_mobile): m for m in pending}
-            for job in as_completed(futures):
-                movie = futures[job]
-                _, rows, ok = job.result()
-                if ok:
-                    all_rows.extend(rows)
-                else:
-                    code = movie["eventCode"]
-                    retry_count[code] = retry_count.get(code, 0) + 1
-                    if retry_count[code] < MAX_RETRIES_PER_EVENT:
-                        next_round.append(movie)
-                    else:
-                        print(f"    ⏭️ Skipping {code} after {MAX_RETRIES_PER_EVENT} failed attempts")
-        pending = next_round
-
-    # No cutoff – include all shows
-    print(f"  ✅ Collected {len(all_rows)} shows for {date_str}")
-
-    # Convert to movie->list of compact arrays
-    movie_data: Dict[str, List[List[Any]]] = {}
-    for show in all_rows:
-        movie_title = show["movie"]
-        compact = [
+#########################################
+# SAVE ADVANCE FILE (no merge, just overwrite)
+#########################################
+def save_advance_file(date_str, shows_list):
+    """Save shows_list (list of show dicts) to daily advance file, overwriting."""
+    # Group by movie title
+    movies = defaultdict(list)
+    for show in shows_list:
+        movies[show["movie"]].append([
             show["eventCode"],
             show["venue"],
             show["time"],
+            show["sessionId"],
             show["totalSeats"],
             show["sold"],
-            show["sessionId"]
-        ]
-        movie_data.setdefault(movie_title, []).append(compact)
+            show["gross"]
+        ])
+    data = {
+        "last_updated": now_ist_str(),
+        "movies": dict(movies)
+    }
+    daily_path = get_daily_file_path(date_str)
+    atomic_dump(daily_path, data)
+    print(f"💾 Saved advance file: {daily_path}")
 
-    return movie_data
-
-# ========== MAIN ==========
+#########################################
+# MAIN
+#########################################
 def main():
     print("\n🚀 Sri Lanka Advance Bookings Tracker Started...\n")
-    future_dates = get_future_dates(DAYS_AHEAD)
-    print(f"📅 Target dates: {future_dates}")
+    target_date = get_tomorrow()  # tomorrow's date
+    print(f"📅 Target date: {target_date}")
 
     # Create session
     session, use_mobile = create_session()
@@ -395,23 +358,73 @@ def main():
         print("❌ All session creation strategies failed. Exiting.")
         sys.exit(1)
 
-    # Session pool
+    # Fetch movies
+    movies_raw, err = get_movies(session=session, use_mobile=use_mobile)
+    if not movies_raw:
+        print(f"❌ Failed to fetch movies. Error: {err}")
+        if use_mobile:
+            print("🔄 Retrying with desktop...")
+            movies_raw, err = get_movies(session=session, use_mobile=False)
+            if movies_raw:
+                use_mobile = False
+        if not movies_raw:
+            sys.exit(1)
+
+    parent_movies = extract_movies(movies_raw)
+    print(f"📽️ Found {len(parent_movies)} parent movies")
+
+    expanded_movies = []
+    for movie in parent_movies:
+        for c in movie["ChildEvents"]:
+            expanded_movies.append({
+                "title": movie["EventTitle"],
+                "eventCode": c["EventCode"],
+                "format": c.get("EventDimension", ""),
+                "language": c.get("EventLanguage", ""),
+                "release": c.get("EventDate", "9999-99-99")
+            })
+    print(f"🎬 Expanded to {len(expanded_movies)} event variants")
+
+    if not expanded_movies:
+        print("⚠️ No event variants found – check API response")
+        sys.exit(0)
+
+    # Create session pool
     session_pool = Queue()
     for _ in range(MAX_THREADS + 2):
         session_pool.put(session)
 
-    # Process each date
-    for date_str in future_dates:
-        data = process_date(date_str, session, use_mobile, session_pool)
-        if not data:
-            print(f"⚠️ No data for {date_str}, skipping file.")
-            continue
+    retry_count = {m["eventCode"]: 0 for m in expanded_movies}
+    all_shows = []
+    pending = expanded_movies.copy()
 
-        filepath = get_advance_filepath(date_str)
-        atomic_dump(filepath, data)
-        print(f"💾 Saved {filepath}")
+    for attempt in range(1, SCRAPE_PASSES + 1):
+        if not pending:
+            break
+        print(f"\n🔄 Scrape pass {attempt}/{SCRAPE_PASSES} – {len(pending)} events pending")
+        next_round = []
+        with ThreadPoolExecutor(max_workers=MAX_THREADS) as pool:
+            futures = {pool.submit(scrape_event, m, target_date, attempt, session_pool, use_mobile): m for m in pending}
+            for job in as_completed(futures):
+                movie = futures[job]
+                _, rows, ok = job.result()
+                if ok:
+                    all_shows.extend(rows)
+                else:
+                    code = movie["eventCode"]
+                    retry_count[code] = retry_count.get(code, 0) + 1
+                    if retry_count[code] < MAX_RETRIES_PER_EVENT:
+                        next_round.append(movie)
+                    else:
+                        print(f"⏭️ Skipping {code} after {MAX_RETRIES_PER_EVENT} failed attempts")
+        pending = next_round
 
-    print("\n✅ All advance bookings updated.\n")
+    print(f"✅ Total shows scraped (no cutoff): {len(all_shows)}")
+
+    # Save directly (overwrite, no merge)
+    save_advance_file(target_date, all_shows)
+
+    print("\n🎉 DONE — ADVANCE BOOKINGS SAVED\n")
 
 if __name__ == "__main__":
     main()
