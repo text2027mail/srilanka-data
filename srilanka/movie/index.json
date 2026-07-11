@@ -1,17 +1,17 @@
 {
-  "last_updated":"2026-07-12 01:26:16 IST",
+  "last_updated":"2026-07-12 03:05:33 IST",
   "movies":[
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":63800.0,
-      "totalTickets":39
+      "totalGross":65900.0,
+      "totalTickets":41
     },
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":117400.0,
-      "totalTickets":70
+      "totalGross":158200.0,
+      "totalTickets":93
     },
     {
       "name":"Backrooms",
@@ -28,8 +28,8 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":125950.0,
-      "totalTickets":65
+      "totalGross":161850.0,
+      "totalTickets":82
     },
     {
       "name":"Con City",
@@ -46,26 +46,26 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":161600.0,
-      "totalTickets":252
+      "totalGross":243100.0,
+      "totalTickets":371
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":69000.0,
-      "totalTickets":150
+      "totalGross":93600.0,
+      "totalTickets":198
     },
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":133050.0,
-      "totalTickets":93
+      "totalGross":140850.0,
+      "totalTickets":99
     },
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":139000.0,
-      "totalTickets":106
+      "totalGross":182350.0,
+      "totalTickets":157
     },
     {
       "name":"Chandarege Wife",
@@ -76,14 +76,14 @@
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":21950.0,
-      "totalTickets":22
+      "totalGross":57650.0,
+      "totalTickets":62
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":244650.0,
-      "totalTickets":201
+      "totalGross":304200.0,
+      "totalTickets":254
     },
     {
       "name":"Young Washington",
@@ -106,26 +106,26 @@
     {
       "name":"Dhamaal 4",
       "slug":"dhamaal-4",
-      "totalGross":78000.0,
-      "totalTickets":60
+      "totalGross":83400.0,
+      "totalTickets":78
     },
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":27150.0,
-      "totalTickets":21
+      "totalGross":46650.0,
+      "totalTickets":36
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":789700.0,
-      "totalTickets":439
+      "totalGross":994850.0,
+      "totalTickets":562
     },
     {
       "name":"Oscar",
       "slug":"oscar",
-      "totalGross":14400.0,
-      "totalTickets":23
+      "totalGross":24000.0,
+      "totalTickets":39
     },
     {
       "name":"OIC Gadafi",
