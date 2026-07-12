@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-13 01:24:21 IST",
+  "last_updated":"2026-07-13 03:06:04 IST",
   "movies":[
     {
       "name":"Alpha",
@@ -10,8 +10,8 @@
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":228200.0,
-      "totalTickets":149
+      "totalGross":237400.0,
+      "totalTickets":153
     },
     {
       "name":"Backrooms",
@@ -28,8 +28,8 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":161850.0,
-      "totalTickets":82
+      "totalGross":175150.0,
+      "totalTickets":96
     },
     {
       "name":"Con City",
@@ -46,14 +46,14 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":337600.0,
-      "totalTickets":580
+      "totalGross":345800.0,
+      "totalTickets":598
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":145900.0,
-      "totalTickets":298
+      "totalGross":153650.0,
+      "totalTickets":317
     },
     {
       "name":"Michael",
@@ -76,20 +76,20 @@
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":60450.0,
-      "totalTickets":70
+      "totalGross":66050.0,
+      "totalTickets":78
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":361000.0,
-      "totalTickets":298
+      "totalGross":375550.0,
+      "totalTickets":311
     },
     {
       "name":"Young Washington",
       "slug":"young-washington",
-      "totalGross":128050.0,
-      "totalTickets":49
+      "totalGross":156850.0,
+      "totalTickets":61
     },
     {
       "name":"Scary Movie",
@@ -106,20 +106,20 @@
     {
       "name":"Dhamaal 4",
       "slug":"dhamaal-4",
-      "totalGross":226400.0,
-      "totalTickets":208
+      "totalGross":243200.0,
+      "totalTickets":215
     },
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":46650.0,
-      "totalTickets":36
+      "totalGross":48850.0,
+      "totalTickets":38
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1211950.0,
-      "totalTickets":688
+      "totalGross":1244050.0,
+      "totalTickets":711
     },
     {
       "name":"Oscar",
@@ -142,8 +142,8 @@
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":460450.0,
-      "totalTickets":398
+      "totalGross":461550.0,
+      "totalTickets":401
     },
     {
       "name":"Welcome To The Jungle",
