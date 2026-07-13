@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-13 03:06:04 IST",
+  "last_updated":"2026-07-13 21:09:44 IST",
   "movies":{
     "Minions & Monsters":[
       [
@@ -183,6 +183,33 @@
         0,
         0,
         0
+      ],
+      [
+        "ET00006127",
+        "Liberty Scope Cinemas: Kiribathgoda",
+        "09:30 PM",
+        "7037",
+        146,
+        5,
+        3500.0
+      ],
+      [
+        "ET00006127",
+        "Neela by Lite Cinema: Dankotuwa",
+        "09:15 PM",
+        "1499",
+        179,
+        5,
+        1750.0
+      ],
+      [
+        "ET00006127",
+        "Samanala Cinemas: Melsiripura",
+        "09:30 PM",
+        "5451",
+        240,
+        0,
+        0.0
       ]
     ],
     "Oscar":[
@@ -250,6 +277,33 @@
         143,
         0,
         0.0
+      ],
+      [
+        "ET00006130",
+        "PVR Cinema: One Galle Face Mall",
+        "10:05 PM",
+        "4628",
+        143,
+        6,
+        7500.0
+      ],
+      [
+        "ET00006130",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:40 PM",
+        "24566",
+        140,
+        9,
+        11700.0
+      ],
+      [
+        "ET00006130",
+        "Seran Cinema: Kilinochchi",
+        "10:30 PM",
+        "546",
+        279,
+        0,
+        0.0
       ]
     ],
     "Rajadahana":[
@@ -292,6 +346,15 @@
         99,
         0,
         0.0
+      ],
+      [
+        "ET00006006",
+        "Scope Cinemas Dolby Atmos: Colombo City Center",
+        "09:40 PM",
+        "62000",
+        200,
+        12,
+        15600.0
       ]
     ],
     "Chandarege Wife":[
@@ -310,6 +373,15 @@
         "10:00 AM",
         "2660",
         216,
+        0,
+        0.0
+      ],
+      [
+        "ET00006094",
+        "Prasanna Cinema Kochchikade Negombo",
+        "09:30 PM",
+        "2343",
+        133,
         0,
         0.0
       ]
@@ -412,6 +484,24 @@
         305,
         1,
         3200.0
+      ],
+      [
+        "ET00006133",
+        "PVR Cinema: One Galle Face Mall",
+        "09:30 PM",
+        "4593",
+        92,
+        9,
+        12150.0
+      ],
+      [
+        "ET00006133",
+        "Scope Cinemas Multiplex IMAX: Havelock City Mall",
+        "09:45 PM",
+        "24453",
+        305,
+        2,
+        6400.0
       ]
     ],
     "Sooriya Sulanga":[
@@ -495,6 +585,15 @@
         150,
         0,
         0.0
+      ],
+      [
+        "ET00006102",
+        "Vijaya Cinema: Minuwangoda",
+        "09:30 PM",
+        "2644",
+        216,
+        0,
+        0.0
       ]
     ],
     "Supergirl":[
@@ -515,6 +614,15 @@
         178,
         0,
         0.0
+      ],
+      [
+        "ET00006070",
+        "Scope Cinemas Multiplex Dolby Atmos: Havelock City",
+        "09:45 PM",
+        "24578",
+        178,
+        3,
+        3900.0
       ]
     ],
     "Alpha":[
@@ -526,6 +634,15 @@
         149,
         0,
         0.0
+      ],
+      [
+        "ET00006114",
+        "Scope Cinemas: Colombo City Center",
+        "09:25 PM",
+        "62018",
+        111,
+        2,
+        2200.0
       ]
     ],
     "Toy Story 5":[
@@ -685,6 +802,115 @@
         97,
         0,
         0.0
+      ],
+      [
+        "ET00006135",
+        "Aqua Lite 3D Cinema: Negombo",
+        "09:30 PM",
+        "4741",
+        298,
+        0,
+        0.0
+      ],
+      [
+        "ET00006135",
+        "City Lite Cinema: Mt. Lavinia",
+        "09:30 PM",
+        "5717",
+        100,
+        3,
+        1650.0
+      ],
+      [
+        "ET00006135",
+        "Concord: Dehiwala",
+        "10:30 PM",
+        "9339",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00006135",
+        "Liberty By Scope Cinemas: Colombo (Screen 1)",
+        "10:00 PM",
+        "21569",
+        387,
+        9,
+        7200.0
+      ],
+      [
+        "ET00006135",
+        "PVR Cinema: One Galle Face Mall",
+        "10:00 PM",
+        "4573",
+        319,
+        42,
+        52500.0
+      ],
+      [
+        "ET00006135",
+        "PVR Cinema: One Galle Face Mall",
+        "10:15 PM",
+        "4688",
+        41,
+        17,
+        40800.0
+      ]
+    ],
+    "Scary Movie":[
+      [
+        "ET00006089",
+        "Scope Cinemas: Colombo City Center",
+        "10:15 PM",
+        "62030",
+        99,
+        11,
+        13200.0
+      ]
+    ],
+    "Love Oh Love":[
+      [
+        "ET00006136",
+        "PVR Cinema: One Galle Face Mall",
+        "10:30 PM",
+        "4668",
+        144,
+        1,
+        1250.0
+      ]
+    ],
+    "Habeebi":[
+      [
+        "ET00006140",
+        "PVR Cinema: One Galle Face Mall",
+        "10:10 PM",
+        "4613",
+        111,
+        0,
+        0.0
+      ]
+    ],
+    "Con City":[
+      [
+        "ET00006119",
+        "PVR Cinema: One Galle Face Mall",
+        "10:20 PM",
+        "4648",
+        143,
+        4,
+        3800.0
+      ]
+    ],
+    "Welcome To The Jungle":[
+      [
+        "ET00006080",
+        "PVR Cinema: One Galle Face Mall",
+        "09:45 PM",
+        "4691",
+        41,
+        9,
+        21600.0
       ]
     ]
   }
