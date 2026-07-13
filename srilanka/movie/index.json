@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-14 03:19:25 IST",
+  "last_updated":"2026-07-14 05:09:16 IST",
   "movies":[
     {
       "name":"Alpha",
@@ -10,8 +10,8 @@
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":241300.0,
-      "totalTickets":156
+      "totalGross":250000.0,
+      "totalTickets":163
     },
     {
       "name":"Backrooms",
@@ -28,8 +28,8 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":175150.0,
-      "totalTickets":96
+      "totalGross":204350.0,
+      "totalTickets":113
     },
     {
       "name":"Con City",
@@ -46,26 +46,26 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":351050.0,
-      "totalTickets":608
+      "totalGross":372750.0,
+      "totalTickets":646
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":153650.0,
-      "totalTickets":317
+      "totalGross":170150.0,
+      "totalTickets":357
     },
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":206250.0,
-      "totalTickets":146
+      "totalGross":216350.0,
+      "totalTickets":154
     },
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":295950.0,
-      "totalTickets":258
+      "totalGross":312750.0,
+      "totalTickets":265
     },
     {
       "name":"Chandarege Wife",
@@ -76,20 +76,20 @@
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":66050.0,
-      "totalTickets":78
+      "totalGross":77350.0,
+      "totalTickets":103
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":375550.0,
-      "totalTickets":311
+      "totalGross":402700.0,
+      "totalTickets":335
     },
     {
       "name":"Young Washington",
       "slug":"young-washington",
-      "totalGross":156850.0,
-      "totalTickets":61
+      "totalGross":176050.0,
+      "totalTickets":69
     },
     {
       "name":"Scary Movie",
@@ -118,14 +118,14 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1262600.0,
-      "totalTickets":722
+      "totalGross":1288500.0,
+      "totalTickets":753
     },
     {
       "name":"Oscar",
       "slug":"oscar",
-      "totalGross":26100.0,
-      "totalTickets":41
+      "totalGross":27300.0,
+      "totalTickets":43
     },
     {
       "name":"OIC Gadafi",
@@ -136,14 +136,14 @@
     {
       "name":"The Sheep Detectives",
       "slug":"the-sheep-detectives",
-      "totalGross":50400.0,
-      "totalTickets":39
+      "totalGross":59200.0,
+      "totalTickets":47
     },
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":563700.0,
-      "totalTickets":472
+      "totalGross":591550.0,
+      "totalTickets":497
     },
     {
       "name":"Welcome To The Jungle",
