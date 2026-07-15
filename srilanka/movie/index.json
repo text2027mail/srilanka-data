@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-15 16:01:43 IST",
+  "last_updated":"2026-07-15 19:59:09 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
@@ -16,8 +16,8 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":502150.0,
-      "totalTickets":834
+      "totalGross":509150.0,
+      "totalTickets":849
     },
     {
       "name":"Sooriya Sulanga",
@@ -28,26 +28,26 @@
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":405450.0,
-      "totalTickets":348
+      "totalGross":417950.0,
+      "totalTickets":358
     },
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":268700.0,
-      "totalTickets":201
+      "totalGross":275300.0,
+      "totalTickets":207
     },
     {
       "name":"Young Washington",
       "slug":"young-washington",
-      "totalGross":206950.0,
-      "totalTickets":82
+      "totalGross":211550.0,
+      "totalTickets":84
     },
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":332800.0,
-      "totalTickets":223
+      "totalGross":335400.0,
+      "totalTickets":225
     },
     {
       "name":"Backrooms",
@@ -64,8 +64,8 @@
     {
       "name":"Love Oh Love",
       "slug":"love-oh-love",
-      "totalGross":15000.0,
-      "totalTickets":14
+      "totalGross":16250.0,
+      "totalTickets":15
     },
     {
       "name":"Chandarege Wife",
@@ -76,8 +76,8 @@
     {
       "name":"Dhamaal 4",
       "slug":"dhamaal-4",
-      "totalGross":245400.0,
-      "totalTickets":217
+      "totalGross":257500.0,
+      "totalTickets":228
     },
     {
       "name":"Toy Story 5",
@@ -88,14 +88,14 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":286700.0,
-      "totalTickets":160
+      "totalGross":288600.0,
+      "totalTickets":162
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1726600.0,
-      "totalTickets":1100
+      "totalGross":1778150.0,
+      "totalTickets":1119
     },
     {
       "name":"Oscar",
@@ -118,14 +118,14 @@
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":806900.0,
-      "totalTickets":691
+      "totalGross":837800.0,
+      "totalTickets":719
     },
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":266700.0,
-      "totalTickets":176
+      "totalGross":273200.0,
+      "totalTickets":181
     },
     {
       "name":"Welcome To The Jungle",
@@ -190,8 +190,8 @@
     {
       "name":"Habeebi",
       "slug":"habeebi",
-      "totalGross":1700.0,
-      "totalTickets":2
+      "totalGross":3800.0,
+      "totalTickets":4
     },
     {
       "name":"The Wife",
