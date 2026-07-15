@@ -1,29 +1,29 @@
 {
-  "last_updated":"2026-07-15 19:59:09 IST",
+  "last_updated":"2026-07-16 03:12:26 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":162700.0,
-      "totalTickets":199
+      "totalGross":164900.0,
+      "totalTickets":201
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":521000.0,
-      "totalTickets":439
+      "totalGross":534500.0,
+      "totalTickets":451
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":509150.0,
-      "totalTickets":849
+      "totalGross":518350.0,
+      "totalTickets":865
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":215650.0,
-      "totalTickets":446
+      "totalGross":220300.0,
+      "totalTickets":457
     },
     {
       "name":"Gatta Kusthi 2",
@@ -34,14 +34,14 @@
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":275300.0,
-      "totalTickets":207
+      "totalGross":278450.0,
+      "totalTickets":210
     },
     {
       "name":"Young Washington",
       "slug":"young-washington",
-      "totalGross":211550.0,
-      "totalTickets":84
+      "totalGross":230750.0,
+      "totalTickets":92
     },
     {
       "name":"Michael",
@@ -82,14 +82,14 @@
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":97950.0,
-      "totalTickets":80
+      "totalGross":116650.0,
+      "totalTickets":97
     },
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":288600.0,
-      "totalTickets":162
+      "totalGross":314000.0,
+      "totalTickets":175
     },
     {
       "name":"Moana",
@@ -100,8 +100,8 @@
     {
       "name":"Oscar",
       "slug":"oscar",
-      "totalGross":31800.0,
-      "totalTickets":51
+      "totalGross":34200.0,
+      "totalTickets":55
     },
     {
       "name":"OIC Gadafi",
@@ -124,8 +124,8 @@
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":273200.0,
-      "totalTickets":181
+      "totalGross":278100.0,
+      "totalTickets":184
     },
     {
       "name":"Welcome To The Jungle",
@@ -186,6 +186,12 @@
       "slug":"dark",
       "totalGross":7350.0,
       "totalTickets":7
+    },
+    {
+      "name":"My Simba",
+      "slug":"my-simba",
+      "totalGross":5400.0,
+      "totalTickets":18
     },
     {
       "name":"Habeebi",
