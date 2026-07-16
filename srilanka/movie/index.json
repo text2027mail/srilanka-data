@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-16 03:12:26 IST",
+  "last_updated":"2026-07-16 16:26:23 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
@@ -14,28 +14,16 @@
       "totalTickets":451
     },
     {
-      "name":"Room No.106",
-      "slug":"room-no106",
-      "totalGross":518350.0,
-      "totalTickets":865
+      "name":"Idhayam Murali",
+      "slug":"idhayam-murali",
+      "totalGross":837800.0,
+      "totalTickets":719
     },
     {
-      "name":"Sooriya Sulanga",
-      "slug":"sooriya-sulanga",
-      "totalGross":220300.0,
-      "totalTickets":457
-    },
-    {
-      "name":"Gatta Kusthi 2",
-      "slug":"gatta-kusthi-2",
-      "totalGross":417950.0,
-      "totalTickets":358
-    },
-    {
-      "name":"Alpha",
-      "slug":"alpha",
-      "totalGross":278450.0,
-      "totalTickets":210
+      "name":"Supergirl",
+      "slug":"supergirl",
+      "totalGross":278100.0,
+      "totalTickets":184
     },
     {
       "name":"Young Washington",
@@ -44,28 +32,10 @@
       "totalTickets":92
     },
     {
-      "name":"Michael",
-      "slug":"michael",
-      "totalGross":335400.0,
-      "totalTickets":225
-    },
-    {
-      "name":"Backrooms",
-      "slug":"backrooms",
-      "totalGross":209500.0,
-      "totalTickets":104
-    },
-    {
-      "name":"Scary Movie",
-      "slug":"scary-movie",
-      "totalGross":34200.0,
-      "totalTickets":21
-    },
-    {
-      "name":"Love Oh Love",
-      "slug":"love-oh-love",
-      "totalGross":16250.0,
-      "totalTickets":15
+      "name":"My Simba",
+      "slug":"my-simba",
+      "totalGross":5400.0,
+      "totalTickets":18
     },
     {
       "name":"Chandarege Wife",
@@ -80,22 +50,16 @@
       "totalTickets":228
     },
     {
-      "name":"Toy Story 5",
-      "slug":"toy-story-5",
-      "totalGross":116650.0,
-      "totalTickets":97
+      "name":"Room No.106",
+      "slug":"room-no106",
+      "totalGross":518350.0,
+      "totalTickets":865
     },
     {
-      "name":"Cocktail 2",
-      "slug":"cocktail-2",
-      "totalGross":314000.0,
-      "totalTickets":175
-    },
-    {
-      "name":"Moana",
-      "slug":"moana",
-      "totalGross":1778150.0,
-      "totalTickets":1119
+      "name":"Sooriya Sulanga",
+      "slug":"sooriya-sulanga",
+      "totalGross":220300.0,
+      "totalTickets":457
     },
     {
       "name":"Oscar",
@@ -104,52 +68,10 @@
       "totalTickets":55
     },
     {
-      "name":"OIC Gadafi",
-      "slug":"oic-gadafi",
-      "totalGross":0.0,
-      "totalTickets":0
-    },
-    {
-      "name":"The Sheep Detectives",
-      "slug":"the-sheep-detectives",
-      "totalGross":72400.0,
-      "totalTickets":59
-    },
-    {
-      "name":"Idhayam Murali",
-      "slug":"idhayam-murali",
-      "totalGross":837800.0,
-      "totalTickets":719
-    },
-    {
-      "name":"Supergirl",
-      "slug":"supergirl",
-      "totalGross":278100.0,
-      "totalTickets":184
-    },
-    {
-      "name":"Welcome To The Jungle",
-      "slug":"welcome-to-the-jungle",
-      "totalGross":92100.0,
-      "totalTickets":37
-    },
-    {
-      "name":"The Devil Wears Prada 2",
-      "slug":"the-devil-wears-prada-2",
-      "totalGross":18600.0,
-      "totalTickets":8
-    },
-    {
-      "name":"Riverstone",
-      "slug":"riverstone",
-      "totalGross":3600.0,
-      "totalTickets":7
-    },
-    {
-      "name":"The Voice of Hind Rajab",
-      "slug":"the-voice-of-hind-rajab",
-      "totalGross":0.0,
-      "totalTickets":0
+      "name":"Gatta Kusthi 2",
+      "slug":"gatta-kusthi-2",
+      "totalGross":417950.0,
+      "totalTickets":358
     },
     {
       "name":"Rajadahana",
@@ -158,16 +80,100 @@
       "totalTickets":0
     },
     {
-      "name":"Moana 2",
-      "slug":"moana-2",
+      "name":"Michael",
+      "slug":"michael",
+      "totalGross":335400.0,
+      "totalTickets":225
+    },
+    {
+      "name":"Love Oh Love",
+      "slug":"love-oh-love",
+      "totalGross":16250.0,
+      "totalTickets":15
+    },
+    {
+      "name":"Cocktail 2",
+      "slug":"cocktail-2",
+      "totalGross":314000.0,
+      "totalTickets":175
+    },
+    {
+      "name":"Toy Story 5",
+      "slug":"toy-story-5",
+      "totalGross":116650.0,
+      "totalTickets":97
+    },
+    {
+      "name":"OIC Gadafi",
+      "slug":"oic-gadafi",
       "totalGross":0.0,
       "totalTickets":0
+    },
+    {
+      "name":"Alpha",
+      "slug":"alpha",
+      "totalGross":278450.0,
+      "totalTickets":210
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":1778150.0,
+      "totalTickets":1119
+    },
+    {
+      "name":"Riverstone",
+      "slug":"riverstone",
+      "totalGross":3600.0,
+      "totalTickets":7
+    },
+    {
+      "name":"Backrooms",
+      "slug":"backrooms",
+      "totalGross":209500.0,
+      "totalTickets":104
+    },
+    {
+      "name":"The Sheep Detectives",
+      "slug":"the-sheep-detectives",
+      "totalGross":72400.0,
+      "totalTickets":59
+    },
+    {
+      "name":"Habeebi",
+      "slug":"habeebi",
+      "totalGross":3800.0,
+      "totalTickets":4
+    },
+    {
+      "name":"Welcome To The Jungle",
+      "slug":"welcome-to-the-jungle",
+      "totalGross":92100.0,
+      "totalTickets":37
+    },
+    {
+      "name":"Scary Movie",
+      "slug":"scary-movie",
+      "totalGross":34200.0,
+      "totalTickets":21
     },
     {
       "name":"Disclosure Day",
       "slug":"disclosure-day",
       "totalGross":14000.0,
       "totalTickets":12
+    },
+    {
+      "name":"The Wife",
+      "slug":"the-wife",
+      "totalGross":0.0,
+      "totalTickets":0
+    },
+    {
+      "name":"The Devil Wears Prada 2",
+      "slug":"the-devil-wears-prada-2",
+      "totalGross":18600.0,
+      "totalTickets":8
     },
     {
       "name":"Nagabandham - The Secret Treasure",
@@ -188,20 +194,14 @@
       "totalTickets":7
     },
     {
-      "name":"My Simba",
-      "slug":"my-simba",
-      "totalGross":5400.0,
-      "totalTickets":18
+      "name":"The Voice of Hind Rajab",
+      "slug":"the-voice-of-hind-rajab",
+      "totalGross":0.0,
+      "totalTickets":0
     },
     {
-      "name":"Habeebi",
-      "slug":"habeebi",
-      "totalGross":3800.0,
-      "totalTickets":4
-    },
-    {
-      "name":"The Wife",
-      "slug":"the-wife",
+      "name":"Moana 2",
+      "slug":"moana-2",
       "totalGross":0.0,
       "totalTickets":0
     },
