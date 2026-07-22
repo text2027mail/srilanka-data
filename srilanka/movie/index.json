@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-07-23 03:35:11 IST",
+  "last_updated":"2026-07-23 05:15:50 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":395700.0,
-      "totalTickets":456
+      "totalGross":398650.0,
+      "totalTickets":461
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":893600.0,
-      "totalTickets":724
+      "totalGross":919900.0,
+      "totalTickets":748
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":970350.0,
-      "totalTickets":1568
+      "totalGross":976750.0,
+      "totalTickets":1584
     },
     {
       "name":"Sooriya Sulanga",
@@ -46,8 +46,8 @@
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":593700.0,
-      "totalTickets":402
+      "totalGross":603200.0,
+      "totalTickets":407
     },
     {
       "name":"Backrooms",
@@ -82,8 +82,8 @@
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":284050.0,
-      "totalTickets":229
+      "totalGross":294550.0,
+      "totalTickets":238
     },
     {
       "name":"Cocktail 2",
@@ -94,8 +94,8 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":3212350.0,
-      "totalTickets":2445
+      "totalGross":3234950.0,
+      "totalTickets":2472
     },
     {
       "name":"Oscar",
@@ -124,8 +124,8 @@
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":315900.0,
-      "totalTickets":208
+      "totalGross":323700.0,
+      "totalTickets":214
     },
     {
       "name":"Welcome To The Jungle",
@@ -136,8 +136,8 @@
     {
       "name":"The Devil Wears Prada 2",
       "slug":"the-devil-wears-prada-2",
-      "totalGross":75800.0,
-      "totalTickets":30
+      "totalGross":80400.0,
+      "totalTickets":32
     },
     {
       "name":"Riverstone",
@@ -184,14 +184,14 @@
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":649150.0,
-      "totalTickets":429
+      "totalGross":655150.0,
+      "totalTickets":434
     },
     {
       "name":"My Simba",
       "slug":"my-simba",
-      "totalGross":87550.0,
-      "totalTickets":195
+      "totalGross":95650.0,
+      "totalTickets":214
     },
     {
       "name":"Con City",
@@ -216,6 +216,12 @@
       "slug":"the-wife",
       "totalGross":0.0,
       "totalTickets":0
+    },
+    {
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":9532550.0,
+      "totalTickets":3986
     },
     {
       "name":"Test LK",
