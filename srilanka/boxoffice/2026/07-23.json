@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-23 13:02:22 IST",
+  "last_updated":"2026-07-23 20:28:03 IST",
   "movies":{
     "Jana Nayagan":[
       [
@@ -775,6 +775,402 @@
         150,
         63,
         53550.0
+      ],
+      [
+        "ET00005900",
+        "Aqua Lite 3D Cinema: Negombo",
+        "10:15 PM",
+        "4789",
+        298,
+        202,
+        181800.0
+      ],
+      [
+        "ET00005900",
+        "Cine City 3D Dolby ATMOS: Maradana",
+        "10:00 PM",
+        "11804",
+        287,
+        250,
+        400000.0
+      ],
+      [
+        "ET00005900",
+        "City Lite Cinema: Mt. Lavinia",
+        "10:00 PM",
+        "5796",
+        100,
+        92,
+        78200.0
+      ],
+      [
+        "ET00005900",
+        "CK Cinema: Kirindiwela",
+        "10:05 PM",
+        "1468",
+        238,
+        46,
+        13800.0
+      ],
+      [
+        "ET00005900",
+        "Eros Cinema: Colombo",
+        "10:30 PM",
+        "5740",
+        134,
+        121,
+        121000.0
+      ],
+      [
+        "ET00005900",
+        "Imperial 3D Cinema: Kurunegala",
+        "10:00 PM",
+        "4256",
+        456,
+        337,
+        185350.0
+      ],
+      [
+        "ET00005900",
+        "Liberty By Scope Cinemas: Colombo (Screen 1)",
+        "11:45 PM",
+        "21807",
+        387,
+        207,
+        351900.0
+      ],
+      [
+        "ET00005900",
+        "Liberty By Scope Cinemas: Colombo (Screen 2)",
+        "09:00 PM",
+        "21806",
+        134,
+        100,
+        170000.0
+      ],
+      [
+        "ET00005900",
+        "Majestic Cineplex: Colombo",
+        "08:45 PM",
+        "32749",
+        149,
+        53,
+        132500.0
+      ],
+      [
+        "ET00005900",
+        "MaxX Lite 3D Cinema: Moratuwa",
+        "10:15 PM",
+        "6895",
+        174,
+        142,
+        127800.0
+      ],
+      [
+        "ET00005900",
+        "Misty Lite 3D Cinema: Nawalapitiya",
+        "09:30 PM",
+        "956",
+        210,
+        38,
+        26600.0
+      ],
+      [
+        "ET00005900",
+        "New Janaki Cinema: Mathugama",
+        "09:30 PM",
+        "976",
+        193,
+        0,
+        0.0
+      ],
+      [
+        "ET00005900",
+        "Prasanna Cinema Kochchikade Negombo",
+        "10:30 PM",
+        "2390",
+        133,
+        23,
+        12650.0
+      ],
+      [
+        "ET00005900",
+        "Priska Lite 3D Cinema: Kalutara",
+        "09:45 PM",
+        "872",
+        417,
+        16,
+        9600.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "08:45 PM",
+        "5207",
+        319,
+        263,
+        644350.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "08:50 PM",
+        "5066",
+        143,
+        111,
+        271950.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "10:25 PM",
+        "5047",
+        105,
+        66,
+        161700.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "11:00 PM",
+        "5062",
+        111,
+        68,
+        166600.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "11:20 PM",
+        "5071",
+        143,
+        63,
+        154350.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "11:45 PM",
+        "5076",
+        144,
+        61,
+        149450.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "11:55 PM",
+        "5086",
+        41,
+        19,
+        94050.0
+      ],
+      [
+        "ET00005900",
+        "PVR Cinema: One Galle Face Mall",
+        "11:55 PM",
+        "5266",
+        41,
+        14,
+        69300.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinema: Bandarawela",
+        "09:00 PM",
+        "9685",
+        107,
+        66,
+        72600.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinema: Bandarawela",
+        "10:45 PM",
+        "9715",
+        172,
+        36,
+        39600.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinema: Jaffna",
+        "08:45 PM",
+        "32174",
+        184,
+        158,
+        316000.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinema: Jaffna",
+        "09:00 PM",
+        "32170",
+        138,
+        123,
+        246000.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinema: Nuwara Eliya",
+        "09:00 PM",
+        "18383",
+        119,
+        73,
+        73000.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinemas: Dematagoda",
+        "08:45 PM",
+        "21754",
+        97,
+        82,
+        164000.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinemas: Polonnaruwa",
+        "09:15 PM",
+        "1181",
+        93,
+        51,
+        45900.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinemas: Polonnaruwa",
+        "10:00 PM",
+        "1176",
+        179,
+        24,
+        21600.0
+      ],
+      [
+        "ET00005900",
+        "Regal: Ambalangoda",
+        "10:30 PM",
+        "8171",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00005900",
+        "Rex Theater: Badulla",
+        "10:00 PM",
+        "1045",
+        318,
+        0,
+        0.0
+      ],
+      [
+        "ET00005900",
+        "Ritz Cinema: Borella",
+        "09:00 PM",
+        "2320",
+        120,
+        8,
+        4800.0
+      ],
+      [
+        "ET00005900",
+        "Ruoo Cinema: Katunayake",
+        "10:00 PM",
+        "6855",
+        176,
+        32,
+        17600.0
+      ],
+      [
+        "ET00005900",
+        "Samanala Cinemas: Melsiripura",
+        "09:45 PM",
+        "5498",
+        240,
+        5,
+        2250.0
+      ],
+      [
+        "ET00005900",
+        "SAS Cineplex: Trincomale",
+        "10:00 PM",
+        "677",
+        106,
+        63,
+        37800.0
+      ],
+      [
+        "ET00005900",
+        "Savoy 3D Dolby ATMOS: Wellawatta",
+        "11:15 PM",
+        "10065",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00005900",
+        "Savoy Metro: Gampaha",
+        "10:30 PM",
+        "6881",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00005900",
+        "Savoy Metro: Maharagama",
+        "10:30 PM",
+        "6260",
+        0,
+        0,
+        0
+      ],
+      [
+        "ET00005900",
+        "Seran Cinema: Kilinochchi",
+        "11:15 PM",
+        "575",
+        279,
+        228,
+        114000.0
+      ],
+      [
+        "ET00005900",
+        "Sky Lite 3D Cinema: Matara",
+        "10:45 PM",
+        "6172",
+        215,
+        33,
+        28050.0
+      ],
+      [
+        "ET00005900",
+        "Vijaya Cinema: Minuwangoda",
+        "10:15 PM",
+        "2710",
+        216,
+        72,
+        28800.0
+      ],
+      [
+        "ET00005900",
+        "VoxX Lite 3D Cinema: Avissawella",
+        "10:00 PM",
+        "6190",
+        150,
+        124,
+        105400.0
+      ],
+      [
+        "ET00005900",
+        "Willmax: Anuradhapura",
+        "10:30 PM",
+        "8458",
+        0,
+        0,
+        0
       ]
     ],
     "Moana":[
@@ -840,6 +1236,15 @@
         215,
         10,
         5000.0
+      ],
+      [
+        "ET00006133",
+        "PVR Cinema: One Galle Face Mall",
+        "09:45 PM",
+        "5268",
+        92,
+        4,
+        4200.0
       ]
     ],
     "My Simba":[
@@ -1026,6 +1431,33 @@
         111,
         5,
         6000.0
+      ],
+      [
+        "ET00006141",
+        "Scope Cinemas Multiplex Dolby Atmos: Havelock City",
+        "09:45 PM",
+        "24947",
+        178,
+        18,
+        25200.0
+      ],
+      [
+        "ET00006141",
+        "Scope Cinemas: Colombo City Center",
+        "09:50 PM",
+        "62364",
+        111,
+        15,
+        18000.0
+      ],
+      [
+        "ET00006141",
+        "Scope Cinemas: Colombo City Center (Screen 2)",
+        "08:45 PM",
+        "62352",
+        125,
+        4,
+        4800.0
       ]
     ],
     "Michael":[
@@ -1283,6 +1715,15 @@
         238,
         2,
         700.0
+      ],
+      [
+        "ET00006127",
+        "Neela by Lite Cinema: Dankotuwa",
+        "09:15 PM",
+        "1537",
+        179,
+        0,
+        0.0
       ]
     ],
     "OIC Gadafi":[
@@ -1316,6 +1757,59 @@
         151,
         0,
         0.0
+      ],
+      [
+        "ET00006135",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:10 PM",
+        "24952",
+        152,
+        12,
+        15600.0
+      ]
+    ],
+    "Alpha":[
+      [
+        "ET00006114",
+        "Scope Cinemas: Colombo City Center",
+        "09:40 PM",
+        "62499",
+        96,
+        2,
+        2200.0
+      ]
+    ],
+    "Gatta Kusthi 2":[
+      [
+        "ET00006130",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:20 PM",
+        "24957",
+        151,
+        4,
+        5200.0
+      ]
+    ],
+    "Young Washington":[
+      [
+        "ET00006137",
+        "Scope Cinemas Gold Class: Colombo City Center",
+        "09:50 PM",
+        "62358",
+        22,
+        0,
+        0.0
+      ]
+    ],
+    "Dhamaal 4":[
+      [
+        "ET00006115",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:30 PM",
+        "24870",
+        121,
+        6,
+        6600.0
       ]
     ]
   }
