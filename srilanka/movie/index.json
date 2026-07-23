@@ -1,35 +1,47 @@
 {
-  "last_updated":"2026-07-23 20:28:03 IST",
+  "last_updated":"2026-07-24 03:18:11 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":398650.0,
-      "totalTickets":461
+      "totalGross":401050.0,
+      "totalTickets":463
     },
     {
-      "name":"Minions & Monsters",
-      "slug":"minions-monsters",
-      "totalGross":919900.0,
-      "totalTickets":748
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":3239150.0,
+      "totalTickets":2476
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":976750.0,
-      "totalTickets":1584
+      "totalGross":986350.0,
+      "totalTickets":1596
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":406300.0,
-      "totalTickets":822
+      "totalGross":414400.0,
+      "totalTickets":840
     },
     {
-      "name":"Gatta Kusthi 2",
-      "slug":"gatta-kusthi-2",
-      "totalGross":618850.0,
-      "totalTickets":611
+      "name":"Idhayam Murali",
+      "slug":"idhayam-murali",
+      "totalGross":1332550.0,
+      "totalTickets":1259
+    },
+    {
+      "name":"My Simba",
+      "slug":"my-simba",
+      "totalGross":104050.0,
+      "totalTickets":236
+    },
+    {
+      "name":"Minions & Monsters",
+      "slug":"minions-monsters",
+      "totalGross":927400.0,
+      "totalTickets":754
     },
     {
       "name":"Alpha",
@@ -38,16 +50,100 @@
       "totalTickets":319
     },
     {
-      "name":"Young Washington",
-      "slug":"young-washington",
-      "totalGross":239950.0,
-      "totalTickets":96
+      "name":"Chandarege Wife",
+      "slug":"chandarege-wife",
+      "totalGross":59500.0,
+      "totalTickets":89
+    },
+    {
+      "name":"Oscar",
+      "slug":"oscar",
+      "totalGross":35700.0,
+      "totalTickets":57
+    },
+    {
+      "name":"Cocktail 2",
+      "slug":"cocktail-2",
+      "totalGross":565550.0,
+      "totalTickets":365
+    },
+    {
+      "name":"The Odyssey",
+      "slug":"the-odyssey",
+      "totalGross":14142350.0,
+      "totalTickets":5110
+    },
+    {
+      "name":"Love Oh Love",
+      "slug":"love-oh-love",
+      "totalGross":21850.0,
+      "totalTickets":22
+    },
+    {
+      "name":"The Devil Wears Prada 2",
+      "slug":"the-devil-wears-prada-2",
+      "totalGross":85200.0,
+      "totalTickets":34
+    },
+    {
+      "name":"Supergirl",
+      "slug":"supergirl",
+      "totalGross":326500.0,
+      "totalTickets":216
+    },
+    {
+      "name":"Evil Dead Burn",
+      "slug":"evil-dead-burn",
+      "totalGross":703150.0,
+      "totalTickets":471
+    },
+    {
+      "name":"Toy Story 5",
+      "slug":"toy-story-5",
+      "totalGross":299350.0,
+      "totalTickets":242
+    },
+    {
+      "name":"Dhamaal 4",
+      "slug":"dhamaal-4",
+      "totalGross":367950.0,
+      "totalTickets":287
+    },
+    {
+      "name":"The Sheep Detectives",
+      "slug":"the-sheep-detectives",
+      "totalGross":164500.0,
+      "totalTickets":134
+    },
+    {
+      "name":"Gatta Kusthi 2",
+      "slug":"gatta-kusthi-2",
+      "totalGross":618850.0,
+      "totalTickets":611
     },
     {
       "name":"Michael",
       "slug":"michael",
       "totalGross":603200.0,
       "totalTickets":407
+    },
+    {
+      "name":"OIC Gadafi",
+      "slug":"oic-gadafi",
+      "totalGross":500.0,
+      "totalTickets":2
+    },
+    {
+      "name":"Riverstone",
+      "slug":"riverstone",
+      "totalGross":21100.0,
+      "totalTickets":43
+    },
+    {
+      "name":"Young Washington",
+      "slug":"young-washington",
+      "totalGross":239950.0,
+      "totalTickets":96
     },
     {
       "name":"Backrooms",
@@ -62,88 +158,10 @@
       "totalTickets":21
     },
     {
-      "name":"Love Oh Love",
-      "slug":"love-oh-love",
-      "totalGross":21850.0,
-      "totalTickets":22
-    },
-    {
-      "name":"Chandarege Wife",
-      "slug":"chandarege-wife",
-      "totalGross":59500.0,
-      "totalTickets":89
-    },
-    {
-      "name":"Dhamaal 4",
-      "slug":"dhamaal-4",
-      "totalGross":367950.0,
-      "totalTickets":287
-    },
-    {
-      "name":"Toy Story 5",
-      "slug":"toy-story-5",
-      "totalGross":294550.0,
-      "totalTickets":238
-    },
-    {
-      "name":"Cocktail 2",
-      "slug":"cocktail-2",
-      "totalGross":565550.0,
-      "totalTickets":365
-    },
-    {
-      "name":"Moana",
-      "slug":"moana",
-      "totalGross":3239150.0,
-      "totalTickets":2476
-    },
-    {
-      "name":"Oscar",
-      "slug":"oscar",
-      "totalGross":35700.0,
-      "totalTickets":57
-    },
-    {
-      "name":"OIC Gadafi",
-      "slug":"oic-gadafi",
-      "totalGross":500.0,
-      "totalTickets":2
-    },
-    {
-      "name":"The Sheep Detectives",
-      "slug":"the-sheep-detectives",
-      "totalGross":164500.0,
-      "totalTickets":134
-    },
-    {
-      "name":"Idhayam Murali",
-      "slug":"idhayam-murali",
-      "totalGross":1332550.0,
-      "totalTickets":1259
-    },
-    {
-      "name":"Supergirl",
-      "slug":"supergirl",
-      "totalGross":323700.0,
-      "totalTickets":214
-    },
-    {
       "name":"Welcome To The Jungle",
       "slug":"welcome-to-the-jungle",
       "totalGross":92100.0,
       "totalTickets":37
-    },
-    {
-      "name":"The Devil Wears Prada 2",
-      "slug":"the-devil-wears-prada-2",
-      "totalGross":80400.0,
-      "totalTickets":32
-    },
-    {
-      "name":"Riverstone",
-      "slug":"riverstone",
-      "totalGross":21100.0,
-      "totalTickets":43
     },
     {
       "name":"The Voice of Hind Rajab",
@@ -176,22 +194,28 @@
       "totalTickets":0
     },
     {
-      "name":"The Odyssey",
-      "slug":"the-odyssey",
-      "totalGross":13827050.0,
-      "totalTickets":5016
+      "name":"Abhisari",
+      "slug":"abhisari",
+      "totalGross":7100.0,
+      "totalTickets":12
     },
     {
-      "name":"Evil Dead Burn",
-      "slug":"evil-dead-burn",
-      "totalGross":703150.0,
-      "totalTickets":471
+      "name":"Monara Wilak",
+      "slug":"monara-wilak",
+      "totalGross":0.0,
+      "totalTickets":0
     },
     {
-      "name":"My Simba",
-      "slug":"my-simba",
-      "totalGross":95650.0,
-      "totalTickets":214
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":14840650.0,
+      "totalTickets":7758
+    },
+    {
+      "name":"Habeebi",
+      "slug":"habeebi",
+      "totalGross":3800.0,
+      "totalTickets":4
     },
     {
       "name":"Con City",
@@ -206,22 +230,10 @@
       "totalTickets":7
     },
     {
-      "name":"Habeebi",
-      "slug":"habeebi",
-      "totalGross":3800.0,
-      "totalTickets":4
-    },
-    {
       "name":"The Wife",
       "slug":"the-wife",
       "totalGross":0.0,
       "totalTickets":0
-    },
-    {
-      "name":"Jana Nayagan",
-      "slug":"jana-nayagan",
-      "totalGross":14372900.0,
-      "totalTickets":7456
     },
     {
       "name":"Test LK",
