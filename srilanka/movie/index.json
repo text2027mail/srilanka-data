@@ -1,53 +1,53 @@
 {
-  "last_updated":"2026-07-25 09:34:49 IST",
+  "last_updated":"2026-07-25 15:48:36 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":463000.0,
-      "totalTickets":542
+      "totalGross":609000.0,
+      "totalTickets":662
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":3631800.0,
-      "totalTickets":2810
+      "totalGross":4279300.0,
+      "totalTickets":3439
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":1093600.0,
-      "totalTickets":1769
+      "totalGross":1210350.0,
+      "totalTickets":1922
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":456100.0,
-      "totalTickets":954
+      "totalGross":463600.0,
+      "totalTickets":964
     },
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":1379050.0,
-      "totalTickets":1290
+      "totalGross":1416550.0,
+      "totalTickets":1315
     },
     {
       "name":"My Simba",
       "slug":"my-simba",
-      "totalGross":115200.0,
-      "totalTickets":264
+      "totalGross":148450.0,
+      "totalTickets":322
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":1122850.0,
-      "totalTickets":910
+      "totalGross":1229450.0,
+      "totalTickets":992
     },
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":474150.0,
-      "totalTickets":327
+      "totalGross":483950.0,
+      "totalTickets":334
     },
     {
       "name":"Chandarege Wife",
@@ -64,14 +64,14 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":596600.0,
-      "totalTickets":392
+      "totalGross":672500.0,
+      "totalTickets":458
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":19692700.0,
-      "totalTickets":6919
+      "totalGross":23226400.0,
+      "totalTickets":8274
     },
     {
       "name":"Love Oh Love",
@@ -94,14 +94,14 @@
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":809200.0,
-      "totalTickets":540
+      "totalGross":925150.0,
+      "totalTickets":611
     },
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":324350.0,
-      "totalTickets":262
+      "totalGross":376350.0,
+      "totalTickets":302
     },
     {
       "name":"Dhamaal 4",
@@ -112,8 +112,8 @@
     {
       "name":"The Sheep Detectives",
       "slug":"the-sheep-detectives",
-      "totalGross":189700.0,
-      "totalTickets":152
+      "totalGross":214900.0,
+      "totalTickets":170
     },
     {
       "name":"Gatta Kusthi 2",
@@ -124,8 +124,8 @@
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":678700.0,
-      "totalTickets":462
+      "totalGross":801300.0,
+      "totalTickets":559
     },
     {
       "name":"OIC Gadafi",
@@ -196,8 +196,8 @@
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":114400.0,
-      "totalTickets":140
+      "totalGross":154700.0,
+      "totalTickets":175
     },
     {
       "name":"Monara Wilak",
@@ -208,8 +208,8 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":23759250.0,
-      "totalTickets":13600
+      "totalGross":30713850.0,
+      "totalTickets":18286
     },
     {
       "name":"Nidhanaya",
