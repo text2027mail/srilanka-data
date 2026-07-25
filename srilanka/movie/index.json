@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-25 15:48:36 IST",
+  "last_updated":"2026-07-25 19:52:12 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
@@ -10,14 +10,14 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":4279300.0,
-      "totalTickets":3439
+      "totalGross":4334650.0,
+      "totalTickets":3480
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":1210350.0,
-      "totalTickets":1922
+      "totalGross":1218950.0,
+      "totalTickets":1942
     },
     {
       "name":"Sooriya Sulanga",
@@ -28,8 +28,8 @@
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":1416550.0,
-      "totalTickets":1315
+      "totalGross":1487050.0,
+      "totalTickets":1362
     },
     {
       "name":"My Simba",
@@ -46,8 +46,8 @@
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":483950.0,
-      "totalTickets":334
+      "totalGross":493750.0,
+      "totalTickets":341
     },
     {
       "name":"Chandarege Wife",
@@ -94,8 +94,8 @@
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":925150.0,
-      "totalTickets":611
+      "totalGross":1004150.0,
+      "totalTickets":670
     },
     {
       "name":"Toy Story 5",
@@ -118,8 +118,8 @@
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":644750.0,
-      "totalTickets":632
+      "totalGross":670250.0,
+      "totalTickets":649
     },
     {
       "name":"Michael",
@@ -196,8 +196,8 @@
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":154700.0,
-      "totalTickets":175
+      "totalGross":190700.0,
+      "totalTickets":199
     },
     {
       "name":"Monara Wilak",
@@ -208,8 +208,8 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":30713850.0,
-      "totalTickets":18286
+      "totalGross":32102800.0,
+      "totalTickets":19339
     },
     {
       "name":"Nidhanaya",
