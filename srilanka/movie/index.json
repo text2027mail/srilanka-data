@@ -1,29 +1,29 @@
 {
-  "last_updated":"2026-07-26 01:38:15 IST",
+  "last_updated":"2026-07-26 03:09:12 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":609000.0,
-      "totalTickets":662
+      "totalGross":641650.0,
+      "totalTickets":699
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":4334650.0,
-      "totalTickets":3480
+      "totalGross":4430950.0,
+      "totalTickets":3558
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":1218950.0,
-      "totalTickets":1942
+      "totalGross":1259050.0,
+      "totalTickets":2018
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":463600.0,
-      "totalTickets":964
+      "totalGross":493500.0,
+      "totalTickets":1031
     },
     {
       "name":"Idhayam Murali",
@@ -34,14 +34,14 @@
     {
       "name":"My Simba",
       "slug":"my-simba",
-      "totalGross":148450.0,
-      "totalTickets":322
+      "totalGross":155650.0,
+      "totalTickets":338
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":1229450.0,
-      "totalTickets":992
+      "totalGross":1266600.0,
+      "totalTickets":1021
     },
     {
       "name":"Alpha",
@@ -64,14 +64,14 @@
     {
       "name":"Cocktail 2",
       "slug":"cocktail-2",
-      "totalGross":672500.0,
-      "totalTickets":458
+      "totalGross":707000.0,
+      "totalTickets":488
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":23226400.0,
-      "totalTickets":8274
+      "totalGross":24275550.0,
+      "totalTickets":8594
     },
     {
       "name":"Love Oh Love",
@@ -82,14 +82,14 @@
     {
       "name":"The Devil Wears Prada 2",
       "slug":"the-devil-wears-prada-2",
-      "totalGross":100800.0,
-      "totalTickets":40
+      "totalGross":116400.0,
+      "totalTickets":46
     },
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":342500.0,
-      "totalTickets":226
+      "totalGross":353700.0,
+      "totalTickets":233
     },
     {
       "name":"Evil Dead Burn",
@@ -100,8 +100,8 @@
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":376350.0,
-      "totalTickets":302
+      "totalGross":388050.0,
+      "totalTickets":311
     },
     {
       "name":"Dhamaal 4",
@@ -194,22 +194,22 @@
       "totalTickets":0
     },
     {
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":33485750.0,
+      "totalTickets":20324
+    },
+    {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":190700.0,
-      "totalTickets":199
+      "totalGross":210400.0,
+      "totalTickets":233
     },
     {
       "name":"Monara Wilak",
       "slug":"monara-wilak",
-      "totalGross":0.0,
-      "totalTickets":0
-    },
-    {
-      "name":"Jana Nayagan",
-      "slug":"jana-nayagan",
-      "totalGross":32102800.0,
-      "totalTickets":19339
+      "totalGross":5200.0,
+      "totalTickets":4
     },
     {
       "name":"Nidhanaya",
