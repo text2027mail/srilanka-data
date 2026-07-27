@@ -1,29 +1,29 @@
 {
-  "last_updated":"2026-07-27 17:31:26 IST",
+  "last_updated":"2026-07-28 03:19:47 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":904800.0,
-      "totalTickets":947
+      "totalGross":910600.0,
+      "totalTickets":959
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":5337750.0,
-      "totalTickets":4369
+      "totalGross":5342150.0,
+      "totalTickets":4373
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":1459700.0,
-      "totalTickets":2267
+      "totalGross":1476400.0,
+      "totalTickets":2307
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
-      "totalGross":538450.0,
-      "totalTickets":1122
+      "totalGross":542450.0,
+      "totalTickets":1130
     },
     {
       "name":"Idhayam Murali",
@@ -40,8 +40,8 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":1630650.0,
-      "totalTickets":1309
+      "totalGross":1648150.0,
+      "totalTickets":1325
     },
     {
       "name":"Alpha",
@@ -70,8 +70,8 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":30133450.0,
-      "totalTickets":11043
+      "totalGross":30491150.0,
+      "totalTickets":11160
     },
     {
       "name":"Love Oh Love",
@@ -82,26 +82,26 @@
     {
       "name":"The Devil Wears Prada 2",
       "slug":"the-devil-wears-prada-2",
-      "totalGross":116400.0,
-      "totalTickets":46
+      "totalGross":121000.0,
+      "totalTickets":48
     },
     {
       "name":"Supergirl",
       "slug":"supergirl",
-      "totalGross":353700.0,
-      "totalTickets":233
+      "totalGross":355000.0,
+      "totalTickets":234
     },
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":1199250.0,
-      "totalTickets":786
+      "totalGross":1201150.0,
+      "totalTickets":788
     },
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":476450.0,
-      "totalTickets":379
+      "totalGross":484150.0,
+      "totalTickets":386
     },
     {
       "name":"Dhamaal 4",
@@ -202,8 +202,8 @@
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":291750.0,
-      "totalTickets":329
+      "totalGross":303550.0,
+      "totalTickets":349
     },
     {
       "name":"Monara Wilak",
