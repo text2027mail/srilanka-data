@@ -1,4 +1,16 @@
 {
-  "last_updated":"2026-07-29 01:45:14 IST",
-  "movies":{}
+  "last_updated":"2026-07-29 03:24:35 IST",
+  "movies":{
+    "Abhisari":[
+      [
+        "ET00006143",
+        "Ricky Cinema: Colombo",
+        "10:30 AM",
+        "11195",
+        563,
+        0,
+        0.0
+      ]
+    ]
+  }
 }
