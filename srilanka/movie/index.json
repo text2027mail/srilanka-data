@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-07-28 05:27:15 IST",
+  "last_updated":"2026-07-28 20:39:10 IST",
   "movies":[
     {
       "name":"Eka Thamai Meka",
@@ -10,8 +10,8 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":5342150.0,
-      "totalTickets":4373
+      "totalGross":5369450.0,
+      "totalTickets":4399
     },
     {
       "name":"Room No.106",
@@ -28,8 +28,8 @@
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":1505250.0,
-      "totalTickets":1376
+      "totalGross":1557250.0,
+      "totalTickets":1416
     },
     {
       "name":"My Simba",
@@ -46,8 +46,8 @@
     {
       "name":"Alpha",
       "slug":"alpha",
-      "totalGross":523750.0,
-      "totalTickets":369
+      "totalGross":543550.0,
+      "totalTickets":387
     },
     {
       "name":"Chandarege Wife",
@@ -70,8 +70,8 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":30491150.0,
-      "totalTickets":11160
+      "totalGross":31468550.0,
+      "totalTickets":11508
     },
     {
       "name":"Love Oh Love",
@@ -118,8 +118,8 @@
     {
       "name":"Gatta Kusthi 2",
       "slug":"gatta-kusthi-2",
-      "totalGross":687150.0,
-      "totalTickets":662
+      "totalGross":723550.0,
+      "totalTickets":690
     },
     {
       "name":"Michael",
@@ -196,14 +196,14 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":39483850.0,
-      "totalTickets":24767
+      "totalGross":41448450.0,
+      "totalTickets":26379
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":303550.0,
-      "totalTickets":349
+      "totalGross":332350.0,
+      "totalTickets":373
     },
     {
       "name":"Monara Wilak",
