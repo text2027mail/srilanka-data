@@ -1,0 +1,37 @@
+{
+  "last_updated":"2026-07-30 20:39:54 IST",
+  "movies":[
+    {
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":24200.0,
+      "totalTickets":37,
+      "totalShows":3,
+      "totalSeats":717
+    },
+    {
+      "name":"Room No.106",
+      "slug":"room-no106",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":1,
+      "totalSeats":240
+    },
+    {
+      "name":"Spider-Man: Brand New Day",
+      "slug":"spider-man-brand-new-day",
+      "totalGross":254950.0,
+      "totalTickets":321,
+      "totalShows":3,
+      "totalSeats":765
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":1,
+      "totalSeats":238
+    }
+  ]
+}
