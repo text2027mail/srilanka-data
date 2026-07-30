@@ -1,29 +1,23 @@
 {
-  "last_updated":"2026-07-30 20:39:54 IST",
+  "last_updated":"2026-07-30 20:45:47 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":24200.0,
-      "totalTickets":37,
-      "totalShows":3,
-      "totalSeats":717
-    },
-    {
-      "name":"Room No.106",
-      "slug":"room-no106",
-      "totalGross":0.0,
-      "totalTickets":0,
-      "totalShows":1,
-      "totalSeats":240
+      "totalGross":118850.0,
+      "totalTickets":109,
+      "totalShows":9,
+      "totalSeats":1537,
+      "occupancy":7.09
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":254950.0,
-      "totalTickets":321,
-      "totalShows":3,
-      "totalSeats":765
+      "totalGross":2089300.0,
+      "totalTickets":1527,
+      "totalShows":13,
+      "totalSeats":2272,
+      "occupancy":67.21
     },
     {
       "name":"Moana",
@@ -31,7 +25,26 @@
       "totalGross":0.0,
       "totalTickets":0,
       "totalShows":1,
-      "totalSeats":238
+      "totalSeats":238,
+      "occupancy":0.0
+    },
+    {
+      "name":"The Odyssey",
+      "slug":"the-odyssey",
+      "totalGross":33250.0,
+      "totalTickets":35,
+      "totalShows":1,
+      "totalSeats":105,
+      "occupancy":33.33
+    },
+    {
+      "name":"Room No.106",
+      "slug":"room-no106",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":1,
+      "totalSeats":240,
+      "occupancy":0.0
     }
   ]
 }
