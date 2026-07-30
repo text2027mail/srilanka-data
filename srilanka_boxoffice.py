@@ -59,12 +59,8 @@ VENUES_FILE = os.path.join(os.path.dirname(__file__), "venues.json")
 USER_AGENTS = [
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
     "Mozilla/5.0 (iPhone; CPU iPhone OS 16_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.0 Mobile/15E148 Safari/604.1",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
-    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 14_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1",
 ]
 
 # cloudscraper valid platforms: windows, linux, darwin, android, ios
@@ -152,10 +148,10 @@ def build_headers(extra=None, use_mobile=False):
         "Accept-Language": random.choice(["en-GB,en;q=0.9", "en-US,en;q=0.8", "en-IN,en;q=0.9"]),
         "Accept-Encoding": "gzip, deflate, br, zstd",
         "User-Agent": ua,
-        "Referer": "https://m.bookmyshow.com/" if use_mobile else "https://lk.bookmyshow.com/",
+        "Referer": "https://lk.bookmyshow.com/" if use_mobile else "https://lk.bookmyshow.com/",
         "Cache-Control": "no-cache",
         "Pragma": "no-cache",
-        "Origin": "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com",
+        "Origin": "https://lk.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com",
         "Sec-Fetch-Dest": "empty",
         "Sec-Fetch-Mode": "cors",
         "Sec-Fetch-Site": "same-origin",
@@ -178,7 +174,7 @@ def create_session(browser_config=None):
         # Store the config key on the session for later use
         scraper._bms_config_key = config_key
         # Warm‑up request to get cookies (both desktop and mobile)
-        for url in ["https://lk.bookmyshow.com/", "https://m.bookmyshow.com/"]:
+        for url in ["https://lk.bookmyshow.com/", "https://lk.bookmyshow.com/"]:
             try:
                 scraper.get(url, headers={"User-Agent": random_user_agent()}, timeout=10)
                 time.sleep(random.uniform(0.3, 0.8))
@@ -230,7 +226,7 @@ def safe_request(url, session, venue_code=None, retries=RETRY_PER_REQUEST, use_m
 #########################################
 def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     bms_id = random_bms_id()
-    base = "https://m.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
+    base = "https://lk.bookmyshow.com" if use_mobile else "https://lk.bookmyshow.com"
     url = (f"{base}/pwa/api/de/showtimes/byvenue"
            f"?venueCode={venue_code}&dateCode={date}"
            f"&regionCode={REGION_CODE}&bmsId={bms_id}")
