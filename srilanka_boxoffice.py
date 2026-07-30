@@ -3,8 +3,8 @@
 Sri Lanka Box Office Scraper (Venue API)
 - Uses /showtimes/byvenue endpoint
 - Adds city/district/state from venues.json
-- Compressed daily JSON: numeric IDs for movies and venues
-- Outputs daily, per-movie, and index with totalShows, totalSeats
+- Outputs same daily, per-movie, and index files
+- Daily files are now compressed with venue/movie number mapping
 """
 
 import json
@@ -13,16 +13,19 @@ import random
 import time
 import sys
 import re
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from queue import Queue
 from collections import defaultdict
 
+# PATCH: only keep cloudscraper (remove curl_cffi and requests fallback)
 try:
     import cloudscraper
+    HAS_CLOUDSCRAPER = True
 except ImportError:
-    print("❌ cloudscraper required. Install: pip install cloudscraper")
+    HAS_CLOUDSCRAPER = False
+    print("❌ cloudscraper is required. Install: pip install cloudscraper")
     sys.exit(1)
 
 #########################################
@@ -30,13 +33,14 @@ except ImportError:
 #########################################
 MAX_THREADS = 2
 RETRY_PER_REQUEST = 5
-SCRAPE_PASSES = 2
+SCRAPE_PASSES = 2                # we may need multiple passes for retries
 MAX_RETRIES_PER_VENUE = 3
 TIMEOUT_SEC = 30
 CUT_OFF_MINUTES = 500
 REGION_CODE = "SNLK"
 IST = ZoneInfo("Asia/Kolkata")
 
+# Paths
 BASE_DIR = "srilanka"
 BOXOFFICE_DIR = os.path.join(BASE_DIR, "boxoffice")
 MOVIE_DIR = os.path.join(BASE_DIR, "movie")
@@ -44,22 +48,20 @@ DATA_DIR = os.path.join(MOVIE_DIR, "data")
 os.makedirs(BOXOFFICE_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
+# PATCH: load venues.json (expected in same directory)
 VENUES_FILE = os.path.join(os.path.dirname(__file__), "venues.json")
 
+# User‑Agent pool (from NewSLApi.txt)
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36",
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
 ]
 
-#########################################
-# HELPERS
-#########################################
-def atomic_dump(path, data):
-    """Minified JSON with no extra spaces."""
+def atomic_dump(path, data, indent=2, separators=(",", ":")):
     tmp = path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
-        json.dump(data, f, separators=(",", ":"))
+        json.dump(data, f, indent=indent, separators=separators)
     os.replace(tmp, path)
 
 def slugify(text):
@@ -81,6 +83,7 @@ def get_daily_file_path(date_str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return path
 
+# PATCH: random bmsId generator (from NewSLApi.txt)
 def random_bms_id():
     part1 = "1"
     part2 = str(random.randint(1000000000, 9999999999))
@@ -88,6 +91,7 @@ def random_bms_id():
     part3 = str(ts)
     return f"{part1}.{part2}.{part3}"
 
+# PATCH: load venues
 def load_venues():
     if not os.path.exists(VENUES_FILE):
         print(f"❌ Venues file not found: {VENUES_FILE}")
@@ -95,18 +99,21 @@ def load_venues():
     try:
         with open(VENUES_FILE, "r", encoding="utf-8") as f:
             venues_list = json.load(f)
-        venue_map = {}       # venue_code -> {city, district, state, name}
+        venue_map = {}
+        name_details = {}          # map venue name -> {city, district, state}
         for v in venues_list:
             code = v.get("VenueCode")
-            if code:
-                venue_map[code] = {
-                    "name": v.get("VenueName", ""),
+            name = v.get("VenueName")
+            if code and name:
+                details = {
                     "city": v.get("city", ""),
                     "district": v.get("district", ""),
                     "state": v.get("state", ""),
                 }
+                venue_map[code] = details
+                name_details[name] = details
         print(f"📋 Loaded {len(venue_map)} venues")
-        return venue_map
+        return venue_map, name_details
     except Exception as e:
         print(f"❌ Error loading venues.json: {e}")
         sys.exit(1)
@@ -117,7 +124,7 @@ def load_venues():
 def random_user_agent():
     return random.choice(USER_AGENTS)
 
-def build_headers(use_mobile=False):
+def build_headers(extra=None, use_mobile=False):
     ua = random_user_agent()
     headers = {
         "Accept": "application/json, text/plain, */*",
@@ -133,15 +140,18 @@ def build_headers(use_mobile=False):
         "Sec-Fetch-Site": "same-origin",
         "Connection": "keep-alive",
     }
+    if extra:
+        headers.update(extra)
     return headers
 
+# PATCH: simplified session creation (only cloudscraper)
 def create_session():
     print("🧪 Creating cloudscraper session...")
     try:
         scraper = cloudscraper.create_scraper(
             browser={"browser": "chrome", "platform": "windows", "desktop": True}
         )
-        # Warm-up
+        # Warm‑up request to get cookies
         scraper.get("https://lk.bookmyshow.com/", headers={"User-Agent": random_user_agent()}, timeout=10)
         time.sleep(random.uniform(0.5, 1.0))
         # Test with a known venue
@@ -154,7 +164,7 @@ def create_session():
         resp = scraper.get(url, headers=build_headers(), timeout=TIMEOUT_SEC)
         if resp.status_code == 200 and resp.json().get("BookMyShow"):
             print("✅ cloudscraper session ready.")
-            return scraper, False
+            return scraper, False   # session, use_mobile=False
         else:
             print("❌ Test request failed.")
             return None, False
@@ -163,11 +173,11 @@ def create_session():
         return None, False
 
 #########################################
-# SAFE REQUEST
+# SAFE REQUEST (with retry)
 #########################################
 def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
     last_err = "UNKNOWN"
-    for _ in range(retries):
+    for attempt in range(retries):
         try:
             headers = build_headers(use_mobile=use_mobile)
             resp = session.get(url, headers=headers, timeout=TIMEOUT_SEC)
@@ -191,7 +201,7 @@ def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
     return None, last_err
 
 #########################################
-# API CALL
+# API CALL (new venue endpoint)
 #########################################
 def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     bms_id = random_bms_id()
@@ -202,7 +212,7 @@ def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     return safe_request(url, session, use_mobile=use_mobile)
 
 #########################################
-# PARSE RESPONSE
+# PARSE RESPONSE (new format)
 #########################################
 def parse_venue_response(raw, date, venue_details):
     shows = []
@@ -236,8 +246,9 @@ def parse_venue_response(raw, date, venue_details):
                             sold = 0
                         price = float(st.get("MinPrice", 0))
                         gross = sold * price
+                        occupancy = round((sold / total_seats * 100), 2) if total_seats else 0
                         if sold < 0 or gross < 0 or available > total_seats or total_seats == 0:
-                            continue
+                            continue   # skip bad data (matches old behaviour)
                         shows.append({
                             "movie": movie_title,
                             "format": event_format,
@@ -247,8 +258,10 @@ def parse_venue_response(raw, date, venue_details):
                             "sessionId": str(session_id),
                             "time": show_time,
                             "totalSeats": total_seats,
+                            "available": available,
                             "sold": sold,
                             "gross": gross,
+                            "occupancy": occupancy,
                             "date": date,
                             "city": city,
                             "district": district,
@@ -259,7 +272,7 @@ def parse_venue_response(raw, date, venue_details):
     return shows
 
 #########################################
-# SCRAPE VENUE
+# SCRAPE VENUE (replaces scrape_event)
 #########################################
 def scrape_venue(venue_code, date, attempt, session_pool, venue_map, use_mobile=False):
     session = session_pool.get()
@@ -272,13 +285,10 @@ def scrape_venue(venue_code, date, attempt, session_pool, venue_map, use_mobile=
     return venue_code, shows, True
 
 #########################################
-# DAILY FILE LOAD / SAVE (compressed)
+# DAILY FILE MERGE (updated for compressed format)
 #########################################
 def load_daily_shows(date_str):
-    """
-    Load existing shows from daily file (old or new format).
-    Returns dict: (eventCode, venue, sessionId) -> show dict.
-    """
+    """Load daily shows from file, supporting both old and new compressed format."""
     daily_path = get_daily_file_path(date_str)
     shows = {}
     if not os.path.exists(daily_path):
@@ -286,22 +296,18 @@ def load_daily_shows(date_str):
     try:
         with open(daily_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        # Detect format
-        movies_obj = data.get("movies", {})
-        # If movies_obj keys are numeric, it's new format
-        first_key = next(iter(movies_obj), None)
-        if first_key and first_key.isdigit():
-            # New format: movies dict with numeric IDs
-            movie_names = data.get("movieNames", {})
-            venue_details = data.get("venueDetails", {})
-            # Build reverse mapping: venue id -> name (and details)
-            venue_id_to_name = {vid: details.get("name", "") for vid, details in venue_details.items()}
-            for movie_id, compact_list in movies_obj.items():
-                movie_title = movie_names.get(movie_id, "")
-                for item in compact_list:
+
+        # Check if new format (has venueMap)
+        if "venueMap" in data:
+            venue_map = data["venueMap"]   # number -> {name, city, district, state}
+            movie_map = data["movieMap"]   # number -> movie title
+            movies = data.get("movies", {})
+            for movie_num, compact_shows in movies.items():
+                movie_title = movie_map.get(str(movie_num), "")
+                for item in compact_shows:
                     if len(item) >= 7:
-                        eventCode, venue_id, showTime, sessionId, totalSeats, sold, gross = item[:7]
-                        venue_name = venue_id_to_name.get(str(venue_id), "")
+                        eventCode, venue_num, showTime, sessionId, totalSeats, sold, gross = item[:7]
+                        venue_name = venue_map.get(str(venue_num), {}).get("name", "")
                     else:
                         continue
                     key = (eventCode, venue_name, sessionId)
@@ -317,9 +323,10 @@ def load_daily_shows(date_str):
                         "date": date_str,
                     }
         else:
-            # Old format: movies dict with title keys
-            for movie_title, compact_list in movies_obj.items():
-                for item in compact_list:
+            # Old format
+            movies = data.get("movies", {})
+            for movie_title, compact_shows in movies.items():
+                for item in compact_shows:
                     if len(item) >= 7:
                         eventCode, venue, showTime, sessionId, totalSeats, sold, gross = item[:7]
                     else:
@@ -341,80 +348,69 @@ def load_daily_shows(date_str):
     return shows
 
 def save_daily_file(date_str, shows_dict, venue_details_map):
-    """
-    shows_dict: keyed by (eventCode, venue, sessionId) -> show dict
-    venue_details_map: dict venue_name -> {city, district, state}
-    Save in compressed format with numeric IDs for movies and venues.
-    """
-    # Build unique movie names -> id
-    movie_names = {}
-    movie_id_to_name = {}
-    movie_counter = 0
-    # Build unique venue names -> id
-    venue_names = {}
-    venue_id_to_name = {}
-    venue_counter = 0
-
-    # First pass: collect all unique movie titles and venue names
+    """Save daily file in compressed format with venue/movie numbering."""
+    # Build unique movie titles and venue names from shows
+    movie_set = set()
+    venue_set = set()
     for show in shows_dict.values():
-        m = show["movie"]
-        if m not in movie_names:
-            movie_counter += 1
-            movie_names[m] = str(movie_counter)
-            movie_id_to_name[str(movie_counter)] = m
-        v = show["venue"]
-        if v not in venue_names:
-            venue_counter += 1
-            venue_names[v] = str(venue_counter)
-            venue_id_to_name[str(venue_counter)] = v
+        movie_set.add(show["movie"])
+        venue_set.add(show["venue"])
 
-    # Build venueDetails object with numeric IDs
-    venue_details_out = {}
-    for vid, vname in venue_id_to_name.items():
+    # Create mappings: number -> name/details
+    movie_map = {str(i+1): title for i, title in enumerate(sorted(movie_set))}
+    # We need reverse mapping for quick conversion
+    movie_to_num = {v: k for k, v in movie_map.items()}
+
+    venue_map = {}
+    venue_to_num = {}
+    for i, vname in enumerate(sorted(venue_set), start=1):
+        num = str(i)
         details = venue_details_map.get(vname, {})
-        venue_details_out[vid] = {
+        venue_map[num] = {
             "name": vname,
             "city": details.get("city", ""),
             "district": details.get("district", ""),
-            "state": details.get("state", ""),
+            "state": details.get("state", "")
         }
+        venue_to_num[vname] = num
 
-    # Build movies object: movie_id -> list of compact shows
-    movies_out = defaultdict(list)
+    # Build movies dict with numbered keys and numbered venue references
+    movies = defaultdict(list)
     for show in shows_dict.values():
-        movie_id = movie_names[show["movie"]]
-        venue_id = venue_names[show["venue"]]
-        compact = [
+        movie_num = movie_to_num[show["movie"]]
+        venue_num = venue_to_num[show["venue"]]
+        # compact list: [eventCode, venueNum, time, sessionId, totalSeats, sold, gross]
+        movies[movie_num].append([
             show["eventCode"],
-            int(venue_id),
+            int(venue_num),  # store as int to save space
             show["time"],
             show["sessionId"],
             show["totalSeats"],
             show["sold"],
             show["gross"]
-        ]
-        movies_out[movie_id].append(compact)
+        ])
 
     data = {
         "last_updated": now_ist_str(),
-        "venueDetails": venue_details_out,
-        "movieNames": movie_id_to_name,
-        "movies": dict(movies_out)
+        "venueMap": venue_map,
+        "movieMap": movie_map,
+        "movies": dict(movies)
     }
+
     daily_path = get_daily_file_path(date_str)
-    atomic_dump(daily_path, data)
-    print(f"💾 Saved daily file: {daily_path}")
+    # Write with no extra spaces (compact)
+    tmp = daily_path + ".tmp"
+    with open(tmp, "w", encoding="utf-8") as f:
+        json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
+    os.replace(tmp, daily_path)
+    print(f"💾 Saved daily file (compressed): {daily_path}")
 
 #########################################
-# MOVIE DATABASE UPDATE
+# MOVIE DATABASE UPDATE (enhanced with totalShows & totalSeats)
 #########################################
 def update_movie_database():
-    """
-    Scan all daily files (both old and new formats) and build per-movie data.
-    Adds totalShows and totalSeats to index.
-    """
     daily_files = []
-    for root, _, files in os.walk(BOXOFFICE_DIR):
+    for root, dirs, files in os.walk(BOXOFFICE_DIR):
         for f in files:
             if f.endswith(".json"):
                 daily_files.append(os.path.join(root, f))
@@ -435,45 +431,21 @@ def update_movie_database():
             date_str = year + month_day.replace("-", "")
         else:
             continue
-        try:
-            with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
-            movies_obj = data.get("movies", {})
-            # Check format
-            first_key = next(iter(movies_obj), None)
-            if first_key and first_key.isdigit():
-                # New format: need movieNames
-                movie_names = data.get("movieNames", {})
-                venue_details = data.get("venueDetails", {})
-                venue_id_to_name = {vid: details.get("name", "") for vid, details in venue_details.items()}
-                for movie_id, compact_list in movies_obj.items():
-                    movie_title = movie_names.get(movie_id, "")
-                    for item in compact_list:
-                        if len(item) >= 7:
-                            _, venue_id, _, _, totalSeats, sold, gross = item[:7]
-                            venue_name = venue_id_to_name.get(str(venue_id), "")
-                        else:
-                            continue
-                        movie_date_data[movie_title][date_str]["totalGross"] += gross
-                        movie_date_data[movie_title][date_str]["totalShows"] += 1
-                        movie_date_data[movie_title][date_str]["totalSeats"] += totalSeats
-                        movie_date_data[movie_title][date_str]["totalSold"] += sold
-                        movie_date_data[movie_title][date_str]["venues"].add(venue_name)
-            else:
-                # Old format: movie title as key
-                for movie_title, compact_list in movies_obj.items():
-                    for item in compact_list:
-                        if len(item) >= 7:
-                            _, venue, _, _, totalSeats, sold, gross = item[:7]
-                        else:
-                            continue
-                        movie_date_data[movie_title][date_str]["totalGross"] += gross
-                        movie_date_data[movie_title][date_str]["totalShows"] += 1
-                        movie_date_data[movie_title][date_str]["totalSeats"] += totalSeats
-                        movie_date_data[movie_title][date_str]["totalSold"] += sold
-                        movie_date_data[movie_title][date_str]["venues"].add(venue)
-        except Exception as e:
-            print(f"⚠️ Error reading {filepath}: {e}")
+
+        # Use load_daily_shows to parse both old and new formats
+        shows_dict = load_daily_shows(date_str)
+        for show in shows_dict.values():
+            movie_title = show["movie"]
+            venue = show["venue"]
+            totalSeats = show["totalSeats"]
+            sold = show["sold"]
+            gross = show["gross"]
+            d = movie_date_data[movie_title][date_str]
+            d["totalGross"] += gross
+            d["totalShows"] += 1
+            d["totalSeats"] += totalSeats
+            d["totalSold"] += sold
+            d["venues"].add(venue)
 
     index = []
     for movie_title, date_data in movie_date_data.items():
@@ -483,13 +455,13 @@ def update_movie_database():
         totalGross = 0
         totalTickets = 0
         totalShows = 0
-        totalSeats_all = 0
+        totalSeats = 0
         for date_str in sorted_dates:
             d = date_data[date_str]
             totalGross += d["totalGross"]
             totalTickets += d["totalSold"]
             totalShows += d["totalShows"]
-            totalSeats_all += d["totalSeats"]
+            totalSeats += d["totalSeats"]
             per_movie_rows.append([
                 int(date_str),
                 d["totalGross"],
@@ -506,9 +478,9 @@ def update_movie_database():
             "name": movie_title,
             "slug": slug,
             "totalGross": totalGross,
-            "totalTickets": totalTickets,
+            "totalTickets": totalTickets,   # sold tickets
             "totalShows": totalShows,
-            "totalSeats": totalSeats_all,
+            "totalSeats": totalSeats
         })
 
     index_path = os.path.join(MOVIE_DIR, "index.json")
@@ -524,8 +496,11 @@ def update_movie_database():
 def main():
     print("\n🚀 Sri Lanka Boxoffice Tracker (Venue API) Started...\n")
 
-    venue_map = load_venues()
+    # PATCH: load venues
+    venue_map, name_details = load_venues()
+
     target_date = get_today()
+    daily_path = get_daily_file_path(target_date)
 
     existing_shows = load_daily_shows(target_date)
     print(f"📂 Loaded {len(existing_shows)} existing shows from daily file")
@@ -566,7 +541,7 @@ def main():
                         print(f"⏭️ Skipping venue {vc} after {MAX_RETRIES_PER_VENUE} failed attempts")
         pending = next_round
 
-    # Cut‑off filter
+    # Cut‑off filter (unchanged)
     def parse_time(date_str, t):
         for fmt in ["%I:%M %p", "%H:%M"]:
             try:
@@ -585,41 +560,30 @@ def main():
     eligible_new = [s for s in new_shows if is_within_cutoff(s)]
     print(f"✅ New shows scraped (after cutoff): {len(eligible_new)}")
 
-    # Merge with existing
+    # Merge
     for show in eligible_new:
         key = (show["eventCode"], show["venue"], show["sessionId"])
         existing_shows[key] = show
 
-    # Build venue_details_map (venue name -> city/district/state)
+    # Build venueDetails map for the daily file (used for venueMap details)
     venue_details_map = {}
     for show in existing_shows.values():
         vname = show["venue"]
         if vname not in venue_details_map:
-            # Try to find from venue_map by matching name (since we have code->details)
-            found = False
-            for vcode, vd in venue_map.items():
-                if vd.get("name") == vname:
-                    venue_details_map[vname] = {
-                        "city": vd.get("city", ""),
-                        "district": vd.get("district", ""),
-                        "state": vd.get("state", ""),
-                    }
-                    found = True
-                    break
-            if not found:
-                # fallback: use show's own city/district/state if present
+            if vname in name_details:
+                venue_details_map[vname] = name_details[vname]
+            else:
                 city = show.get("city", "")
                 district = show.get("district", "")
                 state = show.get("state", "")
                 venue_details_map[vname] = {"city": city, "district": district, "state": state}
 
-    # Save compressed daily file
     save_daily_file(target_date, existing_shows, venue_details_map)
+    print(f"📁 Daily file saved: {daily_path}")
 
-    # Update movie database (index with totalShows, totalSeats)
     update_movie_database()
 
-    print("\n🎉 DONE — CUT-OFF ADD ONLY | PERMANENT DB ACTIVE\n")
+    print("\n🎉 DONE — CUT-OFF ADD ONLY | PERMANENT DB ACTIVE | COMPRESSED DAILY FILES\n")
 
 if __name__ == "__main__":
     main()
