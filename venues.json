@@ -14,7 +14,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Maharagama",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "ALCN",
@@ -31,7 +35,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Negombo",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CACC",
@@ -48,7 +56,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Maradana",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CCJL",
@@ -65,7 +77,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CLCL",
@@ -82,7 +98,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Dehiwala-Mount Lavinia",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CKCK",
@@ -99,7 +119,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kirindiwela",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CCDL",
@@ -116,7 +140,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Dehiwala-Mount Lavinia",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "ECCC",
@@ -133,7 +161,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "IMDK",
@@ -150,7 +182,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kurunegala",
+    "state": "North Western",
+    "district": "Kurunegala",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "JPRP",
@@ -167,7 +203,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Ratnapura",
+    "state": "Sabaragamuwa",
+    "district": "Ratnapura",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "LCCS",
@@ -184,7 +224,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "LCCL",
@@ -201,7 +245,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "LSSK",
@@ -218,7 +266,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Unknown",
+    "state": "Unknown",
+    "district": "Unknown",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "LLLM",
@@ -235,7 +287,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Homagama",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "MCCO",
@@ -252,7 +308,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "MAXC",
@@ -269,7 +329,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Moratuwa",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "MLCN",
@@ -286,7 +350,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Nawalapitiya",
+    "state": "Central",
+    "district": "Kandy",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "NLCD",
@@ -303,7 +371,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Dankotuwa",
+    "state": "North Western",
+    "district": "Puttalam",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "NJCM",
@@ -320,7 +392,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Mathugama",
+    "state": "Western",
+    "district": "Kalutara",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "NNCC",
@@ -337,7 +413,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kadawatha",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "PLLK",
@@ -354,7 +434,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kochchikade",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "PLCK",
@@ -371,7 +455,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kalutara",
+    "state": "Western",
+    "district": "Kalutara",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "PVGT",
@@ -388,7 +476,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Unknown",
+    "state": "Unknown",
+    "district": "Unknown",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCKT",
@@ -405,7 +497,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Moratuwa",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCBD",
@@ -422,7 +518,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Bandarawela",
+    "state": "Uva",
+    "district": "Badulla",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCGA",
@@ -439,7 +539,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Gampaha",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "MCJA",
@@ -456,7 +560,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Jaffna",
+    "state": "Northern",
+    "district": "Jaffna",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCNE",
@@ -473,7 +581,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Nuwara Eliya",
+    "state": "Central",
+    "district": "Nuwara Eliya",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RRCD",
@@ -490,7 +602,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RLCP",
@@ -507,7 +623,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Polonnaruwa",
+    "state": "North Central",
+    "district": "Polonnaruwa",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCAG",
@@ -524,7 +644,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Ambalangoda",
+    "state": "Southern",
+    "district": "Galle",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RXXE",
@@ -541,7 +665,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Badulla",
+    "state": "Uva",
+    "district": "Badulla",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCAC",
@@ -558,7 +686,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCBB",
@@ -575,7 +707,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "RCNM",
@@ -592,7 +728,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Katunayake",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCMM",
@@ -609,7 +749,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Melsiripura",
+    "state": "North Western",
+    "district": "Kurunegala",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCCA",
@@ -626,7 +770,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Alawwa",
+    "state": "North Western",
+    "district": "Kurunegala",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SASC",
@@ -643,7 +791,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Trincomalee",
+    "state": "Eastern",
+    "district": "Trincomalee",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCWT",
@@ -660,7 +812,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Wellawatta",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SMGS",
@@ -677,7 +833,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Gampaha",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCMA",
@@ -694,7 +854,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Maharagama",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SPRG",
@@ -711,7 +875,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Sri Jayawardenepura Kotte",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCDA",
@@ -728,7 +896,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCGS",
@@ -745,7 +917,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCDL",
@@ -762,7 +938,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCIM",
@@ -779,7 +959,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCMH",
@@ -796,7 +980,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "CCCS",
@@ -813,7 +1001,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCTT",
@@ -830,7 +1022,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Colombo",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SCKI",
@@ -847,7 +1043,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kilinochchi",
+    "state": "Northern",
+    "district": "Kilinochchi",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SNKG",
@@ -864,7 +1064,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kurunegala",
+    "state": "North Western",
+    "district": "Kurunegala",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "SKKS",
@@ -881,7 +1085,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Matara",
+    "state": "Southern",
+    "district": "Matara",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "VCCM",
@@ -898,7 +1106,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Minuwangoda",
+    "state": "Western",
+    "district": "Gampaha",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "VLCK",
@@ -915,7 +1127,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Kaduwela",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "VOXX",
@@ -932,7 +1148,11 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Avissawella",
+    "state": "Western",
+    "district": "Colombo",
+    "country": "Sri Lanka"
   },
   {
     "VenueCode": "WCAP",
@@ -949,6 +1169,10 @@
     "UnpaidReleaseCutOffJson": [],
     "CinemaIsNew": "N",
     "CinemaCodFlag": "N",
-    "CinemaCopFlag": "N"
+    "CinemaCopFlag": "N",
+    "city": "Anuradhapura",
+    "state": "North Central",
+    "district": "Anuradhapura",
+    "country": "Sri Lanka"
   }
 ]
