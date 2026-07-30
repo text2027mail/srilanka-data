@@ -8,6 +8,7 @@ Sri Lanka Box Office Scraper (Venue API)
 - Includes format (2D/3D) and language in compact show records
 - Index includes totalShows, totalSeats, occupancy
 - Rotates cloudscraper identity per venue to avoid blocking
+- Logs browser config success/failure for diagnostics
 """
 
 import json
@@ -65,14 +66,18 @@ USER_AGENTS = [
 ]
 
 # cloudscraper valid platforms: windows, linux, darwin, android, ios
+# valid browsers: chrome, firefox
+# Remove invalid combos (firefox+ios caused errors)
 BROWSER_CONFIGS = [
     {"browser": "chrome", "platform": "windows", "desktop": True},
     {"browser": "chrome", "platform": "android", "desktop": False},
     {"browser": "chrome", "platform": "ios", "desktop": False},
     {"browser": "firefox", "platform": "windows", "desktop": True},
     {"browser": "firefox", "platform": "android", "desktop": False},
-    {"browser": "firefox", "platform": "ios", "desktop": False},
 ]
+
+# Statistics for browser config success/failure
+config_stats = defaultdict(lambda: {"success": 0, "fail": 0})
 
 def atomic_dump(path, data, indent=2, separators=(",", ":")):
     tmp = path + ".tmp"
@@ -159,9 +164,12 @@ def build_headers(extra=None, use_mobile=False):
     return headers
 
 def create_session(browser_config=None):
-    """Create a new cloudscraper session with a random browser config."""
+    """Create a new cloudscraper session with a random browser config.
+    Logs success/failure per config for diagnostic purposes.
+    """
     if browser_config is None:
         browser_config = random.choice(BROWSER_CONFIGS)
+    config_key = f"{browser_config['browser']}_{browser_config['platform']}_{browser_config['desktop']}"
     try:
         scraper = cloudscraper.create_scraper(browser=browser_config)
         # Warm‑up request to get cookies (both desktop and mobile)
@@ -171,9 +179,14 @@ def create_session(browser_config=None):
                 time.sleep(random.uniform(0.3, 0.8))
             except:
                 pass
+        # Success
+        config_stats[config_key]["success"] += 1
+        # Uncomment the next line if you want to see each success (can be verbose)
+        # print(f"  ✅ Session created with config: {config_key}")
         return scraper
     except Exception as e:
-        print(f"⚠️ Failed to create session: {e}")
+        config_stats[config_key]["fail"] += 1
+        print(f"⚠️ Failed to create session with config {config_key}: {e}")
         return None
 
 def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
@@ -540,6 +553,12 @@ def main():
             print("❌ Failed to create any session. Exiting.")
             sys.exit(1)
     print(f"🔄 Session pool ready with {created} sessions.")
+
+    # Print browser config statistics
+    print("\n📊 Browser config statistics:")
+    for config, stats in config_stats.items():
+        print(f"  {config}: {stats['success']} success, {stats['fail']} fails")
+    print()
 
     # Determine mobile mode – we test with first session
     use_mobile = False
