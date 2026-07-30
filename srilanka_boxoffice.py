@@ -64,12 +64,13 @@ USER_AGENTS = [
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
 ]
 
+# cloudscraper valid platforms: windows, linux, darwin, android, ios
 BROWSER_CONFIGS = [
     {"browser": "chrome", "platform": "windows", "desktop": True},
-    {"browser": "chrome", "platform": "macos", "desktop": True},
+    {"browser": "chrome", "platform": "darwin", "desktop": True},
     {"browser": "firefox", "platform": "windows", "desktop": True},
-    {"browser": "firefox", "platform": "macos", "desktop": True},
-    {"browser": "safari", "platform": "macos", "desktop": True},
+    {"browser": "firefox", "platform": "darwin", "desktop": True},
+    {"browser": "safari", "platform": "darwin", "desktop": True},
     {"browser": "chrome", "platform": "linux", "desktop": True},
 ]
 
@@ -519,13 +520,26 @@ def main():
     # Create a pool of fresh sessions (one per thread plus extra)
     session_count = MAX_THREADS + 2
     session_pool = Queue()
+    created = 0
     for _ in range(session_count):
         sess = create_session()
         if sess:
             session_pool.put(sess)
+            created += 1
         else:
-            print("❌ Failed to create a session; exiting.")
+            # Don't exit; just try to create at least one session
+            print(f"⚠️ Could not create session; will retry later.")
+    if created == 0:
+        # If no sessions at all, try again with a fallback config
+        print("❌ No sessions created; trying with default config...")
+        fallback_session = cloudscraper.create_scraper()
+        if fallback_session:
+            session_pool.put(fallback_session)
+            created = 1
+        else:
+            print("❌ Failed to create any session. Exiting.")
             sys.exit(1)
+    print(f"🔄 Session pool ready with {created} sessions.")
 
     # Determine mobile mode – we test with first session
     use_mobile = False
@@ -539,6 +553,9 @@ def main():
             use_mobile = mobile_flag
             print(f"✅ Using mobile mode: {use_mobile}")
             break
+    else:
+        print(f"⚠️ Could not determine mobile mode; defaulting to False.")
+        use_mobile = False
     session_pool.put(test_session)
 
     venue_codes = list(venue_map.keys())
