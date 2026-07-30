@@ -43,7 +43,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update Sri Lanka advance bookings data [skip ci]"
+          git commit -m "Update Sri Lanka advance bookings data"
 
           MAX_RETRIES=3
           RETRY_COUNT=0
