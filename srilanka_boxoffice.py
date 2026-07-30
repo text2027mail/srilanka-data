@@ -56,6 +56,8 @@ USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36",
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
 ]
 
 def atomic_dump(path, data, indent=2, separators=(",", ":")):
@@ -144,30 +146,70 @@ def build_headers(extra=None, use_mobile=False):
         headers.update(extra)
     return headers
 
-# PATCH: simplified session creation (only cloudscraper)
-def create_session():
+# PATCH: improved session creation with fallback
+def create_session(venue_map):
     print("🧪 Creating cloudscraper session...")
     try:
         scraper = cloudscraper.create_scraper(
             browser={"browser": "chrome", "platform": "windows", "desktop": True}
         )
-        # Warm‑up request to get cookies
-        scraper.get("https://lk.bookmyshow.com/", headers={"User-Agent": random_user_agent()}, timeout=10)
-        time.sleep(random.uniform(0.5, 1.0))
-        # Test with a known venue
-        test_venue = "ALCN"
-        test_date = get_today()
-        bms_id = random_bms_id()
-        url = (f"https://lk.bookmyshow.com/pwa/api/de/showtimes/byvenue"
-               f"?venueCode={test_venue}&dateCode={test_date}"
-               f"&regionCode={REGION_CODE}&bmsId={bms_id}")
-        resp = scraper.get(url, headers=build_headers(), timeout=TIMEOUT_SEC)
-        if resp.status_code == 200 and resp.json().get("BookMyShow"):
-            print("✅ cloudscraper session ready.")
-            return scraper, False   # session, use_mobile=False
-        else:
-            print("❌ Test request failed.")
-            return None, False
+        # Warm‑up request to get cookies (for both desktop and mobile)
+        for url in ["https://lk.bookmyshow.com/", "https://m.bookmyshow.com/"]:
+            try:
+                scraper.get(url, headers={"User-Agent": random_user_agent()}, timeout=10)
+                time.sleep(random.uniform(0.5, 1.5))
+            except:
+                pass
+
+        # Test with multiple venues and dates
+        test_dates = [get_today()]
+        # Add tomorrow and day after
+        for i in range(1, 3):
+            test_dates.append((datetime.now(IST) + timedelta(days=i)).strftime("%Y%m%d"))
+
+        # Use a few known venues from the list, or fallback to default
+        venue_codes = list(venue_map.keys())
+        if not venue_codes:
+            venue_codes = ["ALCN"]  # fallback
+        test_venues = venue_codes[:min(5, len(venue_codes))]  # first 5
+
+        success = False
+        use_mobile = False
+        for use_mobile_flag in [False, True]:
+            for vc in test_venues:
+                for dt in test_dates:
+                    bms_id = random_bms_id()
+                    base = "https://m.bookmyshow.com" if use_mobile_flag else "https://lk.bookmyshow.com"
+                    url = (f"{base}/pwa/api/de/showtimes/byvenue"
+                           f"?venueCode={vc}&dateCode={dt}"
+                           f"&regionCode={REGION_CODE}&bmsId={bms_id}")
+                    try:
+                        resp = scraper.get(url, headers=build_headers(use_mobile=use_mobile_flag), timeout=TIMEOUT_SEC)
+                        if resp.status_code == 200:
+                            try:
+                                data = resp.json()
+                                if data.get("BookMyShow"):
+                                    print(f"✅ Session test successful with venue {vc} on {dt} (mobile={use_mobile_flag})")
+                                    success = True
+                                    use_mobile = use_mobile_flag
+                                    break
+                            except:
+                                pass
+                        time.sleep(random.uniform(0.3, 0.7))
+                    except:
+                        pass
+                if success:
+                    break
+            if success:
+                break
+
+        if not success:
+            print("⚠️ Test requests all failed. Will proceed with session anyway (may work on some venues).")
+            # Default to mobile=False
+            use_mobile = False
+
+        return scraper, use_mobile
+
     except Exception as e:
         print(f"❌ Session creation error: {e}")
         return None, False
@@ -505,7 +547,7 @@ def main():
     existing_shows = load_daily_shows(target_date)
     print(f"📂 Loaded {len(existing_shows)} existing shows from daily file")
 
-    session, use_mobile = create_session()
+    session, use_mobile = create_session(venue_map)
     if session is None:
         print("❌ Failed to create session. Exiting.")
         sys.exit(1)
