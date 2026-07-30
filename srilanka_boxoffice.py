@@ -7,7 +7,7 @@ Sri Lanka Box Office Scraper (Venue API)
 - Daily files are compressed with venue/movie numbering
 - Includes format (2D/3D) and language in compact show records
 - Index includes totalShows, totalSeats, occupancy
-- Detailed per‑venue logging (success/no‑shows/failure)
+- Rotates cloudscraper identity per venue to avoid blocking
 """
 
 import json
@@ -34,14 +34,15 @@ except ImportError:
 #########################################
 # CONFIG
 #########################################
-MAX_THREADS = 1
-RETRY_PER_REQUEST = 3
-SCRAPE_PASSES = 5                # we may need multiple passes for retries
+MAX_THREADS = 2
+RETRY_PER_REQUEST = 5
+SCRAPE_PASSES = 3                # increased to allow more retries
 MAX_RETRIES_PER_VENUE = 3
-TIMEOUT_SEC = 10
+TIMEOUT_SEC = 30
 CUT_OFF_MINUTES = 500
 REGION_CODE = "SNLK"
 IST = ZoneInfo("Asia/Kolkata")
+BASE_DELAY = 1.0                 # base delay between requests
 
 # Paths
 BASE_DIR = "srilanka"
@@ -51,7 +52,6 @@ DATA_DIR = os.path.join(MOVIE_DIR, "data")
 os.makedirs(BOXOFFICE_DIR, exist_ok=True)
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# PATCH: load venues.json (expected in same directory)
 VENUES_FILE = os.path.join(os.path.dirname(__file__), "venues.json")
 
 # User‑Agent pool
@@ -61,6 +61,16 @@ USER_AGENTS = [
     "Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1",
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.1 Safari/605.1.15",
+    "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+]
+
+BROWSER_CONFIGS = [
+    {"browser": "chrome", "platform": "windows", "desktop": True},
+    {"browser": "chrome", "platform": "macos", "desktop": True},
+    {"browser": "firefox", "platform": "windows", "desktop": True},
+    {"browser": "firefox", "platform": "macos", "desktop": True},
+    {"browser": "safari", "platform": "macos", "desktop": True},
+    {"browser": "chrome", "platform": "linux", "desktop": True},
 ]
 
 def atomic_dump(path, data, indent=2, separators=(",", ":")):
@@ -88,7 +98,6 @@ def get_daily_file_path(date_str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return path
 
-# PATCH: random bmsId generator
 def random_bms_id():
     part1 = "1"
     part2 = str(random.randint(1000000000, 9999999999))
@@ -96,7 +105,6 @@ def random_bms_id():
     part3 = str(ts)
     return f"{part1}.{part2}.{part3}"
 
-# PATCH: load venues
 def load_venues():
     if not os.path.exists(VENUES_FILE):
         print(f"❌ Venues file not found: {VENUES_FILE}")
@@ -105,7 +113,7 @@ def load_venues():
         with open(VENUES_FILE, "r", encoding="utf-8") as f:
             venues_list = json.load(f)
         venue_map = {}
-        name_details = {}          # map venue name -> {city, district, state}
+        name_details = {}
         for v in venues_list:
             code = v.get("VenueCode")
             name = v.get("VenueName")
@@ -124,7 +132,7 @@ def load_venues():
         sys.exit(1)
 
 #########################################
-# HEADERS & SESSION
+# HEADERS & SESSION (with rotation)
 #########################################
 def random_user_agent():
     return random.choice(USER_AGENTS)
@@ -149,74 +157,24 @@ def build_headers(extra=None, use_mobile=False):
         headers.update(extra)
     return headers
 
-# PATCH: improved session creation with fallback
-def create_session(venue_map):
-    print("🧪 Creating cloudscraper session...")
+def create_session(browser_config=None):
+    """Create a new cloudscraper session with a random browser config."""
+    if browser_config is None:
+        browser_config = random.choice(BROWSER_CONFIGS)
     try:
-        scraper = cloudscraper.create_scraper(
-            browser={"browser": "chrome", "platform": "windows", "desktop": True}
-        )
-        # Warm‑up requests
+        scraper = cloudscraper.create_scraper(browser=browser_config)
+        # Warm‑up request to get cookies (both desktop and mobile)
         for url in ["https://lk.bookmyshow.com/", "https://m.bookmyshow.com/"]:
             try:
                 scraper.get(url, headers={"User-Agent": random_user_agent()}, timeout=10)
-                time.sleep(random.uniform(0.5, 1.5))
+                time.sleep(random.uniform(0.3, 0.8))
             except:
                 pass
-
-        # Test with multiple venues and dates
-        test_dates = [get_today()]
-        for i in range(1, 3):
-            test_dates.append((datetime.now(IST) + timedelta(days=i)).strftime("%Y%m%d"))
-
-        venue_codes = list(venue_map.keys())
-        if not venue_codes:
-            venue_codes = ["ALCN"]  # fallback
-        test_venues = venue_codes[:min(5, len(venue_codes))]
-
-        success = False
-        use_mobile = False
-        for use_mobile_flag in [False, True]:
-            for vc in test_venues:
-                for dt in test_dates:
-                    bms_id = random_bms_id()
-                    base = "https://m.bookmyshow.com" if use_mobile_flag else "https://lk.bookmyshow.com"
-                    url = (f"{base}/pwa/api/de/showtimes/byvenue"
-                           f"?venueCode={vc}&dateCode={dt}"
-                           f"&regionCode={REGION_CODE}&bmsId={bms_id}")
-                    try:
-                        resp = scraper.get(url, headers=build_headers(use_mobile=use_mobile_flag), timeout=TIMEOUT_SEC)
-                        if resp.status_code == 200:
-                            try:
-                                data = resp.json()
-                                if data.get("BookMyShow"):
-                                    print(f"✅ Session test successful with venue {vc} on {dt} (mobile={use_mobile_flag})")
-                                    success = True
-                                    use_mobile = use_mobile_flag
-                                    break
-                            except:
-                                pass
-                        time.sleep(random.uniform(0.3, 0.7))
-                    except:
-                        pass
-                if success:
-                    break
-            if success:
-                break
-
-        if not success:
-            print("⚠️ Test requests all failed. Will proceed with session anyway (may work on some venues).")
-            use_mobile = False
-
-        return scraper, use_mobile
-
+        return scraper
     except Exception as e:
-        print(f"❌ Session creation error: {e}")
-        return None, False
+        print(f"⚠️ Failed to create session: {e}")
+        return None
 
-#########################################
-# SAFE REQUEST (with retry)
-#########################################
 def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
     last_err = "UNKNOWN"
     for attempt in range(retries):
@@ -236,10 +194,12 @@ def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
                 last_err = f"HTTP_{resp.status_code}"
             else:
                 last_err = f"HTTP_{resp.status_code}"
-            time.sleep(random.uniform(1.0, 3.0))
+            # Exponential backoff with jitter
+            sleep_time = (2 ** attempt) * BASE_DELAY + random.uniform(0, 0.5)
+            time.sleep(sleep_time)
         except Exception as e:
             last_err = str(e)
-            time.sleep(random.uniform(1.0, 3.0))
+            time.sleep((2 ** attempt) * BASE_DELAY + random.uniform(0, 0.5))
     return None, last_err
 
 #########################################
@@ -254,7 +214,7 @@ def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     return safe_request(url, session, use_mobile=use_mobile)
 
 #########################################
-# PARSE RESPONSE (capture format and language)
+# PARSE RESPONSE
 #########################################
 def parse_venue_response(raw, date, venue_details):
     shows = []
@@ -273,8 +233,8 @@ def parse_venue_response(raw, date, venue_details):
                 movie_title = event.get("EventTitle", "")
                 for child in event.get("ChildEvents", []):
                     event_code = child.get("EventCode", "")
-                    event_format = child.get("EventDimension", "")      # e.g., "2D", "3D"
-                    language = child.get("EventLanguage", "")           # e.g., "English"
+                    event_format = child.get("EventDimension", "")
+                    language = child.get("EventLanguage", "")
                     for st in child.get("ShowTimes", []):
                         session_id = st.get("SessionId", "")
                         show_time = st.get("ShowTime", "")
@@ -314,23 +274,32 @@ def parse_venue_response(raw, date, venue_details):
     return shows
 
 #########################################
-# SCRAPE VENUE
+# SCRAPE VENUE (with session rotation)
 #########################################
 def scrape_venue(venue_code, date, attempt, session_pool, venue_map, use_mobile=False):
+    # Get a session from the pool
     session = session_pool.get()
     raw, err = get_showtimes_by_venue(venue_code, date, session, use_mobile)
-    session_pool.put(session)
+    # If the request failed, we discard this session and create a new one
     if err or not raw:
+        # Replace the failed session with a fresh one
+        new_session = create_session()
+        if new_session:
+            session_pool.put(new_session)
+        else:
+            # If we can't create a new session, put back the old one (better than nothing)
+            session_pool.put(session)
         return venue_code, [], False
+    # If success, put the same session back
+    session_pool.put(session)
     vd = venue_map.get(venue_code, {})
     shows = parse_venue_response(raw, date, vd)
     return venue_code, shows, True
 
 #########################################
-# DAILY FILE MERGE (compressed, includes format & language)
+# DAILY FILE MERGE (compressed)
 #########################################
 def load_daily_shows(date_str):
-    """Load daily shows from file, supporting old (7‑field) and new (9‑field) formats."""
     daily_path = get_daily_file_path(date_str)
     shows = {}
     if not os.path.exists(daily_path):
@@ -338,7 +307,6 @@ def load_daily_shows(date_str):
     try:
         with open(daily_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-
         if "venueMap" in data:
             venue_map = data["venueMap"]
             movie_map = data["movieMap"]
@@ -346,11 +314,9 @@ def load_daily_shows(date_str):
             for movie_num, compact_shows in movies.items():
                 movie_title = movie_map.get(str(movie_num), "")
                 for item in compact_shows:
-                    # item length can be 7 (old) or 9 (new)
                     if len(item) >= 7:
                         eventCode, venue_num, showTime, sessionId, totalSeats, sold, gross = item[:7]
                         venue_name = venue_map.get(str(venue_num), {}).get("name", "")
-                        # format & language if present
                         fmt = item[7] if len(item) > 7 else ""
                         lang = item[8] if len(item) > 8 else ""
                     else:
@@ -370,7 +336,6 @@ def load_daily_shows(date_str):
                         "date": date_str,
                     }
         else:
-            # Old format (no venueMap)
             movies = data.get("movies", {})
             for movie_title, compact_shows in movies.items():
                 for item in compact_shows:
@@ -399,7 +364,6 @@ def load_daily_shows(date_str):
     return shows
 
 def save_daily_file(date_str, shows_dict, venue_details_map):
-    """Save daily file with venue/movie numbering and compact shows including format/language."""
     movie_set = set()
     venue_set = set()
     for show in shows_dict.values():
@@ -426,7 +390,6 @@ def save_daily_file(date_str, shows_dict, venue_details_map):
     for show in shows_dict.values():
         movie_num = movie_to_num[show["movie"]]
         venue_num = venue_to_num[show["venue"]]
-        # compact: [eventCode, venueNum, time, sessionId, totalSeats, sold, gross, format, language]
         movies[movie_num].append([
             show["eventCode"],
             int(venue_num),
@@ -454,7 +417,7 @@ def save_daily_file(date_str, shows_dict, venue_details_map):
     print(f"💾 Saved daily file (compressed): {daily_path}")
 
 #########################################
-# MOVIE DATABASE UPDATE (includes occupancy)
+# MOVIE DATABASE UPDATE
 #########################################
 def update_movie_database():
     daily_files = []
@@ -521,7 +484,6 @@ def update_movie_database():
             "last_updated": now_ist_str(),
             "data": per_movie_rows
         })
-        # Calculate occupancy (sold / seats * 100)
         occupancy = round((totalTickets / totalSeats * 100), 2) if totalSeats > 0 else 0
         index.append({
             "name": movie_title,
@@ -554,21 +516,37 @@ def main():
     existing_shows = load_daily_shows(target_date)
     print(f"📂 Loaded {len(existing_shows)} existing shows from daily file")
 
-    session, use_mobile = create_session(venue_map)
-    if session is None:
-        print("❌ Failed to create session. Exiting.")
-        sys.exit(1)
-
+    # Create a pool of fresh sessions (one per thread plus extra)
+    session_count = MAX_THREADS + 2
     session_pool = Queue()
-    for _ in range(MAX_THREADS + 2):
-        session_pool.put(session)
+    for _ in range(session_count):
+        sess = create_session()
+        if sess:
+            session_pool.put(sess)
+        else:
+            print("❌ Failed to create a session; exiting.")
+            sys.exit(1)
+
+    # Determine mobile mode – we test with first session
+    use_mobile = False
+    test_session = session_pool.get()
+    # Try a quick test with a known venue
+    test_venue = list(venue_map.keys())[0] if venue_map else "ALCN"
+    test_date = get_today()
+    for mobile_flag in [False, True]:
+        raw, err = get_showtimes_by_venue(test_venue, test_date, test_session, mobile_flag)
+        if raw and not err:
+            use_mobile = mobile_flag
+            print(f"✅ Using mobile mode: {use_mobile}")
+            break
+    session_pool.put(test_session)
 
     venue_codes = list(venue_map.keys())
     print(f"🏢 Total venues: {len(venue_codes)}")
 
     retry_count = {vc: 0 for vc in venue_codes}
     pending = venue_codes.copy()
-    all_new_shows = []  # collect all shows from all passes
+    all_new_shows = []
 
     for attempt in range(1, SCRAPE_PASSES + 1):
         if not pending:
@@ -596,12 +574,13 @@ def main():
                     else:
                         print(f"  ⛔ Venue {vc}: failed permanently after {MAX_RETRIES_PER_VENUE} attempts – skipped")
 
-        # Append pass shows to total
         all_new_shows.extend(pass_shows)
         print(f"  Pass {attempt} collected {len(pass_shows)} shows (total so far: {len(all_new_shows)})")
         pending = next_round
         if pending:
             print(f"  {len(pending)} venues will be retried in next pass")
+            # Sleep a bit longer between passes to let rate limits reset
+            time.sleep(5 + random.uniform(0, 3))
 
     # Cut‑off filter
     def parse_time(date_str, t):
