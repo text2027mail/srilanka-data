@@ -1,0 +1,308 @@
+{
+  "last_updated":"2026-07-30 20:26:58 IST",
+  "venueDetails":{
+    "Regal Cinema: Jaffna":{
+      "city":"Jaffna",
+      "district":"Jaffna",
+      "state":"Northern"
+    },
+    "Regal Cinemas: Polonnaruwa":{
+      "city":"Polonnaruwa",
+      "district":"Polonnaruwa",
+      "state":"North Central"
+    },
+    "Ritz Cinema: Borella":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "SAS Cineplex: Trincomale":{
+      "city":"Trincomalee",
+      "district":"Trincomalee",
+      "state":"Eastern"
+    },
+    "Scope Cinemas Gold Class: Colombo City Center":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Scope Cinemas Multiplex Dolby Atmos: Havelock City":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Scope Cinemas: Colombo City Center (Screen 2)":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Seran Cinema: Kilinochchi":{
+      "city":"Kilinochchi",
+      "district":"Kilinochchi",
+      "state":"Northern"
+    },
+    "Sky Lite 3D Cinema: Matara":{
+      "city":"Matara",
+      "district":"Matara",
+      "state":"Southern"
+    },
+    "Vijaya Cinema: Minuwangoda":{
+      "city":"Minuwangoda",
+      "district":"Gampaha",
+      "state":"Western"
+    },
+    "VoxX Lite 3D Cinema: Avissawella":{
+      "city":"Avissawella",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Aqua Lite 3D Cinema: Negombo":{
+      "city":"Negombo",
+      "district":"Gampaha",
+      "state":"Western"
+    },
+    "Imperial 3D Cinema: Kurunegala":{
+      "city":"Kurunegala",
+      "district":"Kurunegala",
+      "state":"North Western"
+    },
+    "Liberty By Scope Cinemas: Colombo (Screen 2)":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "MaxX Lite 3D Cinema: Moratuwa":{
+      "city":"Moratuwa",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Neela by Lite Cinema: Dankotuwa":{
+      "city":"Dankotuwa",
+      "district":"Puttalam",
+      "state":"North Western"
+    },
+    "Scope Cinemas Multiplex: Havelock City Mall":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    },
+    "Scope Cinemas: Colombo City Center":{
+      "city":"Colombo",
+      "district":"Colombo",
+      "state":"Western"
+    }
+  },
+  "movies":{
+    "Jana Nayagan":[
+      [
+        "ET00005900",
+        "Regal Cinema: Jaffna",
+        "09:00 PM",
+        "32224",
+        184,
+        57,
+        114000.0
+      ],
+      [
+        "ET00005900",
+        "Regal Cinemas: Polonnaruwa",
+        "08:45 PM",
+        "1203",
+        93,
+        9,
+        8100.0
+      ],
+      [
+        "ET00005900",
+        "SAS Cineplex: Trincomale",
+        "09:45 PM",
+        "704",
+        116,
+        0,
+        0.0
+      ],
+      [
+        "ET00005900",
+        "Sky Lite 3D Cinema: Matara",
+        "09:45 PM",
+        "6222",
+        215,
+        2,
+        1300.0
+      ],
+      [
+        "ET00005900",
+        "Vijaya Cinema: Minuwangoda",
+        "10:00 PM",
+        "2751",
+        216,
+        8,
+        3200.0
+      ],
+      [
+        "ET00005900",
+        "Aqua Lite 3D Cinema: Negombo",
+        "10:15 PM",
+        "4829",
+        298,
+        20,
+        14000.0
+      ],
+      [
+        "ET00005900",
+        "Liberty By Scope Cinemas: Colombo (Screen 2)",
+        "10:15 PM",
+        "21864",
+        134,
+        12,
+        16800.0
+      ]
+    ],
+    "Spider-Man: Brand New Day":[
+      [
+        "ET00006144",
+        "Ritz Cinema: Borella",
+        "09:00 PM",
+        "2349",
+        120,
+        2,
+        1200.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas Gold Class: Colombo City Center",
+        "10:30 PM",
+        "62436",
+        22,
+        22,
+        70400.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas Multiplex Dolby Atmos: Havelock City",
+        "10:15 PM",
+        "25046",
+        178,
+        164,
+        360800.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas: Colombo City Center (Screen 2)",
+        "10:15 PM",
+        "62704",
+        125,
+        112,
+        201600.0
+      ],
+      [
+        "ET00006147",
+        "Seran Cinema: Kilinochchi",
+        "10:30 PM",
+        "603",
+        279,
+        278,
+        139000.0
+      ],
+      [
+        "ET00006145",
+        "VoxX Lite 3D Cinema: Avissawella",
+        "09:45 PM",
+        "6225",
+        150,
+        57,
+        31350.0
+      ],
+      [
+        "ET00006145",
+        "Imperial 3D Cinema: Kurunegala",
+        "10:00 PM",
+        "4299",
+        456,
+        165,
+        90750.0
+      ],
+      [
+        "ET00006144",
+        "MaxX Lite 3D Cinema: Moratuwa",
+        "09:45 PM",
+        "6944",
+        174,
+        154,
+        92400.0
+      ],
+      [
+        "ET00006144",
+        "Neela by Lite Cinema: Dankotuwa",
+        "09:30 PM",
+        "1597",
+        179,
+        4,
+        1800.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:00 PM",
+        "25503",
+        152,
+        125,
+        225000.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "10:30 PM",
+        "25327",
+        151,
+        130,
+        234000.0
+      ],
+      [
+        "ET00006068",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "09:30 PM",
+        "25504",
+        121,
+        108,
+        194400.0
+      ],
+      [
+        "ET00006145",
+        "Scope Cinemas Multiplex: Havelock City Mall",
+        "10:30 PM",
+        "25040",
+        140,
+        135,
+        243000.0
+      ],
+      [
+        "ET00006144",
+        "Scope Cinemas: Colombo City Center",
+        "09:30 PM",
+        "62709",
+        111,
+        97,
+        174600.0
+      ],
+      [
+        "ET00006068",
+        "Scope Cinemas: Colombo City Center",
+        "10:15 PM",
+        "62442",
+        96,
+        81,
+        145800.0
+      ],
+      [
+        "ET00006068",
+        "Scope Cinemas: Colombo City Center",
+        "11:30 PM",
+        "62714",
+        99,
+        86,
+        154800.0
+      ]
+    ]
+  }
+}
