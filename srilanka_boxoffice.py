@@ -7,6 +7,7 @@ Sri Lanka Box Office Scraper (Venue API)
 - Daily files are compressed with venue/movie numbering
 - Includes format (2D/3D) and language in compact show records
 - Index includes totalShows, totalSeats, occupancy
+- Detailed per‑venue logging (success/no‑shows/failure)
 """
 
 import json
@@ -33,11 +34,11 @@ except ImportError:
 #########################################
 # CONFIG
 #########################################
-MAX_THREADS = 2
-RETRY_PER_REQUEST = 5
-SCRAPE_PASSES = 2                # we may need multiple passes for retries
+MAX_THREADS = 1
+RETRY_PER_REQUEST = 3
+SCRAPE_PASSES = 5                # we may need multiple passes for retries
 MAX_RETRIES_PER_VENUE = 3
-TIMEOUT_SEC = 30
+TIMEOUT_SEC = 10
 CUT_OFF_MINUTES = 500
 REGION_CODE = "SNLK"
 IST = ZoneInfo("Asia/Kolkata")
@@ -567,27 +568,40 @@ def main():
 
     retry_count = {vc: 0 for vc in venue_codes}
     pending = venue_codes.copy()
-    new_shows = []
+    all_new_shows = []  # collect all shows from all passes
 
     for attempt in range(1, SCRAPE_PASSES + 1):
         if not pending:
             break
         print(f"\n🔄 Scrape pass {attempt}/{SCRAPE_PASSES} – {len(pending)} venues pending")
         next_round = []
+        pass_shows = []
+
         with ThreadPoolExecutor(max_workers=MAX_THREADS) as pool:
             futures = {pool.submit(scrape_venue, vc, target_date, attempt, session_pool, venue_map, use_mobile): vc for vc in pending}
             for job in as_completed(futures):
                 vc = futures[job]
                 _, shows, ok = job.result()
-                if ok and shows:
-                    new_shows.extend(shows)
-                elif not ok and shows is not None:
+                if ok:
+                    if shows:
+                        print(f"  ✅ Venue {vc}: {len(shows)} shows")
+                        pass_shows.extend(shows)
+                    else:
+                        print(f"  ℹ️ Venue {vc}: no shows")
+                else:
                     retry_count[vc] = retry_count.get(vc, 0) + 1
                     if retry_count[vc] < MAX_RETRIES_PER_VENUE:
+                        print(f"  ❌ Venue {vc}: failed (attempt {retry_count[vc]}/{MAX_RETRIES_PER_VENUE}) – will retry")
                         next_round.append(vc)
                     else:
-                        print(f"⏭️ Skipping venue {vc} after {MAX_RETRIES_PER_VENUE} failed attempts")
+                        print(f"  ⛔ Venue {vc}: failed permanently after {MAX_RETRIES_PER_VENUE} attempts – skipped")
+
+        # Append pass shows to total
+        all_new_shows.extend(pass_shows)
+        print(f"  Pass {attempt} collected {len(pass_shows)} shows (total so far: {len(all_new_shows)})")
         pending = next_round
+        if pending:
+            print(f"  {len(pending)} venues will be retried in next pass")
 
     # Cut‑off filter
     def parse_time(date_str, t):
@@ -605,8 +619,8 @@ def main():
         mins_left = int((st - datetime.now(IST)).total_seconds() / 60)
         return mins_left < CUT_OFF_MINUTES
 
-    eligible_new = [s for s in new_shows if is_within_cutoff(s)]
-    print(f"✅ New shows scraped (after cutoff): {len(eligible_new)}")
+    eligible_new = [s for s in all_new_shows if is_within_cutoff(s)]
+    print(f"\n✅ Total new shows scraped: {len(all_new_shows)}; after cutoff: {len(eligible_new)}")
 
     # Merge
     for show in eligible_new:
