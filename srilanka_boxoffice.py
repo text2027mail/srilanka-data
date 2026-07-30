@@ -3,8 +3,10 @@
 Sri Lanka Box Office Scraper (Venue API)
 - Uses /showtimes/byvenue endpoint
 - Adds city/district/state from venues.json
-- Outputs same daily, per-movie, and index files
-- Daily files are now compressed with venue/movie number mapping
+- Outputs daily, per-movie, and index files
+- Daily files are compressed with venue/movie numbering
+- Includes format (2D/3D) and language in compact show records
+- Index includes totalShows, totalSeats, occupancy
 """
 
 import json
@@ -51,7 +53,7 @@ os.makedirs(DATA_DIR, exist_ok=True)
 # PATCH: load venues.json (expected in same directory)
 VENUES_FILE = os.path.join(os.path.dirname(__file__), "venues.json")
 
-# User‑Agent pool (from NewSLApi.txt)
+# User‑Agent pool
 USER_AGENTS = [
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/120.0.0.0 Safari/537.36",
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/119.0.0.0 Safari/537.36",
@@ -85,7 +87,7 @@ def get_daily_file_path(date_str):
     os.makedirs(os.path.dirname(path), exist_ok=True)
     return path
 
-# PATCH: random bmsId generator (from NewSLApi.txt)
+# PATCH: random bmsId generator
 def random_bms_id():
     part1 = "1"
     part2 = str(random.randint(1000000000, 9999999999))
@@ -153,7 +155,7 @@ def create_session(venue_map):
         scraper = cloudscraper.create_scraper(
             browser={"browser": "chrome", "platform": "windows", "desktop": True}
         )
-        # Warm‑up request to get cookies (for both desktop and mobile)
+        # Warm‑up requests
         for url in ["https://lk.bookmyshow.com/", "https://m.bookmyshow.com/"]:
             try:
                 scraper.get(url, headers={"User-Agent": random_user_agent()}, timeout=10)
@@ -163,15 +165,13 @@ def create_session(venue_map):
 
         # Test with multiple venues and dates
         test_dates = [get_today()]
-        # Add tomorrow and day after
         for i in range(1, 3):
             test_dates.append((datetime.now(IST) + timedelta(days=i)).strftime("%Y%m%d"))
 
-        # Use a few known venues from the list, or fallback to default
         venue_codes = list(venue_map.keys())
         if not venue_codes:
             venue_codes = ["ALCN"]  # fallback
-        test_venues = venue_codes[:min(5, len(venue_codes))]  # first 5
+        test_venues = venue_codes[:min(5, len(venue_codes))]
 
         success = False
         use_mobile = False
@@ -205,7 +205,6 @@ def create_session(venue_map):
 
         if not success:
             print("⚠️ Test requests all failed. Will proceed with session anyway (may work on some venues).")
-            # Default to mobile=False
             use_mobile = False
 
         return scraper, use_mobile
@@ -243,7 +242,7 @@ def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
     return None, last_err
 
 #########################################
-# API CALL (new venue endpoint)
+# API CALL
 #########################################
 def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     bms_id = random_bms_id()
@@ -254,7 +253,7 @@ def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     return safe_request(url, session, use_mobile=use_mobile)
 
 #########################################
-# PARSE RESPONSE (new format)
+# PARSE RESPONSE (capture format and language)
 #########################################
 def parse_venue_response(raw, date, venue_details):
     shows = []
@@ -273,8 +272,8 @@ def parse_venue_response(raw, date, venue_details):
                 movie_title = event.get("EventTitle", "")
                 for child in event.get("ChildEvents", []):
                     event_code = child.get("EventCode", "")
-                    event_format = child.get("EventDimension", "")
-                    language = child.get("EventLanguage", "")
+                    event_format = child.get("EventDimension", "")      # e.g., "2D", "3D"
+                    language = child.get("EventLanguage", "")           # e.g., "English"
                     for st in child.get("ShowTimes", []):
                         session_id = st.get("SessionId", "")
                         show_time = st.get("ShowTime", "")
@@ -290,7 +289,7 @@ def parse_venue_response(raw, date, venue_details):
                         gross = sold * price
                         occupancy = round((sold / total_seats * 100), 2) if total_seats else 0
                         if sold < 0 or gross < 0 or available > total_seats or total_seats == 0:
-                            continue   # skip bad data (matches old behaviour)
+                            continue
                         shows.append({
                             "movie": movie_title,
                             "format": event_format,
@@ -314,7 +313,7 @@ def parse_venue_response(raw, date, venue_details):
     return shows
 
 #########################################
-# SCRAPE VENUE (replaces scrape_event)
+# SCRAPE VENUE
 #########################################
 def scrape_venue(venue_code, date, attempt, session_pool, venue_map, use_mobile=False):
     session = session_pool.get()
@@ -327,10 +326,10 @@ def scrape_venue(venue_code, date, attempt, session_pool, venue_map, use_mobile=
     return venue_code, shows, True
 
 #########################################
-# DAILY FILE MERGE (updated for compressed format)
+# DAILY FILE MERGE (compressed, includes format & language)
 #########################################
 def load_daily_shows(date_str):
-    """Load daily shows from file, supporting both old and new compressed format."""
+    """Load daily shows from file, supporting old (7‑field) and new (9‑field) formats."""
     daily_path = get_daily_file_path(date_str)
     shows = {}
     if not os.path.exists(daily_path):
@@ -339,22 +338,27 @@ def load_daily_shows(date_str):
         with open(daily_path, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        # Check if new format (has venueMap)
         if "venueMap" in data:
-            venue_map = data["venueMap"]   # number -> {name, city, district, state}
-            movie_map = data["movieMap"]   # number -> movie title
+            venue_map = data["venueMap"]
+            movie_map = data["movieMap"]
             movies = data.get("movies", {})
             for movie_num, compact_shows in movies.items():
                 movie_title = movie_map.get(str(movie_num), "")
                 for item in compact_shows:
+                    # item length can be 7 (old) or 9 (new)
                     if len(item) >= 7:
                         eventCode, venue_num, showTime, sessionId, totalSeats, sold, gross = item[:7]
                         venue_name = venue_map.get(str(venue_num), {}).get("name", "")
+                        # format & language if present
+                        fmt = item[7] if len(item) > 7 else ""
+                        lang = item[8] if len(item) > 8 else ""
                     else:
                         continue
                     key = (eventCode, venue_name, sessionId)
                     shows[key] = {
                         "movie": movie_title,
+                        "format": fmt,
+                        "language": lang,
                         "eventCode": eventCode,
                         "venue": venue_name,
                         "sessionId": sessionId,
@@ -365,17 +369,21 @@ def load_daily_shows(date_str):
                         "date": date_str,
                     }
         else:
-            # Old format
+            # Old format (no venueMap)
             movies = data.get("movies", {})
             for movie_title, compact_shows in movies.items():
                 for item in compact_shows:
                     if len(item) >= 7:
                         eventCode, venue, showTime, sessionId, totalSeats, sold, gross = item[:7]
+                        fmt = item[7] if len(item) > 7 else ""
+                        lang = item[8] if len(item) > 8 else ""
                     else:
                         continue
                     key = (eventCode, venue, sessionId)
                     shows[key] = {
                         "movie": movie_title,
+                        "format": fmt,
+                        "language": lang,
                         "eventCode": eventCode,
                         "venue": venue,
                         "sessionId": sessionId,
@@ -390,17 +398,14 @@ def load_daily_shows(date_str):
     return shows
 
 def save_daily_file(date_str, shows_dict, venue_details_map):
-    """Save daily file in compressed format with venue/movie numbering."""
-    # Build unique movie titles and venue names from shows
+    """Save daily file with venue/movie numbering and compact shows including format/language."""
     movie_set = set()
     venue_set = set()
     for show in shows_dict.values():
         movie_set.add(show["movie"])
         venue_set.add(show["venue"])
 
-    # Create mappings: number -> name/details
     movie_map = {str(i+1): title for i, title in enumerate(sorted(movie_set))}
-    # We need reverse mapping for quick conversion
     movie_to_num = {v: k for k, v in movie_map.items()}
 
     venue_map = {}
@@ -416,20 +421,21 @@ def save_daily_file(date_str, shows_dict, venue_details_map):
         }
         venue_to_num[vname] = num
 
-    # Build movies dict with numbered keys and numbered venue references
     movies = defaultdict(list)
     for show in shows_dict.values():
         movie_num = movie_to_num[show["movie"]]
         venue_num = venue_to_num[show["venue"]]
-        # compact list: [eventCode, venueNum, time, sessionId, totalSeats, sold, gross]
+        # compact: [eventCode, venueNum, time, sessionId, totalSeats, sold, gross, format, language]
         movies[movie_num].append([
             show["eventCode"],
-            int(venue_num),  # store as int to save space
+            int(venue_num),
             show["time"],
             show["sessionId"],
             show["totalSeats"],
             show["sold"],
-            show["gross"]
+            show["gross"],
+            show.get("format", ""),
+            show.get("language", "")
         ])
 
     data = {
@@ -440,7 +446,6 @@ def save_daily_file(date_str, shows_dict, venue_details_map):
     }
 
     daily_path = get_daily_file_path(date_str)
-    # Write with no extra spaces (compact)
     tmp = daily_path + ".tmp"
     with open(tmp, "w", encoding="utf-8") as f:
         json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
@@ -448,7 +453,7 @@ def save_daily_file(date_str, shows_dict, venue_details_map):
     print(f"💾 Saved daily file (compressed): {daily_path}")
 
 #########################################
-# MOVIE DATABASE UPDATE (enhanced with totalShows & totalSeats)
+# MOVIE DATABASE UPDATE (includes occupancy)
 #########################################
 def update_movie_database():
     daily_files = []
@@ -474,7 +479,6 @@ def update_movie_database():
         else:
             continue
 
-        # Use load_daily_shows to parse both old and new formats
         shows_dict = load_daily_shows(date_str)
         for show in shows_dict.values():
             movie_title = show["movie"]
@@ -516,13 +520,16 @@ def update_movie_database():
             "last_updated": now_ist_str(),
             "data": per_movie_rows
         })
+        # Calculate occupancy (sold / seats * 100)
+        occupancy = round((totalTickets / totalSeats * 100), 2) if totalSeats > 0 else 0
         index.append({
             "name": movie_title,
             "slug": slug,
             "totalGross": totalGross,
-            "totalTickets": totalTickets,   # sold tickets
+            "totalTickets": totalTickets,
             "totalShows": totalShows,
-            "totalSeats": totalSeats
+            "totalSeats": totalSeats,
+            "occupancy": occupancy
         })
 
     index_path = os.path.join(MOVIE_DIR, "index.json")
@@ -538,7 +545,6 @@ def update_movie_database():
 def main():
     print("\n🚀 Sri Lanka Boxoffice Tracker (Venue API) Started...\n")
 
-    # PATCH: load venues
     venue_map, name_details = load_venues()
 
     target_date = get_today()
@@ -583,7 +589,7 @@ def main():
                         print(f"⏭️ Skipping venue {vc} after {MAX_RETRIES_PER_VENUE} failed attempts")
         pending = next_round
 
-    # Cut‑off filter (unchanged)
+    # Cut‑off filter
     def parse_time(date_str, t):
         for fmt in ["%I:%M %p", "%H:%M"]:
             try:
@@ -607,7 +613,7 @@ def main():
         key = (show["eventCode"], show["venue"], show["sessionId"])
         existing_shows[key] = show
 
-    # Build venueDetails map for the daily file (used for venueMap details)
+    # Build venueDetails map
     venue_details_map = {}
     for show in existing_shows.values():
         vname = show["venue"]
