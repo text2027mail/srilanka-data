@@ -8,7 +8,7 @@ Sri Lanka Box Office Scraper (Venue API)
 - Includes format (2D/3D) and language in compact show records
 - Index includes totalShows, totalSeats, occupancy
 - Rotates cloudscraper identity per venue to avoid blocking
-- Logs browser config success/failure for diagnostics
+- Logs browser config + user‑agent for each successful fetch
 """
 
 import json
@@ -168,12 +168,15 @@ def build_headers(extra=None, use_mobile=False):
 def create_session(browser_config=None):
     """Create a new cloudscraper session with a random browser config.
     Logs success/failure per config for diagnostic purposes.
+    Attaches the config key to the session object for later logging.
     """
     if browser_config is None:
         browser_config = random.choice(BROWSER_CONFIGS)
     config_key = f"{browser_config['browser']}_{browser_config['platform']}_{browser_config['desktop']}"
     try:
         scraper = cloudscraper.create_scraper(browser=browser_config)
+        # Store the config key on the session for later use
+        scraper._bms_config_key = config_key
         # Warm‑up request to get cookies (both desktop and mobile)
         for url in ["https://lk.bookmyshow.com/", "https://m.bookmyshow.com/"]:
             try:
@@ -183,21 +186,25 @@ def create_session(browser_config=None):
                 pass
         # Success
         config_stats[config_key]["success"] += 1
-        # Uncomment the next line if you want to see each success (can be verbose)
-        # print(f"  ✅ Session created with config: {config_key}")
         return scraper
     except Exception as e:
         config_stats[config_key]["fail"] += 1
         print(f"⚠️ Failed to create session with config {config_key}: {e}")
         return None
 
-def safe_request(url, session, retries=RETRY_PER_REQUEST, use_mobile=False):
+def safe_request(url, session, venue_code=None, retries=RETRY_PER_REQUEST, use_mobile=False):
+    """Send request with retries. On success, logs the config and user-agent used."""
     last_err = "UNKNOWN"
     for attempt in range(retries):
         try:
             headers = build_headers(use_mobile=use_mobile)
             resp = session.get(url, headers=headers, timeout=TIMEOUT_SEC)
             if resp.status_code == 200:
+                # Log success with config and user-agent
+                config_key = getattr(session, '_bms_config_key', 'unknown')
+                ua = headers.get('User-Agent', 'unknown')
+                if venue_code:
+                    print(f"  ✅ Fetch success for venue {venue_code} | Config: {config_key} | UA: {ua}")
                 if resp.text.strip().startswith("<!DOCTYPE"):
                     return None, "HTML_RESPONSE"
                 try:
@@ -227,7 +234,7 @@ def get_showtimes_by_venue(venue_code, date, session, use_mobile=False):
     url = (f"{base}/pwa/api/de/showtimes/byvenue"
            f"?venueCode={venue_code}&dateCode={date}"
            f"&regionCode={REGION_CODE}&bmsId={bms_id}")
-    return safe_request(url, session, use_mobile=use_mobile)
+    return safe_request(url, session, venue_code=venue_code, use_mobile=use_mobile)
 
 #########################################
 # PARSE RESPONSE
@@ -549,6 +556,8 @@ def main():
         print("❌ No sessions created; trying with default config...")
         fallback_session = cloudscraper.create_scraper()
         if fallback_session:
+            # Set a default config key
+            fallback_session._bms_config_key = "fallback_default"
             session_pool.put(fallback_session)
             created = 1
         else:
