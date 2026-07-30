@@ -67,11 +67,11 @@ USER_AGENTS = [
 # cloudscraper valid platforms: windows, linux, darwin, android, ios
 BROWSER_CONFIGS = [
     {"browser": "chrome", "platform": "windows", "desktop": True},
-    {"browser": "chrome", "platform": "darwin", "desktop": True},
+    {"browser": "chrome", "platform": "android", "desktop": False},
+    {"browser": "chrome", "platform": "ios", "desktop": False},
     {"browser": "firefox", "platform": "windows", "desktop": True},
-    {"browser": "firefox", "platform": "darwin", "desktop": True},
-    {"browser": "safari", "platform": "darwin", "desktop": True},
-    {"browser": "chrome", "platform": "linux", "desktop": True},
+    {"browser": "firefox", "platform": "android", "desktop": False},
+    {"browser": "firefox", "platform": "ios", "desktop": False},
 ]
 
 def atomic_dump(path, data, indent=2, separators=(",", ":")):
