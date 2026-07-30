@@ -41,7 +41,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Auto-update Sri Lanka boxoffice data [skip ci]"
+          git commit -m "Auto-update Sri Lanka boxoffice data"
 
           MAX_RETRIES=3
           RETRY_COUNT=0
