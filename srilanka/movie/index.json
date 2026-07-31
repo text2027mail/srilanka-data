@@ -1,59 +1,59 @@
 {
-  "last_updated":"2026-08-01 03:23:08 IST",
+  "last_updated":"2026-08-01 05:18:46 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":2673850.0,
-      "totalTickets":2175,
-      "totalShows":100,
-      "totalSeats":18535,
-      "occupancy":11.73
+      "totalGross":2806400.0,
+      "totalTickets":2275,
+      "totalShows":104,
+      "totalSeats":19267,
+      "occupancy":11.81
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":23515550.0,
-      "totalTickets":17601,
-      "totalShows":224,
-      "totalSeats":38924,
-      "occupancy":45.22
+      "totalGross":26524100.0,
+      "totalTickets":20029,
+      "totalShows":250,
+      "totalSeats":44098,
+      "occupancy":45.42
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":141300.0,
-      "totalTickets":126,
-      "totalShows":12,
-      "totalSeats":2004,
-      "occupancy":6.29
+      "totalGross":216700.0,
+      "totalTickets":184,
+      "totalShows":13,
+      "totalSeats":2115,
+      "occupancy":8.7
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":4535800.0,
-      "totalTickets":1395,
-      "totalShows":27,
-      "totalSeats":4847,
-      "occupancy":28.78
+      "totalGross":5530500.0,
+      "totalTickets":1723,
+      "totalShows":31,
+      "totalSeats":5481,
+      "occupancy":31.44
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":64700.0,
-      "totalTickets":122,
-      "totalShows":33,
-      "totalSeats":7115,
-      "occupancy":1.71
+      "totalGross":70400.0,
+      "totalTickets":134,
+      "totalShows":38,
+      "totalSeats":8155,
+      "occupancy":1.64
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":26700.0,
-      "totalTickets":38,
-      "totalShows":22,
-      "totalSeats":4819,
-      "occupancy":0.79
+      "totalGross":31950.0,
+      "totalTickets":51,
+      "totalShows":26,
+      "totalSeats":5421,
+      "occupancy":0.94
     },
     {
       "name":"Sooriya Sulanga",
@@ -69,27 +69,45 @@
       "slug":"my-simba",
       "totalGross":2850.0,
       "totalTickets":3,
-      "totalShows":8,
-      "totalSeats":1768,
-      "occupancy":0.17
+      "totalShows":9,
+      "totalSeats":1984,
+      "occupancy":0.15
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":57400.0,
       "totalTickets":44,
-      "totalShows":14,
-      "totalSeats":2244,
-      "occupancy":1.96
+      "totalShows":16,
+      "totalSeats":2731,
+      "occupancy":1.61
     },
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":0.0,
-      "totalTickets":0,
+      "totalGross":55000.0,
+      "totalTickets":44,
+      "totalShows":3,
+      "totalSeats":312,
+      "occupancy":14.1
+    },
+    {
+      "name":"Minions & Monsters",
+      "slug":"minions-monsters",
+      "totalGross":61600.0,
+      "totalTickets":49,
+      "totalShows":4,
+      "totalSeats":518,
+      "occupancy":9.46
+    },
+    {
+      "name":"Toy Story 5",
+      "slug":"toy-story-5",
+      "totalGross":21100.0,
+      "totalTickets":17,
       "totalShows":2,
-      "totalSeats":207,
-      "occupancy":0.0
+      "totalSeats":242,
+      "occupancy":7.02
     },
     {
       "name":"Moana 2",
@@ -99,24 +117,6 @@
       "totalShows":1,
       "totalSeats":134,
       "occupancy":0.0
-    },
-    {
-      "name":"Toy Story 5",
-      "slug":"toy-story-5",
-      "totalGross":12000.0,
-      "totalTickets":10,
-      "totalShows":1,
-      "totalSeats":121,
-      "occupancy":8.26
-    },
-    {
-      "name":"Minions & Monsters",
-      "slug":"minions-monsters",
-      "totalGross":25200.0,
-      "totalTickets":21,
-      "totalShows":3,
-      "totalSeats":366,
-      "occupancy":5.74
     },
     {
       "name":"Riverstone",
