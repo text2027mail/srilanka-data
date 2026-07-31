@@ -1,86 +1,86 @@
 {
-  "last_updated":"2026-07-31 09:44:02 IST",
+  "last_updated":"2026-07-31 13:06:32 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":562350.0,
-      "totalTickets":451,
-      "totalShows":52,
-      "totalSeats":9315,
-      "occupancy":4.84
+      "totalGross":1361800.0,
+      "totalTickets":1139,
+      "totalShows":70,
+      "totalSeats":12976,
+      "occupancy":8.78
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":10826000.0,
-      "totalTickets":7725,
-      "totalShows":119,
-      "totalSeats":21015,
-      "occupancy":36.76
+      "totalGross":15634450.0,
+      "totalTickets":11626,
+      "totalShows":163,
+      "totalSeats":28687,
+      "occupancy":40.53
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":18600.0,
-      "totalTickets":22,
-      "totalShows":8,
-      "totalSeats":1397,
-      "occupancy":1.57
+      "totalGross":28200.0,
+      "totalTickets":30,
+      "totalShows":9,
+      "totalSeats":1499,
+      "occupancy":2.0
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":1818000.0,
-      "totalTickets":596,
-      "totalShows":19,
-      "totalSeats":3341,
-      "occupancy":17.84
+      "totalGross":2836000.0,
+      "totalTickets":912,
+      "totalShows":22,
+      "totalSeats":3875,
+      "occupancy":23.54
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":21350.0,
       "totalTickets":33,
-      "totalShows":20,
-      "totalSeats":4439,
-      "occupancy":0.74
+      "totalShows":23,
+      "totalSeats":4865,
+      "occupancy":0.68
     },
     {
       "name":"Sooriya Sulanga",
       "slug":"sooriya-sulanga",
       "totalGross":1300.0,
       "totalTickets":4,
-      "totalShows":4,
-      "totalSeats":754,
-      "occupancy":0.53
+      "totalShows":6,
+      "totalSeats":1127,
+      "occupancy":0.35
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":4700.0,
-      "totalTickets":8,
-      "totalShows":13,
-      "totalSeats":3264,
-      "occupancy":0.25
+      "totalGross":13250.0,
+      "totalTickets":17,
+      "totalShows":16,
+      "totalSeats":3667,
+      "occupancy":0.46
     },
     {
       "name":"My Simba",
       "slug":"my-simba",
-      "totalGross":1900.0,
-      "totalTickets":2,
-      "totalShows":6,
-      "totalSeats":1395,
-      "occupancy":0.14
+      "totalGross":2850.0,
+      "totalTickets":3,
+      "totalShows":7,
+      "totalSeats":1635,
+      "occupancy":0.18
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":0.0,
-      "totalTickets":0,
-      "totalShows":7,
-      "totalSeats":1178,
-      "occupancy":0.0
+      "totalGross":14000.0,
+      "totalTickets":10,
+      "totalShows":9,
+      "totalSeats":1506,
+      "occupancy":0.66
     },
     {
       "name":"Evil Dead Burn",
@@ -112,20 +112,20 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":19200.0,
-      "totalTickets":16,
-      "totalShows":2,
-      "totalSeats":273,
-      "occupancy":5.86
+      "totalGross":25200.0,
+      "totalTickets":21,
+      "totalShows":3,
+      "totalSeats":366,
+      "occupancy":5.74
     },
     {
       "name":"Riverstone",
       "slug":"riverstone",
-      "totalGross":3200.0,
-      "totalTickets":8,
+      "totalGross":8000.0,
+      "totalTickets":20,
       "totalShows":1,
       "totalSeats":200,
-      "occupancy":4.0
+      "occupancy":10.0
     },
     {
       "name":"Vihanga Premayak",
@@ -143,6 +143,24 @@
       "totalTickets":0,
       "totalShows":1,
       "totalSeats":130,
+      "occupancy":0.0
+    },
+    {
+      "name":"Michael",
+      "slug":"michael",
+      "totalGross":30800.0,
+      "totalTickets":22,
+      "totalShows":2,
+      "totalSeats":213,
+      "occupancy":10.33
+    },
+    {
+      "name":"OIC Gadafi",
+      "slug":"oic-gadafi",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":1,
+      "totalSeats":563,
       "occupancy":0.0
     }
   ]
