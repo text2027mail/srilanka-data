@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-07-31 16:42:45 IST",
+  "last_updated":"2026-07-31 20:40:07 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":1943700.0,
-      "totalTickets":1608,
+      "totalGross":2332550.0,
+      "totalTickets":1898,
       "totalShows":85,
       "totalSeats":15858,
-      "occupancy":10.14
+      "occupancy":11.97
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":19076350.0,
-      "totalTickets":14215,
+      "totalGross":19630150.0,
+      "totalTickets":14762,
       "totalShows":187,
       "totalSeats":32512,
-      "occupancy":43.72
+      "occupancy":45.4
     },
     {
       "name":"Moana",
@@ -31,20 +31,20 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":3631300.0,
-      "totalTickets":1124,
+      "totalGross":3758400.0,
+      "totalTickets":1163,
       "totalShows":24,
       "totalSeats":4329,
-      "occupancy":25.96
+      "occupancy":26.87
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":22050.0,
-      "totalTickets":41,
+      "totalTickets":48,
       "totalShows":25,
       "totalSeats":5207,
-      "occupancy":0.79
+      "occupancy":0.92
     },
     {
       "name":"Sooriya Sulanga",
@@ -166,11 +166,11 @@
     {
       "name":"Idhayam Murali",
       "slug":"idhayam-murali",
-      "totalGross":46800.0,
-      "totalTickets":36,
+      "totalGross":72800.0,
+      "totalTickets":56,
       "totalShows":1,
       "totalSeats":121,
-      "occupancy":29.75
+      "occupancy":46.28
     }
   ]
 }
