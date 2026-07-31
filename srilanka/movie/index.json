@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-07-31 23:42:02 IST",
+  "last_updated":"2026-08-01 01:44:03 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":2332550.0,
-      "totalTickets":1898,
-      "totalShows":85,
-      "totalSeats":15858,
-      "occupancy":11.97
+      "totalGross":2471100.0,
+      "totalTickets":2037,
+      "totalShows":90,
+      "totalSeats":16865,
+      "occupancy":12.08
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":19630150.0,
-      "totalTickets":14762,
-      "totalShows":187,
-      "totalSeats":32512,
-      "occupancy":45.4
+      "totalGross":21713750.0,
+      "totalTickets":16462,
+      "totalShows":207,
+      "totalSeats":36443,
+      "occupancy":45.17
     },
     {
       "name":"Moana",
@@ -31,20 +31,29 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":3758400.0,
-      "totalTickets":1163,
-      "totalShows":24,
-      "totalSeats":4329,
-      "occupancy":26.87
+      "totalGross":4532800.0,
+      "totalTickets":1391,
+      "totalShows":26,
+      "totalSeats":4745,
+      "occupancy":29.32
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":22050.0,
-      "totalTickets":48,
-      "totalShows":25,
-      "totalSeats":5207,
-      "occupancy":0.92
+      "totalGross":46050.0,
+      "totalTickets":95,
+      "totalShows":30,
+      "totalSeats":6314,
+      "occupancy":1.5
+    },
+    {
+      "name":"Abhisari",
+      "slug":"abhisari",
+      "totalGross":24700.0,
+      "totalTickets":36,
+      "totalShows":19,
+      "totalSeats":4280,
+      "occupancy":0.84
     },
     {
       "name":"Sooriya Sulanga",
@@ -54,15 +63,6 @@
       "totalShows":6,
       "totalSeats":1127,
       "occupancy":0.35
-    },
-    {
-      "name":"Abhisari",
-      "slug":"abhisari",
-      "totalGross":20200.0,
-      "totalTickets":28,
-      "totalShows":16,
-      "totalSeats":3667,
-      "occupancy":0.76
     },
     {
       "name":"My Simba",
