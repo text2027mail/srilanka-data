@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-01 23:14:48 IST",
+  "last_updated":"2026-08-02 01:27:07 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":6701950.0,
-      "totalTickets":5547,
-      "totalShows":161,
-      "totalSeats":30120,
-      "occupancy":18.42
+      "totalGross":6704950.0,
+      "totalTickets":5549,
+      "totalShows":162,
+      "totalSeats":30254,
+      "occupancy":18.34
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":41468350.0,
-      "totalTickets":31742,
-      "totalShows":352,
-      "totalSeats":61546,
-      "occupancy":51.57
+      "totalGross":42492850.0,
+      "totalTickets":32447,
+      "totalShows":362,
+      "totalSeats":63194,
+      "occupancy":51.35
     },
     {
       "name":"Moana",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":9365200.0,
-      "totalTickets":3132,
-      "totalShows":46,
-      "totalSeats":8182,
-      "occupancy":38.28
+      "totalGross":10260700.0,
+      "totalTickets":3402,
+      "totalShows":48,
+      "totalSeats":8598,
+      "occupancy":39.57
     },
     {
       "name":"Room No.106",
@@ -49,11 +49,11 @@
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":68750.0,
-      "totalTickets":102,
-      "totalShows":30,
-      "totalSeats":6623,
-      "occupancy":1.54
+      "totalGross":70350.0,
+      "totalTickets":104,
+      "totalShows":31,
+      "totalSeats":6839,
+      "occupancy":1.52
     },
     {
       "name":"Sooriya Sulanga",
