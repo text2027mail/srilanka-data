@@ -1,41 +1,41 @@
 {
-  "last_updated":"2026-08-01 15:53:41 IST",
+  "last_updated":"2026-08-01 17:18:12 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":5998200.0,
-      "totalTickets":4913,
+      "totalGross":6184300.0,
+      "totalTickets":5091,
       "totalShows":161,
       "totalSeats":30120,
-      "occupancy":16.31
+      "occupancy":16.9
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":40225000.0,
-      "totalTickets":30646,
+      "totalGross":40722300.0,
+      "totalTickets":31131,
       "totalShows":352,
       "totalSeats":61546,
-      "occupancy":49.79
+      "occupancy":50.58
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":434350.0,
-      "totalTickets":361,
+      "totalGross":431550.0,
+      "totalTickets":359,
       "totalShows":18,
       "totalSeats":3211,
-      "occupancy":11.24
+      "occupancy":11.18
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":9131350.0,
-      "totalTickets":3042,
+      "totalGross":9229700.0,
+      "totalTickets":3082,
       "totalShows":46,
       "totalSeats":8182,
-      "occupancy":37.18
+      "occupancy":37.67
     },
     {
       "name":"Room No.106",
@@ -49,11 +49,11 @@
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":64000.0,
-      "totalTickets":97,
+      "totalGross":68750.0,
+      "totalTickets":102,
       "totalShows":30,
       "totalSeats":6623,
-      "occupancy":1.46
+      "occupancy":1.54
     },
     {
       "name":"Sooriya Sulanga",
@@ -76,11 +76,11 @@
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":216800.0,
-      "totalTickets":162,
+      "totalGross":226600.0,
+      "totalTickets":169,
       "totalShows":20,
       "totalSeats":3492,
-      "occupancy":4.64
+      "occupancy":4.84
     },
     {
       "name":"Evil Dead Burn",
@@ -130,11 +130,11 @@
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":134400.0,
-      "totalTickets":111,
+      "totalGross":162400.0,
+      "totalTickets":131,
       "totalShows":4,
       "totalSeats":426,
-      "occupancy":26.06
+      "occupancy":30.75
     },
     {
       "name":"Moana 2",
