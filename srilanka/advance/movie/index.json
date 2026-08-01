@@ -1,41 +1,41 @@
 {
-  "last_updated":"2026-08-01 00:24:16 IST",
+  "last_updated":"2026-08-01 12:21:32 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":40043050.0,
-      "totalTickets":28046,
-      "totalShows":475,
-      "totalSeats":82963,
-      "occupancy":33.81
+      "totalGross":41245900.0,
+      "totalTickets":29160,
+      "totalShows":476,
+      "totalSeats":83178,
+      "occupancy":35.06
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":9714600.0,
-      "totalTickets":2851,
+      "totalGross":10173950.0,
+      "totalTickets":3024,
       "totalShows":65,
       "totalSeats":11594,
-      "occupancy":24.59
+      "occupancy":26.08
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":3080650.0,
-      "totalTickets":2372,
-      "totalShows":222,
-      "totalSeats":42028,
-      "occupancy":5.64
+      "totalGross":3422750.0,
+      "totalTickets":2656,
+      "totalShows":223,
+      "totalSeats":42204,
+      "occupancy":6.29
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":61300.0,
-      "totalTickets":104,
+      "totalGross":68800.0,
+      "totalTickets":122,
       "totalShows":61,
       "totalSeats":13094,
-      "occupancy":0.79
+      "occupancy":0.93
     },
     {
       "name":"Sooriya Sulanga",
@@ -49,11 +49,11 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":298800.0,
-      "totalTickets":243,
+      "totalGross":374350.0,
+      "totalTickets":305,
       "totalShows":21,
       "totalSeats":4039,
-      "occupancy":6.02
+      "occupancy":7.55
     },
     {
       "name":"Abhisari",
@@ -67,74 +67,74 @@
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":52000.0,
-      "totalTickets":43,
+      "totalGross":66000.0,
+      "totalTickets":53,
       "totalShows":25,
       "totalSeats":4389,
-      "occupancy":0.98
+      "occupancy":1.21
     },
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":75000.0,
-      "totalTickets":60,
+      "totalGross":86700.0,
+      "totalTickets":69,
       "totalShows":6,
       "totalSeats":735,
-      "occupancy":8.16
+      "occupancy":9.39
     },
     {
       "name":"My Simba",
       "slug":"my-simba",
-      "totalGross":9500.0,
-      "totalTickets":13,
-      "totalShows":14,
-      "totalSeats":2766,
-      "occupancy":0.47
+      "totalGross":12350.0,
+      "totalTickets":16,
+      "totalShows":15,
+      "totalSeats":2959,
+      "occupancy":0.54
     },
     {
       "name":"Moana 2",
       "slug":"moana-2",
       "totalGross":0.0,
       "totalTickets":0,
-      "totalShows":2,
-      "totalSeats":268,
+      "totalShows":3,
+      "totalSeats":402,
       "occupancy":0.0
     },
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":99200.0,
-      "totalTickets":77,
+      "totalGross":135600.0,
+      "totalTickets":105,
       "totalShows":8,
       "totalSeats":1036,
-      "occupancy":7.43
+      "occupancy":10.14
     },
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":16700.0,
-      "totalTickets":13,
+      "totalGross":25800.0,
+      "totalTickets":20,
       "totalShows":3,
       "totalSeats":363,
-      "occupancy":3.58
+      "occupancy":5.51
     },
     {
       "name":"Michael",
       "slug":"michael",
-      "totalGross":30800.0,
-      "totalTickets":26,
+      "totalGross":36400.0,
+      "totalTickets":30,
       "totalShows":5,
       "totalSeats":537,
-      "occupancy":4.84
+      "occupancy":5.59
     },
     {
       "name":"Riverstone",
       "slug":"riverstone",
-      "totalGross":9600.0,
-      "totalTickets":24,
+      "totalGross":10400.0,
+      "totalTickets":26,
       "totalShows":3,
       "totalSeats":600,
-      "occupancy":4.0
+      "occupancy":4.33
     },
     {
       "name":"Monara Wilak",
