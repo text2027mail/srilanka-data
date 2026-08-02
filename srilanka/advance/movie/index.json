@@ -1,22 +1,22 @@
 {
-  "last_updated":"2026-08-02 17:14:20 IST",
+  "last_updated":"2026-08-02 21:09:27 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":49735700.0,
-      "totalTickets":35974,
-      "totalShows":629,
-      "totalSeats":110939,
-      "occupancy":32.43
+      "totalGross":50571750.0,
+      "totalTickets":36688,
+      "totalShows":631,
+      "totalSeats":111179,
+      "occupancy":33.0
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
       "totalGross":28050.0,
       "totalTickets":47,
-      "totalShows":56,
-      "totalSeats":12753,
+      "totalShows":57,
+      "totalSeats":12873,
       "occupancy":0.37
     },
     {
@@ -31,20 +31,20 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":12832550.0,
-      "totalTickets":3924,
+      "totalGross":12953350.0,
+      "totalTickets":3964,
       "totalShows":91,
       "totalSeats":16055,
-      "occupancy":24.44
+      "occupancy":24.69
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":5158700.0,
-      "totalTickets":4146,
+      "totalGross":5280000.0,
+      "totalTickets":4280,
       "totalShows":277,
       "totalSeats":51799,
-      "occupancy":8.0
+      "occupancy":8.26
     },
     {
       "name":"Sooriya Sulanga",
@@ -58,20 +58,20 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":577650.0,
-      "totalTickets":472,
+      "totalGross":580950.0,
+      "totalTickets":475,
       "totalShows":29,
       "totalSeats":5501,
-      "occupancy":8.58
+      "occupancy":8.63
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":116300.0,
-      "totalTickets":202,
-      "totalShows":83,
-      "totalSeats":17680,
-      "occupancy":1.14
+      "totalGross":118100.0,
+      "totalTickets":206,
+      "totalShows":84,
+      "totalSeats":17800,
+      "occupancy":1.16
     },
     {
       "name":"Eka Thamai Meka",
@@ -139,11 +139,11 @@
     {
       "name":"Toy Story 5",
       "slug":"toy-story-5",
-      "totalGross":32300.0,
-      "totalTickets":25,
+      "totalGross":36700.0,
+      "totalTickets":29,
       "totalShows":4,
       "totalSeats":484,
-      "occupancy":5.17
+      "occupancy":5.99
     },
     {
       "name":"Vihanga Premayak",
