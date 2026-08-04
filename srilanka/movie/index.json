@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-04 16:40:11 IST",
+  "last_updated":"2026-08-04 20:45:20 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":13375050.0,
-      "totalTickets":11451,
+      "totalGross":13441700.0,
+      "totalTickets":11510,
       "totalShows":356,
       "totalSeats":64935,
-      "occupancy":17.63
+      "occupancy":17.73
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":79944150.0,
-      "totalTickets":62063,
+      "totalGross":80680800.0,
+      "totalTickets":62647,
       "totalShows":824,
       "totalSeats":146294,
-      "occupancy":42.42
+      "occupancy":42.82
     },
     {
       "name":"Moana",
@@ -31,20 +31,20 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":19259950.0,
-      "totalTickets":6554,
+      "totalGross":19377350.0,
+      "totalTickets":6589,
       "totalShows":123,
       "totalSeats":21581,
-      "occupancy":30.37
+      "occupancy":30.53
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":227600.0,
-      "totalTickets":436,
+      "totalTickets":448,
       "totalShows":112,
       "totalSeats":23294,
-      "occupancy":1.87
+      "occupancy":1.92
     },
     {
       "name":"Abhisari",
