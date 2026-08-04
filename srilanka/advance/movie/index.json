@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-04 00:32:22 IST",
+  "last_updated":"2026-08-04 12:36:26 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":58886100.0,
-      "totalTickets":42331,
-      "totalShows":936,
-      "totalSeats":166516,
-      "occupancy":25.42
+      "totalGross":59320900.0,
+      "totalTickets":42664,
+      "totalShows":937,
+      "totalSeats":166635,
+      "occupancy":25.6
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
-      "totalGross":36350.0,
-      "totalTickets":59,
+      "totalGross":43500.0,
+      "totalTickets":70,
       "totalShows":90,
       "totalSeats":20307,
-      "occupancy":0.29
+      "occupancy":0.34
     },
     {
       "name":"Riverstone",
@@ -31,20 +31,20 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":17050150.0,
-      "totalTickets":5192,
+      "totalGross":17285650.0,
+      "totalTickets":5266,
       "totalShows":142,
       "totalSeats":25065,
-      "occupancy":20.71
+      "occupancy":21.01
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":5664300.0,
-      "totalTickets":4548,
+      "totalGross":5678600.0,
+      "totalTickets":4563,
       "totalShows":399,
       "totalSeats":72758,
-      "occupancy":6.25
+      "occupancy":6.27
     },
     {
       "name":"Sooriya Sulanga",
@@ -58,20 +58,20 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":612450.0,
-      "totalTickets":505,
+      "totalGross":623850.0,
+      "totalTickets":515,
       "totalShows":44,
       "totalSeats":8323,
-      "occupancy":6.07
+      "occupancy":6.19
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":137200.0,
-      "totalTickets":238,
+      "totalGross":138500.0,
+      "totalTickets":240,
       "totalShows":129,
       "totalSeats":26806,
-      "occupancy":0.89
+      "occupancy":0.9
     },
     {
       "name":"Eka Thamai Meka",
@@ -130,11 +130,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":288300.0,
-      "totalTickets":228,
+      "totalGross":301500.0,
+      "totalTickets":240,
       "totalShows":17,
       "totalSeats":2134,
-      "occupancy":10.68
+      "occupancy":11.25
     },
     {
       "name":"Toy Story 5",
