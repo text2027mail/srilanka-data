@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-06 16:37:52 IST",
+  "last_updated":"2026-08-06 20:30:41 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":14543600.0,
-      "totalTickets":12528,
+      "totalGross":14581750.0,
+      "totalTickets":12583,
       "totalShows":473,
       "totalSeats":84746,
-      "occupancy":14.78
+      "occupancy":14.85
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":95105900.0,
-      "totalTickets":73300,
+      "totalGross":95528550.0,
+      "totalTickets":73652,
       "totalShows":1123,
       "totalSeats":200406,
-      "occupancy":36.58
+      "occupancy":36.75
     },
     {
       "name":"Moana",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":25295950.0,
-      "totalTickets":8510,
+      "totalGross":25371850.0,
+      "totalTickets":8556,
       "totalShows":172,
       "totalSeats":30308,
-      "occupancy":28.08
+      "occupancy":28.23
     },
     {
       "name":"Room No.106",
@@ -58,11 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":423150.0,
-      "totalTickets":523,
+      "totalGross":425350.0,
+      "totalTickets":569,
       "totalShows":37,
       "totalSeats":6678,
-      "occupancy":7.83
+      "occupancy":8.52
     },
     {
       "name":"Eka Thamai Meka",
