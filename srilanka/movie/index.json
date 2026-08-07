@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-07 21:08:53 IST",
+  "last_updated":"2026-08-07 23:05:12 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
@@ -13,8 +13,8 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":104978550.0,
-      "totalTickets":80076,
+      "totalGross":104989350.0,
+      "totalTickets":80082,
       "totalShows":1269,
       "totalSeats":226132,
       "occupancy":35.41
