@@ -1,41 +1,41 @@
 {
-  "last_updated":"2026-08-07 15:12:57 IST",
+  "last_updated":"2026-08-07 17:02:44 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":14964300.0,
-      "totalTickets":12931,
+      "totalGross":15010750.0,
+      "totalTickets":12975,
       "totalShows":502,
       "totalSeats":90142,
-      "occupancy":14.35
+      "occupancy":14.39
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":103622600.0,
-      "totalTickets":79001,
+      "totalGross":104085650.0,
+      "totalTickets":79400,
       "totalShows":1269,
       "totalSeats":226132,
-      "occupancy":34.94
+      "occupancy":35.11
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1304350.0,
-      "totalTickets":1090,
+      "totalGross":1333950.0,
+      "totalTickets":1112,
       "totalShows":58,
       "totalSeats":10088,
-      "occupancy":10.8
+      "occupancy":11.02
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":27801800.0,
-      "totalTickets":9319,
+      "totalGross":27917000.0,
+      "totalTickets":9352,
       "totalShows":186,
       "totalSeats":32901,
-      "occupancy":28.32
+      "occupancy":28.42
     },
     {
       "name":"Room No.106",
@@ -50,28 +50,28 @@
       "name":"Abhisari",
       "slug":"abhisari",
       "totalGross":220950.0,
-      "totalTickets":303,
+      "totalTickets":306,
       "totalShows":110,
       "totalSeats":25870,
-      "occupancy":1.17
+      "occupancy":1.18
     },
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":1222250.0,
-      "totalTickets":1497,
+      "totalGross":1292900.0,
+      "totalTickets":1619,
       "totalShows":98,
       "totalSeats":18558,
-      "occupancy":8.07
+      "occupancy":8.72
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":563600.0,
-      "totalTickets":477,
+      "totalGross":574400.0,
+      "totalTickets":486,
       "totalShows":71,
       "totalSeats":12447,
-      "occupancy":3.83
+      "occupancy":3.9
     },
     {
       "name":"My Simba",
@@ -193,20 +193,20 @@
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":109850.0,
-      "totalTickets":158,
+      "totalGross":123950.0,
+      "totalTickets":167,
       "totalShows":13,
       "totalSeats":1781,
-      "occupancy":8.87
+      "occupancy":9.38
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":867150.0,
-      "totalTickets":882,
+      "totalGross":1030150.0,
+      "totalTickets":1034,
       "totalShows":31,
       "totalSeats":5735,
-      "occupancy":15.38
+      "occupancy":18.03
     }
   ]
 }
