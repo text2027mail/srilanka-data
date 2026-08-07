@@ -1,50 +1,50 @@
 {
-  "last_updated":"2026-08-07 11:35:12 IST",
+  "last_updated":"2026-08-07 13:35:20 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":14708650.0,
-      "totalTickets":12707,
-      "totalShows":495,
-      "totalSeats":88815,
-      "occupancy":14.31
+      "totalGross":14807450.0,
+      "totalTickets":12803,
+      "totalShows":499,
+      "totalSeats":89709,
+      "occupancy":14.27
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":100991250.0,
-      "totalTickets":77156,
-      "totalShows":1243,
-      "totalSeats":221656,
-      "occupancy":34.81
+      "totalGross":102025650.0,
+      "totalTickets":78026,
+      "totalShows":1255,
+      "totalSeats":223692,
+      "occupancy":34.88
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1260950.0,
-      "totalTickets":1059,
+      "totalGross":1291750.0,
+      "totalTickets":1081,
       "totalShows":58,
       "totalSeats":10088,
-      "occupancy":10.5
+      "occupancy":10.72
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":27031100.0,
-      "totalTickets":9059,
-      "totalShows":183,
-      "totalSeats":32367,
-      "occupancy":27.99
+      "totalGross":27221600.0,
+      "totalTickets":9160,
+      "totalShows":185,
+      "totalSeats":32596,
+      "occupancy":28.1
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":280250.0,
-      "totalTickets":541,
+      "totalGross":283550.0,
+      "totalTickets":547,
       "totalShows":160,
       "totalSeats":33229,
-      "occupancy":1.63
+      "occupancy":1.65
     },
     {
       "name":"Abhisari",
@@ -58,20 +58,20 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":846250.0,
-      "totalTickets":1057,
-      "totalShows":91,
-      "totalSeats":17476,
-      "occupancy":6.05
+      "totalGross":1099000.0,
+      "totalTickets":1350,
+      "totalShows":97,
+      "totalSeats":18458,
+      "occupancy":7.31
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":551600.0,
-      "totalTickets":467,
+      "totalGross":570800.0,
+      "totalTickets":483,
       "totalShows":71,
       "totalSeats":12447,
-      "occupancy":3.75
+      "occupancy":3.88
     },
     {
       "name":"My Simba",
@@ -85,11 +85,11 @@
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":387100.0,
-      "totalTickets":315,
+      "totalGross":392300.0,
+      "totalTickets":319,
       "totalShows":21,
       "totalSeats":2503,
-      "occupancy":12.58
+      "occupancy":12.74
     },
     {
       "name":"Monara Wilak",
@@ -121,11 +121,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":645600.0,
-      "totalTickets":524,
+      "totalGross":662400.0,
+      "totalTickets":538,
       "totalShows":23,
       "totalSeats":2945,
-      "occupancy":17.79
+      "occupancy":18.27
     },
     {
       "name":"Sooriya Sulanga",
@@ -184,29 +184,29 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":29800.0,
-      "totalTickets":30,
+      "totalGross":31300.0,
+      "totalTickets":34,
       "totalShows":12,
       "totalSeats":1979,
-      "occupancy":1.52
+      "occupancy":1.72
     },
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":58600.0,
-      "totalTickets":124,
-      "totalShows":9,
-      "totalSeats":1322,
-      "occupancy":9.38
+      "totalGross":60250.0,
+      "totalTickets":125,
+      "totalShows":11,
+      "totalSeats":1549,
+      "occupancy":8.07
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":606600.0,
-      "totalTickets":677,
-      "totalShows":15,
-      "totalSeats":2432,
-      "occupancy":27.84
+      "totalGross":783950.0,
+      "totalTickets":767,
+      "totalShows":23,
+      "totalSeats":4126,
+      "occupancy":18.59
     }
   ]
 }
