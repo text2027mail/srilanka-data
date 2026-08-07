@@ -1,49 +1,49 @@
 {
-  "last_updated":"2026-08-08 02:52:46 IST",
+  "last_updated":"2026-08-08 04:48:51 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":15331100.0,
-      "totalTickets":13238,
-      "totalShows":506,
-      "totalSeats":90954,
-      "occupancy":14.55
+      "totalGross":15345550.0,
+      "totalTickets":13255,
+      "totalShows":508,
+      "totalSeats":91193,
+      "occupancy":14.54
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":107129400.0,
-      "totalTickets":81472,
-      "totalShows":1298,
-      "totalSeats":230754,
-      "occupancy":35.31
+      "totalGross":108389750.0,
+      "totalTickets":82459,
+      "totalShows":1312,
+      "totalSeats":233658,
+      "occupancy":35.29
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1339050.0,
-      "totalTickets":1118,
-      "totalShows":59,
-      "totalSeats":10260,
-      "occupancy":10.9
+      "totalGross":1484650.0,
+      "totalTickets":1230,
+      "totalShows":61,
+      "totalSeats":10492,
+      "occupancy":11.72
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":28762800.0,
-      "totalTickets":9585,
-      "totalShows":187,
-      "totalSeats":33206,
-      "occupancy":28.87
+      "totalGross":29710800.0,
+      "totalTickets":9934,
+      "totalShows":191,
+      "totalSeats":33823,
+      "occupancy":29.37
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":299700.0,
-      "totalTickets":564,
-      "totalShows":162,
-      "totalSeats":33556,
+      "totalGross":301800.0,
+      "totalTickets":570,
+      "totalShows":163,
+      "totalSeats":33852,
       "occupancy":1.68
     },
     {
@@ -58,20 +58,20 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":1695100.0,
-      "totalTickets":2179,
-      "totalShows":121,
-      "totalSeats":23373,
-      "occupancy":9.32
+      "totalGross":1719500.0,
+      "totalTickets":2240,
+      "totalShows":122,
+      "totalSeats":23588,
+      "occupancy":9.5
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
-      "totalGross":574400.0,
-      "totalTickets":486,
-      "totalShows":71,
-      "totalSeats":12447,
-      "occupancy":3.9
+      "totalGross":575200.0,
+      "totalTickets":488,
+      "totalShows":73,
+      "totalSeats":12863,
+      "occupancy":3.79
     },
     {
       "name":"My Simba",
@@ -95,10 +95,10 @@
       "name":"Monara Wilak",
       "slug":"monara-wilak",
       "totalGross":1500.0,
-      "totalTickets":11,
-      "totalShows":13,
-      "totalSeats":1864,
-      "occupancy":0.59
+      "totalTickets":13,
+      "totalShows":14,
+      "totalSeats":1994,
+      "occupancy":0.65
     },
     {
       "name":"Vihanga Premayak",
@@ -121,11 +121,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":662400.0,
-      "totalTickets":538,
-      "totalShows":23,
-      "totalSeats":2945,
-      "occupancy":18.27
+      "totalGross":735200.0,
+      "totalTickets":594,
+      "totalShows":24,
+      "totalSeats":3097,
+      "occupancy":19.18
     },
     {
       "name":"Sooriya Sulanga",
@@ -184,11 +184,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":1567700.0,
-      "totalTickets":1609,
-      "totalShows":39,
-      "totalSeats":7109,
-      "occupancy":22.63
+      "totalGross":1665150.0,
+      "totalTickets":1652,
+      "totalShows":42,
+      "totalSeats":7453,
+      "occupancy":22.17
     },
     {
       "name":"GDN",
@@ -202,11 +202,11 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":39850.0,
-      "totalTickets":43,
-      "totalShows":15,
-      "totalSeats":2341,
-      "occupancy":1.84
+      "totalGross":40550.0,
+      "totalTickets":45,
+      "totalShows":17,
+      "totalSeats":2804,
+      "occupancy":1.6
     }
   ]
 }
