@@ -1,14 +1,41 @@
 {
-  "last_updated":"2026-08-07 19:30:17 IST",
+  "last_updated":"2026-08-07 21:08:53 IST",
   "movies":[
+    {
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":15215850.0,
+      "totalTickets":13118,
+      "totalShows":502,
+      "totalSeats":90142,
+      "occupancy":14.55
+    },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":104655650.0,
-      "totalTickets":79816,
+      "totalGross":104978550.0,
+      "totalTickets":80076,
       "totalShows":1269,
       "totalSeats":226132,
-      "occupancy":35.3
+      "occupancy":35.41
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":1333950.0,
+      "totalTickets":1112,
+      "totalShows":58,
+      "totalSeats":10088,
+      "occupancy":11.02
+    },
+    {
+      "name":"The Odyssey",
+      "slug":"the-odyssey",
+      "totalGross":28045000.0,
+      "totalTickets":9391,
+      "totalShows":186,
+      "totalSeats":32901,
+      "occupancy":28.54
     },
     {
       "name":"Room No.106",
@@ -31,38 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":1314700.0,
-      "totalTickets":1670,
+      "totalGross":1316900.0,
+      "totalTickets":1674,
       "totalShows":98,
       "totalSeats":18558,
-      "occupancy":9.0
-    },
-    {
-      "name":"The Odyssey",
-      "slug":"the-odyssey",
-      "totalGross":28001000.0,
-      "totalTickets":9380,
-      "totalShows":186,
-      "totalSeats":32901,
-      "occupancy":28.51
-    },
-    {
-      "name":"Jana Nayagan",
-      "slug":"jana-nayagan",
-      "totalGross":15102900.0,
-      "totalTickets":13058,
-      "totalShows":502,
-      "totalSeats":90142,
-      "occupancy":14.49
-    },
-    {
-      "name":"Moana",
-      "slug":"moana",
-      "totalGross":1333950.0,
-      "totalTickets":1112,
-      "totalShows":58,
-      "totalSeats":10088,
-      "occupancy":11.02
+      "occupancy":9.02
     },
     {
       "name":"Eka Thamai Meka",
@@ -193,20 +193,20 @@
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":133950.0,
-      "totalTickets":175,
+      "totalGross":172750.0,
+      "totalTickets":205,
       "totalShows":13,
       "totalSeats":1781,
-      "occupancy":9.83
+      "occupancy":11.51
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":1242900.0,
-      "totalTickets":1274,
+      "totalGross":1455650.0,
+      "totalTickets":1494,
       "totalShows":31,
       "totalSeats":5735,
-      "occupancy":22.21
+      "occupancy":26.05
     }
   ]
 }
