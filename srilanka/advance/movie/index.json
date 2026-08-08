@@ -1,68 +1,68 @@
 {
-  "last_updated":"2026-08-08 20:29:54 IST",
+  "last_updated":"2026-08-08 23:24:02 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":89694050.0,
-      "totalTickets":62891,
+      "totalGross":90737600.0,
+      "totalTickets":63766,
       "totalShows":1520,
       "totalSeats":271727,
-      "occupancy":23.14
+      "occupancy":23.47
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":7474600.0,
-      "totalTickets":6175,
-      "totalShows":545,
-      "totalSeats":99093,
-      "occupancy":6.23
+      "totalGross":7690900.0,
+      "totalTickets":6384,
+      "totalShows":546,
+      "totalSeats":99210,
+      "occupancy":6.43
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":190700.0,
-      "totalTickets":322,
+      "totalGross":203700.0,
+      "totalTickets":342,
       "totalShows":176,
       "totalSeats":36553,
-      "occupancy":0.88
+      "occupancy":0.94
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1127750.0,
-      "totalTickets":906,
+      "totalGross":1142550.0,
+      "totalTickets":917,
       "totalShows":62,
       "totalSeats":10526,
-      "occupancy":8.61
+      "occupancy":8.71
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":28153750.0,
-      "totalTickets":8646,
+      "totalGross":28421950.0,
+      "totalTickets":8754,
       "totalShows":209,
       "totalSeats":37310,
-      "occupancy":23.17
+      "occupancy":23.46
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
       "totalGross":54000.0,
-      "totalTickets":89,
+      "totalTickets":91,
       "totalShows":115,
       "totalSeats":27816,
-      "occupancy":0.32
+      "occupancy":0.33
     },
     {
       "name":"Evil Dead Burn",
       "slug":"evil-dead-burn",
-      "totalGross":256050.0,
-      "totalTickets":198,
+      "totalGross":258850.0,
+      "totalTickets":200,
       "totalShows":22,
       "totalSeats":2643,
-      "occupancy":7.49
+      "occupancy":7.57
     },
     {
       "name":"My Simba",
@@ -121,11 +121,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":614600.0,
-      "totalTickets":483,
+      "totalGross":630200.0,
+      "totalTickets":495,
       "totalShows":26,
       "totalSeats":3398,
-      "occupancy":14.21
+      "occupancy":14.57
     },
     {
       "name":"Riverstone",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":2799550.0,
-      "totalTickets":3398,
-      "totalShows":215,
-      "totalSeats":41551,
-      "occupancy":8.18
+      "totalGross":3035450.0,
+      "totalTickets":3779,
+      "totalShows":216,
+      "totalSeats":41671,
+      "occupancy":9.07
     },
     {
       "name":"Vihanga Premayak",
@@ -166,16 +166,16 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":1513100.0,
-      "totalTickets":1403,
-      "totalShows":120,
-      "totalSeats":21024,
-      "occupancy":6.67
+      "totalGross":1717350.0,
+      "totalTickets":1599,
+      "totalShows":123,
+      "totalSeats":21375,
+      "occupancy":7.48
     },
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":62850.0,
+      "totalGross":60250.0,
       "totalTickets":69,
       "totalShows":35,
       "totalSeats":5837,
@@ -184,11 +184,11 @@
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":99250.0,
-      "totalTickets":153,
+      "totalGross":100050.0,
+      "totalTickets":154,
       "totalShows":45,
       "totalSeats":5808,
-      "occupancy":2.63
+      "occupancy":2.65
     },
     {
       "name":"OIC Gadafi",
