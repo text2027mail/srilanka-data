@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-08 20:36:26 IST",
+  "last_updated":"2026-08-08 22:43:09 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
@@ -13,11 +13,11 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":120856750.0,
-      "totalTickets":91614,
+      "totalGross":121039550.0,
+      "totalTickets":91718,
       "totalShows":1414,
       "totalSeats":252338,
-      "occupancy":36.31
+      "occupancy":36.35
     },
     {
       "name":"Moana",
@@ -184,11 +184,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":3838450.0,
-      "totalTickets":3664,
+      "totalGross":3869450.0,
+      "totalTickets":3684,
       "totalShows":76,
       "totalSeats":13554,
-      "occupancy":27.03
+      "occupancy":27.18
     },
     {
       "name":"GDN",
