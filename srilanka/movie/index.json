@@ -1,50 +1,50 @@
 {
-  "last_updated":"2026-08-10 02:44:24 IST",
+  "last_updated":"2026-08-10 04:41:56 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
       "totalGross":19192200.0,
       "totalTickets":17052,
-      "totalShows":566,
-      "totalSeats":101669,
-      "occupancy":16.77
+      "totalShows":567,
+      "totalSeats":101803,
+      "occupancy":16.75
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":137757450.0,
-      "totalTickets":104417,
-      "totalShows":1578,
-      "totalSeats":281273,
-      "occupancy":37.12
+      "totalGross":138355250.0,
+      "totalTickets":104856,
+      "totalShows":1594,
+      "totalSeats":284273,
+      "occupancy":36.89
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":2242700.0,
-      "totalTickets":1825,
-      "totalShows":67,
-      "totalSeats":11170,
-      "occupancy":16.34
+      "totalGross":2294400.0,
+      "totalTickets":1872,
+      "totalShows":68,
+      "totalSeats":11291,
+      "occupancy":16.58
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":37465900.0,
-      "totalTickets":12571,
-      "totalShows":216,
-      "totalSeats":38569,
-      "occupancy":32.59
+      "totalGross":37669000.0,
+      "totalTickets":12640,
+      "totalShows":219,
+      "totalSeats":39075,
+      "occupancy":32.35
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":383750.0,
       "totalTickets":732,
-      "totalShows":179,
-      "totalSeats":37241,
-      "occupancy":1.97
+      "totalShows":180,
+      "totalSeats":37537,
+      "occupancy":1.95
     },
     {
       "name":"Abhisari",
@@ -58,20 +58,20 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":5630450.0,
-      "totalTickets":8009,
-      "totalShows":245,
-      "totalSeats":47276,
-      "occupancy":16.94
+      "totalGross":5666550.0,
+      "totalTickets":8052,
+      "totalShows":247,
+      "totalSeats":47602,
+      "occupancy":16.92
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":869000.0,
       "totalTickets":763,
-      "totalShows":79,
-      "totalSeats":13787,
-      "occupancy":5.53
+      "totalShows":81,
+      "totalSeats":14203,
+      "occupancy":5.37
     },
     {
       "name":"My Simba",
@@ -96,9 +96,9 @@
       "slug":"monara-wilak",
       "totalGross":10250.0,
       "totalTickets":31,
-      "totalShows":19,
-      "totalSeats":3044,
-      "occupancy":1.02
+      "totalShows":20,
+      "totalSeats":3174,
+      "occupancy":0.98
     },
     {
       "name":"Vihanga Premayak",
@@ -121,11 +121,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":1194050.0,
-      "totalTickets":948,
-      "totalShows":28,
-      "totalSeats":3663,
-      "occupancy":25.88
+      "totalGross":1196250.0,
+      "totalTickets":950,
+      "totalShows":29,
+      "totalSeats":3815,
+      "occupancy":24.9
     },
     {
       "name":"Sooriya Sulanga",
@@ -166,29 +166,29 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":6353000.0,
-      "totalTickets":6043,
-      "totalShows":123,
-      "totalSeats":21479,
-      "occupancy":28.13
+      "totalGross":6360650.0,
+      "totalTickets":6051,
+      "totalShows":125,
+      "totalSeats":21782,
+      "occupancy":27.78
     },
     {
       "name":"GDN",
       "slug":"gdn",
       "totalGross":541050.0,
       "totalTickets":528,
-      "totalShows":41,
-      "totalSeats":5224,
-      "occupancy":10.11
+      "totalShows":42,
+      "totalSeats":5331,
+      "occupancy":9.9
     },
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
       "totalGross":225200.0,
       "totalTickets":274,
-      "totalShows":37,
-      "totalSeats":6050,
-      "occupancy":4.53
+      "totalShows":39,
+      "totalSeats":6511,
+      "occupancy":4.21
     },
     {
       "name":"OIC Gadafi",
