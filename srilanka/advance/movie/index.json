@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-09 20:33:11 IST",
+  "last_updated":"2026-08-09 23:24:27 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":93451800.0,
-      "totalTickets":65630,
+      "totalGross":93880150.0,
+      "totalTickets":65931,
       "totalShows":1652,
       "totalSeats":295814,
-      "occupancy":22.19
+      "occupancy":22.29
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":7937350.0,
-      "totalTickets":6612,
-      "totalShows":566,
-      "totalSeats":102822,
-      "occupancy":6.43
+      "totalGross":8064400.0,
+      "totalTickets":6709,
+      "totalShows":572,
+      "totalSeats":103937,
+      "occupancy":6.45
     },
     {
       "name":"Room No.106",
@@ -31,20 +31,20 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1233450.0,
-      "totalTickets":998,
+      "totalGross":1245450.0,
+      "totalTickets":1008,
       "totalShows":65,
       "totalSeats":10870,
-      "occupancy":9.18
+      "occupancy":9.27
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":29357700.0,
-      "totalTickets":9064,
+      "totalGross":29448850.0,
+      "totalTickets":9091,
       "totalShows":223,
       "totalSeats":39896,
-      "occupancy":22.72
+      "occupancy":22.79
     },
     {
       "name":"Abhisari",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":3383100.0,
-      "totalTickets":4208,
+      "totalGross":3510200.0,
+      "totalTickets":4361,
       "totalShows":285,
       "totalSeats":54433,
-      "occupancy":7.73
+      "occupancy":8.01
     },
     {
       "name":"Vihanga Premayak",
@@ -166,11 +166,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":1792150.0,
-      "totalTickets":1664,
-      "totalShows":152,
-      "totalSeats":26185,
-      "occupancy":6.35
+      "totalGross":1816750.0,
+      "totalTickets":1694,
+      "totalShows":159,
+      "totalSeats":27772,
+      "occupancy":6.1
     },
     {
       "name":"Vihanga Premaya",
@@ -184,11 +184,11 @@
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":107150.0,
-      "totalTickets":160,
+      "totalGross":107950.0,
+      "totalTickets":161,
       "totalShows":59,
       "totalSeats":7860,
-      "occupancy":2.04
+      "occupancy":2.05
     },
     {
       "name":"OIC Gadafi",
