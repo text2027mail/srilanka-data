@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-09 19:07:21 IST",
+  "last_updated":"2026-08-09 20:44:00 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":19050400.0,
-      "totalTickets":16935,
+      "totalGross":19128750.0,
+      "totalTickets":16988,
       "totalShows":562,
       "totalSeats":100950,
-      "occupancy":16.78
+      "occupancy":16.83
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":136731800.0,
-      "totalTickets":103677,
+      "totalGross":137105450.0,
+      "totalTickets":103975,
       "totalShows":1557,
       "totalSeats":277648,
-      "occupancy":37.34
+      "occupancy":37.45
     },
     {
       "name":"Moana",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":37189200.0,
-      "totalTickets":12468,
+      "totalGross":37287800.0,
+      "totalTickets":12497,
       "totalShows":214,
       "totalSeats":38159,
-      "occupancy":32.67
+      "occupancy":32.75
     },
     {
       "name":"Room No.106",
@@ -58,11 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":5488250.0,
-      "totalTickets":7821,
+      "totalGross":5490650.0,
+      "totalTickets":7827,
       "totalShows":219,
       "totalSeats":42199,
-      "occupancy":18.53
+      "occupancy":18.55
     },
     {
       "name":"Eka Thamai Meka",
@@ -166,20 +166,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":6090950.0,
-      "totalTickets":5770,
+      "totalGross":6324500.0,
+      "totalTickets":6017,
       "totalShows":118,
       "totalSeats":20804,
-      "occupancy":27.74
+      "occupancy":28.92
     },
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":520150.0,
-      "totalTickets":508,
+      "totalGross":540250.0,
+      "totalTickets":527,
       "totalShows":38,
       "totalSeats":4870,
-      "occupancy":10.43
+      "occupancy":10.82
     },
     {
       "name":"Vihanga Premaya",
