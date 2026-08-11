@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-11 17:01:55 IST",
+  "last_updated":"2026-08-11 19:36:45 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":20350750.0,
-      "totalTickets":18126,
+      "totalGross":20430750.0,
+      "totalTickets":18206,
       "totalShows":612,
       "totalSeats":110051,
-      "occupancy":16.47
+      "occupancy":16.54
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":148435200.0,
-      "totalTickets":112481,
+      "totalGross":148684750.0,
+      "totalTickets":112669,
       "totalShows":1820,
       "totalSeats":324587,
-      "occupancy":34.65
+      "occupancy":34.71
     },
     {
       "name":"Moana",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":40609500.0,
-      "totalTickets":13662,
+      "totalGross":40689700.0,
+      "totalTickets":13700,
       "totalShows":243,
       "totalSeats":43557,
-      "occupancy":31.37
+      "occupancy":31.45
     },
     {
       "name":"Room No.106",
@@ -58,11 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":7603200.0,
-      "totalTickets":10766,
-      "totalShows":363,
-      "totalSeats":68890,
-      "occupancy":15.63
+      "totalGross":7662250.0,
+      "totalTickets":10866,
+      "totalShows":364,
+      "totalSeats":69128,
+      "occupancy":15.72
     },
     {
       "name":"Eka Thamai Meka",
@@ -166,20 +166,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":7779000.0,
-      "totalTickets":7459,
+      "totalGross":7940050.0,
+      "totalTickets":7611,
       "totalShows":190,
       "totalSeats":34032,
-      "occupancy":21.92
+      "occupancy":22.36
     },
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":626000.0,
-      "totalTickets":613,
+      "totalGross":629800.0,
+      "totalTickets":616,
       "totalShows":59,
       "totalSeats":7691,
-      "occupancy":7.97
+      "occupancy":8.01
     },
     {
       "name":"Vihanga Premaya",
