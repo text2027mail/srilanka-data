@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-11 23:12:57 IST",
+  "last_updated":"2026-08-12 01:17:54 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":40718700.0,
-      "totalTickets":13711,
-      "totalShows":243,
-      "totalSeats":43557,
-      "occupancy":31.48
+      "totalGross":41000900.0,
+      "totalTickets":13794,
+      "totalShows":244,
+      "totalSeats":43862,
+      "occupancy":31.45
     },
     {
       "name":"Room No.106",
