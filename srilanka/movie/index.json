@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-08-12 19:37:15 IST",
+  "last_updated":"2026-08-12 21:10:35 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":20839150.0,
-      "totalTickets":18593,
+      "totalGross":20863150.0,
+      "totalTickets":18603,
       "totalShows":636,
       "totalSeats":114375,
       "occupancy":16.26
@@ -13,11 +13,11 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":154145300.0,
-      "totalTickets":116744,
+      "totalGross":154313150.0,
+      "totalTickets":116894,
       "totalShows":1949,
       "totalSeats":347373,
-      "occupancy":33.61
+      "occupancy":33.65
     },
     {
       "name":"Moana",
@@ -31,11 +31,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":43832500.0,
-      "totalTickets":14711,
+      "totalGross":43865700.0,
+      "totalTickets":14722,
       "totalShows":257,
       "totalSeats":46287,
-      "occupancy":31.78
+      "occupancy":31.81
     },
     {
       "name":"Room No.106",
@@ -58,11 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":8885000.0,
-      "totalTickets":12637,
+      "totalGross":8915250.0,
+      "totalTickets":12698,
       "totalShows":441,
       "totalSeats":83513,
-      "occupancy":15.13
+      "occupancy":15.2
     },
     {
       "name":"Eka Thamai Meka",
@@ -166,20 +166,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":8745950.0,
-      "totalTickets":8396,
+      "totalGross":8805600.0,
+      "totalTickets":8450,
       "totalShows":227,
       "totalSeats":40728,
-      "occupancy":20.61
+      "occupancy":20.75
     },
     {
       "name":"GDN",
       "slug":"gdn",
-      "totalGross":680600.0,
-      "totalTickets":657,
+      "totalGross":684500.0,
+      "totalTickets":660,
       "totalShows":69,
       "totalSeats":8982,
-      "occupancy":7.31
+      "occupancy":7.35
     },
     {
       "name":"Vihanga Premaya",
