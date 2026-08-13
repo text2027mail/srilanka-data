@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-13 23:14:17 IST",
+  "last_updated":"2026-08-14 01:16:22 IST",
   "movies":[
     {
       "name":"Jana Nayagan",
@@ -13,11 +13,11 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":158948900.0,
-      "totalTickets":120369,
-      "totalShows":2077,
-      "totalSeats":369721,
-      "occupancy":32.56
+      "totalGross":159084900.0,
+      "totalTickets":120450,
+      "totalShows":2080,
+      "totalSeats":370343,
+      "occupancy":32.52
     },
     {
       "name":"Moana",
@@ -58,11 +58,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":10038050.0,
-      "totalTickets":14329,
-      "totalShows":519,
-      "totalSeats":98502,
-      "occupancy":14.55
+      "totalGross":10040450.0,
+      "totalTickets":14331,
+      "totalShows":520,
+      "totalSeats":98601,
+      "occupancy":14.53
     },
     {
       "name":"Eka Thamai Meka",
