@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-14 15:14:27 IST",
+  "last_updated":"2026-08-14 16:59:58 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":163423600.0,
-      "totalTickets":123335,
+      "totalGross":163799850.0,
+      "totalTickets":123631,
       "totalShows":2183,
       "totalSeats":388595,
-      "occupancy":31.74
+      "occupancy":31.81
     },
     {
       "name":"Room No.106",
@@ -31,20 +31,20 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":21465000.0,
-      "totalTickets":19161,
-      "totalShows":672,
-      "totalSeats":120603,
-      "occupancy":15.89
+      "totalGross":21492250.0,
+      "totalTickets":19190,
+      "totalShows":673,
+      "totalSeats":120729,
+      "occupancy":15.9
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":47226200.0,
-      "totalTickets":15875,
+      "totalGross":47283800.0,
+      "totalTickets":15896,
       "totalShows":279,
       "totalSeats":50535,
-      "occupancy":31.41
+      "occupancy":31.46
     },
     {
       "name":"Moana",
@@ -139,20 +139,20 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":11069150.0,
-      "totalTickets":15573,
+      "totalGross":11141300.0,
+      "totalTickets":15657,
       "totalShows":604,
       "totalSeats":115312,
-      "occupancy":13.51
+      "occupancy":13.58
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":9553900.0,
-      "totalTickets":9138,
-      "totalShows":277,
-      "totalSeats":49273,
-      "occupancy":18.55
+      "totalGross":9619350.0,
+      "totalTickets":9201,
+      "totalShows":279,
+      "totalSeats":49847,
+      "occupancy":18.46
     },
     {
       "name":"GDN",
@@ -193,11 +193,11 @@
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":381400.0,
-      "totalTickets":360,
+      "totalGross":386600.0,
+      "totalTickets":368,
       "totalShows":28,
       "totalSeats":5179,
-      "occupancy":6.95
+      "occupancy":7.11
     },
     {
       "name":"OIC Gadafi",
@@ -220,20 +220,20 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":3234000.0,
-      "totalTickets":3205,
+      "totalGross":3469650.0,
+      "totalTickets":3524,
       "totalShows":48,
       "totalSeats":10362,
-      "occupancy":30.93
+      "occupancy":34.01
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":291400.0,
-      "totalTickets":240,
+      "totalGross":293900.0,
+      "totalTickets":242,
       "totalShows":9,
       "totalSeats":1040,
-      "occupancy":23.08
+      "occupancy":23.27
     },
     {
       "name":"Batwara 1947",
@@ -247,38 +247,38 @@
     {
       "name":"Magudam",
       "slug":"magudam",
-      "totalGross":106650.0,
-      "totalTickets":213,
-      "totalShows":18,
-      "totalSeats":2844,
-      "occupancy":7.49
+      "totalGross":117700.0,
+      "totalTickets":220,
+      "totalShows":19,
+      "totalSeats":2970,
+      "occupancy":7.41
     },
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":551000.0,
-      "totalTickets":277,
+      "totalGross":592500.0,
+      "totalTickets":300,
       "totalShows":11,
       "totalSeats":1494,
-      "occupancy":18.54
+      "occupancy":20.08
     },
     {
       "name":"Bambaru Avith",
       "slug":"bambaru-avith",
-      "totalGross":98450.0,
-      "totalTickets":227,
+      "totalGross":106950.0,
+      "totalTickets":248,
       "totalShows":6,
       "totalSeats":1138,
-      "occupancy":19.95
+      "occupancy":21.79
     },
     {
       "name":"Awarapan 2",
       "slug":"awarapan-2",
-      "totalGross":222750.0,
-      "totalTickets":208,
+      "totalGross":93250.0,
+      "totalTickets":78,
       "totalShows":3,
       "totalSeats":356,
-      "occupancy":58.43
+      "occupancy":21.91
     }
   ]
 }
