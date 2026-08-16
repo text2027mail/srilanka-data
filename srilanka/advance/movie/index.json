@@ -1,32 +1,32 @@
 {
-  "last_updated":"2026-08-16 20:15:01 IST",
+  "last_updated":"2026-08-16 23:11:07 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":116030350.0,
-      "totalTickets":80931,
+      "totalGross":116195400.0,
+      "totalTickets":81061,
       "totalShows":2465,
       "totalSeats":439455,
-      "occupancy":18.42
+      "occupancy":18.45
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":40695050.0,
-      "totalTickets":12607,
+      "totalGross":40819850.0,
+      "totalTickets":12651,
       "totalShows":296,
       "totalSeats":54086,
-      "occupancy":23.31
+      "occupancy":23.39
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":9095000.0,
-      "totalTickets":7709,
+      "totalGross":9108950.0,
+      "totalTickets":7724,
       "totalShows":698,
       "totalSeats":125403,
-      "occupancy":6.15
+      "occupancy":6.16
     },
     {
       "name":"Abhisari",
@@ -67,20 +67,20 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1865200.0,
-      "totalTickets":1532,
+      "totalGross":1870700.0,
+      "totalTickets":1537,
       "totalShows":92,
       "totalSeats":14083,
-      "occupancy":10.88
+      "occupancy":10.91
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":235500.0,
-      "totalTickets":245,
+      "totalTickets":248,
       "totalShows":95,
       "totalSeats":16331,
-      "occupancy":1.5
+      "occupancy":1.52
     },
     {
       "name":"Evil Dead Burn",
@@ -112,11 +112,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":904950.0,
-      "totalTickets":722,
+      "totalGross":913750.0,
+      "totalTickets":730,
       "totalShows":42,
       "totalSeats":5662,
-      "occupancy":12.75
+      "occupancy":12.89
     },
     {
       "name":"Michael",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":8717000.0,
-      "totalTickets":10999,
+      "totalGross":8759600.0,
+      "totalTickets":11076,
       "totalShows":857,
       "totalSeats":165288,
-      "occupancy":6.65
+      "occupancy":6.7
     },
     {
       "name":"Kalpana",
@@ -157,11 +157,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":7038400.0,
-      "totalTickets":6180,
-      "totalShows":163,
-      "totalSeats":35107,
-      "occupancy":17.6
+      "totalGross":7259050.0,
+      "totalTickets":6361,
+      "totalShows":165,
+      "totalSeats":35463,
+      "occupancy":17.94
     },
     {
       "name":"Bambaru Avith",
@@ -175,20 +175,20 @@
     {
       "name":"Magudam",
       "slug":"magudam",
-      "totalGross":309750.0,
-      "totalTickets":426,
+      "totalGross":311050.0,
+      "totalTickets":427,
       "totalShows":79,
       "totalSeats":13306,
-      "occupancy":3.2
+      "occupancy":3.21
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":2916850.0,
-      "totalTickets":2677,
-      "totalShows":340,
-      "totalSeats":59586,
-      "occupancy":4.49
+      "totalGross":2921100.0,
+      "totalTickets":2679,
+      "totalShows":341,
+      "totalSeats":59764,
+      "occupancy":4.48
     },
     {
       "name":"Awarapan 2",
@@ -202,20 +202,20 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":1550000.0,
-      "totalTickets":714,
+      "totalGross":1569800.0,
+      "totalTickets":728,
       "totalShows":44,
       "totalSeats":5976,
-      "occupancy":11.95
+      "occupancy":12.18
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":670150.0,
-      "totalTickets":537,
+      "totalGross":689950.0,
+      "totalTickets":555,
       "totalShows":36,
       "totalSeats":4160,
-      "occupancy":12.91
+      "occupancy":13.34
     },
     {
       "name":"Batwara 1947",
