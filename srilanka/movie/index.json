@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-17 02:29:29 IST",
+  "last_updated":"2026-08-17 04:28:46 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":182808150.0,
-      "totalTickets":137622,
-      "totalShows":2405,
-      "totalSeats":427675,
-      "occupancy":32.18
+      "totalGross":182958150.0,
+      "totalTickets":137753,
+      "totalShows":2417,
+      "totalSeats":429463,
+      "occupancy":32.08
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":516450.0,
       "totalTickets":952,
-      "totalShows":225,
-      "totalSeats":47833,
-      "occupancy":1.99
+      "totalShows":226,
+      "totalSeats":48129,
+      "occupancy":1.98
     },
     {
       "name":"Abhisari",
@@ -49,11 +49,11 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":3647100.0,
-      "totalTickets":3027,
-      "totalShows":95,
-      "totalSeats":14495,
-      "occupancy":20.88
+      "totalGross":3682300.0,
+      "totalTickets":3059,
+      "totalShows":97,
+      "totalSeats":14727,
+      "occupancy":20.77
     },
     {
       "name":"Eka Thamai Meka",
@@ -69,8 +69,8 @@
       "slug":"my-simba",
       "totalGross":78850.0,
       "totalTickets":125,
-      "totalShows":69,
-      "totalSeats":19726,
+      "totalShows":70,
+      "totalSeats":19846,
       "occupancy":0.63
     },
     {
@@ -105,9 +105,9 @@
       "slug":"minions-monsters",
       "totalGross":1802150.0,
       "totalTickets":1459,
-      "totalShows":41,
-      "totalSeats":5462,
-      "occupancy":26.71
+      "totalShows":42,
+      "totalSeats":5634,
+      "occupancy":25.9
     },
     {
       "name":"Evil Dead Burn",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":16642850.0,
-      "totalTickets":23826,
-      "totalShows":802,
-      "totalSeats":155362,
-      "occupancy":15.34
+      "totalGross":16657900.0,
+      "totalTickets":23853,
+      "totalShows":805,
+      "totalSeats":155911,
+      "occupancy":15.3
     },
     {
       "name":"DC",
@@ -166,11 +166,11 @@
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":537900.0,
-      "totalTickets":581,
-      "totalShows":78,
-      "totalSeats":14328,
-      "occupancy":4.05
+      "totalGross":538700.0,
+      "totalTickets":583,
+      "totalShows":84,
+      "totalSeats":15730,
+      "occupancy":3.71
     },
     {
       "name":"Magudam",
@@ -184,20 +184,20 @@
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":1340250.0,
-      "totalTickets":1060,
-      "totalShows":29,
-      "totalSeats":3384,
-      "occupancy":31.32
+      "totalGross":1356750.0,
+      "totalTickets":1075,
+      "totalShows":31,
+      "totalSeats":3632,
+      "occupancy":29.6
     },
     {
       "name":"Awarapan 2",
       "slug":"awarapan-2",
-      "totalGross":415050.0,
-      "totalTickets":297,
-      "totalShows":13,
-      "totalSeats":1364,
-      "occupancy":21.77
+      "totalGross":430450.0,
+      "totalTickets":304,
+      "totalShows":14,
+      "totalSeats":1405,
+      "occupancy":21.64
     },
     {
       "name":"Batwara 1947",
@@ -222,9 +222,9 @@
       "slug":"the-end-of-oak-street",
       "totalGross":3229100.0,
       "totalTickets":1580,
-      "totalShows":36,
-      "totalSeats":4685,
-      "occupancy":33.72
+      "totalShows":37,
+      "totalSeats":4787,
+      "occupancy":33.01
     },
     {
       "name":"Bambaru Avith",
