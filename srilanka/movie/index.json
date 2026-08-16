@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-16 20:30:30 IST",
+  "last_updated":"2026-08-16 22:31:42 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":182480050.0,
-      "totalTickets":137386,
+      "totalGross":182503300.0,
+      "totalTickets":137401,
       "totalShows":2391,
       "totalSeats":425300,
-      "occupancy":32.3
+      "occupancy":32.31
     },
     {
       "name":"Room No.106",
@@ -40,11 +40,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":53062900.0,
-      "totalTickets":17819,
+      "totalGross":53079150.0,
+      "totalTickets":17832,
       "totalShows":294,
       "totalSeats":53585,
-      "occupancy":33.25
+      "occupancy":33.28
     },
     {
       "name":"Moana",
@@ -157,11 +157,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":13458650.0,
-      "totalTickets":13506,
+      "totalGross":13544450.0,
+      "totalTickets":13558,
       "totalShows":140,
       "totalSeats":30433,
-      "occupancy":44.38
+      "occupancy":44.55
     },
     {
       "name":"Kalpana",
