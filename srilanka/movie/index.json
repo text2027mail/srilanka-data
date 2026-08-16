@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-16 18:49:38 IST",
+  "last_updated":"2026-08-16 20:30:30 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":182286650.0,
-      "totalTickets":137195,
+      "totalGross":182480050.0,
+      "totalTickets":137386,
       "totalShows":2391,
       "totalSeats":425300,
-      "occupancy":32.26
+      "occupancy":32.3
     },
     {
       "name":"Room No.106",
@@ -31,20 +31,20 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":22972700.0,
-      "totalTickets":20668,
+      "totalGross":22994450.0,
+      "totalTickets":20683,
       "totalShows":700,
       "totalSeats":124890,
-      "occupancy":16.55
+      "occupancy":16.56
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":53039150.0,
-      "totalTickets":17800,
+      "totalGross":53062900.0,
+      "totalTickets":17819,
       "totalShows":294,
       "totalSeats":53585,
-      "occupancy":33.22
+      "occupancy":33.25
     },
     {
       "name":"Moana",
@@ -139,29 +139,29 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":16534750.0,
-      "totalTickets":23622,
+      "totalGross":16567000.0,
+      "totalTickets":23697,
       "totalShows":776,
       "totalSeats":149686,
-      "occupancy":15.78
+      "occupancy":15.83
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":11834300.0,
-      "totalTickets":11119,
+      "totalGross":11951000.0,
+      "totalTickets":11241,
       "totalShows":313,
       "totalSeats":55441,
-      "occupancy":20.06
+      "occupancy":20.28
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":13092100.0,
-      "totalTickets":13134,
-      "totalShows":139,
-      "totalSeats":30132,
-      "occupancy":43.59
+      "totalGross":13458650.0,
+      "totalTickets":13506,
+      "totalShows":140,
+      "totalSeats":30433,
+      "occupancy":44.38
     },
     {
       "name":"Kalpana",
@@ -175,11 +175,11 @@
     {
       "name":"Magudam",
       "slug":"magudam",
-      "totalGross":220800.0,
-      "totalTickets":355,
+      "totalGross":226000.0,
+      "totalTickets":359,
       "totalShows":53,
       "totalSeats":8277,
-      "occupancy":4.29
+      "occupancy":4.34
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -202,11 +202,11 @@
     {
       "name":"Batwara 1947",
       "slug":"batwara-1947",
-      "totalGross":337300.0,
-      "totalTickets":235,
+      "totalGross":339500.0,
+      "totalTickets":237,
       "totalShows":12,
       "totalSeats":1176,
-      "occupancy":19.98
+      "occupancy":20.15
     },
     {
       "name":"Vihanga Premaya",
@@ -220,11 +220,11 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":3105200.0,
-      "totalTickets":1517,
+      "totalGross":3170400.0,
+      "totalTickets":1540,
       "totalShows":33,
       "totalSeats":4482,
-      "occupancy":33.85
+      "occupancy":34.36
     },
     {
       "name":"Bambaru Avith",
