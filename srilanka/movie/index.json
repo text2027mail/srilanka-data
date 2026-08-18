@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-18 19:00:19 IST",
+  "last_updated":"2026-08-18 20:43:50 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":187718100.0,
-      "totalTickets":141153,
+      "totalGross":187829800.0,
+      "totalTickets":141229,
       "totalShows":2595,
       "totalSeats":461484,
-      "occupancy":30.59
+      "occupancy":30.6
     },
     {
       "name":"Room No.106",
@@ -139,29 +139,29 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18462200.0,
-      "totalTickets":26269,
+      "totalGross":18536600.0,
+      "totalTickets":26346,
       "totalShows":959,
       "totalSeats":185648,
-      "occupancy":14.15
+      "occupancy":14.19
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":12366600.0,
-      "totalTickets":11587,
+      "totalGross":12400950.0,
+      "totalTickets":11614,
       "totalShows":352,
       "totalSeats":61586,
-      "occupancy":18.81
+      "occupancy":18.86
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":17524750.0,
-      "totalTickets":17061,
+      "totalGross":17668200.0,
+      "totalTickets":17215,
       "totalShows":221,
       "totalSeats":47359,
-      "occupancy":36.02
+      "occupancy":36.35
     },
     {
       "name":"Kalpana",
@@ -175,11 +175,11 @@
     {
       "name":"Magudam",
       "slug":"magudam",
-      "totalGross":259400.0,
-      "totalTickets":388,
+      "totalGross":264500.0,
+      "totalTickets":392,
       "totalShows":69,
       "totalSeats":10487,
-      "occupancy":3.7
+      "occupancy":3.74
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -202,11 +202,11 @@
     {
       "name":"Batwara 1947",
       "slug":"batwara-1947",
-      "totalGross":385150.0,
-      "totalTickets":278,
+      "totalGross":389550.0,
+      "totalTickets":282,
       "totalShows":20,
       "totalSeats":2089,
-      "occupancy":13.31
+      "occupancy":13.5
     },
     {
       "name":"Vihanga Premaya",
@@ -220,7 +220,7 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":3880200.0,
+      "totalGross":3884400.0,
       "totalTickets":2003,
       "totalShows":55,
       "totalSeats":7470,
