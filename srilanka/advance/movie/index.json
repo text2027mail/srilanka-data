@@ -1,32 +1,32 @@
 {
-  "last_updated":"2026-08-18 20:28:27 IST",
+  "last_updated":"2026-08-18 23:20:25 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":118513050.0,
-      "totalTickets":82606,
+      "totalGross":118704300.0,
+      "totalTickets":82765,
       "totalShows":2670,
       "totalSeats":475777,
-      "occupancy":17.36
+      "occupancy":17.4
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":43172150.0,
-      "totalTickets":13373,
+      "totalGross":43222600.0,
+      "totalTickets":13402,
       "totalShows":311,
       "totalSeats":57136,
-      "occupancy":23.41
+      "occupancy":23.46
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":9209500.0,
-      "totalTickets":7822,
+      "totalGross":9228200.0,
+      "totalTickets":7840,
       "totalShows":720,
       "totalSeats":128899,
-      "occupancy":6.07
+      "occupancy":6.08
     },
     {
       "name":"Abhisari",
@@ -49,11 +49,11 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":307100.0,
-      "totalTickets":480,
+      "totalGross":307800.0,
+      "totalTickets":482,
       "totalShows":234,
       "totalSeats":49816,
-      "occupancy":0.96
+      "occupancy":0.97
     },
     {
       "name":"Sooriya Sulanga",
@@ -67,11 +67,11 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":1946450.0,
-      "totalTickets":1607,
+      "totalGross":1948650.0,
+      "totalTickets":1609,
       "totalShows":99,
       "totalSeats":14921,
-      "occupancy":10.77
+      "occupancy":10.78
     },
     {
       "name":"Eka Thamai Meka",
@@ -112,11 +112,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":941250.0,
-      "totalTickets":755,
+      "totalGross":944550.0,
+      "totalTickets":758,
       "totalShows":45,
       "totalSeats":6076,
-      "occupancy":12.43
+      "occupancy":12.48
     },
     {
       "name":"Michael",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":9214550.0,
-      "totalTickets":11668,
+      "totalGross":9231250.0,
+      "totalTickets":11705,
       "totalShows":1039,
       "totalSeats":201109,
-      "occupancy":5.8
+      "occupancy":5.82
     },
     {
       "name":"Kalpana",
@@ -157,11 +157,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":8163100.0,
-      "totalTickets":7066,
-      "totalShows":247,
-      "totalSeats":52683,
-      "occupancy":13.41
+      "totalGross":8252300.0,
+      "totalTickets":7142,
+      "totalShows":248,
+      "totalSeats":52800,
+      "occupancy":13.53
     },
     {
       "name":"Bambaru Avith",
@@ -184,11 +184,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":3001950.0,
-      "totalTickets":2737,
+      "totalGross":3018400.0,
+      "totalTickets":2752,
       "totalShows":381,
       "totalSeats":66099,
-      "occupancy":4.14
+      "occupancy":4.16
     },
     {
       "name":"Awarapan 2",
@@ -202,29 +202,29 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":1871100.0,
-      "totalTickets":885,
+      "totalGross":1902500.0,
+      "totalTickets":908,
       "totalShows":66,
       "totalSeats":8964,
-      "occupancy":9.87
+      "occupancy":10.13
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":860350.0,
-      "totalTickets":719,
+      "totalGross":866350.0,
+      "totalTickets":725,
       "totalShows":56,
       "totalSeats":6538,
-      "occupancy":11.0
+      "occupancy":11.09
     },
     {
       "name":"Batwara 1947",
       "slug":"batwara-1947",
-      "totalGross":331900.0,
-      "totalTickets":238,
+      "totalGross":333900.0,
+      "totalTickets":240,
       "totalShows":25,
       "totalSeats":2652,
-      "occupancy":8.97
+      "occupancy":9.05
     },
     {
       "name":"Vihanga Premaya",
