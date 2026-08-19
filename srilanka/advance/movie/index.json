@@ -1,32 +1,32 @@
 {
-  "last_updated":"2026-08-19 20:28:40 IST",
+  "last_updated":"2026-08-19 23:16:51 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":119646050.0,
-      "totalTickets":83375,
+      "totalGross":119870200.0,
+      "totalTickets":83530,
       "totalShows":2773,
       "totalSeats":493962,
-      "occupancy":16.88
+      "occupancy":16.91
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":44071500.0,
-      "totalTickets":13697,
+      "totalGross":44113450.0,
+      "totalTickets":13716,
       "totalShows":319,
       "totalSeats":58717,
-      "occupancy":23.33
+      "occupancy":23.36
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":9269650.0,
-      "totalTickets":7877,
+      "totalGross":9292600.0,
+      "totalTickets":7898,
       "totalShows":731,
       "totalSeats":130647,
-      "occupancy":6.03
+      "occupancy":6.05
     },
     {
       "name":"Abhisari",
@@ -49,11 +49,11 @@
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":310600.0,
-      "totalTickets":489,
+      "totalGross":311400.0,
+      "totalTickets":491,
       "totalShows":239,
       "totalSeats":50798,
-      "occupancy":0.96
+      "occupancy":0.97
     },
     {
       "name":"Sooriya Sulanga",
@@ -67,11 +67,11 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":2003350.0,
-      "totalTickets":1659,
+      "totalGross":2019900.0,
+      "totalTickets":1675,
       "totalShows":104,
       "totalSeats":15527,
-      "occupancy":10.68
+      "occupancy":10.79
     },
     {
       "name":"Eka Thamai Meka",
@@ -139,28 +139,28 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":9448800.0,
-      "totalTickets":12014,
+      "totalGross":9484150.0,
+      "totalTickets":12067,
       "totalShows":1131,
       "totalSeats":219210,
-      "occupancy":5.48
+      "occupancy":5.5
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":108600.0,
-      "totalTickets":124,
+      "totalGross":109200.0,
+      "totalTickets":126,
       "totalShows":155,
       "totalSeats":29297,
-      "occupancy":0.42
+      "occupancy":0.43
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":8501450.0,
-      "totalTickets":7324,
-      "totalShows":288,
-      "totalSeats":61225,
+      "totalGross":8554200.0,
+      "totalTickets":7368,
+      "totalShows":290,
+      "totalSeats":61595,
       "occupancy":11.96
     },
     {
@@ -184,11 +184,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":3087500.0,
-      "totalTickets":2807,
-      "totalShows":401,
-      "totalSeats":69308,
-      "occupancy":4.05
+      "totalGross":3109750.0,
+      "totalTickets":2827,
+      "totalShows":402,
+      "totalSeats":69405,
+      "occupancy":4.07
     },
     {
       "name":"Awarapan 2",
@@ -202,20 +202,20 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":1988600.0,
-      "totalTickets":966,
+      "totalGross":2005100.0,
+      "totalTickets":973,
       "totalShows":77,
       "totalSeats":10458,
-      "occupancy":9.24
+      "occupancy":9.3
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":921850.0,
-      "totalTickets":781,
+      "totalGross":952250.0,
+      "totalTickets":813,
       "totalShows":66,
       "totalSeats":7727,
-      "occupancy":10.11
+      "occupancy":10.52
     },
     {
       "name":"Batwara 1947",
@@ -229,11 +229,11 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":145600.0,
-      "totalTickets":164,
+      "totalGross":149400.0,
+      "totalTickets":168,
       "totalShows":106,
       "totalSeats":22734,
-      "occupancy":0.72
+      "occupancy":0.74
     },
     {
       "name":"GDN",
