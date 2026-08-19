@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-19 20:43:54 IST",
+  "last_updated":"2026-08-19 22:34:31 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
@@ -157,11 +157,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":19380250.0,
-      "totalTickets":18675,
+      "totalGross":19471600.0,
+      "totalTickets":18738,
       "totalShows":261,
       "totalSeats":55799,
-      "occupancy":33.47
+      "occupancy":33.58
     },
     {
       "name":"Kalpana",
