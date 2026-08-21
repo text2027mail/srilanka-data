@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-21 20:45:47 IST",
+  "last_updated":"2026-08-21 22:42:43 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":195840350.0,
-      "totalTickets":147016,
+      "totalGross":195863600.0,
+      "totalTickets":147031,
       "totalShows":2890,
       "totalSeats":513962,
-      "occupancy":28.6
+      "occupancy":28.61
     },
     {
       "name":"Room No.106",
@@ -157,11 +157,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":22267400.0,
-      "totalTickets":21088,
+      "totalGross":22440650.0,
+      "totalTickets":21193,
       "totalShows":350,
       "totalSeats":75074,
-      "occupancy":28.09
+      "occupancy":28.23
     },
     {
       "name":"Kalpana",
@@ -283,11 +283,11 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":636500.0,
-      "totalTickets":400,
+      "totalGross":669150.0,
+      "totalTickets":423,
       "totalShows":16,
       "totalSeats":1917,
-      "occupancy":20.87
+      "occupancy":22.07
     },
     {
       "name":"Modha Rathri",
