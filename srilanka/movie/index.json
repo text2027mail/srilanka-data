@@ -1,50 +1,50 @@
 {
-  "last_updated":"2026-08-21 04:34:04 IST",
+  "last_updated":"2026-08-21 07:43:21 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":193344150.0,
-      "totalTickets":145239,
-      "totalShows":2820,
-      "totalSeats":500923,
-      "occupancy":28.99
+      "totalGross":193653700.0,
+      "totalTickets":145479,
+      "totalShows":2848,
+      "totalSeats":506457,
+      "occupancy":28.72
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
       "totalGross":551650.0,
       "totalTickets":1003,
-      "totalShows":242,
-      "totalSeats":51389,
-      "occupancy":1.95
+      "totalShows":243,
+      "totalSeats":51589,
+      "occupancy":1.94
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
       "totalGross":223000.0,
       "totalTickets":370,
-      "totalShows":139,
-      "totalSeats":37512,
-      "occupancy":0.99
+      "totalShows":140,
+      "totalSeats":38075,
+      "occupancy":0.97
     },
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":23697650.0,
-      "totalTickets":21384,
-      "totalShows":747,
-      "totalSeats":132329,
-      "occupancy":16.16
+      "totalGross":23706650.0,
+      "totalTickets":21393,
+      "totalShows":749,
+      "totalSeats":132608,
+      "occupancy":16.13
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":58406650.0,
-      "totalTickets":19692,
-      "totalShows":328,
-      "totalSeats":60347,
-      "occupancy":32.63
+      "totalGross":58432250.0,
+      "totalTickets":19707,
+      "totalShows":329,
+      "totalSeats":60458,
+      "occupancy":32.6
     },
     {
       "name":"Moana",
@@ -59,10 +59,10 @@
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":985200.0,
-      "totalTickets":917,
-      "totalShows":102,
-      "totalSeats":17377,
-      "occupancy":5.28
+      "totalTickets":927,
+      "totalShows":103,
+      "totalSeats":17479,
+      "occupancy":5.3
     },
     {
       "name":"My Simba",
@@ -103,11 +103,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":1947550.0,
-      "totalTickets":1593,
-      "totalShows":48,
-      "totalSeats":6397,
-      "occupancy":24.9
+      "totalGross":1970350.0,
+      "totalTickets":1612,
+      "totalShows":49,
+      "totalSeats":6518,
+      "occupancy":24.73
     },
     {
       "name":"Evil Dead Burn",
@@ -139,38 +139,38 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":20159250.0,
-      "totalTickets":28640,
-      "totalShows":1173,
-      "totalSeats":228318,
-      "occupancy":12.54
+      "totalGross":20266250.0,
+      "totalTickets":28755,
+      "totalShows":1192,
+      "totalSeats":231725,
+      "occupancy":12.41
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":12816350.0,
-      "totalTickets":11967,
-      "totalShows":395,
-      "totalSeats":68154,
-      "occupancy":17.56
+      "totalGross":12817550.0,
+      "totalTickets":11971,
+      "totalShows":397,
+      "totalSeats":68469,
+      "occupancy":17.48
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":20585700.0,
-      "totalTickets":19684,
-      "totalShows":306,
-      "totalSeats":65278,
-      "occupancy":30.15
+      "totalGross":20634700.0,
+      "totalTickets":19738,
+      "totalShows":318,
+      "totalSeats":68422,
+      "occupancy":28.85
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":589250.0,
-      "totalTickets":682,
-      "totalShows":164,
-      "totalSeats":31608,
-      "occupancy":2.16
+      "totalGross":590400.0,
+      "totalTickets":683,
+      "totalShows":169,
+      "totalSeats":32456,
+      "occupancy":2.1
     },
     {
       "name":"Magudam",
@@ -184,20 +184,20 @@
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":2092700.0,
-      "totalTickets":1788,
-      "totalShows":72,
-      "totalSeats":8436,
-      "occupancy":21.19
+      "totalGross":2103100.0,
+      "totalTickets":1802,
+      "totalShows":74,
+      "totalSeats":8763,
+      "occupancy":20.56
     },
     {
       "name":"Awarapan 2",
       "slug":"awarapan-2",
-      "totalGross":582900.0,
-      "totalTickets":415,
-      "totalShows":29,
-      "totalSeats":2941,
-      "occupancy":14.11
+      "totalGross":584350.0,
+      "totalTickets":416,
+      "totalShows":30,
+      "totalSeats":3052,
+      "occupancy":13.63
     },
     {
       "name":"Batwara 1947",
@@ -220,11 +220,11 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":4738750.0,
-      "totalTickets":2528,
-      "totalShows":81,
-      "totalSeats":10757,
-      "occupancy":23.5
+      "totalGross":4743550.0,
+      "totalTickets":2532,
+      "totalShows":83,
+      "totalSeats":11084,
+      "occupancy":22.84
     },
     {
       "name":"Bambaru Avith",
@@ -283,29 +283,38 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":64850.0,
-      "totalTickets":35,
-      "totalShows":3,
-      "totalSeats":407,
-      "occupancy":8.6
+      "totalGross":147150.0,
+      "totalTickets":78,
+      "totalShows":7,
+      "totalSeats":833,
+      "occupancy":9.36
     },
     {
       "name":"Modha Rathri",
       "slug":"modha-rathri",
       "totalGross":1350.0,
       "totalTickets":1,
-      "totalShows":1,
-      "totalSeats":111,
-      "occupancy":0.9
+      "totalShows":2,
+      "totalSeats":208,
+      "occupancy":0.48
     },
     {
       "name":"Ram in Leela",
       "slug":"ram-in-leela",
-      "totalGross":1450.0,
-      "totalTickets":1,
+      "totalGross":3450.0,
+      "totalTickets":3,
+      "totalShows":4,
+      "totalSeats":731,
+      "occupancy":0.41
+    },
+    {
+      "name":"Irumudi",
+      "slug":"irumudi",
+      "totalGross":0.0,
+      "totalTickets":0,
       "totalShows":2,
-      "totalSeats":295,
-      "occupancy":0.34
+      "totalSeats":216,
+      "occupancy":0.0
     }
   ]
 }
