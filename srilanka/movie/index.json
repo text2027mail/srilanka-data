@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-22 20:29:43 IST",
+  "last_updated":"2026-08-22 22:30:45 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":201461450.0,
-      "totalTickets":151226,
+      "totalGross":201495550.0,
+      "totalTickets":151248,
       "totalShows":2982,
       "totalSeats":530575,
-      "occupancy":28.5
+      "occupancy":28.51
     },
     {
       "name":"Room No.106",
@@ -148,20 +148,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":13316250.0,
-      "totalTickets":12377,
+      "totalGross":13378350.0,
+      "totalTickets":12423,
       "totalShows":419,
       "totalSeats":72406,
-      "occupancy":17.09
+      "occupancy":17.16
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":24800650.0,
-      "totalTickets":23241,
+      "totalGross":24894700.0,
+      "totalTickets":23298,
       "totalShows":397,
       "totalSeats":85379,
-      "occupancy":27.22
+      "occupancy":27.29
     },
     {
       "name":"Kalpana",
@@ -274,11 +274,11 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":1662250.0,
-      "totalTickets":1047,
+      "totalGross":1701850.0,
+      "totalTickets":1074,
       "totalShows":33,
       "totalSeats":3930,
-      "occupancy":26.64
+      "occupancy":27.33
     },
     {
       "name":"Irumudi",
@@ -292,11 +292,11 @@
     {
       "name":"Modha Rathri",
       "slug":"modha-rathri",
-      "totalGross":16200.0,
-      "totalTickets":12,
+      "totalGross":28350.0,
+      "totalTickets":21,
       "totalShows":5,
       "totalSeats":735,
-      "occupancy":1.63
+      "occupancy":2.86
     },
     {
       "name":"Mutiny",
