@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-23 16:30:56 IST",
+  "last_updated":"2026-08-23 18:51:04 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":206544100.0,
-      "totalTickets":155202,
+      "totalGross":206838400.0,
+      "totalTickets":155457,
       "totalShows":3075,
       "totalSeats":547284,
-      "occupancy":28.36
+      "occupancy":28.41
     },
     {
       "name":"Room No.106",
@@ -31,20 +31,20 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":24153000.0,
-      "totalTickets":21782,
+      "totalGross":24279100.0,
+      "totalTickets":21882,
       "totalShows":772,
       "totalSeats":135852,
-      "occupancy":16.03
+      "occupancy":16.11
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":64354650.0,
-      "totalTickets":21625,
+      "totalGross":64428850.0,
+      "totalTickets":21665,
       "totalShows":347,
       "totalSeats":64045,
-      "occupancy":33.77
+      "occupancy":33.83
     },
     {
       "name":"Moana",
@@ -139,29 +139,29 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":25363700.0,
-      "totalTickets":35746,
+      "totalGross":25610500.0,
+      "totalTickets":36109,
       "totalShows":1436,
       "totalSeats":280157,
-      "occupancy":12.76
+      "occupancy":12.89
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":13587300.0,
-      "totalTickets":12621,
+      "totalGross":13656700.0,
+      "totalTickets":12667,
       "totalShows":434,
       "totalSeats":75053,
-      "occupancy":16.82
+      "occupancy":16.88
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":26704850.0,
-      "totalTickets":24992,
+      "totalGross":26969550.0,
+      "totalTickets":25231,
       "totalShows":439,
       "totalSeats":94722,
-      "occupancy":26.38
+      "occupancy":26.64
     },
     {
       "name":"Kalpana",
@@ -193,11 +193,11 @@
     {
       "name":"Awarapan 2",
       "slug":"awarapan-2",
-      "totalGross":905150.0,
-      "totalTickets":540,
+      "totalGross":916950.0,
+      "totalTickets":544,
       "totalShows":35,
       "totalSeats":3397,
-      "occupancy":15.9
+      "occupancy":16.01
     },
     {
       "name":"Batwara 1947",
@@ -211,20 +211,20 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":544650.0,
-      "totalTickets":671,
+      "totalGross":563050.0,
+      "totalTickets":687,
       "totalShows":116,
       "totalSeats":25960,
-      "occupancy":2.58
+      "occupancy":2.65
     },
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":6846550.0,
-      "totalTickets":3604,
+      "totalGross":6892150.0,
+      "totalTickets":3640,
       "totalShows":110,
       "totalSeats":14815,
-      "occupancy":24.33
+      "occupancy":24.57
     },
     {
       "name":"Bambaru Avith",
@@ -265,20 +265,20 @@
     {
       "name":"Ram in Leela",
       "slug":"ram-in-leela",
-      "totalGross":154250.0,
-      "totalTickets":153,
+      "totalGross":157050.0,
+      "totalTickets":157,
       "totalShows":32,
       "totalSeats":4741,
-      "occupancy":3.23
+      "occupancy":3.31
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":2298650.0,
-      "totalTickets":1471,
+      "totalGross":2368250.0,
+      "totalTickets":1524,
       "totalShows":49,
       "totalSeats":5846,
-      "occupancy":25.16
+      "occupancy":26.07
     },
     {
       "name":"Irumudi",
@@ -301,11 +301,11 @@
     {
       "name":"Mutiny",
       "slug":"mutiny",
-      "totalGross":356550.0,
-      "totalTickets":214,
+      "totalGross":374450.0,
+      "totalTickets":227,
       "totalShows":17,
       "totalSeats":1837,
-      "occupancy":11.65
+      "occupancy":12.36
     },
     {
       "name":"OIC Gadafi",
