@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-08-25 22:46:43 IST",
+  "last_updated":"2026-08-26 00:48:42 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
@@ -306,6 +306,15 @@
       "totalShows":2,
       "totalSeats":242,
       "occupancy":0.0
+    },
+    {
+      "name":"Toxic: A Fairy Tale For Grown-ups",
+      "slug":"toxic-a-fairy-tale-for-grown-ups",
+      "totalGross":550400.0,
+      "totalTickets":222,
+      "totalShows":29,
+      "totalSeats":4827,
+      "occupancy":4.6
     },
     {
       "name":"OIC Gadafi",
