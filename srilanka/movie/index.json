@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-26 19:10:58 IST",
+  "last_updated":"2026-08-26 21:35:44 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":217341750.0,
-      "totalTickets":163973,
+      "totalGross":217484100.0,
+      "totalTickets":164066,
       "totalShows":3322,
       "totalSeats":590598,
-      "occupancy":27.76
+      "occupancy":27.78
     },
     {
       "name":"Room No.106",
@@ -40,11 +40,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":70063800.0,
-      "totalTickets":23533,
+      "totalGross":70121600.0,
+      "totalTickets":23550,
       "totalShows":366,
       "totalSeats":67946,
-      "occupancy":34.63
+      "occupancy":34.66
     },
     {
       "name":"Moana",
@@ -157,11 +157,11 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":3859750.0,
-      "totalTickets":2647,
+      "totalGross":3895750.0,
+      "totalTickets":2670,
       "totalShows":95,
       "totalSeats":11834,
-      "occupancy":22.37
+      "occupancy":22.56
     },
     {
       "name":"Kalpana",
@@ -184,11 +184,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":29700750.0,
-      "totalTickets":28056,
+      "totalGross":29758250.0,
+      "totalTickets":28102,
       "totalShows":540,
       "totalSeats":115500,
-      "occupancy":24.29
+      "occupancy":24.33
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -310,11 +310,11 @@
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":7990150.0,
-      "totalTickets":6262,
+      "totalGross":8485550.0,
+      "totalTickets":6723,
       "totalShows":120,
       "totalSeats":22285,
-      "occupancy":28.1
+      "occupancy":30.17
     },
     {
       "name":"OIC Gadafi",
