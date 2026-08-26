@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-08-26 14:55:16 IST",
+  "last_updated":"2026-08-26 16:43:07 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":216650900.0,
-      "totalTickets":163411,
+      "totalGross":217031100.0,
+      "totalTickets":163708,
       "totalShows":3322,
       "totalSeats":590598,
-      "occupancy":27.67
+      "occupancy":27.72
     },
     {
       "name":"Room No.106",
@@ -31,20 +31,20 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":24484900.0,
-      "totalTickets":22077,
+      "totalGross":24496150.0,
+      "totalTickets":22086,
       "totalShows":794,
       "totalSeats":138983,
-      "occupancy":15.88
+      "occupancy":15.89
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":69904600.0,
-      "totalTickets":23485,
+      "totalGross":70009400.0,
+      "totalTickets":23517,
       "totalShows":366,
       "totalSeats":67946,
-      "occupancy":34.56
+      "occupancy":34.61
     },
     {
       "name":"Moana",
@@ -139,38 +139,38 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":28794050.0,
-      "totalTickets":40749,
+      "totalGross":28933300.0,
+      "totalTickets":40996,
       "totalShows":1709,
       "totalSeats":333299,
-      "occupancy":12.23
+      "occupancy":12.3
     },
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":14108400.0,
-      "totalTickets":13016,
+      "totalGross":14123400.0,
+      "totalTickets":13026,
       "totalShows":458,
       "totalSeats":79647,
-      "occupancy":16.34
+      "occupancy":16.35
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":3723900.0,
-      "totalTickets":2546,
+      "totalGross":3801600.0,
+      "totalTickets":2605,
       "totalShows":95,
       "totalSeats":11834,
-      "occupancy":21.51
+      "occupancy":22.01
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":733400.0,
-      "totalTickets":987,
+      "totalGross":735200.0,
+      "totalTickets":993,
       "totalShows":268,
       "totalSeats":53594,
-      "occupancy":1.84
+      "occupancy":1.85
     },
     {
       "name":"Ram in Leela",
@@ -184,20 +184,20 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":29400150.0,
-      "totalTickets":27681,
+      "totalGross":29571900.0,
+      "totalTickets":27858,
       "totalShows":540,
       "totalSeats":115500,
-      "occupancy":23.97
+      "occupancy":24.12
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":4529750.0,
-      "totalTickets":3829,
+      "totalGross":4579250.0,
+      "totalTickets":3868,
       "totalShows":137,
       "totalSeats":16092,
-      "occupancy":23.79
+      "occupancy":24.04
     },
     {
       "name":"Irumudi",
@@ -211,20 +211,20 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":600200.0,
-      "totalTickets":748,
+      "totalGross":604750.0,
+      "totalTickets":755,
       "totalShows":123,
       "totalSeats":27508,
-      "occupancy":2.72
+      "occupancy":2.74
     },
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":8201950.0,
-      "totalTickets":4429,
+      "totalGross":8223650.0,
+      "totalTickets":4448,
       "totalShows":138,
       "totalSeats":18793,
-      "occupancy":23.57
+      "occupancy":23.67
     },
     {
       "name":"Mutiny",
@@ -310,11 +310,11 @@
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":6194200.0,
-      "totalTickets":4691,
-      "totalShows":119,
-      "totalSeats":21966,
-      "occupancy":21.36
+      "totalGross":7043400.0,
+      "totalTickets":5394,
+      "totalShows":120,
+      "totalSeats":22285,
+      "occupancy":24.2
     },
     {
       "name":"OIC Gadafi",
