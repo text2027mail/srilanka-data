@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-08-27 21:02:35 IST",
+  "last_updated":"2026-08-28 06:39:51 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":217484100.0,
-      "totalTickets":164066,
-      "totalShows":3322,
-      "totalSeats":590598,
-      "occupancy":27.78
+      "totalGross":218227750.0,
+      "totalTickets":164614,
+      "totalShows":3352,
+      "totalSeats":595753,
+      "occupancy":27.63
     },
     {
       "name":"Room No.106",
       "slug":"room-no106",
-      "totalGross":662550.0,
-      "totalTickets":1118,
-      "totalShows":256,
-      "totalSeats":53525,
-      "occupancy":2.09
+      "totalGross":668150.0,
+      "totalTickets":1134,
+      "totalShows":257,
+      "totalSeats":53725,
+      "occupancy":2.11
     },
     {
       "name":"Abhisari",
@@ -31,46 +31,46 @@
     {
       "name":"Jana Nayagan",
       "slug":"jana-nayagan",
-      "totalGross":24518650.0,
-      "totalTickets":22104,
-      "totalShows":794,
-      "totalSeats":138983,
-      "occupancy":15.9
+      "totalGross":24527050.0,
+      "totalTickets":22112,
+      "totalShows":797,
+      "totalSeats":139412,
+      "occupancy":15.86
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":70121600.0,
-      "totalTickets":23550,
-      "totalShows":366,
-      "totalSeats":67946,
-      "occupancy":34.66
+      "totalGross":70358400.0,
+      "totalTickets":23614,
+      "totalShows":367,
+      "totalSeats":68251,
+      "occupancy":34.6
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":4784050.0,
-      "totalTickets":4124,
-      "totalShows":129,
-      "totalSeats":18963,
-      "occupancy":21.75
+      "totalGross":4893250.0,
+      "totalTickets":4215,
+      "totalShows":130,
+      "totalSeats":19084,
+      "occupancy":22.09
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":985200.0,
       "totalTickets":1027,
-      "totalShows":107,
-      "totalSeats":17887,
-      "occupancy":5.74
+      "totalShows":108,
+      "totalSeats":17989,
+      "occupancy":5.71
     },
     {
       "name":"My Simba",
       "slug":"my-simba",
       "totalGross":80450.0,
       "totalTickets":133,
-      "totalShows":96,
-      "totalSeats":24472,
+      "totalShows":97,
+      "totalSeats":24689,
       "occupancy":0.54
     },
     {
@@ -103,11 +103,11 @@
     {
       "name":"Minions & Monsters",
       "slug":"minions-monsters",
-      "totalGross":2477650.0,
-      "totalTickets":2038,
-      "totalShows":57,
-      "totalSeats":7444,
-      "occupancy":27.38
+      "totalGross":2487250.0,
+      "totalTickets":2046,
+      "totalShows":58,
+      "totalSeats":7565,
+      "occupancy":27.05
     },
     {
       "name":"Evil Dead Burn",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":29083750.0,
-      "totalTickets":41284,
-      "totalShows":1709,
-      "totalSeats":333299,
-      "occupancy":12.39
+      "totalGross":29276500.0,
+      "totalTickets":41578,
+      "totalShows":1745,
+      "totalSeats":340701,
+      "occupancy":12.2
     },
     {
       "name":"DC",
@@ -157,20 +157,20 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":3895750.0,
-      "totalTickets":2670,
-      "totalShows":95,
-      "totalSeats":11834,
-      "occupancy":22.56
+      "totalGross":3967250.0,
+      "totalTickets":2740,
+      "totalShows":100,
+      "totalSeats":12462,
+      "occupancy":21.99
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
       "totalGross":735200.0,
       "totalTickets":993,
-      "totalShows":268,
-      "totalSeats":53594,
-      "occupancy":1.85
+      "totalShows":273,
+      "totalSeats":54535,
+      "occupancy":1.82
     },
     {
       "name":"Ram in Leela",
@@ -184,20 +184,20 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":29758250.0,
-      "totalTickets":28102,
-      "totalShows":540,
-      "totalSeats":115500,
-      "occupancy":24.33
+      "totalGross":29863450.0,
+      "totalTickets":28198,
+      "totalShows":546,
+      "totalSeats":116578,
+      "occupancy":24.19
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":4579250.0,
-      "totalTickets":3868,
-      "totalShows":137,
-      "totalSeats":16092,
-      "occupancy":24.04
+      "totalGross":4622100.0,
+      "totalTickets":3908,
+      "totalShows":141,
+      "totalSeats":16632,
+      "occupancy":23.5
     },
     {
       "name":"Irumudi",
@@ -220,20 +220,20 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":8285650.0,
-      "totalTickets":4503,
-      "totalShows":138,
-      "totalSeats":18793,
-      "occupancy":23.96
+      "totalGross":8338450.0,
+      "totalTickets":4541,
+      "totalShows":142,
+      "totalSeats":19091,
+      "occupancy":23.79
     },
     {
       "name":"Mutiny",
       "slug":"mutiny",
-      "totalGross":497200.0,
-      "totalTickets":308,
-      "totalShows":29,
-      "totalSeats":3121,
-      "occupancy":9.87
+      "totalGross":505300.0,
+      "totalTickets":314,
+      "totalShows":31,
+      "totalSeats":3337,
+      "occupancy":9.41
     },
     {
       "name":"Awarapan 2",
@@ -310,11 +310,11 @@
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":8485550.0,
-      "totalTickets":6723,
-      "totalShows":120,
-      "totalSeats":22285,
-      "occupancy":30.17
+      "totalGross":8641900.0,
+      "totalTickets":6803,
+      "totalShows":139,
+      "totalSeats":25934,
+      "occupancy":26.23
     },
     {
       "name":"OIC Gadafi",
@@ -333,6 +333,33 @@
       "totalShows":1,
       "totalSeats":121,
       "occupancy":46.28
+    },
+    {
+      "name":"Cricket Sadu",
+      "slug":"cricket-sadu",
+      "totalGross":44650.0,
+      "totalTickets":43,
+      "totalShows":22,
+      "totalSeats":3827,
+      "occupancy":1.12
+    },
+    {
+      "name":"Hi",
+      "slug":"hi",
+      "totalGross":36850.0,
+      "totalTickets":40,
+      "totalShows":6,
+      "totalSeats":898,
+      "occupancy":4.45
+    },
+    {
+      "name":"Once More",
+      "slug":"once-more",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":2,
+      "totalSeats":234,
+      "occupancy":0.0
     },
     {
       "name":"Aswesuma",
