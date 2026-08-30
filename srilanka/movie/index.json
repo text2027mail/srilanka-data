@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-08-30 17:46:06 IST",
+  "last_updated":"2026-08-30 22:28:51 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":225446600.0,
-      "totalTickets":170003,
+      "totalGross":225498000.0,
+      "totalTickets":170037,
       "totalShows":3492,
       "totalSeats":619356,
       "occupancy":27.45
@@ -148,20 +148,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":14355000.0,
-      "totalTickets":13191,
+      "totalGross":14388000.0,
+      "totalTickets":13213,
       "totalShows":473,
       "totalSeats":82902,
-      "occupancy":15.91
+      "occupancy":15.94
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":5256500.0,
-      "totalTickets":3622,
+      "totalGross":5270900.0,
+      "totalTickets":3634,
       "totalShows":126,
       "totalSeats":15397,
-      "occupancy":23.52
+      "occupancy":23.6
     },
     {
       "name":"Kalpana",
@@ -184,11 +184,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":32569050.0,
-      "totalTickets":30995,
+      "totalGross":32639250.0,
+      "totalTickets":31047,
       "totalShows":606,
       "totalSeats":127969,
-      "occupancy":24.22
+      "occupancy":24.26
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -301,11 +301,11 @@
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":11150700.0,
-      "totalTickets":8542,
+      "totalGross":11246800.0,
+      "totalTickets":8600,
       "totalShows":275,
       "totalSeats":52176,
-      "occupancy":16.37
+      "occupancy":16.48
     },
     {
       "name":"Once More",
