@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-09-01 17:33:32 IST",
+  "last_updated":"2026-09-01 22:27:13 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":227451750.0,
-      "totalTickets":171474,
+      "totalGross":227488950.0,
+      "totalTickets":171494,
       "totalShows":3633,
       "totalSeats":643659,
       "occupancy":26.64
@@ -292,20 +292,20 @@
     {
       "name":"Hi",
       "slug":"hi",
-      "totalGross":1945300.0,
-      "totalTickets":1914,
+      "totalGross":1989050.0,
+      "totalTickets":1949,
       "totalShows":85,
       "totalSeats":12285,
-      "occupancy":15.58
+      "occupancy":15.86
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":11541100.0,
-      "totalTickets":8789,
+      "totalGross":11563600.0,
+      "totalTickets":8807,
       "totalShows":350,
       "totalSeats":65392,
-      "occupancy":13.44
+      "occupancy":13.47
     },
     {
       "name":"Once More",
