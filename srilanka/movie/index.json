@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-09-02 17:14:42 IST",
+  "last_updated":"2026-09-02 22:22:34 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":228540400.0,
-      "totalTickets":172303,
+      "totalGross":228576200.0,
+      "totalTickets":172327,
       "totalShows":3703,
       "totalSeats":655595,
-      "occupancy":26.28
+      "occupancy":26.29
     },
     {
       "name":"Room No.106",
@@ -148,11 +148,11 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":14435050.0,
-      "totalTickets":13248,
+      "totalGross":14453800.0,
+      "totalTickets":13263,
       "totalShows":484,
       "totalSeats":85266,
-      "occupancy":15.54
+      "occupancy":15.55
     },
     {
       "name":"Insidious: Out of The Further",
@@ -292,20 +292,20 @@
     {
       "name":"Hi",
       "slug":"hi",
-      "totalGross":2231550.0,
-      "totalTickets":2148,
+      "totalGross":2329050.0,
+      "totalTickets":2226,
       "totalShows":106,
       "totalSeats":15299,
-      "occupancy":14.04
+      "occupancy":14.55
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":11698950.0,
-      "totalTickets":8901,
+      "totalGross":11738950.0,
+      "totalTickets":8933,
       "totalShows":381,
       "totalSeats":71052,
-      "occupancy":12.53
+      "occupancy":12.57
     },
     {
       "name":"Once More",
