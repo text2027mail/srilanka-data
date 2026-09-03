@@ -1,14 +1,14 @@
 {
-  "last_updated":"2026-09-03 02:50:15 IST",
+  "last_updated":"2026-09-03 06:13:23 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":228782400.0,
-      "totalTickets":172471,
-      "totalShows":3712,
-      "totalSeats":657204,
-      "occupancy":26.24
+      "totalGross":228917500.0,
+      "totalTickets":172590,
+      "totalShows":3734,
+      "totalSeats":661135,
+      "occupancy":26.11
     },
     {
       "name":"Room No.106",
@@ -24,9 +24,9 @@
       "slug":"abhisari",
       "totalGross":226750.0,
       "totalTickets":385,
-      "totalShows":157,
-      "totalSeats":47646,
-      "occupancy":0.81
+      "totalShows":158,
+      "totalSeats":48209,
+      "occupancy":0.8
     },
     {
       "name":"Jana Nayagan",
@@ -40,8 +40,8 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":77104900.0,
-      "totalTickets":25792,
+      "totalGross":77101500.0,
+      "totalTickets":25791,
       "totalShows":405,
       "totalSeats":76846,
       "occupancy":33.56
@@ -49,20 +49,20 @@
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":5343650.0,
-      "totalTickets":4583,
-      "totalShows":135,
-      "totalSeats":19689,
-      "occupancy":23.28
+      "totalGross":5396450.0,
+      "totalTickets":4631,
+      "totalShows":136,
+      "totalSeats":19810,
+      "occupancy":23.38
     },
     {
       "name":"Eka Thamai Meka",
       "slug":"eka-thamai-meka",
       "totalGross":985200.0,
       "totalTickets":1056,
-      "totalShows":113,
-      "totalSeats":18499,
-      "occupancy":5.71
+      "totalShows":114,
+      "totalSeats":18601,
+      "occupancy":5.68
     },
     {
       "name":"My Simba",
@@ -139,11 +139,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":32733100.0,
-      "totalTickets":46626,
-      "totalShows":2164,
-      "totalSeats":423018,
-      "occupancy":11.02
+      "totalGross":32757550.0,
+      "totalTickets":46663,
+      "totalShows":2183,
+      "totalSeats":426585,
+      "occupancy":10.94
     },
     {
       "name":"DC",
@@ -157,20 +157,20 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":5653150.0,
-      "totalTickets":3936,
-      "totalShows":156,
-      "totalSeats":18925,
-      "occupancy":20.8
+      "totalGross":5661550.0,
+      "totalTickets":3943,
+      "totalShows":160,
+      "totalSeats":19545,
+      "occupancy":20.17
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
-      "totalGross":773150.0,
-      "totalTickets":1121,
-      "totalShows":328,
-      "totalSeats":65598,
-      "occupancy":1.71
+      "totalGross":780050.0,
+      "totalTickets":1144,
+      "totalShows":331,
+      "totalSeats":66202,
+      "occupancy":1.73
     },
     {
       "name":"Ram in Leela",
@@ -184,11 +184,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":33296950.0,
-      "totalTickets":31681,
-      "totalShows":679,
-      "totalSeats":142526,
-      "occupancy":22.23
+      "totalGross":33307650.0,
+      "totalTickets":31695,
+      "totalShows":684,
+      "totalSeats":143701,
+      "occupancy":22.06
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -211,8 +211,8 @@
     {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
-      "totalGross":685150.0,
-      "totalTickets":881,
+      "totalGross":685850.0,
+      "totalTickets":883,
       "totalShows":132,
       "totalSeats":28833,
       "occupancy":3.06
@@ -222,18 +222,18 @@
       "slug":"the-end-of-oak-street",
       "totalGross":9567350.0,
       "totalTickets":5404,
-      "totalShows":180,
-      "totalSeats":22586,
-      "occupancy":23.93
+      "totalShows":181,
+      "totalSeats":22688,
+      "occupancy":23.82
     },
     {
       "name":"Mutiny",
       "slug":"mutiny",
-      "totalGross":599950.0,
-      "totalTickets":387,
-      "totalShows":42,
-      "totalSeats":4528,
-      "occupancy":8.55
+      "totalGross":601200.0,
+      "totalTickets":388,
+      "totalShows":43,
+      "totalSeats":4633,
+      "occupancy":8.37
     },
     {
       "name":"Awarapan 2",
@@ -283,38 +283,38 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":1024100.0,
-      "totalTickets":1604,
-      "totalShows":304,
-      "totalSeats":57040,
-      "occupancy":2.81
+      "totalGross":1034750.0,
+      "totalTickets":1625,
+      "totalShows":316,
+      "totalSeats":59702,
+      "occupancy":2.72
     },
     {
       "name":"Hi",
       "slug":"hi",
-      "totalGross":2335000.0,
-      "totalTickets":2232,
-      "totalShows":110,
-      "totalSeats":15969,
-      "occupancy":13.98
+      "totalGross":2337400.0,
+      "totalTickets":2236,
+      "totalShows":111,
+      "totalSeats":16272,
+      "occupancy":13.74
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
       "slug":"toxic-a-fairy-tale-for-grown-ups",
-      "totalGross":11767600.0,
-      "totalTickets":8947,
-      "totalShows":386,
-      "totalSeats":71907,
-      "occupancy":12.44
+      "totalGross":11773200.0,
+      "totalTickets":8952,
+      "totalShows":392,
+      "totalSeats":73025,
+      "occupancy":12.26
     },
     {
       "name":"Once More",
       "slug":"once-more",
-      "totalGross":72700.0,
-      "totalTickets":87,
-      "totalShows":15,
-      "totalSeats":1761,
-      "occupancy":4.94
+      "totalGross":77500.0,
+      "totalTickets":93,
+      "totalShows":17,
+      "totalSeats":1995,
+      "occupancy":4.66
     },
     {
       "name":"GDN",
@@ -360,6 +360,15 @@
       "totalShows":1,
       "totalSeats":121,
       "occupancy":46.28
+    },
+    {
+      "name":"Man Hoyanne Premayak",
+      "slug":"man-hoyanne-premayak",
+      "totalGross":3800.0,
+      "totalTickets":4,
+      "totalShows":1,
+      "totalSeats":144,
+      "occupancy":2.78
     },
     {
       "name":"Aswesuma",
