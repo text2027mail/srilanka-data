@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-09-03 17:14:25 IST",
+  "last_updated":"2026-09-03 22:11:53 IST",
   "movies":[
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":229484800.0,
-      "totalTickets":173032,
+      "totalGross":229499650.0,
+      "totalTickets":173043,
       "totalShows":3771,
       "totalSeats":667244,
       "occupancy":25.93
@@ -148,20 +148,20 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":14461600.0,
-      "totalTickets":13269,
+      "totalGross":14486600.0,
+      "totalTickets":13289,
       "totalShows":487,
       "totalSeats":85837,
-      "occupancy":15.46
+      "occupancy":15.48
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":5713150.0,
-      "totalTickets":3986,
+      "totalGross":5720650.0,
+      "totalTickets":3992,
       "totalShows":164,
       "totalSeats":19942,
-      "occupancy":19.99
+      "occupancy":20.02
     },
     {
       "name":"Kalpana",
@@ -184,11 +184,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":33449550.0,
-      "totalTickets":31836,
+      "totalGross":33534550.0,
+      "totalTickets":31904,
       "totalShows":698,
       "totalSeats":146369,
-      "occupancy":21.75
+      "occupancy":21.8
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -292,11 +292,11 @@
     {
       "name":"Hi",
       "slug":"hi",
-      "totalGross":2430400.0,
-      "totalTickets":2322,
+      "totalGross":2470250.0,
+      "totalTickets":2344,
       "totalShows":129,
       "totalSeats":18891,
-      "occupancy":12.29
+      "occupancy":12.41
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
@@ -310,11 +310,11 @@
     {
       "name":"Once More",
       "slug":"once-more",
-      "totalGross":88750.0,
-      "totalTickets":102,
+      "totalGross":193750.0,
+      "totalTickets":186,
       "totalShows":18,
       "totalSeats":2106,
-      "occupancy":4.84
+      "occupancy":8.83
     },
     {
       "name":"GDN",
