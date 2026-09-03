@@ -1,69 +1,6 @@
 {
-  "last_updated":"2026-09-03 22:11:53 IST",
+  "last_updated":"2026-09-04 00:58:31 IST",
   "movies":[
-    {
-      "name":"Spider-Man: Brand New Day",
-      "slug":"spider-man-brand-new-day",
-      "totalGross":229499650.0,
-      "totalTickets":173043,
-      "totalShows":3771,
-      "totalSeats":667244,
-      "occupancy":25.93
-    },
-    {
-      "name":"Room No.106",
-      "slug":"room-no106",
-      "totalGross":669550.0,
-      "totalTickets":1138,
-      "totalShows":259,
-      "totalSeats":54125,
-      "occupancy":2.1
-    },
-    {
-      "name":"Abhisari",
-      "slug":"abhisari",
-      "totalGross":228350.0,
-      "totalTickets":387,
-      "totalShows":160,
-      "totalSeats":48988,
-      "occupancy":0.79
-    },
-    {
-      "name":"Jana Nayagan",
-      "slug":"jana-nayagan",
-      "totalGross":24831550.0,
-      "totalTickets":22415,
-      "totalShows":816,
-      "totalSeats":142437,
-      "occupancy":15.74
-    },
-    {
-      "name":"The Odyssey",
-      "slug":"the-odyssey",
-      "totalGross":77613300.0,
-      "totalTickets":25991,
-      "totalShows":411,
-      "totalSeats":78113,
-      "occupancy":33.27
-    },
-    {
-      "name":"Moana",
-      "slug":"moana",
-      "totalGross":5421750.0,
-      "totalTickets":4654,
-      "totalShows":136,
-      "totalSeats":19810,
-      "occupancy":23.49
-    },
-    {
-      "name":"Eka Thamai Meka",
-      "slug":"eka-thamai-meka",
-      "totalGross":985200.0,
-      "totalTickets":1062,
-      "totalShows":114,
-      "totalSeats":18601,
-      "occupancy":5.71
-    },
     {
       "name":"My Simba",
       "slug":"my-simba",
@@ -72,69 +9,6 @@
       "totalShows":100,
       "totalSeats":25340,
       "occupancy":0.52
-    },
-    {
-      "name":"Sooriya Sulanga",
-      "slug":"sooriya-sulanga",
-      "totalGross":28600.0,
-      "totalTickets":62,
-      "totalShows":45,
-      "totalSeats":7226,
-      "occupancy":0.86
-    },
-    {
-      "name":"Monara Wilak",
-      "slug":"monara-wilak",
-      "totalGross":10950.0,
-      "totalTickets":33,
-      "totalShows":41,
-      "totalSeats":6624,
-      "occupancy":0.5
-    },
-    {
-      "name":"Toy Story 5",
-      "slug":"toy-story-5",
-      "totalGross":168500.0,
-      "totalTickets":137,
-      "totalShows":7,
-      "totalSeats":847,
-      "occupancy":16.17
-    },
-    {
-      "name":"Minions & Monsters",
-      "slug":"minions-monsters",
-      "totalGross":2757050.0,
-      "totalTickets":2262,
-      "totalShows":64,
-      "totalSeats":8291,
-      "occupancy":27.28
-    },
-    {
-      "name":"Evil Dead Burn",
-      "slug":"evil-dead-burn",
-      "totalGross":598300.0,
-      "totalTickets":473,
-      "totalShows":27,
-      "totalSeats":3229,
-      "occupancy":14.65
-    },
-    {
-      "name":"Riverstone",
-      "slug":"riverstone",
-      "totalGross":191200.0,
-      "totalTickets":478,
-      "totalShows":12,
-      "totalSeats":2400,
-      "occupancy":19.92
-    },
-    {
-      "name":"Michael",
-      "slug":"michael",
-      "totalGross":389200.0,
-      "totalTickets":329,
-      "totalShows":14,
-      "totalSeats":1491,
-      "occupancy":22.07
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -153,6 +27,24 @@
       "totalShows":487,
       "totalSeats":85837,
       "occupancy":15.48
+    },
+    {
+      "name":"Spider-Man: Brand New Day",
+      "slug":"spider-man-brand-new-day",
+      "totalGross":229499650.0,
+      "totalTickets":173043,
+      "totalShows":3771,
+      "totalSeats":667244,
+      "occupancy":25.93
+    },
+    {
+      "name":"Jana Nayagan",
+      "slug":"jana-nayagan",
+      "totalGross":24831550.0,
+      "totalTickets":22415,
+      "totalShows":816,
+      "totalSeats":142437,
+      "occupancy":15.74
     },
     {
       "name":"Insidious: Out of The Further",
@@ -209,6 +101,15 @@
       "occupancy":1.21
     },
     {
+      "name":"Minions & Monsters",
+      "slug":"minions-monsters",
+      "totalGross":2757050.0,
+      "totalTickets":2262,
+      "totalShows":64,
+      "totalSeats":8291,
+      "occupancy":27.28
+    },
+    {
       "name":"Vihanga Premaya",
       "slug":"vihanga-premaya",
       "totalGross":687800.0,
@@ -225,6 +126,33 @@
       "totalShows":185,
       "totalSeats":23057,
       "occupancy":23.75
+    },
+    {
+      "name":"The Odyssey",
+      "slug":"the-odyssey",
+      "totalGross":77613300.0,
+      "totalTickets":25991,
+      "totalShows":411,
+      "totalSeats":78113,
+      "occupancy":33.27
+    },
+    {
+      "name":"Room No.106",
+      "slug":"room-no106",
+      "totalGross":669550.0,
+      "totalTickets":1138,
+      "totalShows":259,
+      "totalSeats":54125,
+      "occupancy":2.1
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":5421750.0,
+      "totalTickets":4654,
+      "totalShows":136,
+      "totalSeats":19810,
+      "occupancy":23.49
     },
     {
       "name":"Mutiny",
@@ -245,6 +173,15 @@
       "occupancy":15.25
     },
     {
+      "name":"Eka Thamai Meka",
+      "slug":"eka-thamai-meka",
+      "totalGross":985200.0,
+      "totalTickets":1062,
+      "totalShows":114,
+      "totalSeats":18601,
+      "occupancy":5.71
+    },
+    {
       "name":"Modha Rathri",
       "slug":"modha-rathri",
       "totalGross":69600.0,
@@ -254,13 +191,22 @@
       "occupancy":4.15
     },
     {
-      "name":"Magudam",
-      "slug":"magudam",
-      "totalGross":275100.0,
-      "totalTickets":401,
-      "totalShows":78,
-      "totalSeats":11766,
-      "occupancy":3.41
+      "name":"Abhisari",
+      "slug":"abhisari",
+      "totalGross":228350.0,
+      "totalTickets":387,
+      "totalShows":160,
+      "totalSeats":48988,
+      "occupancy":0.79
+    },
+    {
+      "name":"Monara Wilak",
+      "slug":"monara-wilak",
+      "totalGross":10950.0,
+      "totalTickets":33,
+      "totalShows":41,
+      "totalSeats":6624,
+      "occupancy":0.5
     },
     {
       "name":"Batwara 1947",
@@ -272,13 +218,49 @@
       "occupancy":12.21
     },
     {
-      "name":"Bambaru Avith",
-      "slug":"bambaru-avith",
-      "totalGross":339650.0,
-      "totalTickets":796,
-      "totalShows":21,
-      "totalSeats":4516,
-      "occupancy":17.63
+      "name":"Magudam",
+      "slug":"magudam",
+      "totalGross":275100.0,
+      "totalTickets":401,
+      "totalShows":78,
+      "totalSeats":11766,
+      "occupancy":3.41
+    },
+    {
+      "name":"GDN",
+      "slug":"gdn",
+      "totalGross":719400.0,
+      "totalTickets":688,
+      "totalShows":77,
+      "totalSeats":10079,
+      "occupancy":6.83
+    },
+    {
+      "name":"Sooriya Sulanga",
+      "slug":"sooriya-sulanga",
+      "totalGross":28600.0,
+      "totalTickets":62,
+      "totalShows":45,
+      "totalSeats":7226,
+      "occupancy":0.86
+    },
+    {
+      "name":"Evil Dead Burn",
+      "slug":"evil-dead-burn",
+      "totalGross":598300.0,
+      "totalTickets":473,
+      "totalShows":27,
+      "totalSeats":3229,
+      "occupancy":14.65
+    },
+    {
+      "name":"Riverstone",
+      "slug":"riverstone",
+      "totalGross":191200.0,
+      "totalTickets":478,
+      "totalShows":12,
+      "totalSeats":2400,
+      "occupancy":19.92
     },
     {
       "name":"Cricket Sadu",
@@ -317,15 +299,6 @@
       "occupancy":8.83
     },
     {
-      "name":"GDN",
-      "slug":"gdn",
-      "totalGross":719400.0,
-      "totalTickets":688,
-      "totalShows":77,
-      "totalSeats":10079,
-      "occupancy":6.83
-    },
-    {
       "name":"Moana 2",
       "slug":"moana-2",
       "totalGross":33550.0,
@@ -335,6 +308,24 @@
       "occupancy":5.49
     },
     {
+      "name":"Toy Story 5",
+      "slug":"toy-story-5",
+      "totalGross":168500.0,
+      "totalTickets":137,
+      "totalShows":7,
+      "totalSeats":847,
+      "occupancy":16.17
+    },
+    {
+      "name":"Michael",
+      "slug":"michael",
+      "totalGross":389200.0,
+      "totalTickets":329,
+      "totalShows":14,
+      "totalSeats":1491,
+      "occupancy":22.07
+    },
+    {
       "name":"Vihanga Premayak",
       "slug":"vihanga-premayak",
       "totalGross":0.0,
@@ -342,6 +333,15 @@
       "totalShows":2,
       "totalSeats":242,
       "occupancy":0.0
+    },
+    {
+      "name":"Bambaru Avith",
+      "slug":"bambaru-avith",
+      "totalGross":339650.0,
+      "totalTickets":796,
+      "totalShows":21,
+      "totalSeats":4516,
+      "occupancy":17.63
     },
     {
       "name":"OIC Gadafi",
@@ -362,15 +362,6 @@
       "occupancy":46.28
     },
     {
-      "name":"Man Hoyanne Premayak",
-      "slug":"man-hoyanne-premayak",
-      "totalGross":3800.0,
-      "totalTickets":4,
-      "totalShows":6,
-      "totalSeats":1168,
-      "occupancy":0.34
-    },
-    {
       "name":"Aswesuma",
       "slug":"aswesuma",
       "totalGross":70000.0,
@@ -378,6 +369,15 @@
       "totalShows":1,
       "totalSeats":111,
       "occupancy":90.09
+    },
+    {
+      "name":"Man Hoyanne Premayak",
+      "slug":"man-hoyanne-premayak",
+      "totalGross":3800.0,
+      "totalTickets":4,
+      "totalShows":6,
+      "totalSeats":1168,
+      "occupancy":0.34
     }
   ]
 }
