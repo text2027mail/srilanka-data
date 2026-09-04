@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-04 17:15:26 IST",
+  "last_updated":"2026-09-04 22:06:35 IST",
   "movies":[
     {
       "name":"My Simba",
@@ -22,17 +22,17 @@
     {
       "name":"DC",
       "slug":"dc",
-      "totalGross":14511100.0,
-      "totalTickets":13309,
+      "totalGross":14536300.0,
+      "totalTickets":13330,
       "totalShows":492,
       "totalSeats":86661,
-      "occupancy":15.36
+      "occupancy":15.38
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":230428350.0,
-      "totalTickets":173681,
+      "totalGross":230493150.0,
+      "totalTickets":173716,
       "totalShows":3835,
       "totalSeats":678497,
       "occupancy":25.6
@@ -49,11 +49,11 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":5926450.0,
-      "totalTickets":4123,
+      "totalGross":5938950.0,
+      "totalTickets":4132,
       "totalShows":178,
       "totalSeats":21510,
-      "occupancy":19.17
+      "occupancy":19.21
     },
     {
       "name":"Kalpana",
@@ -76,11 +76,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":33762700.0,
-      "totalTickets":32155,
+      "totalGross":33884900.0,
+      "totalTickets":32249,
       "totalShows":721,
       "totalSeats":151956,
-      "occupancy":21.16
+      "occupancy":21.22
     },
     {
       "name":"PAW Patrol: The Dino Movie",
@@ -130,11 +130,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":78244600.0,
-      "totalTickets":26202,
+      "totalGross":78352600.0,
+      "totalTickets":26229,
       "totalShows":419,
       "totalSeats":79990,
-      "occupancy":32.76
+      "occupancy":32.79
     },
     {
       "name":"Room No.106",
@@ -310,11 +310,11 @@
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":89500.0,
-      "totalTickets":102,
+      "totalGross":171500.0,
+      "totalTickets":162,
       "totalShows":17,
       "totalSeats":2578,
-      "occupancy":3.96
+      "occupancy":6.28
     },
     {
       "name":"Me Kathawath Ahanna",
