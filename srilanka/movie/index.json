@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-06 02:13:39 IST",
+  "last_updated":"2026-09-06 03:51:40 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -13,20 +13,20 @@
     {
       "name":"Man Hoyanne Premayak",
       "slug":"man-hoyanne-premayak",
-      "totalGross":99550.0,
-      "totalTickets":154,
-      "totalShows":77,
-      "totalSeats":13547,
-      "occupancy":1.14
+      "totalGross":104050.0,
+      "totalTickets":159,
+      "totalShows":81,
+      "totalSeats":14069,
+      "occupancy":1.13
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":1671450.0,
-      "totalTickets":2563,
-      "totalShows":451,
-      "totalSeats":85636,
-      "occupancy":2.99
+      "totalGross":1690150.0,
+      "totalTickets":2591,
+      "totalShows":452,
+      "totalSeats":85782,
+      "occupancy":3.02
     },
     {
       "name":"Hi",
@@ -40,29 +40,29 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":232839300.0,
-      "totalTickets":175509,
-      "totalShows":3909,
-      "totalSeats":691892,
+      "totalGross":232976100.0,
+      "totalTickets":175592,
+      "totalShows":3912,
+      "totalSeats":692155,
       "occupancy":25.37
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":34467950.0,
-      "totalTickets":32851,
-      "totalShows":748,
-      "totalSeats":158483,
+      "totalGross":34511450.0,
+      "totalTickets":32866,
+      "totalShows":749,
+      "totalSeats":158524,
       "occupancy":20.73
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":6457650.0,
-      "totalTickets":4484,
-      "totalShows":194,
-      "totalSeats":23390,
-      "occupancy":19.17
+      "totalGross":6470850.0,
+      "totalTickets":4495,
+      "totalShows":195,
+      "totalSeats":23495,
+      "occupancy":19.13
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
@@ -121,11 +121,20 @@
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":5796400.0,
-      "totalTickets":4826,
-      "totalShows":205,
-      "totalSeats":23645,
-      "occupancy":20.41
+      "totalGross":5814000.0,
+      "totalTickets":4842,
+      "totalShows":206,
+      "totalSeats":23737,
+      "occupancy":20.4
+    },
+    {
+      "name":"Moana",
+      "slug":"moana",
+      "totalGross":5640750.0,
+      "totalTickets":4825,
+      "totalShows":141,
+      "totalSeats":20415,
+      "occupancy":23.63
     },
     {
       "name":"My Simba",
@@ -207,15 +216,6 @@
       "totalShows":259,
       "totalSeats":54125,
       "occupancy":2.1
-    },
-    {
-      "name":"Moana",
-      "slug":"moana",
-      "totalGross":5597850.0,
-      "totalTickets":4792,
-      "totalShows":140,
-      "totalSeats":20294,
-      "occupancy":23.61
     },
     {
       "name":"Mutiny",
