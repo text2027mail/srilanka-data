@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-06 14:15:02 IST",
+  "last_updated":"2026-09-06 19:14:14 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -13,10 +13,10 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":15982300.0,
-      "totalTickets":20991,
-      "totalShows":2531,
-      "totalSeats":493216,
+      "totalGross":15993100.0,
+      "totalTickets":21013,
+      "totalShows":2532,
+      "totalSeats":493454,
       "occupancy":4.26
     },
     {
@@ -31,29 +31,29 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":761650.0,
-      "totalTickets":1080,
-      "totalShows":556,
-      "totalSeats":105691,
-      "occupancy":1.02
+      "totalGross":769150.0,
+      "totalTickets":1096,
+      "totalShows":557,
+      "totalSeats":105929,
+      "occupancy":1.03
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":141183150.0,
-      "totalTickets":98408,
+      "totalGross":141225550.0,
+      "totalTickets":98452,
       "totalShows":4033,
       "totalSeats":714452,
-      "occupancy":13.77
+      "occupancy":13.78
     },
     {
       "name":"Hi",
       "slug":"hi",
-      "totalGross":1007750.0,
-      "totalTickets":876,
-      "totalShows":222,
-      "totalSeats":33837,
-      "occupancy":2.59
+      "totalGross":1011150.0,
+      "totalTickets":881,
+      "totalShows":223,
+      "totalSeats":34116,
+      "occupancy":2.58
     },
     {
       "name":"DC",
@@ -67,20 +67,20 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":13122300.0,
-      "totalTickets":11318,
+      "totalGross":13120800.0,
+      "totalTickets":11315,
       "totalShows":756,
       "totalSeats":161799,
-      "occupancy":7.0
+      "occupancy":6.99
     },
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":84150.0,
-      "totalTickets":86,
+      "totalGross":83650.0,
+      "totalTickets":85,
       "totalShows":65,
       "totalSeats":9920,
-      "occupancy":0.87
+      "occupancy":0.86
     },
     {
       "name":"Mirzapur: The Movie",
@@ -130,11 +130,11 @@
     {
       "name":"Once More",
       "slug":"once-more",
-      "totalGross":113200.0,
-      "totalTickets":120,
+      "totalGross":105200.0,
+      "totalTickets":110,
       "totalShows":30,
       "totalSeats":3794,
-      "occupancy":3.16
+      "occupancy":2.9
     },
     {
       "name":"Vihanga Premaya",
@@ -166,20 +166,20 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":58488100.0,
-      "totalTickets":18195,
+      "totalGross":58526100.0,
+      "totalTickets":18206,
       "totalShows":438,
       "totalSeats":84869,
-      "occupancy":21.44
+      "occupancy":21.45
     },
     {
       "name":"I'm Game",
       "slug":"im-game",
-      "totalGross":104900.0,
-      "totalTickets":76,
+      "totalGross":108500.0,
+      "totalTickets":79,
       "totalShows":16,
       "totalSeats":2370,
-      "occupancy":3.21
+      "occupancy":3.33
     },
     {
       "name":"My Simba",
@@ -267,9 +267,9 @@
       "slug":"irumudi",
       "totalGross":13000.0,
       "totalTickets":10,
-      "totalShows":23,
-      "totalSeats":2879,
-      "occupancy":0.35
+      "totalShows":24,
+      "totalSeats":3158,
+      "occupancy":0.32
     },
     {
       "name":"Awarapan 2",
