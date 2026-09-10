@@ -1,68 +1,68 @@
 {
-  "last_updated":"2026-09-10 02:44:03 IST",
+  "last_updated":"2026-09-10 06:07:40 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":35754700.0,
-      "totalTickets":50944,
-      "totalShows":2695,
-      "totalSeats":526126,
-      "occupancy":9.68
+      "totalGross":35764200.0,
+      "totalTickets":50958,
+      "totalShows":2710,
+      "totalSeats":528803,
+      "occupancy":9.64
     },
     {
       "name":"Man Hoyanne Premayak",
       "slug":"man-hoyanne-premayak",
-      "totalGross":211350.0,
-      "totalTickets":384,
-      "totalShows":209,
-      "totalSeats":36777,
-      "occupancy":1.04
+      "totalGross":214050.0,
+      "totalTickets":388,
+      "totalShows":215,
+      "totalSeats":38074,
+      "occupancy":1.02
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":2257150.0,
-      "totalTickets":3551,
-      "totalShows":644,
-      "totalSeats":123408,
-      "occupancy":2.88
+      "totalGross":2260450.0,
+      "totalTickets":3556,
+      "totalShows":649,
+      "totalSeats":124338,
+      "occupancy":2.86
     },
     {
       "name":"Hi",
       "slug":"hi",
       "totalGross":3637700.0,
       "totalTickets":3422,
-      "totalShows":274,
-      "totalSeats":42767,
-      "occupancy":8.0
+      "totalShows":275,
+      "totalSeats":42874,
+      "occupancy":7.98
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":235542650.0,
-      "totalTickets":177580,
-      "totalShows":4162,
-      "totalSeats":736629,
-      "occupancy":24.11
+      "totalGross":235591650.0,
+      "totalTickets":177624,
+      "totalShows":4176,
+      "totalSeats":739119,
+      "occupancy":24.03
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":35186250.0,
-      "totalTickets":33500,
-      "totalShows":826,
-      "totalSeats":176086,
-      "occupancy":19.02
+      "totalGross":35187850.0,
+      "totalTickets":33502,
+      "totalShows":827,
+      "totalSeats":176223,
+      "occupancy":19.01
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":7125950.0,
-      "totalTickets":4940,
-      "totalShows":233,
-      "totalSeats":27451,
-      "occupancy":18.0
+      "totalGross":7166750.0,
+      "totalTickets":4962,
+      "totalShows":236,
+      "totalSeats":27757,
+      "occupancy":17.88
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
@@ -78,9 +78,9 @@
       "slug":"bethlehem-kudumba-unit",
       "totalGross":540000.0,
       "totalTickets":561,
-      "totalShows":107,
-      "totalSeats":16208,
-      "occupancy":3.46
+      "totalShows":108,
+      "totalSeats":16342,
+      "occupancy":3.43
     },
     {
       "name":"I'm Game",
@@ -94,11 +94,11 @@
     {
       "name":"Once More",
       "slug":"once-more",
-      "totalGross":324350.0,
-      "totalTickets":317,
-      "totalShows":35,
-      "totalSeats":4541,
-      "occupancy":6.98
+      "totalGross":337550.0,
+      "totalTickets":329,
+      "totalShows":36,
+      "totalSeats":4646,
+      "occupancy":7.08
     },
     {
       "name":"The End of Oak Street",
@@ -121,28 +121,28 @@
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":5980100.0,
-      "totalTickets":4965,
-      "totalShows":231,
-      "totalSeats":26516,
-      "occupancy":18.72
+      "totalGross":5982300.0,
+      "totalTickets":4967,
+      "totalShows":232,
+      "totalSeats":26608,
+      "occupancy":18.67
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":5765650.0,
-      "totalTickets":4924,
-      "totalShows":147,
-      "totalSeats":21141,
-      "occupancy":23.29
+      "totalGross":5774450.0,
+      "totalTickets":4932,
+      "totalShows":148,
+      "totalSeats":21262,
+      "occupancy":23.2
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
       "totalGross":785750.0,
       "totalTickets":1163,
-      "totalShows":347,
-      "totalSeats":69450,
+      "totalShows":348,
+      "totalSeats":69570,
       "occupancy":1.67
     },
     {
@@ -150,17 +150,17 @@
       "slug":"my-simba",
       "totalGross":80450.0,
       "totalTickets":133,
-      "totalShows":106,
-      "totalSeats":25898,
+      "totalShows":107,
+      "totalSeats":25991,
       "occupancy":0.51
     },
     {
       "name":"Abhisari",
       "slug":"abhisari",
       "totalGross":231550.0,
-      "totalTickets":396,
-      "totalShows":175,
-      "totalSeats":54660,
+      "totalTickets":398,
+      "totalShows":176,
+      "totalSeats":55223,
       "occupancy":0.72
     },
     {
@@ -202,11 +202,11 @@
     {
       "name":"Mirzapur: The Movie",
       "slug":"mirzapur-the-movie",
-      "totalGross":432900.0,
-      "totalTickets":308,
-      "totalShows":19,
-      "totalSeats":2621,
-      "occupancy":11.75
+      "totalGross":449700.0,
+      "totalTickets":315,
+      "totalShows":20,
+      "totalSeats":2662,
+      "occupancy":11.83
     },
     {
       "name":"Vihanga Premaya",
@@ -222,9 +222,9 @@
       "slug":"im-game",
       "totalGross":183450.0,
       "totalTickets":128,
-      "totalShows":28,
-      "totalSeats":4597,
-      "occupancy":2.78
+      "totalShows":29,
+      "totalSeats":4740,
+      "occupancy":2.7
     },
     {
       "name":"Irumudi",
@@ -420,18 +420,18 @@
       "slug":"mandaadi",
       "totalGross":5800.0,
       "totalTickets":10,
-      "totalShows":7,
-      "totalSeats":1619,
-      "occupancy":0.62
+      "totalShows":13,
+      "totalSeats":2943,
+      "occupancy":0.34
     },
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":8700.0,
-      "totalTickets":8,
-      "totalShows":4,
-      "totalSeats":661,
-      "occupancy":1.21
+      "totalGross":38700.0,
+      "totalTickets":36,
+      "totalShows":9,
+      "totalSeats":1601,
+      "occupancy":2.25
     },
     {
       "name":"Aswesuma",
