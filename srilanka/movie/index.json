@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-10 17:21:50 IST",
+  "last_updated":"2026-09-10 22:11:56 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,8 +40,8 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":235917400.0,
-      "totalTickets":177839,
+      "totalGross":235927400.0,
+      "totalTickets":177843,
       "totalShows":4205,
       "totalSeats":743938,
       "occupancy":23.91
@@ -76,11 +76,11 @@
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":560400.0,
-      "totalTickets":584,
+      "totalGross":576600.0,
+      "totalTickets":602,
       "totalShows":112,
       "totalSeats":16861,
-      "occupancy":3.46
+      "occupancy":3.57
     },
     {
       "name":"I'm Game",
@@ -220,11 +220,11 @@
     {
       "name":"Im Game",
       "slug":"im-game",
-      "totalGross":245050.0,
-      "totalTickets":177,
+      "totalGross":254650.0,
+      "totalTickets":181,
       "totalShows":35,
       "totalSeats":5492,
-      "occupancy":3.22
+      "occupancy":3.3
     },
     {
       "name":"Irumudi",
@@ -418,20 +418,20 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":218200.0,
-      "totalTickets":245,
+      "totalGross":344000.0,
+      "totalTickets":346,
       "totalShows":33,
       "totalSeats":7043,
-      "occupancy":3.48
+      "occupancy":4.91
     },
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":611450.0,
-      "totalTickets":751,
+      "totalGross":726200.0,
+      "totalTickets":911,
       "totalShows":54,
       "totalSeats":11605,
-      "occupancy":6.47
+      "occupancy":7.85
     },
     {
       "name":"Aswesuma",
