@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-11 17:20:08 IST",
+  "last_updated":"2026-09-11 22:16:21 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,8 +40,8 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":236407300.0,
-      "totalTickets":178133,
+      "totalGross":236414700.0,
+      "totalTickets":178136,
       "totalShows":4255,
       "totalSeats":752173,
       "occupancy":23.68
@@ -49,11 +49,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":35332100.0,
-      "totalTickets":33659,
+      "totalGross":35401000.0,
+      "totalTickets":33712,
       "totalShows":840,
       "totalSeats":177762,
-      "occupancy":18.93
+      "occupancy":18.96
     },
     {
       "name":"Insidious: Out of The Further",
@@ -220,11 +220,11 @@
     {
       "name":"Im Game",
       "slug":"im-game",
-      "totalGross":316350.0,
-      "totalTickets":222,
+      "totalGross":418250.0,
+      "totalTickets":275,
       "totalShows":43,
       "totalSeats":6473,
-      "occupancy":3.43
+      "occupancy":4.25
     },
     {
       "name":"Irumudi",
@@ -400,11 +400,11 @@
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":1164750.0,
-      "totalTickets":1370,
+      "totalGross":1273250.0,
+      "totalTickets":1457,
       "totalShows":111,
       "totalSeats":24066,
-      "occupancy":5.69
+      "occupancy":6.05
     },
     {
       "name":"Gigolo",
@@ -418,11 +418,11 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":1015650.0,
-      "totalTickets":1043,
+      "totalGross":1445650.0,
+      "totalTickets":1429,
       "totalShows":72,
       "totalSeats":14630,
-      "occupancy":7.13
+      "occupancy":9.77
     },
     {
       "name":"Haiwaan",
