@@ -1,32 +1,32 @@
 {
-  "last_updated":"2026-09-13 00:17:26 IST",
+  "last_updated":"2026-09-13 04:05:48 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":36676700.0,
-      "totalTickets":52356,
-      "totalShows":2875,
-      "totalSeats":560727,
-      "occupancy":9.34
+      "totalGross":36855200.0,
+      "totalTickets":52641,
+      "totalShows":2891,
+      "totalSeats":564200,
+      "occupancy":9.33
     },
     {
       "name":"Man Hoyanne Premayak",
       "slug":"man-hoyanne-premayak",
-      "totalGross":328400.0,
-      "totalTickets":563,
-      "totalShows":279,
-      "totalSeats":50435,
-      "occupancy":1.12
+      "totalGross":354300.0,
+      "totalTickets":612,
+      "totalShows":294,
+      "totalSeats":53499,
+      "occupancy":1.14
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":2794050.0,
-      "totalTickets":4380,
-      "totalShows":772,
-      "totalSeats":148971,
-      "occupancy":2.94
+      "totalGross":2830900.0,
+      "totalTickets":4437,
+      "totalShows":778,
+      "totalSeats":149975,
+      "occupancy":2.96
     },
     {
       "name":"Hi",
@@ -40,11 +40,11 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":237654400.0,
-      "totalTickets":179014,
-      "totalShows":4304,
-      "totalSeats":760313,
-      "occupancy":23.54
+      "totalGross":237849700.0,
+      "totalTickets":179203,
+      "totalShows":4320,
+      "totalSeats":762706,
+      "occupancy":23.5
     },
     {
       "name":"Vishwanath and Sons",
@@ -58,11 +58,11 @@
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":7704650.0,
-      "totalTickets":5303,
-      "totalShows":260,
-      "totalSeats":30240,
-      "occupancy":17.54
+      "totalGross":7729450.0,
+      "totalTickets":5322,
+      "totalShows":263,
+      "totalSeats":30616,
+      "occupancy":17.38
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
@@ -103,11 +103,11 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":11008050.0,
-      "totalTickets":6407,
-      "totalShows":263,
-      "totalSeats":31849,
-      "occupancy":20.12
+      "totalGross":11025650.0,
+      "totalTickets":6421,
+      "totalShows":266,
+      "totalSeats":32367,
+      "occupancy":19.84
     },
     {
       "name":"The Odyssey",
@@ -121,28 +121,28 @@
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
-      "totalGross":6134200.0,
-      "totalTickets":5082,
-      "totalShows":248,
-      "totalSeats":28339,
-      "occupancy":17.93
+      "totalGross":6152200.0,
+      "totalTickets":5097,
+      "totalShows":250,
+      "totalSeats":28552,
+      "occupancy":17.85
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":5865550.0,
-      "totalTickets":5004,
-      "totalShows":151,
-      "totalSeats":21625,
-      "occupancy":23.14
+      "totalGross":5942250.0,
+      "totalTickets":5063,
+      "totalShows":152,
+      "totalSeats":21746,
+      "occupancy":23.28
     },
     {
       "name":"Kalpana",
       "slug":"kalpana",
       "totalGross":785750.0,
       "totalTickets":1163,
-      "totalShows":350,
-      "totalSeats":70050,
+      "totalShows":351,
+      "totalSeats":70266,
       "occupancy":1.66
     },
     {
@@ -220,11 +220,11 @@
     {
       "name":"Im Game",
       "slug":"im-game",
-      "totalGross":559450.0,
-      "totalTickets":353,
-      "totalShows":49,
-      "totalSeats":7217,
-      "occupancy":4.89
+      "totalGross":580650.0,
+      "totalTickets":373,
+      "totalShows":51,
+      "totalSeats":7497,
+      "occupancy":4.98
     },
     {
       "name":"Irumudi",
@@ -382,38 +382,38 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":3638800.0,
-      "totalTickets":3606,
-      "totalShows":116,
-      "totalSeats":23048,
-      "occupancy":15.65
+      "totalGross":3778300.0,
+      "totalTickets":3757,
+      "totalShows":123,
+      "totalSeats":24527,
+      "occupancy":15.32
     },
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":2118200.0,
-      "totalTickets":2369,
-      "totalShows":164,
-      "totalSeats":35546,
-      "occupancy":6.66
+      "totalGross":2134550.0,
+      "totalTickets":2387,
+      "totalShows":172,
+      "totalSeats":37261,
+      "occupancy":6.41
     },
     {
       "name":"Gigolo",
       "slug":"gigolo",
-      "totalGross":27050.0,
-      "totalTickets":44,
-      "totalShows":25,
-      "totalSeats":4881,
-      "occupancy":0.9
+      "totalGross":35050.0,
+      "totalTickets":59,
+      "totalShows":31,
+      "totalSeats":6071,
+      "occupancy":0.97
     },
     {
       "name":"Haiwaan",
       "slug":"haiwaan",
-      "totalGross":118500.0,
-      "totalTickets":75,
-      "totalShows":7,
-      "totalSeats":792,
-      "occupancy":9.47
+      "totalGross":144600.0,
+      "totalTickets":84,
+      "totalShows":8,
+      "totalSeats":833,
+      "occupancy":10.08
     },
     {
       "name":"Vihanga Premayak",
