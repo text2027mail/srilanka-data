@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-13 17:49:14 IST",
+  "last_updated":"2026-09-13 22:08:41 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,8 +40,8 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":238616550.0,
-      "totalTickets":179756,
+      "totalGross":238651350.0,
+      "totalTickets":179776,
       "totalShows":4353,
       "totalSeats":768453,
       "occupancy":23.39
@@ -49,11 +49,11 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":35820300.0,
-      "totalTickets":34114,
+      "totalGross":35862600.0,
+      "totalTickets":34161,
       "totalShows":853,
       "totalSeats":179293,
-      "occupancy":19.03
+      "occupancy":19.05
     },
     {
       "name":"Insidious: Out of The Further",
@@ -220,11 +220,11 @@
     {
       "name":"Im Game",
       "slug":"im-game",
-      "totalGross":610650.0,
-      "totalTickets":388,
+      "totalGross":673050.0,
+      "totalTickets":414,
       "totalShows":53,
       "totalSeats":7681,
-      "occupancy":5.05
+      "occupancy":5.39
     },
     {
       "name":"Irumudi",
@@ -382,20 +382,20 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":5580750.0,
-      "totalTickets":5861,
+      "totalGross":5975350.0,
+      "totalTickets":6256,
       "totalShows":157,
       "totalSeats":31053,
-      "occupancy":18.87
+      "occupancy":20.15
     },
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":2593800.0,
-      "totalTickets":2845,
+      "totalGross":2690950.0,
+      "totalTickets":2920,
       "totalShows":211,
       "totalSeats":45705,
-      "occupancy":6.22
+      "occupancy":6.39
     },
     {
       "name":"Gigolo",
@@ -409,11 +409,11 @@
     {
       "name":"Haiwaan",
       "slug":"haiwaan",
-      "totalGross":151500.0,
-      "totalTickets":90,
+      "totalGross":158500.0,
+      "totalTickets":95,
       "totalShows":11,
       "totalSeats":1209,
-      "occupancy":7.44
+      "occupancy":7.86
     },
     {
       "name":"Vihanga Premayak",
