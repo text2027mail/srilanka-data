@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-20 17:20:50 IST",
+  "last_updated":"2026-09-20 22:00:31 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,8 +40,8 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":241026500.0,
-      "totalTickets":181473,
+      "totalGross":241029500.0,
+      "totalTickets":181475,
       "totalShows":4624,
       "totalSeats":810479,
       "occupancy":22.39
@@ -49,8 +49,8 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":36335150.0,
-      "totalTickets":34622,
+      "totalGross":36343550.0,
+      "totalTickets":34628,
       "totalShows":899,
       "totalSeats":185381,
       "occupancy":18.68
@@ -76,11 +76,11 @@
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":916800.0,
-      "totalTickets":896,
+      "totalGross":935000.0,
+      "totalTickets":909,
       "totalShows":133,
       "totalSeats":19447,
-      "occupancy":4.61
+      "occupancy":4.67
     },
     {
       "name":"I'm Game",
@@ -220,11 +220,11 @@
     {
       "name":"Im Game",
       "slug":"im-game",
-      "totalGross":936250.0,
-      "totalTickets":525,
+      "totalGross":962350.0,
+      "totalTickets":534,
       "totalShows":83,
       "totalSeats":11009,
-      "occupancy":4.77
+      "occupancy":4.85
     },
     {
       "name":"Irumudi",
@@ -400,11 +400,11 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":10337000.0,
-      "totalTickets":11369,
+      "totalGross":10433500.0,
+      "totalTickets":11490,
       "totalShows":430,
       "totalSeats":85518,
-      "occupancy":13.29
+      "occupancy":13.44
     },
     {
       "name":"Haiwaan",
@@ -436,11 +436,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":13300700.0,
-      "totalTickets":18351,
+      "totalGross":13403650.0,
+      "totalTickets":18483,
       "totalShows":358,
       "totalSeats":68964,
-      "occupancy":26.61
+      "occupancy":26.8
     },
     {
       "name":"Resident Evil",
