@@ -1,32 +1,32 @@
 {
-  "last_updated":"2026-09-22 01:15:14 IST",
+  "last_updated":"2026-09-22 05:10:00 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":38215050.0,
-      "totalTickets":55145,
-      "totalShows":3363,
-      "totalSeats":658264,
-      "occupancy":8.38
+      "totalGross":38223950.0,
+      "totalTickets":55163,
+      "totalShows":3385,
+      "totalSeats":662475,
+      "occupancy":8.33
     },
     {
       "name":"Man Hoyanne Premayak",
       "slug":"man-hoyanne-premayak",
-      "totalGross":503250.0,
-      "totalTickets":894,
-      "totalShows":459,
-      "totalSeats":84937,
-      "occupancy":1.05
+      "totalGross":503850.0,
+      "totalTickets":896,
+      "totalShows":467,
+      "totalSeats":86311,
+      "occupancy":1.04
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":3952000.0,
-      "totalTickets":6126,
-      "totalShows":1147,
-      "totalSeats":220559,
-      "occupancy":2.78
+      "totalGross":3957600.0,
+      "totalTickets":6132,
+      "totalShows":1156,
+      "totalSeats":222144,
+      "occupancy":2.76
     },
     {
       "name":"Hi",
@@ -40,29 +40,29 @@
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":241122350.0,
-      "totalTickets":181532,
-      "totalShows":4650,
-      "totalSeats":813995,
-      "occupancy":22.3
+      "totalGross":241157550.0,
+      "totalTickets":181550,
+      "totalShows":4661,
+      "totalSeats":815630,
+      "occupancy":22.26
     },
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
       "totalGross":36360850.0,
       "totalTickets":34647,
-      "totalShows":906,
-      "totalSeats":186330,
-      "occupancy":18.59
+      "totalShows":908,
+      "totalSeats":186657,
+      "occupancy":18.56
     },
     {
       "name":"Insidious: Out of The Further",
       "slug":"insidious-out-of-the-further",
-      "totalGross":8627850.0,
-      "totalTickets":5897,
-      "totalShows":340,
-      "totalSeats":38478,
-      "occupancy":15.33
+      "totalGross":8630250.0,
+      "totalTickets":5899,
+      "totalShows":342,
+      "totalSeats":38761,
+      "occupancy":15.22
     },
     {
       "name":"Toxic: A Fairy Tale For Grown-ups",
@@ -76,11 +76,11 @@
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":943500.0,
-      "totalTickets":919,
-      "totalShows":135,
-      "totalSeats":19692,
-      "occupancy":4.67
+      "totalGross":945450.0,
+      "totalTickets":922,
+      "totalShows":136,
+      "totalSeats":19826,
+      "occupancy":4.65
     },
     {
       "name":"I'm Game",
@@ -103,38 +103,38 @@
     {
       "name":"The End of Oak Street",
       "slug":"the-end-of-oak-street",
-      "totalGross":11686750.0,
-      "totalTickets":6867,
-      "totalShows":340,
-      "totalSeats":41843,
-      "occupancy":16.41
+      "totalGross":11694450.0,
+      "totalTickets":6874,
+      "totalShows":343,
+      "totalSeats":42186,
+      "occupancy":16.29
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":85678800.0,
-      "totalTickets":28879,
-      "totalShows":534,
-      "totalSeats":103156,
-      "occupancy":28.0
+      "totalGross":85699200.0,
+      "totalTickets":28885,
+      "totalShows":535,
+      "totalSeats":103461,
+      "occupancy":27.92
     },
     {
       "name":"PAW Patrol: The Dino Movie",
       "slug":"paw-patrol-the-dino-movie",
       "totalGross":6377400.0,
       "totalTickets":5267,
-      "totalShows":291,
-      "totalSeats":32607,
-      "occupancy":16.15
+      "totalShows":292,
+      "totalSeats":32706,
+      "occupancy":16.1
     },
     {
       "name":"Moana",
       "slug":"moana",
-      "totalGross":6068250.0,
-      "totalTickets":5161,
-      "totalShows":160,
-      "totalSeats":22714,
-      "occupancy":22.72
+      "totalGross":6070450.0,
+      "totalTickets":5163,
+      "totalShows":161,
+      "totalSeats":22835,
+      "occupancy":22.61
     },
     {
       "name":"Kalpana",
@@ -382,29 +382,29 @@
     {
       "name":"Sardar 2",
       "slug":"sardar-2",
-      "totalGross":3370250.0,
-      "totalTickets":3660,
-      "totalShows":430,
-      "totalSeats":89804,
-      "occupancy":4.08
+      "totalGross":3371250.0,
+      "totalTickets":3661,
+      "totalShows":437,
+      "totalSeats":91097,
+      "occupancy":4.02
     },
     {
       "name":"Gigolo",
       "slug":"gigolo",
-      "totalGross":93600.0,
-      "totalTickets":176,
-      "totalShows":111,
-      "totalSeats":21551,
-      "occupancy":0.82
+      "totalGross":94100.0,
+      "totalTickets":178,
+      "totalShows":113,
+      "totalSeats":22085,
+      "occupancy":0.81
     },
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":10699750.0,
-      "totalTickets":11793,
-      "totalShows":463,
-      "totalSeats":91605,
-      "occupancy":12.87
+      "totalGross":10737750.0,
+      "totalTickets":11827,
+      "totalShows":473,
+      "totalSeats":93012,
+      "occupancy":12.72
     },
     {
       "name":"Haiwaan",
@@ -436,29 +436,38 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":15387700.0,
-      "totalTickets":21550,
-      "totalShows":481,
-      "totalSeats":93165,
-      "occupancy":23.13
+      "totalGross":15661000.0,
+      "totalTickets":21887,
+      "totalShows":523,
+      "totalSeats":101911,
+      "occupancy":21.48
     },
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":1880250.0,
-      "totalTickets":954,
-      "totalShows":88,
-      "totalSeats":15727,
-      "occupancy":6.07
+      "totalGross":1922350.0,
+      "totalTickets":978,
+      "totalShows":96,
+      "totalSeats":17001,
+      "occupancy":5.75
     },
     {
       "name":"Daayra",
       "slug":"daayra",
       "totalGross":331200.0,
       "totalTickets":132,
-      "totalShows":21,
-      "totalSeats":2439,
-      "occupancy":5.41
+      "totalShows":22,
+      "totalSeats":2541,
+      "occupancy":5.19
+    },
+    {
+      "name":"Gharasarapa",
+      "slug":"gharasarapa",
+      "totalGross":0.0,
+      "totalTickets":0,
+      "totalShows":4,
+      "totalSeats":2252,
+      "occupancy":0.0
     },
     {
       "name":"OIC Gadafi",
@@ -477,15 +486,6 @@
       "totalShows":1,
       "totalSeats":121,
       "occupancy":46.28
-    },
-    {
-      "name":"Gharasarapa",
-      "slug":"gharasarapa",
-      "totalGross":0.0,
-      "totalTickets":0,
-      "totalShows":2,
-      "totalSeats":1126,
-      "occupancy":0.0
     },
     {
       "name":"Aswesuma",
