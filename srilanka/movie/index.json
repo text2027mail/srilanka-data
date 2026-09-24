@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-09-24 13:19:45 IST",
+  "last_updated":"2026-09-24 19:18:42 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -22,20 +22,20 @@
     {
       "name":"Vishwanath and Sons",
       "slug":"vishwanath-and-sons",
-      "totalGross":36429350.0,
-      "totalTickets":34713,
-      "totalShows":924,
-      "totalSeats":188803,
-      "occupancy":18.39
+      "totalGross":36434150.0,
+      "totalTickets":34717,
+      "totalShows":925,
+      "totalSeats":188946,
+      "occupancy":18.37
     },
     {
       "name":"Spider-Man: Brand New Day",
       "slug":"spider-man-brand-new-day",
-      "totalGross":241522450.0,
-      "totalTickets":181781,
-      "totalShows":4720,
-      "totalSeats":823416,
-      "occupancy":22.08
+      "totalGross":241542650.0,
+      "totalTickets":181795,
+      "totalShows":4722,
+      "totalSeats":823607,
+      "occupancy":22.07
     },
     {
       "name":"Jana Nayagan",
@@ -85,11 +85,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":86023300.0,
-      "totalTickets":29015,
-      "totalShows":545,
-      "totalSeats":105347,
-      "occupancy":27.54
+      "totalGross":86189900.0,
+      "totalTickets":29064,
+      "totalShows":546,
+      "totalSeats":105652,
+      "occupancy":27.51
     },
     {
       "name":"DC",
@@ -193,8 +193,8 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":4043900.0,
-      "totalTickets":6249,
+      "totalGross":4051900.0,
+      "totalTickets":6259,
       "totalShows":1252,
       "totalSeats":240338,
       "occupancy":2.6
@@ -211,11 +211,11 @@
     {
       "name":"Mandaadi",
       "slug":"mandaadi",
-      "totalGross":11023950.0,
-      "totalTickets":12180,
-      "totalShows":560,
-      "totalSeats":109545,
-      "occupancy":11.12
+      "totalGross":11026550.0,
+      "totalTickets":12182,
+      "totalShows":563,
+      "totalSeats":110402,
+      "occupancy":11.03
     },
     {
       "name":"Gigolo",
@@ -240,9 +240,9 @@
       "slug":"insidious-out-of-the-further",
       "totalGross":8724850.0,
       "totalTickets":5976,
-      "totalShows":363,
-      "totalSeats":41080,
-      "occupancy":14.55
+      "totalShows":364,
+      "totalSeats":41176,
+      "occupancy":14.51
     },
     {
       "name":"Im Game",
@@ -256,10 +256,10 @@
     {
       "name":"Bethlehem Kudumba Unit",
       "slug":"bethlehem-kudumba-unit",
-      "totalGross":960500.0,
-      "totalTickets":939,
-      "totalShows":139,
-      "totalSeats":20182,
+      "totalGross":964100.0,
+      "totalTickets":943,
+      "totalShows":140,
+      "totalSeats":20293,
       "occupancy":4.65
     },
     {
@@ -346,29 +346,29 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":21285000.0,
-      "totalTickets":29696,
-      "totalShows":854,
-      "totalSeats":166493,
-      "occupancy":17.84
+      "totalGross":21773100.0,
+      "totalTickets":30460,
+      "totalShows":860,
+      "totalSeats":167494,
+      "occupancy":18.19
     },
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2386150.0,
-      "totalTickets":1214,
-      "totalShows":152,
-      "totalSeats":27105,
-      "occupancy":4.48
+      "totalGross":2471150.0,
+      "totalTickets":1260,
+      "totalShows":154,
+      "totalSeats":27346,
+      "occupancy":4.61
     },
     {
       "name":"Daayra",
       "slug":"daayra",
-      "totalGross":446400.0,
-      "totalTickets":183,
+      "totalGross":463200.0,
+      "totalTickets":190,
       "totalShows":33,
       "totalSeats":3861,
-      "occupancy":4.74
+      "occupancy":4.92
     },
     {
       "name":"Gharasarapa",
@@ -481,11 +481,11 @@
     {
       "name":"The Paradise",
       "slug":"the-paradise",
-      "totalGross":73400.0,
-      "totalTickets":96,
-      "totalShows":3,
-      "totalSeats":524,
-      "occupancy":18.32
+      "totalGross":153850.0,
+      "totalTickets":150,
+      "totalShows":7,
+      "totalSeats":1373,
+      "occupancy":10.92
     },
     {
       "name":"OIC Gadafi",
