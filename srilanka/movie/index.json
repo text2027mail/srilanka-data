@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-01 19:26:35 IST",
+  "last_updated":"2026-10-02 01:22:19 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -400,11 +400,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":10331800.0,
-      "totalTickets":4154,
-      "totalShows":172,
-      "totalSeats":31213,
-      "occupancy":13.31
+      "totalGross":10352600.0,
+      "totalTickets":4167,
+      "totalShows":173,
+      "totalSeats":31391,
+      "occupancy":13.27
     },
     {
       "name":"Heart of the Beast",
