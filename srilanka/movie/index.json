@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-03 17:34:25 IST",
+  "last_updated":"2026-10-03 22:15:22 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -346,11 +346,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":58288400.0,
-      "totalTickets":84021,
+      "totalGross":58487200.0,
+      "totalTickets":84184,
       "totalShows":1979,
       "totalSeats":388894,
-      "occupancy":21.61
+      "occupancy":21.65
     },
     {
       "name":"The Paradise",
@@ -373,20 +373,20 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":3875850.0,
-      "totalTickets":2148,
+      "totalGross":3941850.0,
+      "totalTickets":2192,
       "totalShows":212,
       "totalSeats":34902,
-      "occupancy":6.15
+      "occupancy":6.28
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":5277050.0,
-      "totalTickets":6629,
+      "totalGross":5350550.0,
+      "totalTickets":6678,
       "totalShows":217,
       "totalSeats":40247,
-      "occupancy":16.47
+      "occupancy":16.59
     },
     {
       "name":"Dorothy",
@@ -400,11 +400,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":11701350.0,
-      "totalTickets":4742,
+      "totalGross":11765850.0,
+      "totalTickets":4785,
       "totalShows":211,
       "totalSeats":37477,
-      "occupancy":12.65
+      "occupancy":12.77
     },
     {
       "name":"Heart of the Beast",
@@ -607,11 +607,11 @@
     {
       "name":"Sigma",
       "slug":"sigma",
-      "totalGross":561900.0,
-      "totalTickets":673,
+      "totalGross":671400.0,
+      "totalTickets":746,
       "totalShows":41,
       "totalSeats":6982,
-      "occupancy":9.64
+      "occupancy":10.68
     },
     {
       "name":"Prem Keetanu",
