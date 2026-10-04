@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-04 01:35:38 IST",
+  "last_updated":"2026-10-04 16:10:34 IST",
   "movies":[
     {
       "name":"My Simba",
@@ -22,8 +22,8 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":17926550.0,
-      "totalTickets":24194,
+      "totalGross":17934450.0,
+      "totalTickets":24202,
       "totalShows":3663,
       "totalSeats":715062,
       "occupancy":3.38
@@ -112,11 +112,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":61415100.0,
-      "totalTickets":19247,
+      "totalGross":61430500.0,
+      "totalTickets":19253,
       "totalShows":560,
       "totalSeats":108123,
-      "occupancy":17.8
+      "occupancy":17.81
     },
     {
       "name":"The End of Oak Street",
@@ -195,8 +195,8 @@
       "slug":"cricket-sadu",
       "totalGross":1566050.0,
       "totalTickets":2254,
-      "totalShows":1490,
-      "totalSeats":284263,
+      "totalShows":1491,
+      "totalSeats":284479,
       "occupancy":0.79
     },
     {
@@ -346,29 +346,29 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":37083500.0,
-      "totalTickets":47384,
-      "totalShows":2231,
-      "totalSeats":440111,
-      "occupancy":10.77
+      "totalGross":37472150.0,
+      "totalTickets":48045,
+      "totalShows":2236,
+      "totalSeats":440807,
+      "occupancy":10.9
     },
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9026550.0,
-      "totalTickets":3349,
-      "totalShows":255,
-      "totalSeats":44479,
-      "occupancy":7.53
+      "totalGross":9033550.0,
+      "totalTickets":3356,
+      "totalShows":256,
+      "totalSeats":44695,
+      "occupancy":7.51
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":1186400.0,
-      "totalTickets":1441,
+      "totalGross":1209700.0,
+      "totalTickets":1471,
       "totalShows":238,
       "totalSeats":44643,
-      "occupancy":3.23
+      "occupancy":3.3
     },
     {
       "name":"Dorothy",
@@ -400,8 +400,8 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2039800.0,
-      "totalTickets":1083,
+      "totalGross":2042200.0,
+      "totalTickets":1084,
       "totalShows":224,
       "totalSeats":36697,
       "occupancy":2.95
@@ -409,11 +409,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":1351700.0,
-      "totalTickets":810,
-      "totalShows":139,
-      "totalSeats":18865,
-      "occupancy":4.29
+      "totalGross":1356300.0,
+      "totalTickets":812,
+      "totalShows":140,
+      "totalSeats":19081,
+      "occupancy":4.26
     },
     {
       "name":"Daayra",
@@ -447,36 +447,36 @@
       "slug":"ahasa-tharam",
       "totalGross":151800.0,
       "totalTickets":167,
-      "totalShows":62,
-      "totalSeats":9803,
-      "occupancy":1.7
+      "totalShows":63,
+      "totalSeats":10019,
+      "occupancy":1.67
     },
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":219700.0,
-      "totalTickets":279,
+      "totalGross":230550.0,
+      "totalTickets":292,
       "totalShows":25,
       "totalSeats":4567,
-      "occupancy":6.11
+      "occupancy":6.39
     },
     {
       "name":"Sigma",
       "slug":"sigma",
-      "totalGross":150850.0,
-      "totalTickets":171,
-      "totalShows":77,
-      "totalSeats":13410,
-      "occupancy":1.28
+      "totalGross":154150.0,
+      "totalTickets":174,
+      "totalShows":78,
+      "totalSeats":13697,
+      "occupancy":1.27
     },
     {
       "name":"Baththa",
       "slug":"baththa",
       "totalGross":151550.0,
       "totalTickets":138,
-      "totalShows":75,
-      "totalSeats":11186,
-      "occupancy":1.23
+      "totalShows":76,
+      "totalSeats":11489,
+      "occupancy":1.2
     },
     {
       "name":"Yezhu Kadal Yezhu Malai",
@@ -492,9 +492,9 @@
       "slug":"porattam",
       "totalGross":79900.0,
       "totalTickets":107,
-      "totalShows":15,
-      "totalSeats":3135,
-      "occupancy":3.41
+      "totalShows":16,
+      "totalSeats":3272,
+      "occupancy":3.27
     },
     {
       "name":"Drishyam: The Conclusion",
