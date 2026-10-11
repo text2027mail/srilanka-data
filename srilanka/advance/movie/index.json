@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-11 16:25:25 IST",
+  "last_updated":"2026-10-12 00:34:32 IST",
   "movies":[
     {
       "name":"My Simba",
@@ -22,10 +22,10 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18077250.0,
-      "totalTickets":24434,
-      "totalShows":3715,
-      "totalSeats":723980,
+      "totalGross":18079450.0,
+      "totalTickets":24436,
+      "totalShows":3722,
+      "totalSeats":725155,
       "occupancy":3.37
     },
     {
@@ -112,11 +112,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":61618200.0,
-      "totalTickets":19329,
-      "totalShows":572,
-      "totalSeats":110341,
-      "occupancy":17.52
+      "totalGross":61649600.0,
+      "totalTickets":19340,
+      "totalShows":574,
+      "totalSeats":110745,
+      "occupancy":17.46
     },
     {
       "name":"The End of Oak Street",
@@ -177,8 +177,8 @@
       "slug":"man-hoyanne-premayak",
       "totalGross":387800.0,
       "totalTickets":790,
-      "totalShows":565,
-      "totalSeats":106917,
+      "totalShows":567,
+      "totalSeats":107372,
       "occupancy":0.74
     },
     {
@@ -193,10 +193,10 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":1615500.0,
-      "totalTickets":2312,
-      "totalShows":1599,
-      "totalSeats":306685,
+      "totalGross":1617700.0,
+      "totalTickets":2317,
+      "totalShows":1614,
+      "totalSeats":309748,
       "occupancy":0.75
     },
     {
@@ -213,9 +213,9 @@
       "slug":"mandaadi",
       "totalGross":2567000.0,
       "totalTickets":2681,
-      "totalShows":706,
-      "totalSeats":135640,
-      "occupancy":1.98
+      "totalShows":712,
+      "totalSeats":136608,
+      "occupancy":1.96
     },
     {
       "name":"Bethlehem Kudumba Unit",
@@ -283,146 +283,146 @@
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":266900.0,
-      "totalTickets":321,
-      "totalShows":186,
-      "totalSeats":31834,
-      "occupancy":1.01
+      "totalGross":269700.0,
+      "totalTickets":325,
+      "totalShows":207,
+      "totalSeats":35562,
+      "occupancy":0.91
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":49255700.0,
-      "totalTickets":64258,
-      "totalShows":3334,
-      "totalSeats":655583,
-      "occupancy":9.8
+      "totalGross":49601150.0,
+      "totalTickets":64722,
+      "totalShows":3488,
+      "totalSeats":686011,
+      "occupancy":9.43
     },
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":516350.0,
-      "totalTickets":634,
-      "totalShows":67,
-      "totalSeats":11818,
-      "occupancy":5.36
+      "totalGross":519250.0,
+      "totalTickets":638,
+      "totalShows":73,
+      "totalSeats":12874,
+      "occupancy":4.96
     },
     {
       "name":"Baththa",
       "slug":"baththa",
-      "totalGross":367750.0,
-      "totalTickets":346,
-      "totalShows":201,
-      "totalSeats":31017,
-      "occupancy":1.12
+      "totalGross":368250.0,
+      "totalTickets":347,
+      "totalShows":219,
+      "totalSeats":33974,
+      "occupancy":1.02
     },
     {
       "name":"Sigma",
       "slug":"sigma",
-      "totalGross":188650.0,
-      "totalTickets":214,
-      "totalShows":162,
-      "totalSeats":26789,
-      "occupancy":0.8
+      "totalGross":190150.0,
+      "totalTickets":216,
+      "totalShows":172,
+      "totalSeats":28269,
+      "occupancy":0.76
     },
     {
       "name":"Anbil Avan",
       "slug":"anbil-avan",
-      "totalGross":111800.0,
-      "totalTickets":108,
-      "totalShows":44,
-      "totalSeats":6236,
-      "occupancy":1.73
+      "totalGross":113800.0,
+      "totalTickets":110,
+      "totalShows":47,
+      "totalSeats":6639,
+      "occupancy":1.66
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":1414800.0,
-      "totalTickets":1688,
-      "totalShows":380,
-      "totalSeats":70426,
-      "occupancy":2.4
+      "totalGross":1415300.0,
+      "totalTickets":1689,
+      "totalShows":399,
+      "totalSeats":73891,
+      "occupancy":2.29
     },
     {
       "name":"Yezhu Kadal Yezhu Malai",
       "slug":"yezhu-kadal-yezhu-malai",
       "totalGross":16350.0,
       "totalTickets":23,
-      "totalShows":48,
-      "totalSeats":6597,
-      "occupancy":0.35
+      "totalShows":49,
+      "totalSeats":6730,
+      "occupancy":0.34
     },
     {
       "name":"Dorothy",
       "slug":"dorothy",
-      "totalGross":131400.0,
-      "totalTickets":175,
-      "totalShows":58,
-      "totalSeats":7674,
-      "occupancy":2.28
+      "totalGross":132700.0,
+      "totalTickets":177,
+      "totalShows":60,
+      "totalSeats":7942,
+      "occupancy":2.23
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":1890700.0,
-      "totalTickets":1182,
-      "totalShows":226,
-      "totalSeats":29556,
-      "occupancy":4.0
+      "totalGross":1919200.0,
+      "totalTickets":1203,
+      "totalShows":239,
+      "totalSeats":31011,
+      "occupancy":3.88
     },
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":978300.0,
-      "totalTickets":412,
-      "totalShows":103,
-      "totalSeats":11406,
-      "occupancy":3.61
+      "totalGross":1043900.0,
+      "totalTickets":436,
+      "totalShows":112,
+      "totalSeats":12229,
+      "occupancy":3.57
     },
     {
       "name":"Porattam",
       "slug":"porattam",
       "totalGross":107400.0,
       "totalTickets":142,
-      "totalShows":40,
-      "totalSeats":7428,
-      "occupancy":1.91
+      "totalShows":41,
+      "totalSeats":7561,
+      "occupancy":1.88
     },
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9632250.0,
-      "totalTickets":3636,
-      "totalShows":364,
-      "totalSeats":61806,
-      "occupancy":5.88
+      "totalGross":9646250.0,
+      "totalTickets":3648,
+      "totalShows":376,
+      "totalSeats":63719,
+      "occupancy":5.73
     },
     {
       "name":"The Vvaan - Force of the Forrest",
       "slug":"the-vvaan-force-of-the-forrest",
       "totalGross":113000.0,
       "totalTickets":46,
-      "totalShows":20,
-      "totalSeats":1912,
-      "occupancy":2.41
+      "totalShows":21,
+      "totalSeats":2023,
+      "occupancy":2.27
     },
     {
       "name":"Ethalaya",
       "slug":"ethalaya",
       "totalGross":0.0,
       "totalTickets":0,
-      "totalShows":21,
-      "totalSeats":11823,
+      "totalShows":24,
+      "totalSeats":13512,
       "occupancy":0.0
     },
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2229700.0,
-      "totalTickets":1187,
-      "totalShows":245,
-      "totalSeats":38856,
-      "occupancy":3.05
+      "totalGross":2236900.0,
+      "totalTickets":1191,
+      "totalShows":248,
+      "totalSeats":39155,
+      "occupancy":3.04
     },
     {
       "name":"Queen Budapest",
@@ -544,29 +544,29 @@
     {
       "name":"Digger",
       "slug":"digger",
-      "totalGross":263100.0,
-      "totalTickets":123,
-      "totalShows":46,
-      "totalSeats":6854,
-      "occupancy":1.79
+      "totalGross":285900.0,
+      "totalTickets":134,
+      "totalShows":60,
+      "totalSeats":9024,
+      "occupancy":1.48
     },
     {
       "name":"Linkin Park: Unshatter",
       "slug":"linkin-park-unshatter",
       "totalGross":492000.0,
       "totalTickets":202,
-      "totalShows":13,
-      "totalSeats":2161,
-      "occupancy":9.35
+      "totalShows":14,
+      "totalSeats":2387,
+      "occupancy":8.46
     },
     {
       "name":"The Social Reckoning",
       "slug":"the-social-reckoning",
       "totalGross":30500.0,
       "totalTickets":23,
-      "totalShows":27,
-      "totalSeats":3172,
-      "occupancy":0.73
+      "totalShows":33,
+      "totalSeats":3791,
+      "occupancy":0.61
     },
     {
       "name":"Prem Keetanu",
