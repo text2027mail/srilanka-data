@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-10-14 01:47:16 IST",
+  "last_updated":"2026-10-14 15:07:28 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":278300.0,
-      "totalTickets":343,
+      "totalGross":279100.0,
+      "totalTickets":345,
       "totalShows":247,
       "totalSeats":43141,
       "occupancy":0.8
@@ -13,11 +13,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":50858250.0,
-      "totalTickets":66461,
+      "totalGross":51039300.0,
+      "totalTickets":66752,
       "totalShows":3752,
       "totalSeats":737467,
-      "occupancy":9.01
+      "occupancy":9.05
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":546300.0,
-      "totalTickets":670,
+      "totalGross":549600.0,
+      "totalTickets":673,
       "totalShows":85,
       "totalSeats":14869,
-      "occupancy":4.51
+      "occupancy":4.53
     },
     {
       "name":"Baththa",
@@ -60,9 +60,9 @@
       "slug":"cricket-sadu",
       "totalGross":1619900.0,
       "totalTickets":2319,
-      "totalShows":1641,
-      "totalSeats":315312,
-      "occupancy":0.74
+      "totalShows":1642,
+      "totalSeats":315768,
+      "occupancy":0.73
     },
     {
       "name":"Dorothy",
@@ -85,11 +85,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":1998500.0,
-      "totalTickets":1266,
+      "totalGross":2000500.0,
+      "totalTickets":1268,
       "totalShows":258,
       "totalSeats":33304,
-      "occupancy":3.8
+      "occupancy":3.81
     },
     {
       "name":"Meesaya Murukku 2",
@@ -202,11 +202,11 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2284900.0,
-      "totalTickets":1218,
+      "totalGross":2289700.0,
+      "totalTickets":1220,
       "totalShows":253,
       "totalSeats":39654,
-      "occupancy":3.07
+      "occupancy":3.08
     },
     {
       "name":"The Odyssey",
@@ -670,11 +670,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":11086750.0,
-      "totalTickets":7123,
-      "totalShows":176,
-      "totalSeats":31840,
-      "occupancy":22.37
+      "totalGross":12804800.0,
+      "totalTickets":8291,
+      "totalShows":183,
+      "totalSeats":33767,
+      "occupancy":24.55
     },
     {
       "name":"Vihanga Premayak",
