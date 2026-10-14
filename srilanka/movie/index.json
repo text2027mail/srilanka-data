@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-14 19:34:08 IST",
+  "last_updated":"2026-10-15 00:26:46 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -105,8 +105,8 @@
       "slug":"cricket-sadu",
       "totalGross":5321500.0,
       "totalTickets":8185,
-      "totalShows":1615,
-      "totalSeats":312196,
+      "totalShows":1616,
+      "totalSeats":312652,
       "occupancy":2.62
     },
     {
@@ -675,6 +675,15 @@
       "totalShows":14,
       "totalSeats":1491,
       "occupancy":22.07
+    },
+    {
+      "name":"Jailer 2",
+      "slug":"jailer-2",
+      "totalGross":4318000.0,
+      "totalTickets":1590,
+      "totalShows":35,
+      "totalSeats":6301,
+      "occupancy":25.23
     },
     {
       "name":"Vihanga Premayak",
