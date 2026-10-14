@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-14 13:32:34 IST",
+  "last_updated":"2026-10-14 19:34:08 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":97843000.0,
-      "totalTickets":143774,
-      "totalShows":3660,
-      "totalSeats":719538,
-      "occupancy":19.98
+      "totalGross":98081000.0,
+      "totalTickets":144155,
+      "totalShows":3667,
+      "totalSeats":720847,
+      "occupancy":20.0
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,38 +40,38 @@
     {
       "name":"Baththa",
       "slug":"baththa",
-      "totalGross":2113250.0,
-      "totalTickets":2045,
+      "totalGross":2118450.0,
+      "totalTickets":2049,
       "totalShows":236,
       "totalSeats":36946,
-      "occupancy":5.54
+      "occupancy":5.55
     },
     {
       "name":"Digger",
       "slug":"digger",
-      "totalGross":672000.0,
-      "totalTickets":333,
-      "totalShows":72,
-      "totalSeats":10973,
-      "occupancy":3.03
+      "totalGross":673200.0,
+      "totalTickets":334,
+      "totalShows":73,
+      "totalSeats":11117,
+      "occupancy":3.0
     },
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":2605700.0,
-      "totalTickets":1262,
-      "totalShows":120,
-      "totalSeats":13149,
-      "occupancy":9.6
+      "totalGross":2633400.0,
+      "totalTickets":1274,
+      "totalShows":121,
+      "totalSeats":13190,
+      "occupancy":9.66
     },
     {
       "name":"Sigma",
       "slug":"sigma",
       "totalGross":1277100.0,
       "totalTickets":1502,
-      "totalShows":176,
-      "totalSeats":28457,
-      "occupancy":5.28
+      "totalShows":177,
+      "totalSeats":28562,
+      "occupancy":5.26
     },
     {
       "name":"Anbil Avan",
@@ -85,20 +85,20 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":14382400.0,
-      "totalTickets":6082,
-      "totalShows":380,
-      "totalSeats":63786,
-      "occupancy":9.54
+      "totalGross":14437300.0,
+      "totalTickets":6105,
+      "totalShows":381,
+      "totalSeats":64091,
+      "occupancy":9.53
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":5204600.0,
-      "totalTickets":3518,
-      "totalShows":251,
-      "totalSeats":32326,
-      "occupancy":10.88
+      "totalGross":5225300.0,
+      "totalTickets":3536,
+      "totalShows":252,
+      "totalSeats":32418,
+      "occupancy":10.91
     },
     {
       "name":"Cricket Sadu",
@@ -130,11 +130,11 @@
     {
       "name":"The Social Reckoning",
       "slug":"the-social-reckoning",
-      "totalGross":172100.0,
-      "totalTickets":125,
-      "totalShows":36,
-      "totalSeats":4086,
-      "occupancy":3.06
+      "totalGross":179900.0,
+      "totalTickets":131,
+      "totalShows":38,
+      "totalSeats":4259,
+      "occupancy":3.08
     },
     {
       "name":"Ayu",
@@ -157,11 +157,11 @@
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":7156600.0,
-      "totalTickets":8665,
-      "totalShows":425,
-      "totalSeats":78380,
-      "occupancy":11.06
+      "totalGross":7159600.0,
+      "totalTickets":8667,
+      "totalShows":427,
+      "totalSeats":78644,
+      "occupancy":11.02
     },
     {
       "name":"Porattam",
@@ -175,11 +175,11 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":4872750.0,
-      "totalTickets":2768,
-      "totalShows":242,
-      "totalSeats":37925,
-      "occupancy":7.3
+      "totalGross":4896450.0,
+      "totalTickets":2787,
+      "totalShows":243,
+      "totalSeats":38103,
+      "occupancy":7.31
     },
     {
       "name":"The Odyssey",
@@ -211,11 +211,11 @@
     {
       "name":"LISA - Always Lalisa ",
       "slug":"lisa-always-lalisa",
-      "totalGross":207400.0,
-      "totalTickets":61,
+      "totalGross":231200.0,
+      "totalTickets":68,
       "totalShows":1,
       "totalSeats":305,
-      "occupancy":20.0
+      "occupancy":22.3
     },
     {
       "name":"My Simba",
