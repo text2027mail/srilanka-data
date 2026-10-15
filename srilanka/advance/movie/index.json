@@ -1,29 +1,29 @@
 {
-  "last_updated":"2026-10-15 02:22:13 IST",
+  "last_updated":"2026-10-15 14:45:09 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":287200.0,
-      "totalTickets":356,
-      "totalShows":258,
-      "totalSeats":45233,
-      "occupancy":0.79
+      "totalGross":289000.0,
+      "totalTickets":358,
+      "totalShows":260,
+      "totalSeats":45656,
+      "occupancy":0.78
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":51768700.0,
-      "totalTickets":67774,
-      "totalShows":3861,
-      "totalSeats":758492,
-      "occupancy":8.94
+      "totalGross":52080700.0,
+      "totalTickets":68226,
+      "totalShows":3863,
+      "totalSeats":758662,
+      "occupancy":8.99
     },
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18094750.0,
-      "totalTickets":24454,
+      "totalGross":18103500.0,
+      "totalTickets":24489,
       "totalShows":3740,
       "totalSeats":728585,
       "occupancy":3.36
@@ -33,18 +33,18 @@
       "slug":"man-hoyanne-premayak",
       "totalGross":387800.0,
       "totalTickets":790,
-      "totalShows":571,
-      "totalSeats":108282,
+      "totalShows":572,
+      "totalSeats":108499,
       "occupancy":0.73
     },
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":555600.0,
-      "totalTickets":678,
+      "totalGross":561600.0,
+      "totalTickets":683,
       "totalShows":89,
       "totalSeats":15357,
-      "occupancy":4.41
+      "occupancy":4.45
     },
     {
       "name":"Baththa",
@@ -85,20 +85,20 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2052200.0,
-      "totalTickets":1301,
+      "totalGross":2061000.0,
+      "totalTickets":1307,
       "totalShows":266,
       "totalSeats":34236,
-      "occupancy":3.8
+      "occupancy":3.82
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":1425400.0,
-      "totalTickets":1702,
+      "totalGross":1428000.0,
+      "totalTickets":1704,
       "totalShows":423,
       "totalSeats":77966,
-      "occupancy":2.18
+      "occupancy":2.19
     },
     {
       "name":"Sigma",
@@ -139,8 +139,8 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9757550.0,
-      "totalTickets":3712,
+      "totalGross":9769550.0,
+      "totalTickets":3716,
       "totalShows":404,
       "totalSeats":67626,
       "occupancy":5.49
@@ -202,17 +202,17 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2335500.0,
-      "totalTickets":1246,
+      "totalGross":2340800.0,
+      "totalTickets":1249,
       "totalShows":256,
       "totalSeats":40016,
-      "occupancy":3.11
+      "occupancy":3.12
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":61675200.0,
-      "totalTickets":19348,
+      "totalGross":61678400.0,
+      "totalTickets":19350,
       "totalShows":577,
       "totalSeats":111245,
       "occupancy":17.39
@@ -339,9 +339,9 @@
       "slug":"paw-patrol-the-dino-movie",
       "totalGross":3053150.0,
       "totalTickets":2532,
-      "totalShows":312,
-      "totalSeats":34798,
-      "occupancy":7.28
+      "totalShows":313,
+      "totalSeats":34905,
+      "occupancy":7.25
     },
     {
       "name":"Minions & Monsters",
@@ -670,11 +670,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":17383950.0,
-      "totalTickets":11419,
-      "totalShows":311,
-      "totalSeats":57358,
-      "occupancy":19.91
+      "totalGross":18450300.0,
+      "totalTickets":12222,
+      "totalShows":314,
+      "totalSeats":57691,
+      "occupancy":21.19
     },
     {
       "name":"Vihanga Premayak",
@@ -715,11 +715,11 @@
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":55400.0,
-      "totalTickets":29,
-      "totalShows":11,
-      "totalSeats":2034,
-      "occupancy":1.43
+      "totalGross":77900.0,
+      "totalTickets":40,
+      "totalShows":12,
+      "totalSeats":2060,
+      "occupancy":1.94
     },
     {
       "name":"Dinga",
