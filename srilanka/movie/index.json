@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-15 17:39:26 IST",
+  "last_updated":"2026-10-15 22:52:46 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -679,11 +679,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":20052350.0,
-      "totalTickets":13910,
+      "totalGross":20273150.0,
+      "totalTickets":14016,
       "totalShows":186,
       "totalSeats":34229,
-      "occupancy":40.64
+      "occupancy":40.95
     },
     {
       "name":"Vihanga Premayak",
