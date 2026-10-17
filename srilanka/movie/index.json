@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-17 17:56:41 IST",
+  "last_updated":"2026-10-17 21:27:44 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":107688200.0,
-      "totalTickets":159194,
+      "totalGross":107819000.0,
+      "totalTickets":159367,
       "totalShows":4030,
       "totalSeats":790960,
-      "occupancy":20.13
+      "occupancy":20.15
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Baththa",
       "slug":"baththa",
-      "totalGross":2146850.0,
-      "totalTickets":2077,
+      "totalGross":2155250.0,
+      "totalTickets":2083,
       "totalShows":242,
       "totalSeats":37637,
-      "occupancy":5.52
+      "occupancy":5.53
     },
     {
       "name":"Digger",
@@ -85,11 +85,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":14747900.0,
-      "totalTickets":6288,
+      "totalGross":14783900.0,
+      "totalTickets":6312,
       "totalShows":399,
       "totalSeats":65764,
-      "occupancy":9.56
+      "occupancy":9.6
     },
     {
       "name":"Heart of the Beast",
@@ -580,20 +580,20 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":51163350.0,
-      "totalTickets":37167,
-      "totalShows":470,
-      "totalSeats":85098,
-      "occupancy":43.68
+      "totalGross":52495950.0,
+      "totalTickets":38523,
+      "totalShows":472,
+      "totalSeats":85573,
+      "occupancy":45.02
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":824500.0,
-      "totalTickets":424,
+      "totalGross":910900.0,
+      "totalTickets":478,
       "totalShows":25,
       "totalSeats":4320,
-      "occupancy":9.81
+      "occupancy":11.06
     },
     {
       "name":"Dinga",
