@@ -1,29 +1,29 @@
 {
-  "last_updated":"2026-10-17 14:10:37 IST",
+  "last_updated":"2026-10-17 19:18:59 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":379100.0,
-      "totalTickets":465,
+      "totalGross":394400.0,
+      "totalTickets":485,
       "totalShows":294,
       "totalSeats":52994,
-      "occupancy":0.88
+      "occupancy":0.92
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":57929000.0,
-      "totalTickets":77343,
+      "totalGross":58699700.0,
+      "totalTickets":78519,
       "totalShows":4130,
       "totalSeats":810644,
-      "occupancy":9.54
+      "occupancy":9.69
     },
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18169800.0,
-      "totalTickets":24569,
+      "totalGross":18186300.0,
+      "totalTickets":24583,
       "totalShows":3751,
       "totalSeats":730721,
       "occupancy":3.36
@@ -40,11 +40,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":650400.0,
-      "totalTickets":763,
+      "totalGross":670250.0,
+      "totalTickets":779,
       "totalShows":96,
       "totalSeats":16237,
-      "occupancy":4.7
+      "occupancy":4.8
     },
     {
       "name":"Baththa",
@@ -58,8 +58,8 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":1649750.0,
-      "totalTickets":2357,
+      "totalGross":1654950.0,
+      "totalTickets":2363,
       "totalShows":1677,
       "totalSeats":322997,
       "occupancy":0.73
@@ -76,29 +76,29 @@
     {
       "name":"Digger",
       "slug":"digger",
-      "totalGross":396400.0,
-      "totalTickets":189,
+      "totalGross":399000.0,
+      "totalTickets":190,
       "totalShows":91,
       "totalSeats":13893,
-      "occupancy":1.36
+      "occupancy":1.37
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2291300.0,
-      "totalTickets":1442,
+      "totalGross":2293900.0,
+      "totalTickets":1444,
       "totalShows":281,
       "totalSeats":36037,
-      "occupancy":4.0
+      "occupancy":4.01
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":1435800.0,
-      "totalTickets":1710,
+      "totalGross":1438400.0,
+      "totalTickets":1712,
       "totalShows":426,
       "totalSeats":78281,
-      "occupancy":2.18
+      "occupancy":2.19
     },
     {
       "name":"Sigma",
@@ -139,11 +139,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9886450.0,
-      "totalTickets":3791,
+      "totalGross":9893650.0,
+      "totalTickets":3801,
       "totalShows":414,
       "totalSeats":68418,
-      "occupancy":5.54
+      "occupancy":5.56
     },
     {
       "name":"The Social Reckoning",
@@ -202,17 +202,17 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2515200.0,
-      "totalTickets":1357,
+      "totalGross":2530600.0,
+      "totalTickets":1367,
       "totalShows":262,
       "totalSeats":40740,
-      "occupancy":3.33
+      "occupancy":3.36
     },
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":61708200.0,
-      "totalTickets":19369,
+      "totalGross":61709500.0,
+      "totalTickets":19370,
       "totalShows":579,
       "totalSeats":111437,
       "occupancy":17.38
@@ -571,20 +571,20 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":36506250.0,
-      "totalTickets":24350,
-      "totalShows":590,
-      "totalSeats":107573,
-      "occupancy":22.64
+      "totalGross":38238600.0,
+      "totalTickets":25584,
+      "totalShows":596,
+      "totalSeats":108773,
+      "occupancy":23.52
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":538600.0,
-      "totalTickets":246,
+      "totalGross":593600.0,
+      "totalTickets":265,
       "totalShows":38,
       "totalSeats":6519,
-      "occupancy":3.77
+      "occupancy":4.07
     },
     {
       "name":"Dinga",
