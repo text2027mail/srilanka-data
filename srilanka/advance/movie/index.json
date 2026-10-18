@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-10-18 14:27:20 IST",
+  "last_updated":"2026-10-18 19:34:25 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":416200.0,
-      "totalTickets":517,
+      "totalGross":419800.0,
+      "totalTickets":522,
       "totalShows":308,
       "totalSeats":56024,
-      "occupancy":0.92
+      "occupancy":0.93
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":59799450.0,
-      "totalTickets":80150,
-      "totalShows":4248,
-      "totalSeats":833592,
-      "occupancy":9.62
+      "totalGross":60005050.0,
+      "totalTickets":80489,
+      "totalShows":4251,
+      "totalSeats":834306,
+      "occupancy":9.65
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,7 +40,7 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":696850.0,
+      "totalGross":697750.0,
       "totalTickets":805,
       "totalShows":100,
       "totalSeats":16725,
@@ -49,8 +49,8 @@
     {
       "name":"Baththa",
       "slug":"baththa",
-      "totalGross":415700.0,
-      "totalTickets":405,
+      "totalGross":416600.0,
+      "totalTickets":406,
       "totalShows":248,
       "totalSeats":38245,
       "occupancy":1.06
@@ -85,17 +85,17 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2348100.0,
-      "totalTickets":1477,
+      "totalGross":2394900.0,
+      "totalTickets":1503,
       "totalShows":291,
       "totalSeats":37184,
-      "occupancy":3.97
+      "occupancy":4.04
     },
     {
       "name":"Meesaya Murukku 2",
       "slug":"meesaya-murukku-2",
-      "totalGross":1438400.0,
-      "totalTickets":1712,
+      "totalGross":1439400.0,
+      "totalTickets":1713,
       "totalShows":431,
       "totalSeats":78870,
       "occupancy":2.17
@@ -112,11 +112,11 @@
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":1248500.0,
-      "totalTickets":524,
+      "totalGross":1296500.0,
+      "totalTickets":551,
       "totalShows":142,
       "totalSeats":14976,
-      "occupancy":3.5
+      "occupancy":3.68
     },
     {
       "name":"Linkin Park: Unshatter",
@@ -202,7 +202,7 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2556400.0,
+      "totalGross":2556800.0,
       "totalTickets":1383,
       "totalShows":265,
       "totalSeats":41102,
@@ -571,29 +571,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":41425000.0,
-      "totalTickets":27858,
-      "totalShows":691,
-      "totalSeats":127608,
-      "occupancy":21.83
+      "totalGross":41798450.0,
+      "totalTickets":28156,
+      "totalShows":692,
+      "totalSeats":127846,
+      "occupancy":22.02
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":686200.0,
-      "totalTickets":311,
+      "totalGross":743000.0,
+      "totalTickets":342,
       "totalShows":51,
       "totalSeats":8515,
-      "occupancy":3.65
+      "occupancy":4.02
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":18050.0,
-      "totalTickets":27,
+      "totalGross":19050.0,
+      "totalTickets":29,
       "totalShows":35,
       "totalSeats":5170,
-      "occupancy":0.52
+      "occupancy":0.56
     },
     {
       "name":"Prem Keetanu",
