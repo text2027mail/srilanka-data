@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-19 10:52:19 IST",
+  "last_updated":"2026-10-19 19:29:34 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":115093000.0,
-      "totalTickets":171541,
-      "totalShows":4262,
-      "totalSeats":836252,
-      "occupancy":20.51
+      "totalGross":115629850.0,
+      "totalTickets":172467,
+      "totalShows":4277,
+      "totalSeats":838810,
+      "occupancy":20.56
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Baththa",
       "slug":"baththa",
-      "totalGross":2201450.0,
-      "totalTickets":2141,
-      "totalShows":246,
-      "totalSeats":38112,
-      "occupancy":5.62
+      "totalGross":2202350.0,
+      "totalTickets":2142,
+      "totalShows":248,
+      "totalSeats":38357,
+      "occupancy":5.58
     },
     {
       "name":"Digger",
@@ -58,11 +58,11 @@
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":3016500.0,
-      "totalTickets":1483,
-      "totalShows":135,
-      "totalSeats":14290,
-      "occupancy":10.38
+      "totalGross":3019200.0,
+      "totalTickets":1486,
+      "totalShows":137,
+      "totalSeats":14621,
+      "occupancy":10.16
     },
     {
       "name":"Sigma",
@@ -85,20 +85,20 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":14883200.0,
-      "totalTickets":6392,
-      "totalShows":407,
-      "totalSeats":66452,
-      "occupancy":9.62
+      "totalGross":14898400.0,
+      "totalTickets":6400,
+      "totalShows":409,
+      "totalSeats":66566,
+      "occupancy":9.61
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":6110600.0,
-      "totalTickets":4097,
-      "totalShows":292,
-      "totalSeats":37105,
-      "occupancy":11.04
+      "totalGross":6119700.0,
+      "totalTickets":4104,
+      "totalShows":293,
+      "totalSeats":37283,
+      "occupancy":11.01
     },
     {
       "name":"Cricket Sadu",
@@ -159,9 +159,9 @@
       "slug":"meesaya-murukku-2",
       "totalGross":7176200.0,
       "totalTickets":8680,
-      "totalShows":436,
-      "totalSeats":79636,
-      "occupancy":10.9
+      "totalShows":437,
+      "totalSeats":79779,
+      "occupancy":10.88
     },
     {
       "name":"Porattam",
@@ -184,11 +184,11 @@
     {
       "name":"The Odyssey",
       "slug":"the-odyssey",
-      "totalGross":87628600.0,
-      "totalTickets":29732,
-      "totalShows":580,
-      "totalSeats":111329,
-      "occupancy":26.71
+      "totalGross":87658500.0,
+      "totalTickets":29755,
+      "totalShows":581,
+      "totalSeats":111425,
+      "occupancy":26.7
     },
     {
       "name":"Linkin Park: Unshatter",
@@ -580,29 +580,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":72118600.0,
-      "totalTickets":53512,
-      "totalShows":681,
-      "totalSeats":124742,
-      "occupancy":42.9
+      "totalGross":74938800.0,
+      "totalTickets":56102,
+      "totalShows":718,
+      "totalSeats":132314,
+      "occupancy":42.4
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":1541500.0,
-      "totalTickets":767,
-      "totalShows":49,
-      "totalSeats":8115,
-      "occupancy":9.45
+      "totalGross":1554500.0,
+      "totalTickets":777,
+      "totalShows":50,
+      "totalSeats":8315,
+      "occupancy":9.34
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":106950.0,
-      "totalTickets":148,
-      "totalShows":34,
-      "totalSeats":5066,
-      "occupancy":2.92
+      "totalGross":110550.0,
+      "totalTickets":152,
+      "totalShows":35,
+      "totalSeats":5171,
+      "occupancy":2.94
     },
     {
       "name":"Prem Keetanu",
@@ -729,6 +729,15 @@
       "totalShows":1,
       "totalSeats":121,
       "occupancy":46.28
+    },
+    {
+      "name":"Teardrop Nation: Episode 2",
+      "slug":"teardrop-nation-episode-2",
+      "totalGross":90000.0,
+      "totalTickets":75,
+      "totalShows":1,
+      "totalSeats":121,
+      "occupancy":61.98
     },
     {
       "name":"Rocket",
