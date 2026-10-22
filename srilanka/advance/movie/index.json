@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-10-22 15:00:45 IST",
+  "last_updated":"2026-10-22 20:54:48 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":458200.0,
-      "totalTickets":575,
-      "totalShows":365,
-      "totalSeats":68067,
-      "occupancy":0.84
+      "totalGross":460900.0,
+      "totalTickets":579,
+      "totalShows":366,
+      "totalSeats":68243,
+      "occupancy":0.85
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":63055950.0,
-      "totalTickets":84658,
-      "totalShows":4749,
-      "totalSeats":929602,
-      "occupancy":9.11
+      "totalGross":63286550.0,
+      "totalTickets":85022,
+      "totalShows":4761,
+      "totalSeats":932385,
+      "occupancy":9.12
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":739700.0,
-      "totalTickets":845,
+      "totalGross":736100.0,
+      "totalTickets":842,
       "totalShows":111,
       "totalSeats":18105,
-      "occupancy":4.67
+      "occupancy":4.65
     },
     {
       "name":"Baththa",
@@ -60,8 +60,8 @@
       "slug":"cricket-sadu",
       "totalGross":1677250.0,
       "totalTickets":2388,
-      "totalShows":1723,
-      "totalSeats":331108,
+      "totalShows":1727,
+      "totalSeats":331957,
       "occupancy":0.72
     },
     {
@@ -85,11 +85,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2613600.0,
-      "totalTickets":1646,
+      "totalGross":2641600.0,
+      "totalTickets":1666,
       "totalShows":327,
       "totalSeats":41215,
-      "occupancy":3.99
+      "occupancy":4.04
     },
     {
       "name":"Meesaya Murukku 2",
@@ -121,11 +121,11 @@
     {
       "name":"Linkin Park: Unshatter",
       "slug":"linkin-park-unshatter",
-      "totalGross":535200.0,
-      "totalTickets":238,
+      "totalGross":536400.0,
+      "totalTickets":239,
       "totalShows":17,
       "totalSeats":2893,
-      "occupancy":8.23
+      "occupancy":8.26
     },
     {
       "name":"Anbil Avan",
@@ -139,11 +139,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9984250.0,
-      "totalTickets":3868,
+      "totalGross":9989050.0,
+      "totalTickets":3871,
       "totalShows":437,
       "totalSeats":70299,
-      "occupancy":5.5
+      "occupancy":5.51
     },
     {
       "name":"The Social Reckoning",
@@ -202,8 +202,8 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2595000.0,
-      "totalTickets":1413,
+      "totalGross":2598000.0,
+      "totalTickets":1415,
       "totalShows":276,
       "totalSeats":42302,
       "occupancy":3.34
@@ -571,29 +571,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":46820300.0,
-      "totalTickets":31230,
-      "totalShows":1126,
-      "totalSeats":210502,
-      "occupancy":14.84
+      "totalGross":47281900.0,
+      "totalTickets":31638,
+      "totalShows":1129,
+      "totalSeats":211314,
+      "occupancy":14.97
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":949400.0,
-      "totalTickets":446,
+      "totalGross":955000.0,
+      "totalTickets":448,
       "totalShows":100,
       "totalSeats":16305,
-      "occupancy":2.74
+      "occupancy":2.75
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":26150.0,
-      "totalTickets":41,
-      "totalShows":77,
-      "totalSeats":12334,
-      "occupancy":0.33
+      "totalGross":28750.0,
+      "totalTickets":45,
+      "totalShows":78,
+      "totalSeats":12527,
+      "occupancy":0.36
     },
     {
       "name":"Prem Keetanu",
@@ -652,11 +652,11 @@
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":163200.0,
-      "totalTickets":97,
+      "totalGross":220200.0,
+      "totalTickets":133,
       "totalShows":17,
       "totalSeats":2336,
-      "occupancy":4.15
+      "occupancy":5.69
     },
     {
       "name":"Udta Teer",
