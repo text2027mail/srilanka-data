@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-10-22 02:20:00 IST",
+  "last_updated":"2026-10-22 15:00:45 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":456400.0,
-      "totalTickets":573,
-      "totalShows":364,
-      "totalSeats":67851,
+      "totalGross":458200.0,
+      "totalTickets":575,
+      "totalShows":365,
+      "totalSeats":68067,
       "occupancy":0.84
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":62773950.0,
-      "totalTickets":84302,
-      "totalShows":4738,
-      "totalSeats":927182,
-      "occupancy":9.09
+      "totalGross":63055950.0,
+      "totalTickets":84658,
+      "totalShows":4749,
+      "totalSeats":929602,
+      "occupancy":9.11
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":733700.0,
-      "totalTickets":840,
+      "totalGross":739700.0,
+      "totalTickets":845,
       "totalShows":111,
       "totalSeats":18105,
-      "occupancy":4.64
+      "occupancy":4.67
     },
     {
       "name":"Baththa",
@@ -85,10 +85,10 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2595400.0,
-      "totalTickets":1633,
-      "totalShows":324,
-      "totalSeats":40939,
+      "totalGross":2613600.0,
+      "totalTickets":1646,
+      "totalShows":327,
+      "totalSeats":41215,
       "occupancy":3.99
     },
     {
@@ -121,11 +121,11 @@
     {
       "name":"Linkin Park: Unshatter",
       "slug":"linkin-park-unshatter",
-      "totalGross":528000.0,
-      "totalTickets":232,
+      "totalGross":535200.0,
+      "totalTickets":238,
       "totalShows":17,
       "totalSeats":2893,
-      "occupancy":8.02
+      "occupancy":8.23
     },
     {
       "name":"Anbil Avan",
@@ -139,11 +139,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":9971850.0,
-      "totalTickets":3860,
-      "totalShows":435,
-      "totalSeats":70115,
-      "occupancy":5.51
+      "totalGross":9984250.0,
+      "totalTickets":3868,
+      "totalShows":437,
+      "totalSeats":70299,
+      "occupancy":5.5
     },
     {
       "name":"The Social Reckoning",
@@ -571,28 +571,28 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":46417250.0,
-      "totalTickets":30984,
-      "totalShows":1117,
-      "totalSeats":208760,
+      "totalGross":46820300.0,
+      "totalTickets":31230,
+      "totalShows":1126,
+      "totalSeats":210502,
       "occupancy":14.84
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":942400.0,
-      "totalTickets":444,
+      "totalGross":949400.0,
+      "totalTickets":446,
       "totalShows":100,
       "totalSeats":16305,
-      "occupancy":2.72
+      "occupancy":2.74
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":25150.0,
-      "totalTickets":39,
-      "totalShows":75,
-      "totalSeats":11662,
+      "totalGross":26150.0,
+      "totalTickets":41,
+      "totalShows":77,
+      "totalSeats":12334,
       "occupancy":0.33
     },
     {
@@ -652,11 +652,11 @@
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":115800.0,
-      "totalTickets":69,
-      "totalShows":16,
-      "totalSeats":2120,
-      "occupancy":3.25
+      "totalGross":163200.0,
+      "totalTickets":97,
+      "totalShows":17,
+      "totalSeats":2336,
+      "occupancy":4.15
     },
     {
       "name":"Udta Teer",
@@ -670,20 +670,20 @@
     {
       "name":"Teardrop Nation: Episode 1",
       "slug":"teardrop-nation-episode-1",
-      "totalGross":254700.0,
-      "totalTickets":218,
+      "totalGross":255600.0,
+      "totalTickets":219,
       "totalShows":6,
       "totalSeats":491,
-      "occupancy":44.4
+      "occupancy":44.6
     },
     {
       "name":"Teardrop Nation: Episode 2",
       "slug":"teardrop-nation-episode-2",
-      "totalGross":202700.0,
-      "totalTickets":172,
+      "totalGross":206300.0,
+      "totalTickets":174,
       "totalShows":5,
       "totalSeats":386,
-      "occupancy":44.56
+      "occupancy":45.08
     },
     {
       "name":"Angel And The Badman",
