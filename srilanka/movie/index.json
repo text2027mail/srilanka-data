@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-23 19:20:48 IST",
+  "last_updated":"2026-10-24 00:14:51 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -580,11 +580,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":88937350.0,
-      "totalTickets":66594,
-      "totalShows":1156,
-      "totalSeats":216928,
-      "occupancy":30.7
+      "totalGross":88940850.0,
+      "totalTickets":66601,
+      "totalShows":1157,
+      "totalSeats":217207,
+      "occupancy":30.66
     },
     {
       "name":"Street Fighter",
