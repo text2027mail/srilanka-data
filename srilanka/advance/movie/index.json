@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-10-23 20:44:34 IST",
+  "last_updated":"2026-10-24 02:17:17 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
       "totalGross":509900.0,
       "totalTickets":654,
-      "totalShows":381,
-      "totalSeats":71398,
-      "occupancy":0.92
+      "totalShows":382,
+      "totalSeats":71790,
+      "occupancy":0.91
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
       "totalGross":66017700.0,
       "totalTickets":89532,
-      "totalShows":4897,
-      "totalSeats":959247,
-      "occupancy":9.33
+      "totalShows":4900,
+      "totalSeats":960423,
+      "occupancy":9.32
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -699,8 +699,8 @@
       "slug":"villain",
       "totalGross":0.0,
       "totalTickets":0,
-      "totalShows":6,
-      "totalSeats":3378,
+      "totalShows":9,
+      "totalSeats":5067,
       "occupancy":0.0
     },
     {
