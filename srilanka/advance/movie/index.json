@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-24 14:28:17 IST",
+  "last_updated":"2026-10-24 19:33:11 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
@@ -697,11 +697,11 @@
     {
       "name":"Villain",
       "slug":"villain",
-      "totalGross":0.0,
-      "totalTickets":0,
+      "totalGross":500.0,
+      "totalTickets":2,
       "totalShows":9,
       "totalSeats":5067,
-      "occupancy":0.0
+      "occupancy":0.04
     },
     {
       "name":"Moana 2",
