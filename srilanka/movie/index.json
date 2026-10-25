@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-25 02:44:05 IST",
+  "last_updated":"2026-10-25 06:03:34 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -681,8 +681,8 @@
       "slug":"villain",
       "totalGross":0.0,
       "totalTickets":0,
-      "totalShows":7,
-      "totalSeats":3941,
+      "totalShows":8,
+      "totalSeats":4504,
       "occupancy":0.0
     },
     {
