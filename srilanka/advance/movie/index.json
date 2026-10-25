@@ -1,23 +1,23 @@
 {
-  "last_updated":"2026-10-25 14:45:12 IST",
+  "last_updated":"2026-10-25 19:57:44 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":515150.0,
-      "totalTickets":662,
+      "totalGross":518750.0,
+      "totalTickets":667,
       "totalShows":395,
       "totalSeats":74413,
-      "occupancy":0.89
+      "occupancy":0.9
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":66530900.0,
-      "totalTickets":90261,
+      "totalGross":66713450.0,
+      "totalTickets":90530,
       "totalShows":5019,
       "totalSeats":983983,
-      "occupancy":9.17
+      "occupancy":9.2
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -85,11 +85,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2769500.0,
-      "totalTickets":1763,
+      "totalGross":2778100.0,
+      "totalTickets":1771,
       "totalShows":341,
       "totalSeats":42847,
-      "occupancy":4.11
+      "occupancy":4.13
     },
     {
       "name":"Meesaya Murukku 2",
@@ -139,11 +139,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":10045450.0,
-      "totalTickets":3910,
+      "totalGross":10053850.0,
+      "totalTickets":3917,
       "totalShows":442,
       "totalSeats":70760,
-      "occupancy":5.53
+      "occupancy":5.54
     },
     {
       "name":"The Social Reckoning",
@@ -202,8 +202,8 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2646400.0,
-      "totalTickets":1449,
+      "totalGross":2648800.0,
+      "totalTickets":1451,
       "totalShows":282,
       "totalSeats":42930,
       "occupancy":3.38
@@ -571,29 +571,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":52311050.0,
-      "totalTickets":35625,
+      "totalGross":52533250.0,
+      "totalTickets":35772,
       "totalShows":1345,
       "totalSeats":252341,
-      "occupancy":14.12
+      "occupancy":14.18
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":1004500.0,
-      "totalTickets":476,
+      "totalGross":1014800.0,
+      "totalTickets":481,
       "totalShows":124,
       "totalSeats":20270,
-      "occupancy":2.35
+      "occupancy":2.37
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":41550.0,
-      "totalTickets":66,
+      "totalGross":43350.0,
+      "totalTickets":67,
       "totalShows":95,
       "totalSeats":15215,
-      "occupancy":0.43
+      "occupancy":0.44
     },
     {
       "name":"Prem Keetanu",
@@ -652,20 +652,20 @@
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":506900.0,
-      "totalTickets":306,
+      "totalGross":519600.0,
+      "totalTickets":319,
       "totalShows":52,
       "totalSeats":7088,
-      "occupancy":4.32
+      "occupancy":4.5
     },
     {
       "name":"Udta Teer",
       "slug":"udta-teer",
-      "totalGross":81900.0,
-      "totalTickets":52,
+      "totalGross":86700.0,
+      "totalTickets":54,
       "totalShows":10,
       "totalSeats":1013,
-      "occupancy":5.13
+      "occupancy":5.33
     },
     {
       "name":"Teardrop Nation: Episode 1",
