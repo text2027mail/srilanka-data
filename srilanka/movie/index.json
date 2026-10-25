@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-25 06:03:34 IST",
+  "last_updated":"2026-10-25 10:52:13 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -679,11 +679,11 @@
     {
       "name":"Villain",
       "slug":"villain",
-      "totalGross":0.0,
-      "totalTickets":0,
-      "totalShows":8,
-      "totalSeats":4504,
-      "occupancy":0.0
+      "totalGross":500.0,
+      "totalTickets":2,
+      "totalShows":9,
+      "totalSeats":5067,
+      "occupancy":0.04
     },
     {
       "name":"Teardrop Nation: Episode 1",
