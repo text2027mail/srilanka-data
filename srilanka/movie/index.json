@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-26 19:06:33 IST",
+  "last_updated":"2026-10-27 01:41:06 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -15,26 +15,26 @@
       "slug":"ahasa-tharam",
       "totalGross":1614850.0,
       "totalTickets":1992,
-      "totalShows":404,
-      "totalSeats":76363,
-      "occupancy":2.61
+      "totalShows":405,
+      "totalSeats":76661,
+      "occupancy":2.6
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":129345950.0,
-      "totalTickets":194148,
-      "totalShows":5035,
-      "totalSeats":986927,
-      "occupancy":19.67
+      "totalGross":129384050.0,
+      "totalTickets":194216,
+      "totalShows":5049,
+      "totalSeats":989678,
+      "occupancy":19.62
     },
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":40076900.0,
-      "totalTickets":57753,
-      "totalShows":3755,
-      "totalSeats":730895,
+      "totalGross":40079100.0,
+      "totalTickets":57755,
+      "totalShows":3757,
+      "totalSeats":731167,
       "occupancy":7.9
     },
     {
@@ -49,11 +49,11 @@
     {
       "name":"Digger",
       "slug":"digger",
-      "totalGross":908700.0,
-      "totalTickets":482,
-      "totalShows":103,
-      "totalSeats":15340,
-      "occupancy":3.14
+      "totalGross":917800.0,
+      "totalTickets":489,
+      "totalShows":104,
+      "totalSeats":15518,
+      "occupancy":3.15
     },
     {
       "name":"Drishyam: The Conclusion",
@@ -94,19 +94,19 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":6978000.0,
-      "totalTickets":4703,
-      "totalShows":342,
-      "totalSeats":42720,
-      "occupancy":11.01
+      "totalGross":6983200.0,
+      "totalTickets":4707,
+      "totalShows":343,
+      "totalSeats":42920,
+      "occupancy":10.97
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
       "totalGross":5462500.0,
       "totalTickets":8357,
-      "totalShows":1729,
-      "totalSeats":334410,
+      "totalShows":1730,
+      "totalSeats":334503,
       "occupancy":2.5
     },
     {
@@ -139,11 +139,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":1405300.0,
-      "totalTickets":2024,
-      "totalShows":110,
-      "totalSeats":18163,
-      "occupancy":11.14
+      "totalGross":1426200.0,
+      "totalTickets":2043,
+      "totalShows":111,
+      "totalSeats":18274,
+      "occupancy":11.18
     },
     {
       "name":"Dorothy",
@@ -452,6 +452,33 @@
       "occupancy":7.18
     },
     {
+      "name":"Jailer 2",
+      "slug":"jailer-2",
+      "totalGross":101276900.0,
+      "totalTickets":77987,
+      "totalShows":1383,
+      "totalSeats":260252,
+      "occupancy":29.97
+    },
+    {
+      "name":"Clayface",
+      "slug":"clayface",
+      "totalGross":1278850.0,
+      "totalTickets":802,
+      "totalShows":53,
+      "totalSeats":7180,
+      "occupancy":11.17
+    },
+    {
+      "name":"Dinga",
+      "slug":"dinga",
+      "totalGross":222250.0,
+      "totalTickets":276,
+      "totalShows":95,
+      "totalSeats":15455,
+      "occupancy":1.79
+    },
+    {
       "name":"Yezhu Kadal Yezhu Malai",
       "slug":"yezhu-kadal-yezhu-malai",
       "totalGross":140800.0,
@@ -578,15 +605,6 @@
       "occupancy":100.0
     },
     {
-      "name":"Jailer 2",
-      "slug":"jailer-2",
-      "totalGross":101209700.0,
-      "totalTickets":77929,
-      "totalShows":1376,
-      "totalSeats":258838,
-      "occupancy":30.11
-    },
-    {
       "name":"Street Fighter",
       "slug":"street-fighter",
       "totalGross":2269250.0,
@@ -594,15 +612,6 @@
       "totalShows":122,
       "totalSeats":19892,
       "occupancy":5.88
-    },
-    {
-      "name":"Dinga",
-      "slug":"dinga",
-      "totalGross":222250.0,
-      "totalTickets":276,
-      "totalShows":94,
-      "totalSeats":15239,
-      "occupancy":1.81
     },
     {
       "name":"Prem Keetanu",
@@ -657,15 +666,6 @@
       "totalShows":3,
       "totalSeats":333,
       "occupancy":0.6
-    },
-    {
-      "name":"Clayface",
-      "slug":"clayface",
-      "totalGross":1278850.0,
-      "totalTickets":802,
-      "totalShows":52,
-      "totalSeats":7078,
-      "occupancy":11.33
     },
     {
       "name":"Udta Teer",
