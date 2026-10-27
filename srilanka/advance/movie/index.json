@@ -1,11 +1,11 @@
 {
-  "last_updated":"2026-10-27 15:25:00 IST",
+  "last_updated":"2026-10-27 21:25:43 IST",
   "movies":[
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":531750.0,
-      "totalTickets":684,
+      "totalGross":534150.0,
+      "totalTickets":688,
       "totalShows":423,
       "totalSeats":79975,
       "occupancy":0.86
@@ -13,11 +13,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":67645900.0,
-      "totalTickets":91920,
-      "totalShows":5264,
-      "totalSeats":1032262,
-      "occupancy":8.9
+      "totalGross":67828400.0,
+      "totalTickets":92217,
+      "totalShows":5274,
+      "totalSeats":1033990,
+      "occupancy":8.92
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Ayu",
       "slug":"ayu",
-      "totalGross":817100.0,
-      "totalTickets":908,
+      "totalGross":819300.0,
+      "totalTickets":910,
       "totalShows":115,
       "totalSeats":18549,
-      "occupancy":4.9
+      "occupancy":4.91
     },
     {
       "name":"Baththa",
@@ -112,11 +112,11 @@
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":1348000.0,
-      "totalTickets":594,
+      "totalGross":1352400.0,
+      "totalTickets":598,
       "totalShows":166,
       "totalSeats":17977,
-      "occupancy":3.3
+      "occupancy":3.33
     },
     {
       "name":"Linkin Park: Unshatter",
@@ -454,29 +454,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":53721600.0,
-      "totalTickets":36671,
+      "totalGross":53891450.0,
+      "totalTickets":36848,
       "totalShows":1540,
       "totalSeats":289389,
-      "occupancy":12.67
+      "occupancy":12.73
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":1054400.0,
-      "totalTickets":510,
+      "totalGross":1056600.0,
+      "totalTickets":512,
       "totalShows":148,
       "totalSeats":24156,
-      "occupancy":2.11
+      "occupancy":2.12
     },
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":639900.0,
-      "totalTickets":396,
+      "totalGross":668900.0,
+      "totalTickets":414,
       "totalShows":88,
       "totalSeats":12096,
-      "occupancy":3.27
+      "occupancy":3.42
     },
     {
       "name":"Dinga",
