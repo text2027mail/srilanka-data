@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-30 12:00:10 IST",
+  "last_updated":"2026-10-30 19:08:11 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":40094600.0,
-      "totalTickets":57775,
-      "totalShows":3766,
-      "totalSeats":733635,
-      "occupancy":7.88
+      "totalGross":40097600.0,
+      "totalTickets":57777,
+      "totalShows":3767,
+      "totalSeats":733689,
+      "occupancy":7.87
     },
     {
       "name":"Mandaadi",
@@ -193,11 +193,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":134003250.0,
-      "totalTickets":201219,
-      "totalShows":5540,
-      "totalSeats":1085564,
-      "occupancy":18.54
+      "totalGross":134662550.0,
+      "totalTickets":202345,
+      "totalShows":5560,
+      "totalSeats":1088953,
+      "occupancy":18.58
     },
     {
       "name":"Ahasa Tharam",
@@ -211,29 +211,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":105860650.0,
-      "totalTickets":82039,
-      "totalShows":1726,
-      "totalSeats":325177,
-      "occupancy":25.23
+      "totalGross":106926450.0,
+      "totalTickets":82979,
+      "totalShows":1755,
+      "totalSeats":330823,
+      "occupancy":25.08
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":2366050.0,
-      "totalTickets":1242,
-      "totalShows":162,
-      "totalSeats":26482,
-      "occupancy":4.69
+      "totalGross":2392150.0,
+      "totalTickets":1251,
+      "totalShows":163,
+      "totalSeats":26504,
+      "occupancy":4.72
     },
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":1853950.0,
-      "totalTickets":1207,
-      "totalShows":116,
-      "totalSeats":15890,
-      "occupancy":7.6
+      "totalGross":1958950.0,
+      "totalTickets":1268,
+      "totalShows":119,
+      "totalSeats":16259,
+      "occupancy":7.8
     },
     {
       "name":"Dinga",
@@ -256,11 +256,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":7174100.0,
-      "totalTickets":4854,
+      "totalGross":7199600.0,
+      "totalTickets":4871,
       "totalShows":371,
       "totalSeats":46052,
-      "occupancy":10.54
+      "occupancy":10.58
     },
     {
       "name":"Villain",
@@ -328,11 +328,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15244000.0,
-      "totalTickets":6636,
-      "totalShows":438,
-      "totalSeats":69058,
-      "occupancy":9.61
+      "totalGross":15298400.0,
+      "totalTickets":6670,
+      "totalShows":439,
+      "totalSeats":69150,
+      "occupancy":9.65
     },
     {
       "name":"Dorothy",
@@ -346,10 +346,10 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":5694550.0,
-      "totalTickets":3315,
-      "totalShows":286,
-      "totalSeats":42678,
+      "totalGross":5715350.0,
+      "totalTickets":3328,
+      "totalShows":287,
+      "totalSeats":42830,
       "occupancy":7.77
     },
     {
@@ -562,11 +562,11 @@
     {
       "name":"Angel And The Badman",
       "slug":"angel-and-the-badman",
-      "totalGross":6000.0,
-      "totalTickets":4,
+      "totalGross":13500.0,
+      "totalTickets":9,
       "totalShows":4,
       "totalSeats":506,
-      "occupancy":0.79
+      "occupancy":1.78
     },
     {
       "name":"Spying Stars",
