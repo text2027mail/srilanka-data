@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-10-31 01:03:19 IST",
+  "last_updated":"2026-10-31 15:59:29 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -13,8 +13,8 @@
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
-      "totalGross":1736900.0,
-      "totalTickets":2444,
+      "totalGross":1743900.0,
+      "totalTickets":2449,
       "totalShows":1794,
       "totalSeats":343939,
       "occupancy":0.71
@@ -22,8 +22,8 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18246900.0,
-      "totalTickets":24643,
+      "totalGross":18255300.0,
+      "totalTickets":24655,
       "totalShows":3791,
       "totalSeats":738016,
       "occupancy":3.34
@@ -193,74 +193,74 @@
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
-      "totalGross":563950.0,
-      "totalTickets":728,
+      "totalGross":569950.0,
+      "totalTickets":736,
       "totalShows":461,
-      "totalSeats":87525,
-      "occupancy":0.83
+      "totalSeats":87472,
+      "occupancy":0.84
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":71595150.0,
-      "totalTickets":97674,
+      "totalGross":72503150.0,
+      "totalTickets":99226,
       "totalShows":5811,
-      "totalSeats":1137563,
-      "occupancy":8.59
+      "totalSeats":1137558,
+      "occupancy":8.72
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":56450450.0,
-      "totalTickets":38601,
+      "totalGross":56923100.0,
+      "totalTickets":39033,
       "totalShows":1922,
       "totalSeats":361442,
-      "occupancy":10.68
+      "occupancy":10.8
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":1101500.0,
-      "totalTickets":534,
+      "totalGross":1105500.0,
+      "totalTickets":537,
       "totalShows":177,
       "totalSeats":28728,
-      "occupancy":1.86
+      "occupancy":1.87
     },
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":1009000.0,
-      "totalTickets":637,
+      "totalGross":1029000.0,
+      "totalTickets":655,
       "totalShows":157,
       "totalSeats":21437,
-      "occupancy":2.97
+      "occupancy":3.06
     },
     {
       "name":"Dinga",
       "slug":"dinga",
-      "totalGross":54150.0,
-      "totalTickets":77,
+      "totalGross":55950.0,
+      "totalTickets":79,
       "totalShows":133,
       "totalSeats":20460,
-      "occupancy":0.38
+      "occupancy":0.39
     },
     {
       "name":"Udta Teer",
       "slug":"udta-teer",
-      "totalGross":175900.0,
-      "totalTickets":102,
+      "totalGross":177300.0,
+      "totalTickets":103,
       "totalShows":32,
       "totalSeats":3431,
-      "occupancy":2.97
+      "occupancy":3.0
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":2995300.0,
-      "totalTickets":1923,
+      "totalGross":3009600.0,
+      "totalTickets":1931,
       "totalShows":386,
       "totalSeats":47947,
-      "occupancy":4.01
+      "occupancy":4.03
     },
     {
       "name":"Teardrop Nation: Episode 1",
@@ -274,11 +274,11 @@
     {
       "name":"Drishyam: The Conclusion",
       "slug":"drishyam-the-conclusion",
-      "totalGross":1438300.0,
-      "totalTickets":631,
+      "totalGross":1447000.0,
+      "totalTickets":634,
       "totalShows":174,
       "totalSeats":18780,
-      "occupancy":3.36
+      "occupancy":3.38
     },
     {
       "name":"Teardrop Nation: Episode 2",
@@ -292,11 +292,11 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":10157050.0,
-      "totalTickets":3989,
+      "totalGross":10167550.0,
+      "totalTickets":3996,
       "totalShows":454,
       "totalSeats":71864,
-      "occupancy":5.55
+      "occupancy":5.56
     },
     {
       "name":"Anbil Avan",
@@ -319,8 +319,8 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2721400.0,
-      "totalTickets":1494,
+      "totalGross":2724200.0,
+      "totalTickets":1495,
       "totalShows":297,
       "totalSeats":44394,
       "occupancy":3.37
@@ -409,11 +409,11 @@
     {
       "name":"Teardrop Nation: Episode 3",
       "slug":"teardrop-nation-episode-3",
-      "totalGross":203200.0,
-      "totalTickets":176,
+      "totalGross":206800.0,
+      "totalTickets":180,
       "totalShows":13,
       "totalSeats":914,
-      "occupancy":19.26
+      "occupancy":19.69
     },
     {
       "name":"Kalpana",
@@ -571,29 +571,29 @@
     {
       "name":"Agnijaya",
       "slug":"agnijaya",
-      "totalGross":82150.0,
-      "totalTickets":101,
+      "totalGross":82750.0,
+      "totalTickets":134,
       "totalShows":57,
       "totalSeats":9258,
-      "occupancy":1.09
+      "occupancy":1.45
     },
     {
       "name":"Teardrop Nation: Episode 4",
       "slug":"teardrop-nation-episode-4",
-      "totalGross":1800.0,
-      "totalTickets":2,
+      "totalGross":5400.0,
+      "totalTickets":6,
       "totalShows":8,
       "totalSeats":360,
-      "occupancy":0.56
+      "occupancy":1.67
     },
     {
       "name":"Spying Stars",
       "slug":"spying-stars",
-      "totalGross":11500.0,
-      "totalTickets":9,
+      "totalGross":20100.0,
+      "totalTickets":15,
       "totalShows":8,
       "totalSeats":900,
-      "occupancy":1.0
+      "occupancy":1.67
     },
     {
       "name":"Swapna Sundari",
@@ -841,11 +841,11 @@
     {
       "name":"Teardrop Nation: Episode 1 and 2",
       "slug":"teardrop-nation-episode-1-and-2",
-      "totalGross":355000.0,
-      "totalTickets":142,
+      "totalGross":437500.0,
+      "totalTickets":175,
       "totalShows":7,
-      "totalSeats":844,
-      "occupancy":16.82
+      "totalSeats":791,
+      "occupancy":22.12
     },
     {
       "name":"Teardrop Nation: Episode 3 and 4",
@@ -853,8 +853,8 @@
       "totalGross":120000.0,
       "totalTickets":48,
       "totalShows":3,
-      "totalSeats":342,
-      "occupancy":14.04
+      "totalSeats":289,
+      "occupancy":16.61
     }
   ]
 }
