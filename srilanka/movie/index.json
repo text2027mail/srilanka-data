@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-01 12:23:32 IST",
+  "last_updated":"2026-11-01 20:59:18 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -193,11 +193,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":144892050.0,
-      "totalTickets":218811,
-      "totalShows":5828,
-      "totalSeats":1141766,
-      "occupancy":19.16
+      "totalGross":145410850.0,
+      "totalTickets":219626,
+      "totalShows":5837,
+      "totalSeats":1143395,
+      "occupancy":19.21
     },
     {
       "name":"Ahasa Tharam",
@@ -211,29 +211,29 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":113748700.0,
-      "totalTickets":89279,
-      "totalShows":1927,
-      "totalSeats":363220,
-      "occupancy":24.58
+      "totalGross":114232950.0,
+      "totalTickets":89668,
+      "totalShows":1953,
+      "totalSeats":368324,
+      "occupancy":24.34
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":2520850.0,
-      "totalTickets":1314,
-      "totalShows":174,
-      "totalSeats":28328,
-      "occupancy":4.64
+      "totalGross":2544850.0,
+      "totalTickets":1324,
+      "totalShows":175,
+      "totalSeats":28350,
+      "occupancy":4.67
     },
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":2613250.0,
-      "totalTickets":1710,
-      "totalShows":151,
-      "totalSeats":20574,
-      "occupancy":8.31
+      "totalGross":2683250.0,
+      "totalTickets":1760,
+      "totalShows":153,
+      "totalSeats":20917,
+      "occupancy":8.41
     },
     {
       "name":"Dinga",
@@ -328,10 +328,10 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15472000.0,
-      "totalTickets":6785,
-      "totalShows":442,
-      "totalSeats":69426,
+      "totalGross":15481600.0,
+      "totalTickets":6791,
+      "totalShows":443,
+      "totalSeats":69518,
       "occupancy":9.77
     },
     {
@@ -346,11 +346,11 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":5834950.0,
-      "totalTickets":3384,
-      "totalShows":290,
-      "totalSeats":43026,
-      "occupancy":7.87
+      "totalGross":5866150.0,
+      "totalTickets":3408,
+      "totalShows":291,
+      "totalSeats":43178,
+      "occupancy":7.89
     },
     {
       "name":"Teardrop Nation: Episode 4",
@@ -859,11 +859,11 @@
     {
       "name":"Teardrop Nation: Episode 3 and 4",
       "slug":"teardrop-nation-episode-3-and-4",
-      "totalGross":177500.0,
-      "totalTickets":71,
-      "totalShows":3,
-      "totalSeats":289,
-      "occupancy":24.57
+      "totalGross":215000.0,
+      "totalTickets":86,
+      "totalShows":4,
+      "totalSeats":332,
+      "occupancy":25.9
     }
   ]
 }
