@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-02 15:30:26 IST",
+  "last_updated":"2026-11-03 02:01:46 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -15,8 +15,8 @@
       "slug":"cricket-sadu",
       "totalGross":5565400.0,
       "totalTickets":8502,
-      "totalShows":1784,
-      "totalSeats":344440,
+      "totalShows":1785,
+      "totalSeats":344592,
       "occupancy":2.47
     },
     {
@@ -193,47 +193,47 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":146544200.0,
-      "totalTickets":221599,
-      "totalShows":5970,
-      "totalSeats":1169551,
-      "occupancy":18.95
+      "totalGross":146670000.0,
+      "totalTickets":221758,
+      "totalShows":5989,
+      "totalSeats":1173353,
+      "occupancy":18.9
     },
     {
       "name":"Ahasa Tharam",
       "slug":"ahasa-tharam",
       "totalGross":1833150.0,
       "totalTickets":2282,
-      "totalShows":478,
-      "totalSeats":90732,
-      "occupancy":2.52
+      "totalShows":479,
+      "totalSeats":91030,
+      "occupancy":2.51
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":114967800.0,
-      "totalTickets":90554,
-      "totalShows":2035,
-      "totalSeats":383770,
-      "occupancy":23.6
+      "totalGross":114988300.0,
+      "totalTickets":90580,
+      "totalShows":2043,
+      "totalSeats":385071,
+      "occupancy":23.52
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
       "totalGross":2554450.0,
       "totalTickets":1329,
-      "totalShows":181,
-      "totalSeats":29273,
-      "occupancy":4.54
+      "totalShows":182,
+      "totalSeats":29398,
+      "occupancy":4.52
     },
     {
       "name":"Clayface",
       "slug":"clayface",
       "totalGross":2718750.0,
       "totalTickets":1791,
-      "totalShows":170,
-      "totalSeats":23067,
-      "occupancy":7.76
+      "totalShows":172,
+      "totalSeats":23280,
+      "occupancy":7.69
     },
     {
       "name":"Dinga",
@@ -249,9 +249,9 @@
       "slug":"udta-teer",
       "totalGross":353700.0,
       "totalTickets":226,
-      "totalShows":35,
-      "totalSeats":3911,
-      "occupancy":5.78
+      "totalShows":36,
+      "totalSeats":4054,
+      "occupancy":5.57
     },
     {
       "name":"Heart of the Beast",
@@ -555,27 +555,27 @@
       "slug":"agnijaya",
       "totalGross":285650.0,
       "totalTickets":464,
-      "totalShows":86,
-      "totalSeats":14399,
-      "occupancy":3.22
+      "totalShows":89,
+      "totalSeats":14718,
+      "occupancy":3.15
     },
     {
       "name":"Angel And The Badman",
       "slug":"angel-and-the-badman",
       "totalGross":41000.0,
       "totalTickets":28,
-      "totalShows":15,
-      "totalSeats":1970,
-      "occupancy":1.42
+      "totalShows":16,
+      "totalSeats":2196,
+      "occupancy":1.28
     },
     {
       "name":"Spying Stars",
       "slug":"spying-stars",
-      "totalGross":54900.0,
-      "totalTickets":41,
-      "totalShows":12,
-      "totalSeats":1240,
-      "occupancy":3.31
+      "totalGross":117300.0,
+      "totalTickets":93,
+      "totalShows":13,
+      "totalSeats":1361,
+      "occupancy":6.83
     },
     {
       "name":"Swapna Sundari",
