@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-06 18:01:35 IST",
+  "last_updated":"2026-11-07 01:13:16 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -821,6 +821,24 @@
       "occupancy":22.3
     },
     {
+      "name":"Ramayana",
+      "slug":"ramayana",
+      "totalGross":4190800.0,
+      "totalTickets":2187,
+      "totalShows":41,
+      "totalSeats":7725,
+      "occupancy":28.31
+    },
+    {
+      "name":"Scene",
+      "slug":"scene",
+      "totalGross":5548650.0,
+      "totalTickets":5829,
+      "totalShows":87,
+      "totalSeats":17844,
+      "occupancy":32.67
+    },
+    {
       "name":"Queen Budapest",
       "slug":"queen-budapest",
       "totalGross":1298800.0,
@@ -837,24 +855,6 @@
       "totalShows":29,
       "totalSeats":4223,
       "occupancy":5.94
-    },
-    {
-      "name":"Scene",
-      "slug":"scene",
-      "totalGross":5471850.0,
-      "totalTickets":5781,
-      "totalShows":86,
-      "totalSeats":17693,
-      "occupancy":32.67
-    },
-    {
-      "name":"Ramayana",
-      "slug":"ramayana",
-      "totalGross":3909600.0,
-      "totalTickets":2113,
-      "totalShows":40,
-      "totalSeats":7420,
-      "occupancy":28.48
     },
     {
       "name":"George Michael: The Faith Tour",
