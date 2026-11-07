@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-07 19:06:01 IST",
+  "last_updated":"2026-11-08 00:34:50 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -823,11 +823,11 @@
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":9839500.0,
-      "totalTickets":5779,
-      "totalShows":96,
-      "totalSeats":16506,
-      "occupancy":35.01
+      "totalGross":9934000.0,
+      "totalTickets":5968,
+      "totalShows":97,
+      "totalSeats":16785,
+      "occupancy":35.56
     },
     {
       "name":"Scene",
