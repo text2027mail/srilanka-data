@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-08 12:13:51 IST",
+  "last_updated":"2026-11-08 19:24:55 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":159849100.0,
-      "totalTickets":243587,
-      "totalShows":6676,
-      "totalSeats":1308101,
-      "occupancy":18.62
+      "totalGross":160430350.0,
+      "totalTickets":244883,
+      "totalShows":6684,
+      "totalSeats":1309741,
+      "occupancy":18.7
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":118598550.0,
-      "totalTickets":94057,
-      "totalShows":2304,
-      "totalSeats":430169,
-      "occupancy":21.87
+      "totalGross":118919450.0,
+      "totalTickets":94356,
+      "totalShows":2308,
+      "totalSeats":430503,
+      "occupancy":21.92
     },
     {
       "name":"Dinga",
@@ -58,11 +58,11 @@
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
-      "totalGross":2723850.0,
-      "totalTickets":1434,
-      "totalShows":208,
-      "totalSeats":32903,
-      "occupancy":4.36
+      "totalGross":2733450.0,
+      "totalTickets":1438,
+      "totalShows":209,
+      "totalSeats":32925,
+      "occupancy":4.37
     },
     {
       "name":"Heart of the Beast",
@@ -94,10 +94,10 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15630400.0,
-      "totalTickets":6899,
-      "totalShows":455,
-      "totalSeats":70622,
+      "totalGross":15644800.0,
+      "totalTickets":6908,
+      "totalShows":456,
+      "totalSeats":70714,
       "occupancy":9.77
     },
     {
@@ -823,29 +823,29 @@
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":15280750.0,
-      "totalTickets":9623,
-      "totalShows":139,
-      "totalSeats":23672,
-      "occupancy":40.65
+      "totalGross":17280400.0,
+      "totalTickets":11460,
+      "totalShows":154,
+      "totalSeats":26107,
+      "occupancy":43.9
     },
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":18163600.0,
-      "totalTickets":18955,
-      "totalShows":221,
-      "totalSeats":45576,
-      "occupancy":41.59
+      "totalGross":20800800.0,
+      "totalTickets":21704,
+      "totalShows":246,
+      "totalSeats":50941,
+      "occupancy":42.61
     },
     {
       "name":"Mookuthi Amman 2",
       "slug":"mookuthi-amman-2",
-      "totalGross":1749050.0,
-      "totalTickets":1766,
-      "totalShows":71,
-      "totalSeats":10209,
-      "occupancy":17.3
+      "totalGross":2306050.0,
+      "totalTickets":2345,
+      "totalShows":73,
+      "totalSeats":10677,
+      "occupancy":21.96
     },
     {
       "name":"George Michael: The Faith Tour",
