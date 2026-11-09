@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-09 00:41:36 IST",
+  "last_updated":"2026-11-09 05:34:54 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -15,62 +15,62 @@
       "slug":"ahasa-tharam",
       "totalGross":1986450.0,
       "totalTickets":2457,
-      "totalShows":507,
-      "totalSeats":95618,
-      "occupancy":2.57
+      "totalShows":510,
+      "totalSeats":95982,
+      "occupancy":2.56
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":160430350.0,
-      "totalTickets":244883,
-      "totalShows":6684,
-      "totalSeats":1309741,
-      "occupancy":18.7
+      "totalGross":160560450.0,
+      "totalTickets":245128,
+      "totalShows":6731,
+      "totalSeats":1318942,
+      "occupancy":18.59
     },
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
       "totalGross":40175300.0,
       "totalTickets":57877,
-      "totalShows":3786,
-      "totalSeats":738471,
-      "occupancy":7.84
+      "totalShows":3787,
+      "totalSeats":738927,
+      "occupancy":7.83
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":118919450.0,
-      "totalTickets":94356,
-      "totalShows":2308,
-      "totalSeats":430503,
-      "occupancy":21.92
+      "totalGross":119045900.0,
+      "totalTickets":94595,
+      "totalShows":2313,
+      "totalSeats":431282,
+      "occupancy":21.93
     },
     {
       "name":"Dinga",
       "slug":"dinga",
       "totalGross":245550.0,
       "totalTickets":303,
-      "totalShows":150,
-      "totalSeats":22974,
-      "occupancy":1.32
+      "totalShows":151,
+      "totalSeats":23190,
+      "occupancy":1.31
     },
     {
       "name":"Street Fighter",
       "slug":"street-fighter",
       "totalGross":2733450.0,
       "totalTickets":1438,
-      "totalShows":209,
-      "totalSeats":32925,
-      "occupancy":4.37
+      "totalShows":211,
+      "totalSeats":33176,
+      "occupancy":4.33
     },
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":8115700.0,
-      "totalTickets":5485,
-      "totalShows":433,
-      "totalSeats":52530,
+      "totalGross":8120500.0,
+      "totalTickets":5487,
+      "totalShows":434,
+      "totalSeats":52552,
       "occupancy":10.44
     },
     {
@@ -94,20 +94,20 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15644800.0,
-      "totalTickets":6908,
-      "totalShows":456,
-      "totalSeats":70714,
-      "occupancy":9.77
+      "totalGross":15649200.0,
+      "totalTickets":6912,
+      "totalShows":457,
+      "totalSeats":70806,
+      "occupancy":9.76
     },
     {
       "name":"Cricket Sadu",
       "slug":"cricket-sadu",
       "totalGross":5604900.0,
       "totalTickets":8549,
-      "totalShows":1813,
-      "totalSeats":349469,
-      "occupancy":2.45
+      "totalShows":1815,
+      "totalSeats":349721,
+      "occupancy":2.44
     },
     {
       "name":"Anbil Avan",
@@ -213,9 +213,9 @@
       "slug":"clayface",
       "totalGross":3171950.0,
       "totalTickets":2088,
-      "totalShows":234,
-      "totalSeats":30589,
-      "occupancy":6.83
+      "totalShows":236,
+      "totalSeats":30852,
+      "occupancy":6.77
     },
     {
       "name":"Udta Teer",
@@ -240,9 +240,9 @@
       "slug":"agnijaya",
       "totalGross":516450.0,
       "totalTickets":802,
-      "totalShows":204,
-      "totalSeats":34730,
-      "occupancy":2.31
+      "totalShows":217,
+      "totalSeats":36949,
+      "occupancy":2.17
     },
     {
       "name":"Teardrop Nation: Episode 1",
@@ -294,26 +294,26 @@
       "slug":"swapna-sundari",
       "totalGross":244300.0,
       "totalTickets":202,
-      "totalShows":26,
-      "totalSeats":2364,
-      "occupancy":8.54
+      "totalShows":28,
+      "totalSeats":2539,
+      "occupancy":7.96
     },
     {
       "name":"Spying Stars",
       "slug":"spying-stars",
       "totalGross":288650.0,
       "totalTickets":242,
-      "totalShows":38,
-      "totalSeats":4202,
-      "occupancy":5.76
+      "totalShows":41,
+      "totalSeats":4468,
+      "occupancy":5.42
     },
     {
       "name":"Neera",
       "slug":"neera",
       "totalGross":0.0,
       "totalTickets":0,
-      "totalShows":14,
-      "totalSeats":7882,
+      "totalShows":16,
+      "totalSeats":9008,
       "occupancy":0.0
     },
     {
@@ -776,6 +776,33 @@
       "occupancy":5.49
     },
     {
+      "name":"Scene",
+      "slug":"scene",
+      "totalGross":21291200.0,
+      "totalTickets":22343,
+      "totalShows":263,
+      "totalSeats":54491,
+      "occupancy":41.0
+    },
+    {
+      "name":"Ramayana",
+      "slug":"ramayana",
+      "totalGross":17754800.0,
+      "totalTickets":11922,
+      "totalShows":174,
+      "totalSeats":29519,
+      "occupancy":40.39
+    },
+    {
+      "name":"Mookuthi Amman 2",
+      "slug":"mookuthi-amman-2",
+      "totalGross":2386450.0,
+      "totalTickets":2482,
+      "totalShows":81,
+      "totalSeats":11717,
+      "occupancy":21.18
+    },
+    {
       "name":"I'm Game",
       "slug":"im-game",
       "totalGross":867150.0,
@@ -819,33 +846,6 @@
       "totalShows":1,
       "totalSeats":305,
       "occupancy":22.3
-    },
-    {
-      "name":"Ramayana",
-      "slug":"ramayana",
-      "totalGross":17280400.0,
-      "totalTickets":11460,
-      "totalShows":154,
-      "totalSeats":26107,
-      "occupancy":43.9
-    },
-    {
-      "name":"Scene",
-      "slug":"scene",
-      "totalGross":20800800.0,
-      "totalTickets":21704,
-      "totalShows":246,
-      "totalSeats":50941,
-      "occupancy":42.61
-    },
-    {
-      "name":"Mookuthi Amman 2",
-      "slug":"mookuthi-amman-2",
-      "totalGross":2306050.0,
-      "totalTickets":2345,
-      "totalShows":73,
-      "totalSeats":10677,
-      "occupancy":21.96
     },
     {
       "name":"George Michael: The Faith Tour",
