@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-13 12:51:27 IST",
+  "last_updated":"2026-11-13 22:16:03 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -778,29 +778,29 @@
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":25232000.0,
-      "totalTickets":26911,
-      "totalShows":500,
-      "totalSeats":104615,
-      "occupancy":25.72
+      "totalGross":25664800.0,
+      "totalTickets":27132,
+      "totalShows":503,
+      "totalSeats":105115,
+      "occupancy":25.81
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":29344850.0,
-      "totalTickets":20905,
-      "totalShows":437,
-      "totalSeats":73508,
-      "occupancy":28.44
+      "totalGross":29700250.0,
+      "totalTickets":21061,
+      "totalShows":439,
+      "totalSeats":73693,
+      "occupancy":28.58
     },
     {
       "name":"Mookuthi Amman 2",
       "slug":"mookuthi-amman-2",
-      "totalGross":2849950.0,
-      "totalTickets":3187,
-      "totalShows":150,
-      "totalSeats":22508,
-      "occupancy":14.16
+      "totalGross":2863450.0,
+      "totalTickets":3196,
+      "totalShows":151,
+      "totalSeats":22619,
+      "occupancy":14.13
     },
     {
       "name":"I'm Game",
@@ -891,6 +891,15 @@
       "totalShows":8,
       "totalSeats":1359,
       "occupancy":0.74
+    },
+    {
+      "name":"John Doe",
+      "slug":"john-doe",
+      "totalGross":132000.0,
+      "totalTickets":88,
+      "totalShows":1,
+      "totalSeats":143,
+      "occupancy":61.54
     },
     {
       "name":"Queen Budapest",
