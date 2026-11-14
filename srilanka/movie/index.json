@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-14 12:33:49 IST",
+  "last_updated":"2026-11-14 20:52:38 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,11 +22,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":167568650.0,
-      "totalTickets":257144,
-      "totalShows":7290,
-      "totalSeats":1431529,
-      "occupancy":17.96
+      "totalGross":168311700.0,
+      "totalTickets":258240,
+      "totalShows":7302,
+      "totalSeats":1433726,
+      "occupancy":18.01
     },
     {
       "name":"Adaraneeya Tharuwak",
@@ -40,11 +40,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":119938900.0,
-      "totalTickets":95537,
-      "totalShows":2378,
-      "totalSeats":439845,
-      "occupancy":21.72
+      "totalGross":120204800.0,
+      "totalTickets":95722,
+      "totalShows":2382,
+      "totalSeats":440475,
+      "occupancy":21.73
     },
     {
       "name":"Dinga",
@@ -94,10 +94,10 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15823600.0,
-      "totalTickets":7005,
-      "totalShows":466,
-      "totalSeats":71583,
+      "totalGross":15849100.0,
+      "totalTickets":7020,
+      "totalShows":467,
+      "totalSeats":71675,
       "occupancy":9.79
     },
     {
@@ -778,29 +778,29 @@
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":27113500.0,
-      "totalTickets":28689,
-      "totalShows":546,
-      "totalSeats":113812,
-      "occupancy":25.21
+      "totalGross":27974300.0,
+      "totalTickets":29377,
+      "totalShows":561,
+      "totalSeats":117032,
+      "occupancy":25.1
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":35588900.0,
-      "totalTickets":24952,
-      "totalShows":489,
-      "totalSeats":82690,
-      "occupancy":30.18
+      "totalGross":37923400.0,
+      "totalTickets":26944,
+      "totalShows":507,
+      "totalSeats":85945,
+      "occupancy":31.35
     },
     {
       "name":"Mookuthi Amman 2",
       "slug":"mookuthi-amman-2",
-      "totalGross":2951400.0,
-      "totalTickets":3320,
-      "totalShows":159,
-      "totalSeats":23613,
-      "occupancy":14.06
+      "totalGross":2979900.0,
+      "totalTickets":3339,
+      "totalShows":161,
+      "totalSeats":23850,
+      "occupancy":14.0
     },
     {
       "name":"I'm Game",
@@ -851,10 +851,10 @@
       "name":"Kotu",
       "slug":"kotu",
       "totalGross":238550.0,
-      "totalTickets":274,
-      "totalShows":66,
-      "totalSeats":10621,
-      "occupancy":2.58
+      "totalTickets":314,
+      "totalShows":68,
+      "totalSeats":10871,
+      "occupancy":2.89
     },
     {
       "name":"Ebenezer: A Christmas Carol",
