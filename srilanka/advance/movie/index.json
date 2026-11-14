@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-14 02:27:44 IST",
+  "last_updated":"2026-11-14 17:08:50 IST",
   "movies":[
     {
       "name":"Man Hoyanne Premayak",
@@ -22,8 +22,8 @@
     {
       "name":"Adaraneeya Tharuwak",
       "slug":"adaraneeya-tharuwak",
-      "totalGross":18297200.0,
-      "totalTickets":24720,
+      "totalGross":18299900.0,
+      "totalTickets":24726,
       "totalShows":3821,
       "totalSeats":745431,
       "occupancy":3.32
@@ -31,11 +31,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":84219100.0,
-      "totalTickets":117818,
-      "totalShows":7429,
-      "totalSeats":1457373,
-      "occupancy":8.08
+      "totalGross":85031800.0,
+      "totalTickets":119249,
+      "totalShows":7433,
+      "totalSeats":1458831,
+      "occupancy":8.17
     },
     {
       "name":"Ayu",
@@ -49,11 +49,11 @@
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":59984600.0,
-      "totalTickets":42324,
-      "totalShows":2408,
-      "totalSeats":443215,
-      "occupancy":9.55
+      "totalGross":60008600.0,
+      "totalTickets":42352,
+      "totalShows":2411,
+      "totalSeats":444076,
+      "occupancy":9.54
     },
     {
       "name":"Dinga",
@@ -94,11 +94,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":3517400.0,
-      "totalTickets":2298,
+      "totalGross":3524600.0,
+      "totalTickets":2303,
       "totalShows":472,
       "totalSeats":56438,
-      "occupancy":4.07
+      "occupancy":4.08
     },
     {
       "name":"Drishyam: The Conclusion",
@@ -175,8 +175,8 @@
     {
       "name":"Resident Evil",
       "slug":"resident-evil",
-      "totalGross":2886300.0,
-      "totalTickets":1560,
+      "totalGross":2892300.0,
+      "totalTickets":1562,
       "totalShows":316,
       "totalSeats":45488,
       "occupancy":3.43
@@ -202,11 +202,11 @@
     {
       "name":"Clayface",
       "slug":"clayface",
-      "totalGross":1440000.0,
-      "totalTickets":932,
+      "totalGross":1447500.0,
+      "totalTickets":937,
       "totalShows":283,
       "totalSeats":35226,
-      "occupancy":2.65
+      "occupancy":2.66
     },
     {
       "name":"Udta Teer",
@@ -275,10 +275,10 @@
       "name":"Agnijaya",
       "slug":"agnijaya",
       "totalGross":260850.0,
-      "totalTickets":346,
+      "totalTickets":349,
       "totalShows":305,
-      "totalSeats":52184,
-      "occupancy":0.66
+      "totalSeats":52222,
+      "occupancy":0.67
     },
     {
       "name":"Angel And The Badman",
@@ -301,11 +301,11 @@
     {
       "name":"Spying Stars",
       "slug":"spying-stars",
-      "totalGross":150500.0,
-      "totalTickets":130,
+      "totalGross":153300.0,
+      "totalTickets":132,
       "totalShows":65,
       "totalSeats":7180,
-      "occupancy":1.81
+      "occupancy":1.84
     },
     {
       "name":"The Odyssey",
@@ -319,20 +319,20 @@
     {
       "name":"Teardrop Nation: Episode 3 and 4",
       "slug":"teardrop-nation-episode-3-and-4",
-      "totalGross":1422700.0,
-      "totalTickets":609,
+      "totalGross":1437900.0,
+      "totalTickets":617,
       "totalShows":27,
       "totalSeats":3005,
-      "occupancy":20.27
+      "occupancy":20.53
     },
     {
       "name":"Teardrop Nation: Episode 1 and 2",
       "slug":"teardrop-nation-episode-1-and-2",
-      "totalGross":1802100.0,
-      "totalTickets":773,
+      "totalGross":1861000.0,
+      "totalTickets":804,
       "totalShows":40,
       "totalSeats":4729,
-      "occupancy":16.35
+      "occupancy":17.0
     },
     {
       "name":"The Social Reckoning",
@@ -769,29 +769,29 @@
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":10339950.0,
-      "totalTickets":10203,
-      "totalShows":646,
-      "totalSeats":135308,
-      "occupancy":7.54
+      "totalGross":10513900.0,
+      "totalTickets":10390,
+      "totalShows":650,
+      "totalSeats":136310,
+      "occupancy":7.62
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":20261900.0,
-      "totalTickets":12774,
-      "totalShows":604,
-      "totalSeats":103002,
-      "occupancy":12.4
+      "totalGross":21737850.0,
+      "totalTickets":13910,
+      "totalShows":606,
+      "totalSeats":103305,
+      "occupancy":13.46
     },
     {
       "name":"Mookuthi Amman 2",
       "slug":"mookuthi-amman-2",
-      "totalGross":887300.0,
-      "totalTickets":780,
-      "totalShows":190,
-      "totalSeats":28084,
-      "occupancy":2.78
+      "totalGross":895100.0,
+      "totalTickets":791,
+      "totalShows":191,
+      "totalSeats":28210,
+      "occupancy":2.8
     },
     {
       "name":"Neera",
@@ -841,47 +841,47 @@
     {
       "name":"Kotu",
       "slug":"kotu",
-      "totalGross":157050.0,
-      "totalTickets":172,
-      "totalShows":98,
-      "totalSeats":15274,
-      "occupancy":1.13
+      "totalGross":207400.0,
+      "totalTickets":227,
+      "totalShows":99,
+      "totalSeats":15670,
+      "occupancy":1.45
     },
     {
       "name":"Rahai Jeewithe",
       "slug":"rahai-jeewithe",
-      "totalGross":9500.0,
-      "totalTickets":14,
+      "totalGross":18000.0,
+      "totalTickets":23,
       "totalShows":23,
-      "totalSeats":3960,
-      "occupancy":0.35
+      "totalSeats":3958,
+      "occupancy":0.58
     },
     {
       "name":"Ebenezer: A Christmas Carol",
       "slug":"ebenezer-a-christmas-carol",
-      "totalGross":155100.0,
-      "totalTickets":78,
+      "totalGross":165100.0,
+      "totalTickets":83,
       "totalShows":34,
       "totalSeats":3952,
-      "occupancy":1.97
+      "occupancy":2.1
     },
     {
       "name":"John Doe",
       "slug":"john-doe",
-      "totalGross":2800.0,
-      "totalTickets":2,
-      "totalShows":3,
-      "totalSeats":365,
-      "occupancy":0.55
+      "totalGross":7000.0,
+      "totalTickets":5,
+      "totalShows":4,
+      "totalSeats":491,
+      "occupancy":1.02
     },
     {
       "name":"I Play Rocky",
       "slug":"i-play-rocky",
-      "totalGross":105400.0,
-      "totalTickets":44,
+      "totalGross":122400.0,
+      "totalTickets":52,
       "totalShows":27,
       "totalSeats":2472,
-      "occupancy":1.78
+      "occupancy":2.1
     },
     {
       "name":"George Michael: The Faith Tour",
