@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-22 02:10:12 IST",
+  "last_updated":"2026-11-22 18:16:12 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -445,11 +445,11 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":88895450.0,
-      "totalTickets":125433,
-      "totalShows":8208,
-      "totalSeats":1613264,
-      "occupancy":7.78
+      "totalGross":89170750.0,
+      "totalTickets":125963,
+      "totalShows":8217,
+      "totalSeats":1615238,
+      "occupancy":7.8
     },
     {
       "name":"Ayu",
@@ -618,27 +618,27 @@
       "slug":"agnijaya",
       "totalGross":261650.0,
       "totalTickets":353,
-      "totalShows":332,
-      "totalSeats":57274,
-      "occupancy":0.62
+      "totalShows":333,
+      "totalSeats":57528,
+      "occupancy":0.61
     },
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":11330500.0,
-      "totalTickets":11138,
+      "totalGross":11352650.0,
+      "totalTickets":11162,
       "totalShows":902,
       "totalSeats":183371,
-      "occupancy":6.07
+      "occupancy":6.09
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":31711700.0,
-      "totalTickets":20536,
-      "totalShows":1093,
-      "totalSeats":188688,
-      "occupancy":10.88
+      "totalGross":32049700.0,
+      "totalTickets":20787,
+      "totalShows":1094,
+      "totalSeats":188924,
+      "occupancy":11.0
     },
     {
       "name":"Mookuthi Amman 2",
@@ -688,20 +688,20 @@
     {
       "name":"Teardrop Nation: Episode 3 and 4",
       "slug":"teardrop-nation-episode-3-and-4",
-      "totalGross":1859700.0,
-      "totalTickets":839,
+      "totalGross":1871100.0,
+      "totalTickets":845,
       "totalShows":43,
       "totalSeats":4596,
-      "occupancy":18.26
+      "occupancy":18.39
     },
     {
       "name":"Teardrop Nation: Episode 1 and 2",
       "slug":"teardrop-nation-episode-1-and-2",
-      "totalGross":2429100.0,
-      "totalTickets":1103,
+      "totalGross":2469000.0,
+      "totalTickets":1124,
       "totalShows":55,
       "totalSeats":6151,
-      "occupancy":17.93
+      "occupancy":18.27
     },
     {
       "name":"Angel And The Badman",
@@ -760,11 +760,11 @@
     {
       "name":"Kotu",
       "slug":"kotu",
-      "totalGross":795100.0,
-      "totalTickets":904,
-      "totalShows":401,
-      "totalSeats":66100,
-      "occupancy":1.37
+      "totalGross":850800.0,
+      "totalTickets":955,
+      "totalShows":405,
+      "totalSeats":67005,
+      "occupancy":1.43
     },
     {
       "name":"I Play Rocky",
@@ -778,20 +778,20 @@
     {
       "name":"Rahai Jeewithe",
       "slug":"rahai-jeewithe",
-      "totalGross":24000.0,
-      "totalTickets":39,
-      "totalShows":80,
-      "totalSeats":16079,
-      "occupancy":0.24
+      "totalGross":25800.0,
+      "totalTickets":43,
+      "totalShows":81,
+      "totalSeats":16253,
+      "occupancy":0.26
     },
     {
       "name":"Ebenezer: A Christmas Carol",
       "slug":"ebenezer-a-christmas-carol",
-      "totalGross":433100.0,
-      "totalTickets":250,
+      "totalGross":439100.0,
+      "totalTickets":255,
       "totalShows":91,
       "totalSeats":10498,
-      "occupancy":2.38
+      "occupancy":2.43
     },
     {
       "name":"John Doe",
@@ -940,11 +940,11 @@
     {
       "name":"O.M: Operation Mole",
       "slug":"om-operation-mole",
-      "totalGross":3535800.0,
-      "totalTickets":3649,
-      "totalShows":244,
-      "totalSeats":49641,
-      "occupancy":7.35
+      "totalGross":3565450.0,
+      "totalTickets":3687,
+      "totalShows":247,
+      "totalSeats":50087,
+      "occupancy":7.36
     },
     {
       "name":"Sathyavan Savithiri",
@@ -960,27 +960,27 @@
       "slug":"appakutty",
       "totalGross":36000.0,
       "totalTickets":40,
-      "totalShows":34,
-      "totalSeats":5957,
-      "occupancy":0.67
+      "totalShows":35,
+      "totalSeats":6135,
+      "occupancy":0.65
     },
     {
       "name":"The Hunger Games: Sunrise on the Reaping",
       "slug":"the-hunger-games-sunrise-on-the-reaping",
-      "totalGross":2517100.0,
-      "totalTickets":1155,
+      "totalGross":2585800.0,
+      "totalTickets":1194,
       "totalShows":60,
       "totalSeats":8609,
-      "occupancy":13.42
+      "occupancy":13.87
     },
     {
       "name":"Godzilla Minus Zero",
       "slug":"godzilla-minus-zero",
-      "totalGross":1975400.0,
-      "totalTickets":707,
-      "totalShows":76,
-      "totalSeats":11166,
-      "occupancy":6.33
+      "totalGross":2020300.0,
+      "totalTickets":725,
+      "totalShows":77,
+      "totalSeats":11340,
+      "occupancy":6.39
     },
     {
       "name":"LIK: Love Insurance Kompany",
