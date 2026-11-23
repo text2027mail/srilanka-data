@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-23 03:40:10 IST",
+  "last_updated":"2026-11-23 08:40:38 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -438,27 +438,27 @@
       "slug":"ahasa-tharam",
       "totalGross":2071950.0,
       "totalTickets":2547,
-      "totalShows":529,
-      "totalSeats":97926,
+      "totalShows":530,
+      "totalSeats":98037,
       "occupancy":2.6
     },
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":179785750.0,
-      "totalTickets":277679,
-      "totalShows":8022,
-      "totalSeats":1576440,
-      "occupancy":17.61
+      "totalGross":180047000.0,
+      "totalTickets":278086,
+      "totalShows":8061,
+      "totalSeats":1583922,
+      "occupancy":17.56
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":120771750.0,
-      "totalTickets":96299,
-      "totalShows":2439,
-      "totalSeats":447740,
-      "occupancy":21.51
+      "totalGross":120776950.0,
+      "totalTickets":96303,
+      "totalShows":2441,
+      "totalSeats":447863,
+      "occupancy":21.5
     },
     {
       "name":"Dinga",
@@ -508,10 +508,10 @@
     {
       "name":"Avengers Endgame: Encore",
       "slug":"avengers-endgame-encore",
-      "totalGross":15959500.0,
-      "totalTickets":7103,
-      "totalShows":479,
-      "totalSeats":72779,
+      "totalGross":15969400.0,
+      "totalTickets":7112,
+      "totalShows":480,
+      "totalSeats":72871,
       "occupancy":9.76
     },
     {
@@ -627,27 +627,27 @@
       "slug":"agnijaya",
       "totalGross":649450.0,
       "totalTickets":990,
-      "totalShows":324,
-      "totalSeats":56252,
-      "occupancy":1.76
+      "totalShows":325,
+      "totalSeats":56506,
+      "occupancy":1.75
     },
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":31864900.0,
-      "totalTickets":33331,
-      "totalShows":816,
-      "totalSeats":165364,
-      "occupancy":20.16
+      "totalGross":31910800.0,
+      "totalTickets":33384,
+      "totalShows":824,
+      "totalSeats":166422,
+      "occupancy":20.06
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":61146250.0,
-      "totalTickets":44722,
-      "totalShows":960,
-      "totalSeats":166004,
-      "occupancy":26.94
+      "totalGross":61420550.0,
+      "totalTickets":44964,
+      "totalShows":981,
+      "totalSeats":170069,
+      "occupancy":26.44
     },
     {
       "name":"Mookuthi Amman 2",
@@ -697,11 +697,11 @@
     {
       "name":"Teardrop Nation: Episode 3 and 4",
       "slug":"teardrop-nation-episode-3-and-4",
-      "totalGross":2441800.0,
-      "totalTickets":1098,
-      "totalShows":37,
-      "totalSeats":3917,
-      "occupancy":28.03
+      "totalGross":2489300.0,
+      "totalTickets":1123,
+      "totalShows":39,
+      "totalSeats":4118,
+      "occupancy":27.27
     },
     {
       "name":"Teardrop Nation: Episode 1 and 2",
@@ -760,38 +760,38 @@
     {
       "name":"Kotu",
       "slug":"kotu",
-      "totalGross":2479550.0,
-      "totalTickets":2840,
-      "totalShows":375,
-      "totalSeats":62715,
-      "occupancy":4.53
+      "totalGross":2513850.0,
+      "totalTickets":2883,
+      "totalShows":392,
+      "totalSeats":65573,
+      "occupancy":4.4
     },
     {
       "name":"Rahai Jeewithe",
       "slug":"rahai-jeewithe",
-      "totalGross":95850.0,
-      "totalTickets":190,
-      "totalShows":75,
-      "totalSeats":14735,
-      "occupancy":1.29
+      "totalGross":98550.0,
+      "totalTickets":196,
+      "totalShows":79,
+      "totalSeats":15690,
+      "occupancy":1.25
     },
     {
       "name":"Ebenezer: A Christmas Carol",
       "slug":"ebenezer-a-christmas-carol",
-      "totalGross":793900.0,
-      "totalTickets":636,
-      "totalShows":83,
-      "totalSeats":9969,
-      "occupancy":6.38
+      "totalGross":799900.0,
+      "totalTickets":641,
+      "totalShows":85,
+      "totalSeats":10159,
+      "occupancy":6.31
     },
     {
       "name":"I Play Rocky",
       "slug":"i-play-rocky",
-      "totalGross":484900.0,
-      "totalTickets":295,
-      "totalShows":64,
-      "totalSeats":5720,
-      "occupancy":5.16
+      "totalGross":489700.0,
+      "totalTickets":299,
+      "totalShows":65,
+      "totalSeats":5841,
+      "occupancy":5.12
     },
     {
       "name":"John Doe",
@@ -940,47 +940,47 @@
     {
       "name":"Appakutty",
       "slug":"appakutty",
-      "totalGross":106400.0,
-      "totalTickets":111,
-      "totalShows":23,
-      "totalSeats":3883,
-      "occupancy":2.86
+      "totalGross":118800.0,
+      "totalTickets":124,
+      "totalShows":28,
+      "totalSeats":4648,
+      "occupancy":2.67
     },
     {
       "name":"O.M: Operation Mole",
       "slug":"om-operation-mole",
-      "totalGross":8031650.0,
-      "totalTickets":8490,
-      "totalShows":176,
-      "totalSeats":36276,
-      "occupancy":23.4
+      "totalGross":8097750.0,
+      "totalTickets":8568,
+      "totalShows":195,
+      "totalSeats":40128,
+      "occupancy":21.35
     },
     {
       "name":"Sathyavan Savithiri",
       "slug":"sathyavan-savithiri",
-      "totalGross":57450.0,
-      "totalTickets":60,
+      "totalGross":61450.0,
+      "totalTickets":64,
       "totalShows":17,
       "totalSeats":2120,
-      "occupancy":2.83
+      "occupancy":3.02
     },
     {
       "name":"The Hunger Games: Sunrise on the Reaping",
       "slug":"the-hunger-games-sunrise-on-the-reaping",
-      "totalGross":2847100.0,
-      "totalTickets":1358,
-      "totalShows":41,
-      "totalSeats":6194,
-      "occupancy":21.92
+      "totalGross":2978800.0,
+      "totalTickets":1403,
+      "totalShows":46,
+      "totalSeats":7109,
+      "occupancy":19.74
     },
     {
       "name":"Godzilla Minus Zero",
       "slug":"godzilla-minus-zero",
-      "totalGross":2316350.0,
-      "totalTickets":968,
-      "totalShows":57,
-      "totalSeats":8185,
-      "occupancy":11.83
+      "totalGross":2402350.0,
+      "totalTickets":1005,
+      "totalShows":61,
+      "totalSeats":8861,
+      "occupancy":11.34
     },
     {
       "name":"I'm Game",
