@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-25 17:16:05 IST",
+  "last_updated":"2026-11-26 03:29:44 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -445,20 +445,20 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":181006150.0,
-      "totalTickets":279677,
-      "totalShows":8145,
-      "totalSeats":1600820,
-      "occupancy":17.47
+      "totalGross":181075650.0,
+      "totalTickets":279802,
+      "totalShows":8168,
+      "totalSeats":1605836,
+      "occupancy":17.42
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":120873350.0,
-      "totalTickets":96395,
-      "totalShows":2446,
-      "totalSeats":448498,
-      "occupancy":21.49
+      "totalGross":120878950.0,
+      "totalTickets":96402,
+      "totalShows":2449,
+      "totalSeats":448922,
+      "occupancy":21.47
     },
     {
       "name":"Dinga",
@@ -481,11 +481,11 @@
     {
       "name":"Heart of the Beast",
       "slug":"heart-of-the-beast",
-      "totalGross":8956700.0,
-      "totalTickets":6095,
-      "totalShows":502,
-      "totalSeats":59139,
-      "occupancy":10.31
+      "totalGross":8962700.0,
+      "totalTickets":6101,
+      "totalShows":503,
+      "totalSeats":59231,
+      "occupancy":10.3
     },
     {
       "name":"Meesaya Murukku 2",
@@ -627,27 +627,27 @@
       "slug":"agnijaya",
       "totalGross":649450.0,
       "totalTickets":990,
-      "totalShows":326,
-      "totalSeats":56699,
-      "occupancy":1.75
+      "totalShows":328,
+      "totalSeats":57107,
+      "occupancy":1.73
     },
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":32087200.0,
-      "totalTickets":33527,
-      "totalShows":836,
-      "totalSeats":167965,
-      "occupancy":19.96
+      "totalGross":32093200.0,
+      "totalTickets":33533,
+      "totalShows":838,
+      "totalSeats":168242,
+      "occupancy":19.93
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":63179050.0,
-      "totalTickets":46471,
-      "totalShows":1035,
-      "totalSeats":179850,
-      "occupancy":25.84
+      "totalGross":63323850.0,
+      "totalTickets":46565,
+      "totalShows":1045,
+      "totalSeats":181023,
+      "occupancy":25.72
     },
     {
       "name":"Mookuthi Amman 2",
@@ -760,29 +760,29 @@
     {
       "name":"Kotu",
       "slug":"kotu",
-      "totalGross":2662900.0,
-      "totalTickets":3036,
-      "totalShows":425,
-      "totalSeats":70524,
-      "occupancy":4.3
+      "totalGross":2684000.0,
+      "totalTickets":3061,
+      "totalShows":437,
+      "totalSeats":72605,
+      "occupancy":4.22
     },
     {
       "name":"Rahai Jeewithe",
       "slug":"rahai-jeewithe",
       "totalGross":98550.0,
       "totalTickets":196,
-      "totalShows":81,
-      "totalSeats":16013,
+      "totalShows":82,
+      "totalSeats":16120,
       "occupancy":1.22
     },
     {
       "name":"Ebenezer: A Christmas Carol",
       "slug":"ebenezer-a-christmas-carol",
-      "totalGross":839500.0,
-      "totalTickets":674,
-      "totalShows":87,
-      "totalSeats":10410,
-      "occupancy":6.47
+      "totalGross":851500.0,
+      "totalTickets":684,
+      "totalShows":88,
+      "totalSeats":10550,
+      "occupancy":6.48
     },
     {
       "name":"I Play Rocky",
@@ -902,6 +902,51 @@
       "occupancy":17.63
     },
     {
+      "name":"O.M: Operation Mole",
+      "slug":"om-operation-mole",
+      "totalGross":9043950.0,
+      "totalTickets":9522,
+      "totalShows":257,
+      "totalSeats":52398,
+      "occupancy":18.17
+    },
+    {
+      "name":"Sathyavan Savithiri",
+      "slug":"sathyavan-savithiri",
+      "totalGross":86450.0,
+      "totalTickets":90,
+      "totalShows":25,
+      "totalSeats":3039,
+      "occupancy":2.96
+    },
+    {
+      "name":"Godzilla Minus Zero",
+      "slug":"godzilla-minus-zero",
+      "totalGross":2582750.0,
+      "totalTickets":1122,
+      "totalShows":76,
+      "totalSeats":10995,
+      "occupancy":10.2
+    },
+    {
+      "name":"Appakutty",
+      "slug":"appakutty",
+      "totalGross":188700.0,
+      "totalTickets":191,
+      "totalShows":36,
+      "totalSeats":5842,
+      "occupancy":3.27
+    },
+    {
+      "name":"The Hunger Games: Sunrise on the Reaping",
+      "slug":"the-hunger-games-sunrise-on-the-reaping",
+      "totalGross":3447300.0,
+      "totalTickets":1667,
+      "totalShows":63,
+      "totalSeats":9443,
+      "occupancy":17.65
+    },
+    {
       "name":"Rocket",
       "slug":"rocket",
       "totalGross":29900.0,
@@ -936,51 +981,6 @@
       "totalShows":3,
       "totalSeats":915,
       "occupancy":41.75
-    },
-    {
-      "name":"Appakutty",
-      "slug":"appakutty",
-      "totalGross":187100.0,
-      "totalTickets":189,
-      "totalShows":35,
-      "totalSeats":5745,
-      "occupancy":3.29
-    },
-    {
-      "name":"O.M: Operation Mole",
-      "slug":"om-operation-mole",
-      "totalGross":9015300.0,
-      "totalTickets":9489,
-      "totalShows":251,
-      "totalSeats":51132,
-      "occupancy":18.56
-    },
-    {
-      "name":"Sathyavan Savithiri",
-      "slug":"sathyavan-savithiri",
-      "totalGross":83450.0,
-      "totalTickets":87,
-      "totalShows":24,
-      "totalSeats":2928,
-      "occupancy":2.97
-    },
-    {
-      "name":"The Hunger Games: Sunrise on the Reaping",
-      "slug":"the-hunger-games-sunrise-on-the-reaping",
-      "totalGross":3407900.0,
-      "totalTickets":1636,
-      "totalShows":61,
-      "totalSeats":9154,
-      "occupancy":17.87
-    },
-    {
-      "name":"Godzilla Minus Zero",
-      "slug":"godzilla-minus-zero",
-      "totalGross":2541100.0,
-      "totalTickets":1092,
-      "totalShows":72,
-      "totalSeats":10150,
-      "occupancy":10.76
     },
     {
       "name":"I'm Game",
