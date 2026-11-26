@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-26 09:56:33 IST",
+  "last_updated":"2026-11-26 20:02:21 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -445,20 +445,20 @@
     {
       "name":"Eda Ra",
       "slug":"eda-ra",
-      "totalGross":181309750.0,
-      "totalTickets":280103,
-      "totalShows":8209,
-      "totalSeats":1613616,
-      "occupancy":17.36
+      "totalGross":181428650.0,
+      "totalTickets":280279,
+      "totalShows":8216,
+      "totalSeats":1614986,
+      "occupancy":17.35
     },
     {
       "name":"Jailer 2",
       "slug":"jailer-2",
-      "totalGross":120886150.0,
-      "totalTickets":96406,
-      "totalShows":2452,
-      "totalSeats":449271,
-      "occupancy":21.46
+      "totalGross":120895850.0,
+      "totalTickets":96414,
+      "totalShows":2454,
+      "totalSeats":449640,
+      "occupancy":21.44
     },
     {
       "name":"Dinga",
@@ -634,20 +634,20 @@
     {
       "name":"Scene",
       "slug":"scene",
-      "totalGross":32123400.0,
-      "totalTickets":33561,
-      "totalShows":843,
-      "totalSeats":168927,
-      "occupancy":19.87
+      "totalGross":32131800.0,
+      "totalTickets":33567,
+      "totalShows":845,
+      "totalSeats":169145,
+      "occupancy":19.85
     },
     {
       "name":"Ramayana",
       "slug":"ramayana",
-      "totalGross":63702550.0,
-      "totalTickets":46820,
-      "totalShows":1070,
-      "totalSeats":185885,
-      "occupancy":25.19
+      "totalGross":63872150.0,
+      "totalTickets":46990,
+      "totalShows":1081,
+      "totalSeats":188279,
+      "occupancy":24.96
     },
     {
       "name":"Mookuthi Amman 2",
@@ -760,11 +760,11 @@
     {
       "name":"Kotu",
       "slug":"kotu",
-      "totalGross":2735300.0,
-      "totalTickets":3117,
-      "totalShows":459,
-      "totalSeats":76393,
-      "occupancy":4.08
+      "totalGross":2804800.0,
+      "totalTickets":3182,
+      "totalShows":464,
+      "totalSeats":77155,
+      "occupancy":4.12
     },
     {
       "name":"Rahai Jeewithe",
@@ -904,47 +904,47 @@
     {
       "name":"O.M: Operation Mole",
       "slug":"om-operation-mole",
-      "totalGross":9080150.0,
-      "totalTickets":9573,
-      "totalShows":278,
-      "totalSeats":56319,
-      "occupancy":17.0
+      "totalGross":9174100.0,
+      "totalTickets":9656,
+      "totalShows":291,
+      "totalSeats":58507,
+      "occupancy":16.5
     },
     {
       "name":"Sathyavan Savithiri",
       "slug":"sathyavan-savithiri",
-      "totalGross":87100.0,
-      "totalTickets":91,
-      "totalShows":26,
-      "totalSeats":3173,
-      "occupancy":2.87
+      "totalGross":108100.0,
+      "totalTickets":106,
+      "totalShows":27,
+      "totalSeats":3294,
+      "occupancy":3.22
     },
     {
       "name":"Godzilla Minus Zero",
       "slug":"godzilla-minus-zero",
-      "totalGross":2597950.0,
-      "totalTickets":1133,
-      "totalShows":80,
-      "totalSeats":11566,
-      "occupancy":9.8
+      "totalGross":2626550.0,
+      "totalTickets":1147,
+      "totalShows":82,
+      "totalSeats":11680,
+      "occupancy":9.82
     },
     {
       "name":"Appakutty",
       "slug":"appakutty",
       "totalGross":194100.0,
       "totalTickets":194,
-      "totalShows":39,
-      "totalSeats":6336,
-      "occupancy":3.06
+      "totalShows":40,
+      "totalSeats":6447,
+      "occupancy":3.01
     },
     {
       "name":"The Hunger Games: Sunrise on the Reaping",
       "slug":"the-hunger-games-sunrise-on-the-reaping",
-      "totalGross":3549900.0,
-      "totalTickets":1738,
-      "totalShows":70,
-      "totalSeats":10569,
-      "occupancy":16.44
+      "totalGross":3579800.0,
+      "totalTickets":1751,
+      "totalShows":72,
+      "totalSeats":10788,
+      "occupancy":16.23
     },
     {
       "name":"Viragaya (1987)",
@@ -954,6 +954,15 @@
       "totalShows":1,
       "totalSeats":151,
       "occupancy":83.44
+    },
+    {
+      "name":"The Further Mis-Adventures of Cliff Booth",
+      "slug":"the-further-mis-adventures-of-cliff-booth",
+      "totalGross":3600.0,
+      "totalTickets":1,
+      "totalShows":3,
+      "totalSeats":915,
+      "occupancy":0.11
     },
     {
       "name":"Rocket",
@@ -1008,15 +1017,6 @@
       "totalShows":1,
       "totalSeats":111,
       "occupancy":100.0
-    },
-    {
-      "name":"The Further Mis-Adventures of Cliff Booth",
-      "slug":"the-further-mis-adventures-of-cliff-booth",
-      "totalGross":3600.0,
-      "totalTickets":1,
-      "totalShows":2,
-      "totalSeats":610,
-      "occupancy":0.16
     }
   ]
 }
