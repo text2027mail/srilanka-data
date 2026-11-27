@@ -1,5 +1,5 @@
 {
-  "last_updated":"2026-11-27 14:38:27 IST",
+  "last_updated":"2026-11-28 01:10:19 IST",
   "movies":[
     {
       "name":"Adaraneeya Tharuwak",
@@ -315,6 +315,33 @@
       "totalShows":292,
       "totalSeats":45125,
       "occupancy":8.14
+    },
+    {
+      "name":"Godzilla Minus Zero",
+      "slug":"godzilla-minus-zero",
+      "totalGross":2937150.0,
+      "totalTickets":1263,
+      "totalShows":89,
+      "totalSeats":12492,
+      "occupancy":10.11
+    },
+    {
+      "name":"COCO",
+      "slug":"coco",
+      "totalGross":158900.0,
+      "totalTickets":168,
+      "totalShows":15,
+      "totalSeats":3026,
+      "occupancy":5.55
+    },
+    {
+      "name":"Ramayana",
+      "slug":"ramayana",
+      "totalGross":65289600.0,
+      "totalTickets":47987,
+      "totalShows":1130,
+      "totalSeats":197218,
+      "occupancy":24.33
     },
     {
       "name":"Batwara 1947",
@@ -641,15 +668,6 @@
       "occupancy":19.72
     },
     {
-      "name":"Ramayana",
-      "slug":"ramayana",
-      "totalGross":65160000.0,
-      "totalTickets":47906,
-      "totalShows":1129,
-      "totalSeats":197067,
-      "occupancy":24.31
-    },
-    {
       "name":"Mookuthi Amman 2",
       "slug":"mookuthi-amman-2",
       "totalGross":3106500.0,
@@ -920,15 +938,6 @@
       "occupancy":3.22
     },
     {
-      "name":"Godzilla Minus Zero",
-      "slug":"godzilla-minus-zero",
-      "totalGross":2706750.0,
-      "totalTickets":1199,
-      "totalShows":88,
-      "totalSeats":12187,
-      "occupancy":9.84
-    },
-    {
       "name":"Appakutty",
       "slug":"appakutty",
       "totalGross":194100.0,
@@ -1008,15 +1017,6 @@
       "totalShows":19,
       "totalSeats":2717,
       "occupancy":23.85
-    },
-    {
-      "name":"COCO",
-      "slug":"coco",
-      "totalGross":154700.0,
-      "totalTickets":165,
-      "totalShows":14,
-      "totalSeats":2886,
-      "occupancy":5.72
     },
     {
       "name":"Focker-In-Law",
